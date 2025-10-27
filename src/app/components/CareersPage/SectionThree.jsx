@@ -54,17 +54,17 @@ const SectionThree = () => {
 
     return (
         <div ref={sectionRef} className="w-full bg-[#0A131C] p-5 md:p-20 relative overflow-hidden">
-            <div className="hidden md:block absolute top-[10%] left-1/2 -translate-x-1/2 w-[90%] h-[84%] bg-gradient-to-r from-[#FA1AC2] via-[#11AAEE] to-[#11AAEE] p-[2px] rounded-[10px]">
+            <div className="hidden aboutpage-section-three md:block absolute top-[10%] left-1/2 -translate-x-1/2 w-[90%] h-[84%] bg-gradient-to-r from-[#FA1AC2] via-[#11AAEE] to-[#11AAEE] p-[2px] rounded-[10px]">
                 <div className="w-full h-full bg-[#0A131C] rounded-[10px]"></div>
                 <div className="w-[155px] h-[179px] bg-[#1AE4FA] rounded-full absolute top-[-4%] right-[-4%] blur-[250px]"></div>
                 <div className="w-[155px] h-[179px] bg-[#1AE4FA] rounded-full absolute bottom-[-4%] left-[-4%] blur-[250px]"></div>
             </div>
 
-            <div className="w-full h-full section-three-bgImage pt-2 sm:pt-4 md:pt-6">
+            <div className="w-full aboutpage-section-three mx-auto h-full section-three-bgImage pt-2 sm:pt-4 md:pt-6">
 
-                <div className="relative section-three-title mt-[20px] ld:mt-[50px]">
-                    <div className="w-[59vw] sm:w-[40vw] md:w-[20vw] h-1 bg-[#71C1E6] absolute left-[15.7%] sm:left-[28.5%] md:left-[38.5%] top-[5vw] sm:top-[20%] md:top-[18%]"></div>
-                    <h1 className="text-2xl sm:text-3xl md:text-4xl text-center pt-[40px] sm:pt-6 text-white">
+                <div className="relative section-three-title mt-[20px] md:mt-[40px]">
+                    {/* <div className="w-[59vw] sm:w-[40vw] md:w-[20vw] h-1 bg-[#71C1E6] absolute left-[15.7%] sm:left-[28.5%] md:left-[38.5%] top-[5vw] sm:top-[20%] md:top-[18%]"></div> */}
+                    <h1 className="w-[160px] md:w-[260px] mx-auto text-2xl sm:text-3xl md:text-4xl text-center pt-[10px] border-t-[3px] border-[#71C1E6] text-white">
                         See Our
                     </h1>
                     <h2 className="text-2xl sm:text-3xl md:text-4xl text-center text-[#71C1E6] font-bold">
@@ -73,15 +73,15 @@ const SectionThree = () => {
                 </div>
 
 
-                <div className="relative w-full mt-4 sm:mt-6 md:mt-10 p-0 md:p-6 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="relative w-full mt-4 sm:mt-6 md:mt-0 p-0 md:p-6 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                     <img
                         src="/img/aboutpage/sectionthree/rightLogo.png"
-                        className="absolute top-[-50%] right-[-4%]" loading="lazy"
+                        className="hidden md:block absolute top-[-18%] lg:top-[-200px] right-[-60px] lg:right-[-50px] xl:right-[-30px]" loading="lazy"
                     />
 
                     <img
                         src="/img/aboutpage/sectionthree/leftLogo.png" loading="lazy"
-                        className="hidden md:block absolute bottom-[-5%] lg:bottom-[-10%] left-[-7%] lg:left-[-5%]"
+                        className="hidden md:block absolute bottom-[-40px] left-[-60px] lg:bottom-[-13%] lg:left-[-50px] xl:left-[-30px]"
                     />
 
                     {projects.map((project, index) => (
@@ -97,15 +97,15 @@ const SectionThree = () => {
                             p-[5px] xl:p-[10px]">
 
                                 <div className="w-full h-full">
-                                    <div className="w-full h-[100px] sm:h-[150px]">
+                                    <div className="w-full h-[140px] sm:h-[200px] md:h-[180px] lg:h-[190px] xl:h-[200px]">
                                         <img
                                             src={project.img} loading="lazy"
                                             className="w-full h-full transition-all duration-500 group-hover:opacity-30"
                                         />
                                     </div>
                                 </div>
-                                <div className="w-full h-full">
-                                    <div className="flex items-center justify-between mt-[1vw]">
+                                <div className="w-full h-full mt-[10px]">
+                                    <div className="flex items-center justify-between">
                                         <span className="flex items-center justify-between gap-2 text-white">
                                             <img src="/img/careerspage/author.png" className="w-[3vw] lg:w-[20px]" loading="lazy" />
                                             <span className="text-[8px] sm:text-[12px] md:text-[16px] lg:text-[12px] xl:text-[14px]">|</span>
@@ -117,15 +117,9 @@ const SectionThree = () => {
                                             <span className="text-[8px] sm:text-[12px] md:text-[16px] lg:text-[12px] xl:text-[14px]">1 Jan 2025</span>
                                         </span>
                                     </div>
-                                    <h4 className="mt-[2vw] font-semibold text-[10px] 
-                                    sm:text-[14px] md:text-[18px] 
-                                    lg:text-[16px] text-white">Few Words "Can Refer To A Phrase"</h4>
-                                    <p className="text-[#928D9B] text-[8px] 
-                                    sm:text-[12px] md:text-[16px] 
-                                    lg:text-[14px] mt-[3vw] lg:mt-[3px]">Lorem ipsum is simply dummy text</p>
-                                    <button className="bg-white text-[#755E9D] w-[58px] h-[15px] 
-                                    sm:w-[70px] sm:h-[22px] rounded-[3px] text-[8px] 
-                                    sm:text-[12px] mt-[3vw] lg:mt-[6px]">Read More</button>
+                                    <h4 className="w-[140px] sm:w-[200px] md:w-[260px] lg:w-[200px] xl:w-[200px] font-semibold text-[10px] sm:text-[14px] md:text-[18px] lg:text-[16px] text-white mt-[17px]">Few Words "Can Refer To A Phrase"</h4>
+                                    <p className="text-[#928D9B] text-[8px] sm:text-[12px] md:text-[16px] lg:text-[14px] mt-[14px]">Lorem ipsum is simply dummy text</p>
+                                    <button className="bg-white text-[#755E9D] w-[58px] h-[15px] sm:w-[70px] sm:h-[22px] rounded-[3px] text-[8px] sm:text-[12px] mt-[14px]">Read More</button>
                                 </div>
                             </div>
                         </div>

@@ -75,15 +75,15 @@ const SectionOne = () => {
       </div>
 
       <Header />
-      <div className="w-full h-full pt-0 relative overflow-hidden">
+      <div className="w-full servicepage-section-one mx-auto h-full pt-0 relative overflow-hidden">
 
         <img ref={imgRef1}
           src="/img/aboutpage/sectionone/image01.png"
-          className="img-top hidden lg:block absolute top-[-5%] left-[30%] h-[16vw]" loading="lazy"
+          className="img-top hidden lg:block absolute top-[-5%] left-[30%] w-[160px]" loading="lazy"
         />
         <img ref={imgRef2}
           src="/img/aboutpage/sectionone/image02.png" loading="lazy"
-          className="img-left-bottom hidden lg:block absolute top-[0vw] right-[10vw] rotate-30 w-[5vw]"
+          className="img-left-bottom hidden lg:block absolute top-[0vw] right-[10vw] rotate-30 w-[66px]"
         />
 
         <div className="w-full h-[80%] md:h-full flex flex-col-reverse lg:hidden items-center justify-center gap-0 md:gap-10 ps-25.5 pe-25.5">

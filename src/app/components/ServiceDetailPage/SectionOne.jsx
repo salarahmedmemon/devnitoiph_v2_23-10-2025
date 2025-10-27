@@ -97,7 +97,7 @@ const SectionOne = () => {
   return (
     <div ref={sectionRef} className="bg-[url('/img/servicedetailspage/bgimage.png')] bg-cover bg-center w-full h-[514px] sm:h-[560px] md:h-[640px] xl:h-[725px] pt-[9px] md:pt-[20px] xl:pt-[30px]">
       <Header />
-      <div className="w-full h-full pt-[26px] sm:pt-0 relative overflow-hidden">
+      <div className="w-full mx-auto servicedetailspage-sectionone h-full pt-[26px] sm:pt-0 relative overflow-hidden">
         <img ref={imgRef1}
           src="/img/aboutpage/sectionone/image01.png" loading="lazy"
           className="img-top hidden lg:block absolute w-[173px] h-[217px] top-[-5%] left-[29%]"

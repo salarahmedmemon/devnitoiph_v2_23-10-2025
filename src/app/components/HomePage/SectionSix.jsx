@@ -168,9 +168,9 @@ function FAQItem({ q, a1, a2, id }) {
    <div
       ref={wrapperRef}
       className="relative w-full sm:w-[45%] lg:w-[90%] lg:mx-auto mt-[2vw] p-[2px] rounded-lg
-      frequently-asked-question-border"
+       bg-[#fff3] frequently-asked-question-border"
     >
-    <div className="w-full bg-[#ffffff1f] px-8 md:px-14 py-3 md:py-6 flex flex-col justify-center transition-all duration-300 backdrop-blur-[2px]">
+    <div className="w-full px-8 md:px-14 py-3 md:py-6 flex flex-col justify-center transition-all duration-300 backdrop-blur-[2px]">
       
       <div className="flex items-center justify-between gap-4">
         <p
@@ -310,7 +310,7 @@ const SectionSix = () => {
       <div className='w-[0vw] h-[0vw] rounded-full absolute top-[100px] left-[-60px] opacity-[50%] blur-circle2'></div>
 
       <div className="w-full h-[100px] sm:h-[150px] bg-white pt-[26px] ps-[26px] sm:pt-[39px] sm:ps-[86px]">
-        <div className="w-[454px] h-[74px]">
+        <div className="w-[454px] h-[74px] homepage-section-six-heading">
           <h1 ref={h1Ref} className="border-t-[3px] border-[#4C4886] w-[50px] h-[24px] sm:w-[87px] sm:h-[42px] text-[20px] sm:text-[32px] font-[500]">FAQ's</h1>
           <h2 ref={h2Ref} className="text-[20px] sm:text-[32px] font-[600] text-[#4C4886]"> <span class="bg-gradient-to-r from-[#FA1AC2] via-[#1AE4FA] to-[#1CDE63D9] bg-clip-text text-transparent font-bold">
                 Frequently
@@ -328,7 +328,7 @@ const SectionSix = () => {
         </div>
 
         {/* Large Device Layout (2 fixed columns) */}
-        <div className="hidden w-full mt-[40px] lg:grid lg:grid-cols-2">
+        <div className="hidden mx-auto homepage-section-six-faq w-full mt-[40px] lg:grid lg:grid-cols-2">
          
           <div className="flex flex-col">
             {faqs.slice(0, 3).map((f) => (

@@ -7,12 +7,14 @@ const SectionSix = () => {
     return (
         <div className="w-full h-[1550px]  md:h-[700px]  bg-[#EEEEEE] relative overflow-hidden pt-[96px]">
 
-            <div className="hidden md:block w-[25vw] h-[25vw] bg-[#B7D2EF] rounded-full p-[.2vw] absolute top-[-9vw] right-[-12vw]">
-                <div className="w-full h-full rounded-full bg-gradient-to-b to-[#E6EAEE] from-[#E7EBEE]"></div>
+            {/* RIGHT CIRCLE */}
+            <div className='homepage-sectionone-rightcircle w-[140px] sm:w-[300px] lg:w-[405.06px] h-[140px] sm:h-[300px] lg:h-[405.06px] rounded-full bg-[#BAD3EF] absolute top-[-20px] right-[-60px] sm:top-[-50px] lg:top-[16px] sm:right-[-150px] lg:right-[-200px] xl:left-[85%] p-[3px]'>
+                <div className='w-full h-full rounded-full bg-gradient-to-b from-[#E2E8EE] to-[#E9EBEE]'></div>
             </div>
 
-            <div className="hidden md:block w-[50vw] h-[50vw] bg-[#FFF] rounded-full p-[.2vw] absolute bottom-[-17vw] left-[-17vw]">
-                <div className="w-full h-full rounded-full bg-[#EEE]"></div>
+            {/* LEFT CIRCLE */}
+            <div className='w-[185.26px] h-[185.26px] sm:w-[400px] sm:h-[400px] lg:w-[754px] lg:h-[754px] rounded-full bg-[#fff] absolute bottom-[-20px] left-[-40px] sm:bottom-[-30px] sm:left-[-160px] lg:bottom-[-200px] lg:left-[-160px] p-[3px]'>
+                <div className='w-full h-full rounded-full bg-gradient-to-b from-[#F2F3F5] to-[#F1F2F2]'></div>
             </div>
 
             <div className="mx-auto text-center w-[303px] h-[100px] border-t-[3px] border-[#4C4886] text-[32px] font-[500]">
@@ -20,7 +22,7 @@ const SectionSix = () => {
                 <h2 className="text-[#4C4886]">Article</h2>
             </div>
 
-            <div className="w-[90%] mx-auto h-[401px] flex flex-wrap items-center justify-center gap-[21px] mt-[53px]">
+            <div className="w-[90%] careerspage-sectionsix mx-auto h-[401px] flex flex-wrap items-center justify-center gap-[21px] mt-[53px]">
                 <div className="w-full md:w-[30%] z-[50] h-full">
                     <div className="w-full h-[80%] rounded-[10px]">
                         <img src="/img/careerspage/sectionsix/image01.png" className="w-full h-full object-cover rounded-[10px]" loading="lazy" />

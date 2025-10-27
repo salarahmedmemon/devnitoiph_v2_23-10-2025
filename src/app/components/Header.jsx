@@ -170,32 +170,12 @@ const Header = () => {
       {/* CONTACT BUTTONS */}
       <div className="header-btns flex items-center gap-3">
         <button className="w-[28px] h-[26px] sm:w-[40px] sm:h-[39.44px] bg-[#4C4886] flex items-center justify-center rounded-[5px] sm:rounded-[10px] rotate-once cursor-pointer">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 32 32"
-            fill="currentColor"
-            className="w-6 h-6 text-white"
-          >
-            <path d="M16 .395C7.164.395.073 7.486.073 16.322c0 2.875.755 5.688 2.197 8.175L0 32l7.694-2.01a15.826 15.826 0 0 0 8.306 2.289h.006c8.837 0 15.928-7.09 15.928-15.927C31.934 7.486 24.843.395 16 .395Zm0 29.1a13.1 13.1 0 0 1-6.693-1.84l-.48-.285-4.57 1.193 1.219-4.46-.31-.457A13.1 13.1 0 0 1 2.9 16.322C2.9 8.66 8.338 3.223 16 3.223s13.1 5.437 13.1 13.099S23.662 29.495 16 29.495Zm7.225-9.856c-.395-.197-2.331-1.151-2.693-1.283-.36-.133-.623-.197-.886.197-.262.395-1.018 1.283-1.25 1.546-.23.263-.46.296-.854.099-.395-.197-1.667-.615-3.175-1.96-1.174-1.048-1.965-2.341-2.197-2.736-.23-.395-.024-.608.173-.805.178-.178.395-.46.592-.69.198-.23.263-.395.395-.657.133-.263.066-.493-.033-.69-.099-.197-.886-2.137-1.216-2.933-.32-.77-.646-.665-.886-.677-.229-.012-.492-.012-.755-.012-.262 0-.69.099-1.052.493-.36.395-1.384 1.35-1.384 3.293s1.416 3.826 1.613 4.092c.197.263 2.79 4.266 6.754 5.98.945.407 1.681.65 2.255.833.948.302 1.812.26 2.497.158.762-.113 2.331-.953 2.661-1.874.33-.92.33-1.71.23-1.874-.098-.164-.36-.262-.755-.46Z" />
-          </svg>
-
-          {/* <img className="hidden sm:block" src="/img/homepage/whatsapp.png" alt="WhatsApp" /> */}
-          {/* <img className="block sm:hidden w-[10.98px] h-[]10.78px]" src="/img/homepage/whatsapp.png" alt="WhatsApp" /> */}
+          <img className="hidden sm:block" src="/img/homepage/whatsapp.png" alt="WhatsApp" />
+          <img className="block sm:hidden w-[10.98px] h-[]10.78px]" src="/img/homepage/whatsapp.png" alt="WhatsApp" />
         </button>
         <button className="w-[28px] h-[26px] sm:w-[40px] sm:h-[39.44px] bg-[#4C4886] flex items-center justify-center rounded-[5px] sm:rounded-[10px] rotate-once cursor-pointer">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 48 48"
-            className="w-6 h-6 text-white"
-          >
-            <path fill="#4C4886" d="M4 11.5v25c0 1.93 1.57 3.5 3.5 3.5h33c1.93 0 3.5-1.57 3.5-3.5v-25l-20 14z"/>
-            <path fill="#f2f2f2" d="M44 11.5V13l-20 14L4 13v-1.5c0-1.93 1.57-3.5 3.5-3.5h33c1.93 0 3.5 1.57 3.5 3.5z"/>
-            <path fill="#f2f2f2" d="M4 11.5l20 14 20-14H4z"/>
-            <path fill="#f2f2f2" d="M44 36.5V13l-20 14L4 13v23.5C4 38.43 5.57 40 7.5 40h33c1.93 0 3.5-1.57 3.5-3.5z"/>
-          </svg>
-
-          {/* <img className="hidden sm:block" src="/img/homepage/gmail.png" alt="Gmail" /> */}
-          {/* <img className="block sm:hidden w-[10.98px] h-[]10.78px]" src="/img/homepage/gmail.png" alt="Gmail" /> */}
+          <img className="hidden sm:block" src="/img/homepage/gmail.png" alt="Gmail" />
+          <img className="block sm:hidden w-[10.98px] h-[]10.78px]" src="/img/homepage/gmail.png" alt="Gmail" />
         </button>
       </div>
     </div>

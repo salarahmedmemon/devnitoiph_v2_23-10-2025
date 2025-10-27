@@ -55,11 +55,11 @@ const SectionThree = () => {
       <div className='w-[0vw] h-[0vw] rounded-full absolute bottom-[30%] left-0 opacity-[24%] lg:opacity-[30%] blur-circle blur-animation'></div>
 
 
-      <div className="w-full bg-gradient-to-br to-[#FA1AC2] from-[#11AAEE] section-three-bgImage p-0 md:p-[3px]">
+      <div className="w-full aboutpage-section-three mx-auto bg-gradient-to-br to-[#FA1AC2] from-[#11AAEE] section-three-bgImage p-0 md:p-[3px]">
         <div className="w-full bg-[#0A131C] pt-2 sm:pt-4 md:pt-6">
           <div className="relative section-three-title">
-            <div className="w-[50vw] sm:w-[40vw] md:w-[20vw] h-1 bg-[#71C1E6] absolute left-[22%] sm:left-[28.5%] md:left-[38.5%] top-[5vw] sm:top-[20%] md:top-[18%]"></div>
-            <h1 className="text-2xl sm:text-3xl md:text-4xl text-center pt-[24px] sm:pt-6 text-white">
+            {/* <div className="w-[50vw] sm:w-[40vw] md:w-[20vw] h-1 bg-[#71C1E6] absolute left-[22%] sm:left-[28.5%] md:left-[38.5%] top-[5vw] sm:top-[20%] md:top-[18%]"></div> */}
+            <h1 className="w-[200px] sm:w-[300px] mx-auto text-2xl sm:text-3xl md:text-4xl text-center pt-[8px] border-t-3 border-[#71C1E6] sm:pt-6 text-white">
               Meet The Best
             </h1>
             <h2 className="text-2xl sm:text-3xl md:text-4xl text-center text-[#71C1E6] font-bold">
@@ -71,17 +71,17 @@ const SectionThree = () => {
           <div className="relative w-full sm:w-[90%] sm:mx-auto  mt-4 sm:mt-6 md:mt-10 p-0 md:p-6 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-10">
             <img
               src="/img/aboutpage/sectionthree/rightLogo.png"
-              className="hidden md:block absolute top-[-220px] right-[-106px]" loading="lazy"
+              className="hidden md:block absolute top-[-220px] right-[-70px] lg:right-[-90px] xl:right-[-106px]" loading="lazy"
             />
             <img
               src="/img/aboutpage/sectionthree/leftLogo.png"
-              className="hidden md:block absolute bottom-[-40px] left-[-100px]" loading="lazy"
+              className="hidden md:block absolute bottom-[-40px] left-[-80px] xl:left-[-100px]" loading="lazy"
             />
 
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-[#FA1AC2] via-[#11AAEE] to-[#1CDE63] project-card group w-[100%] h-[205px] sm:w-[40vw] md:w-[23vw] sm:h-[30vw] md:h-[22vw] gradient-border rounded-lg relative overflow-hidden flex items-center justify-center p-[3px] cursor-pointer"
+                className="bg-gradient-to-br from-[#FA1AC2] via-[#11AAEE] to-[#1CDE63] project-card group w-[100%] h-[205px] sm:h-[180px] md:h-[320px] sm:w-[40vw] md:w-[23vw] xl:w-[340px] gradient-border rounded-lg relative overflow-hidden flex items-center justify-center p-[3px] cursor-pointer"
               >
                 <div className="w-full h-full rounded-lg bg-[#0A131C]">
                   

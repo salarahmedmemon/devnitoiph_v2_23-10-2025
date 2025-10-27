@@ -109,7 +109,7 @@ const SectionTwo = () => {
 
 
             {/* FOR LARGE SCREEN */}
-            <div className="hidden lg:flex w-full h-[78%] mt-[14%] justify-between">
+            <div className="hidden lg:flex w-full h-[78%] mt-[14%] xl:mt-[200px] justify-center gap-[100px]">
                 <div ref={imageRef} className="w-[511px] h-[419px] ms-[5%]">
                     <div className="w-full h-full relative ms-[4%]">
                         {/* <Image

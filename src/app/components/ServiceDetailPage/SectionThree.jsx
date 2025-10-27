@@ -8,9 +8,10 @@ const SectionThree = () => {
 
     // 3. return statement/jsx
     return (
-        <div className="w-full h-[2200px] sm:h-[2566px] md:h-[2000px]  lg:h-[2400px] bg-[#0A131C] relative">
-            <div className="image w-full h-[40vh] absolute top-[10vw] p-4 left-0 text-white  lg:left-[5%]   xl:top-[140px] xl:left-[0px]">
-                <img src="/img/servicedetailspage/sectionthree/image01.png" className="border-[2px] border-[#fff] rounded-lg    w-full  lg:w-[60%]  xl:w-[847px] lg:border-[3px] xl:h-[465px]" loading="lazy" />
+        <div className="w-full bg-[#0A131C]">
+            <div className="servicedetailspage-sectionthree mx-auto w-full h-[2200px] sm:h-[2566px] md:h-[2000px]  lg:h-[2400px] relative">
+                <div className="image w-full h-[40vh] absolute top-[10vw] p-4 left-0 text-white  lg:left-[5%]   xl:top-[140px] xl:left-[0px]">
+                <img src="/img/servicedetailspage/sectionthree/image01.png" className="border-[2px] border-[#fff] rounded-lg    w-full  lg:w-[60%]  xl:w-[820px] lg:border-[3px] xl:h-[465px]" loading="lazy" />
                 <h1 className="text-[#77CCF3] text-[20px] font-[600]   sm:text-[6vw]   md:text-[4vw]   lg:text-[3vw]    xl:text-[36px]">Information Security Services We Offer</h1>
                 <p className="w-[100%] text-[12px] font-[400] mt-2    sm:text-[2.4vw]   md:text-[2vw]     lg:w-[55%] lg:text-[2vw]   xl:w-[817px] xl:text-[16px]">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem
                     ipsum has been the industry's standard text ever since the 1500s. When an unknown
@@ -27,8 +28,8 @@ const SectionThree = () => {
                 </p>
 
                 <div className="hidden xl:flex w-full mt-[51px] gap-5">
-                    <img src="/img/servicedetailspage/sectionthree/image02.png" className="w-full border-1 border-[#fff] rounded-[20px]    xl:w-[413px] xl:h-[300px]" loading="lazy"/>
-                    <img src="/img/servicedetailspage/sectionthree/image03.png" className="w-full border-1 border-[#fff] rounded-[20px]    xl:w-[413px] xl:h-[300px]" loading="lazy" />
+                    <img src="/img/servicedetailspage/sectionthree/image02.png" className="w-full border-1 border-[#fff] rounded-[20px]    xl:w-[400px] xl:h-[300px]" loading="lazy"/>
+                    <img src="/img/servicedetailspage/sectionthree/image03.png" className="w-full border-1 border-[#fff] rounded-[20px]    xl:w-[400px] xl:h-[300px]" loading="lazy" />
                 </div>
 
                 <p className="hidden xl:block w-[90%] text-[12px] mt-[19px]   xl:w-[817px]">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem
@@ -162,6 +163,7 @@ const SectionThree = () => {
                     <img src="/img/servicedetailspage/sectionthree/instagram.png" className="w-[10vw]    lg:w-[20%]     xl:w-[51px] xl:h-[50px]" loading="lazy" />
                     <img src="/img/servicedetailspage/sectionthree/twitter.png" className="w-[10vw]    lg:w-[20%]     xl:w-[51px] xl:h-[50px]" loading="lazy" />
                 </div>
+            </div>
             </div>
         </div>
     );

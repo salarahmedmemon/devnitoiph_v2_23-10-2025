@@ -16,7 +16,7 @@ const Page = () => {
             <SectionTwo />
             <SectionThree />
             <SectionFour />
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 };

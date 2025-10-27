@@ -42,7 +42,7 @@ const SectionOne = () => {
                 <Header />
             </div>
 
-            <div className="relative lg:flex lg:justify-between">
+            <div className="relative mx-auto homepage-section-one lg:flex lg:justify-between">
                 <div className="z-[1000] w-[154px] h-[158px] sm:w-[420px] sm:h-[391px] text-center lg:text-start absolute left-1/2 -translate-x-1/2 lg:left-auto lg:translate-x-0 lg:ms-[80px] text-white mt-[14px] sm:mt-[30px] md:mt-[50px] lg:mt-[70px] xl:mt-[113.46px]">
                     <button className="animate-text w-full h-[30px] sm:w-[314px] sm:h-[66px] lg:w-[275px] xl:w-[314px]  rounded-[10px] bg-white text-[#4C4886] font-[600] text-[20px] sm:text-[44px] lg:text-[40px] xl:text-[44px] ">CONNECTING</button>
                     <h1 className="animate-text font-[600] text-[34px] sm:text-[66px] md:text-[74px] xl:text-[92px] pt-[26px] sm:pt-0 leading-[10px] sm:leading-[100px] xl:leading-[100px]">BRANDS</h1>

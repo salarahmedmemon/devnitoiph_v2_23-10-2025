@@ -10,102 +10,102 @@ const SectionThree = () => {
     const h1Ref = useRef(null);
     const h2Ref = useRef(null);
     const circleRefsDesktop = useRef([]);
-const circleRefsMobile = useRef([]);
+    const circleRefsMobile = useRef([]);
 
-useEffect(() => {
-  if (!containerRef.current) return;
+    useEffect(() => {
+        if (!containerRef.current) return;
 
-  const ctx = gsap.context(() => {
-    // Headings
-    gsap.fromTo(
-      h1Ref.current,
-      { x: 100, opacity: 0 },
-      {
-        x: 0,
-        opacity: 1,
-        duration: 1,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: h1Ref.current,
-          start: "top 80%",
-          toggleActions: "play none none none",
-        },
-      }
-    );
+        const ctx = gsap.context(() => {
+            // Headings
+            gsap.fromTo(
+                h1Ref.current,
+                { x: 100, opacity: 0 },
+                {
+                    x: 0,
+                    opacity: 1,
+                    duration: 1,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: h1Ref.current,
+                        start: "top 80%",
+                        toggleActions: "play none none none",
+                    },
+                }
+            );
 
-    gsap.fromTo(
-      h2Ref.current,
-      { x: -100, opacity: 0 },
-      {
-        x: 0,
-        opacity: 1,
-        duration: 1,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: h2Ref.current,
-          start: "top 80%",
-          toggleActions: "play none none none",
-        },
-      }
-    );
+            gsap.fromTo(
+                h2Ref.current,
+                { x: -100, opacity: 0 },
+                {
+                    x: 0,
+                    opacity: 1,
+                    duration: 1,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: h2Ref.current,
+                        start: "top 80%",
+                        toggleActions: "play none none none",
+                    },
+                }
+            );
 
-    // Circle animation setup
-    const setupCircleAnimation = (circleArray) => {
-      let activeIndex = null;
+            // Circle animation setup
+            const setupCircleAnimation = (circleArray) => {
+                let activeIndex = null;
 
-      const animateRandomCircle = () => {
-        const allCircles = circleArray.filter(Boolean);
-        if (allCircles.length === 0) return;
+                const animateRandomCircle = () => {
+                    const allCircles = circleArray.filter(Boolean);
+                    if (allCircles.length === 0) return;
 
-        // hide previous
-        if (activeIndex !== null && allCircles[activeIndex]) {
-          gsap.to(allCircles[activeIndex], {
-            scale: 0,
-            opacity: 0,
-            duration: 0.3,
-            ease: "power2.inOut",
-          });
-        }
+                    // hide previous
+                    if (activeIndex !== null && allCircles[activeIndex]) {
+                        gsap.to(allCircles[activeIndex], {
+                            scale: 0,
+                            opacity: 0,
+                            duration: 0.3,
+                            ease: "power2.inOut",
+                        });
+                    }
 
-        // pick new one
-        let newIndex = activeIndex;
-        while (newIndex === activeIndex) {
-          newIndex = Math.floor(Math.random() * allCircles.length);
-        }
-        activeIndex = newIndex;
+                    // pick new one
+                    let newIndex = activeIndex;
+                    while (newIndex === activeIndex) {
+                        newIndex = Math.floor(Math.random() * allCircles.length);
+                    }
+                    activeIndex = newIndex;
 
-        if (!allCircles[newIndex]) return; // ✅ safety check
-        gsap.fromTo(
-          allCircles[newIndex],
-          { scale: 0, opacity: 0 },
-          {
-            scale: 1,
-            opacity: 1,
-            duration: 1.4,
-            ease: "back.out(1.7)",
-          }
-        );
-      };
+                    if (!allCircles[newIndex]) return; // ✅ safety check
+                    gsap.fromTo(
+                        allCircles[newIndex],
+                        { scale: 0, opacity: 0 },
+                        {
+                            scale: 1,
+                            opacity: 1,
+                            duration: 1.4,
+                            ease: "back.out(1.7)",
+                        }
+                    );
+                };
 
-      const interval = setInterval(animateRandomCircle, 4500);
+                const interval = setInterval(animateRandomCircle, 4500);
 
-      // ✅ cleanup correctly
-      return () => clearInterval(interval);
-    };
+                // ✅ cleanup correctly
+                return () => clearInterval(interval);
+            };
 
-    // Run for both groups
-    const cleanupDesktop = setupCircleAnimation(circleRefsDesktop.current);
-    const cleanupMobile = setupCircleAnimation(circleRefsMobile.current);
+            // Run for both groups
+            const cleanupDesktop = setupCircleAnimation(circleRefsDesktop.current);
+            const cleanupMobile = setupCircleAnimation(circleRefsMobile.current);
 
-    // ✅ cleanup both on unmount
-    return () => {
-      cleanupDesktop?.();
-      cleanupMobile?.();
-    };
-  }, containerRef);
+            // ✅ cleanup both on unmount
+            return () => {
+                cleanupDesktop?.();
+                cleanupMobile?.();
+            };
+        }, containerRef);
 
-  return () => ctx.revert();
-}, []);
+        return () => ctx.revert();
+    }, []);
 
 
 
@@ -120,7 +120,7 @@ useEffect(() => {
 
 
             {/* Main glass box */}
-            <div className="main-glass w-[88%] mx-auto h-[425px] sm:h-[740px] lg:h-[800px] xl:h-[800px] rounded-[5px] xl:rounded-[26px] border-2 xl:border border-[#4279E8]/40
+            <div className="main-glass w-[96%] md:w-[88%] mx-auto h-[425px] sm:h-[740px] lg:h-[800px] xl:h-[800px] rounded-[5px] xl:rounded-[26px] border-2 xl:border border-[#4279E8]/40
                             backdrop-blur-xl opacity-96
                             shadow-[0_8px_26px_rgba(0,0,0,0.6)]
                             relative overflow-hidden">
@@ -266,7 +266,7 @@ useEffect(() => {
                 </div>
 
                 {/* PROJECTS SHOWCASE FOR MOBILE */}
-                <div className="flex lg:hidden w-[94%] sm:w-[90%] mx-auto mt-[16px] sm:mt-0 gap-[5px] sm:gap-[10px] flex-wrap">
+                <div className="flex lg:hidden w-[90%] mx-auto mt-[16px] sm:mt-0 gap-[3px] sm:gap-[10px] flex-wrap">
                     {/* PROJECT ONE */}
                     <div className="w-[180px] h-[119px] sm:w-[33%] sm:h-[280px] p-[2px] gradient-border">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projectone.png')] bg-cover bg-center relative">

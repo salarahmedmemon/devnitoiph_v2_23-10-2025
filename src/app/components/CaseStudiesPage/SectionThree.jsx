@@ -71,8 +71,8 @@ const SectionThree = () => {
   };
 
   return (
-    <div className="w-full h-[1900px] md:h-[1300px] lg:min-h-[1000px] bg-[#0A131C] p-5 sm:p-20">
-      <div className="w-[99%] h-full md:h-auto gradient-border rounded-[1vw] p-1 mx-auto">
+    <div className="w-full h-[1900px] sm:h-[2100px] md:h-[1300px] lg:min-h-[1000px] bg-[#0A131C] p-5 sm:p-20">
+      <div className="w-[99%] casestudypage-sectionthree h-full md:h-auto gradient-border rounded-[1vw] p-1 mx-auto">
         <div className="w-full h-full bg-[#0A131C] rounded-[1vw] text-white">
           {/* Top Section */}
           <div
@@ -109,13 +109,13 @@ const SectionThree = () => {
             <div
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
-              className={`w-[50%] md:w-[80%] lg:w-[94%] gradient-border mx-auto rounded-lg p-[3px] mt-[40px] mb-[70px] transition-all duration-700 ease-in-out cursor-pointer ${isExpanded ? "scale-y-[1.15]" : "scale-y-[1]"
+              className={`w-[280px] md:w-[600px] lg:w-[94%] gradient-border mx-auto rounded-lg p-[3px] mt-[40px] mb-[70px] transition-all duration-700 ease-in-out cursor-pointer ${isExpanded ? "scale-y-[1.15]" : "scale-y-[1]"
                 }`}
               style={{ transformOrigin: "center center" }}
             >
               <div
                 ref={rightRef}
-                className="w-full bg-[#0A131C] rounded-lg pt-6 md:p-8 flex items-start justify-between gap-6 flex-wrap"
+                className="w-full bg-[#0A131C] rounded-lg pt-6 lg:p-8 flex items-start justify-between gap-6 flex-wrap"
               >
                 {[
                   {

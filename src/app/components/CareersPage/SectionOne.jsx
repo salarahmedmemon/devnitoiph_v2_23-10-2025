@@ -96,7 +96,6 @@ const SectionOne = () => {
 
   // 3. return statment/jsx
   return (
-    imagesLoaded &&
     <div ref={sectionRef} className="w-full h-[514px] sm:h-[560px] md:h-[640px] xl:h-[725px] pt-[9px] md:pt-[20px] xl:pt-[30px]">
       {/* LARGE SCREEN BACKGROUND IMAGE */}
       <div className="w-full h-[514px] sm:h-[560px] md:h-[640px] xl:h-[725px] absolute top-0 left-0">
@@ -104,7 +103,7 @@ const SectionOne = () => {
       </div>
 
       <Header />
-      <div className="w-full h-full pt-[26px] sm:pt-0 relative overflow-hidden">
+      <div className="w-full careerspage-sectionone mx-auto h-full pt-[26px] sm:pt-0 relative overflow-hidden">
         <img ref={imgRef1}
           src="/img/aboutpage/sectionone/image01.png" loading="lazy"
           className="img-top hidden lg:block absolute w-[173px] h-[217px] top-[-5%] left-[29%]"

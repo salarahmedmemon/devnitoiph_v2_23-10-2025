@@ -18,12 +18,6 @@ const SectionOne = () => {
   const rightRef = useRef(null);
   const tl = useRef(null);
 
-  // MOBILE REFS
-  // const mImg1 = useRef(null);
-  // const mImg2 = useRef(null);
-  // const mContent = useRef(null);
-  // const mRight = useRef(null);
-
   useLayoutEffect(() => {
     if (!loaded || !sectionRef.current) return;
 
@@ -88,7 +82,7 @@ const SectionOne = () => {
       </div>
 
       <Header />
-      <div className="w-full h-full pt-0 relative overflow-hidden">
+      <div className="w-full mx-auto fagpage-sectionone h-full pt-0 relative overflow-hidden">
 
         <img ref={imgRef1}
           src="/img/aboutpage/sectionone/image01.png" loading="lazy"

@@ -72,12 +72,14 @@ const SectionThree = () => {
   }, []);
 
   return (
-    <div className="w-full h-[400px] md:h-[740px] bg-[#0A131C]">
-      {/* Header */}
-      <h1 ref={leftRef} className="text-[#4C4886] pt-[6vw] text-center font-semibold text-[4vw] md:text-[2vw]">
+    <div className="homepage-section-six w-full h-[800px] md:h-[740px] bg-[#0A131C] relative">
+      <div className='w-full h-full absolute bottom-0 bg-[#0a131cf5]'></div>
+      <div className="w-full faqpage-sectionthree mx-auto z-[9999] relative">
+        {/* Heading */}
+      <h1 ref={leftRef} className="text-[#4C4886] pt-[60px] text-center font-[500] text-[20px] sm:text-[28px]">
         A Frequently Asked Question
       </h1>
-      <p ref={rightRef} className="text-center text-[#656565] pt-[1vw]">
+      <p ref={rightRef} className="text-center text-[#656565] text-[16px] font-[500] pt-[1vw]">
         Quick answers to questions you may have about untitled UI and billing.
       </p>
 
@@ -86,35 +88,32 @@ const SectionThree = () => {
         <input
           type="text"
           placeholder="Search"
-          className="bg-white py-2 md:py-[.5vw] mt-[1.5vw] rounded-lg w-[35vw] md:w-[28vw] text-gray-500 text-[2.8vw] md:text-[1.3vw] ps-[5vw] md:ps-[3.4vw]"
+          className="bg-white mt-[30px] rounded-lg w-[300px] sm:w-[447px] h-[46px] px-[40px] py-[10px] text-[20px] text-[#CCCCCC] font-[400]"
         />
         <img
           src="/img/faqpage/image04.png"
-          className="absolute top-[4.8vw] md:top-[2.3vw] left-[1.5vw] md:left-[1vw] w-[2vw] md:w-[1.5vw]"
+          className="absolute top-[43px] left-[10px] w-[20px] h-[20px]"
         />
       </div>
 
       {/* Category buttons */}
-      <div ref={rightRef} className="mx-auto w-fit mt-[4vw] text-[#848688] text-[2.5vw] md:text-[1.5vw] flex gap-[2vw] md:gap-[1vw]">
-        <button className="bg-transparent font-semibold border-[2px] px-2 rounded border-[#3D3C6D] text-[#3D3C6D]">
-          General
-        </button>
+      <div ref={rightRef} className="mx-auto w-fit mt-[60px] text-[16px] flex gap-[20px] text-[#AAAAAA]">
+        <button className="bg-transparent w-[70px] sm:w-[120px] h-[30px] border-[2px] sm:px-[20px] rounded-[5px] sm:rounded-[10px] border-[#4C4886] text-[#4C4886] font-[500]">General</button>
         <button>Build</button>
         <button>Promote</button>
-        <button>Manage</button>
         <button>Integration</button>
         <button>Legal</button>
       </div>
 
-      <hr className="text-[#828484] mt-[1vw] w-[90vw] mx-auto" />
+      <hr className="text-[#828484] mt-[1vw] w-[94%] mx-auto" />
 
-      <h2 ref={leftRef} className="text-[#4A4682] ps-[4.4vw] pt-[.7vw] font-semibold text-[2.7vw] md:text-[1.8vw]">
+      <h2 ref={leftRef} className="text-[#4A4682] ps-[20px] sm:ps-[44px] pt-[20px] font-[500] text-[24px]">
         General Questions
       </h2>
 
       {/* Conditional Rendering */}
       {!clicked ? (
-        <div ref={leftRef} className="w-[90vw] mx-auto mt-[2vw] flex flex-wrap items-center justify-center gap-4">
+        <div ref={leftRef} className="w-[94%] mx-auto mt-[40px] flex flex-wrap items-center justify-center gap-4">
           {questions.map((q, i) => (
             <div
               key={i}
@@ -122,51 +121,52 @@ const SectionThree = () => {
                 setClicked(true);
                 setActiveIndex(i);
               }}
-              className="w-full h-[64px] border-[2px] border-gray-300 rounded-lg relative cursor-pointer"
+              className="w-full h-[64px] border-[2px] border-[#AAAAAA] rounded-[10px] relative cursor-pointer"
             >
               <img
                 src="/img/faqpage/arrow.png"
-                className="absolute w-[3vw] right-[1vw] top-[.7vw]"
+                className="absolute w-[23px] right-[20px] top-[20px]"
               />
               {/* <h3 className="ps-[1vw] pt-[2vw] text-white">{q.title}</h3> */}
             </div>
           ))}
         </div>
       ) : (
-        <div className="w-[90vw] mx-auto mt-[2vw] flex gap-4">
+        <div className="w-[94%] mx-auto mt-[40px] flex flex-col md:flex-row md:gap-[40px]">
           {/* Left Column */}
-          <div className="w-[48%] h-[240px] flex flex-col gap-6">
+          <div className="w-[97%] md:w-[48%] h-[240px] flex flex-col gap-6">
             {questions.map((q, i) => (
               <div
                 key={i}
                 onClick={() => setActiveIndex(i)}
-                className={`w-full h-[16%] md:h-[6vh] flex items-center justify-between px-[1vw] cursor-pointer rounded-lg ${
+                className={`w-full h-[16%] md:h-[6vh] flex items-center justify-between px-[20px] cursor-pointer rounded-lg ${
                   activeIndex === i
                     ? "bg-[#4C4886] text-white"
                     : "border-[2px] border-gray-200 text-white"
                 }`}
               >
                 <>
-                  <h2 className="font-semibold text-[1.8vw] md:text-[1.3vw]">{q.title}</h2>
-                  <img src="/img/faqpage/whitearrow.png" className="w-[4vw]" />
+                  <h2 className="font-semibold text-[12px] md:text-[16px]">{q.title}</h2>
+                  <img src="/img/faqpage/whitearrow.png" className="w-[26px]" />
                 </>
               </div>
             ))}
           </div>
 
-          <div className="w-[.1vw] h-[18vw] bg-[#282D50]"></div>
+          <div className="hidden md:block w-[5px] h-[240px] bg-[#282D50]"></div>
 
           {/* Right Column */}
-          <div className="w-[48%] h-full">
-            <h3 className="text-[#4A4783] font-semibold text-[2.4vw] md:text-[1.6vw]">
+          <div className="w-[97%] md:w-[48%] h-full">
+            <h3 className="text-[#4A4783] font-[500] text-[16px] md:text-[20px]">
               {questions[activeIndex].title}
             </h3>
-            <p className="text-[#56585A] text-[2vw] md:text-[1vw] mt-[1vw]">
+            <p className="text-[#56585A] text-[12px] md:text-[18px] mt-[20px]">
               {questions[activeIndex].content}
             </p>
           </div>
         </div>
       )}
+      </div>
     </div>
   );
 };

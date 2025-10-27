@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const SectionThree = () => {
+  // 1. states/hook variables
   const sectionRef = useRef(null);
 
   useEffect(() => {
@@ -41,7 +42,6 @@ const SectionThree = () => {
     return () => ctx.revert();
   }, []);
 
-  // ✅ Your real data
   const projects = [
     {
       heading: "GRAPHIC DESIGNING",
@@ -101,67 +101,61 @@ const SectionThree = () => {
     },
   ];
 
-  return (
-    <div
-      ref={sectionRef}
-      className="w-full bg-[#0A131C] p-5 md:p-20 relative overflow-hidden"
-    >
 
-      {/* HEADINGS */}
-            <div className="w-[398px] h-[44px] border-t-[3px] 
-            lg:border-t-[5px] border-[#1AE4FA] 
-            absolute left-1/2 -translate-x-1/2
-            md:w-[400px]">
-                <h1 className="text-[32px] font-[500] text-center text-white">PACKAGES We Offering</h1>
-                <h2 className="text-[40px] font-[600] text-[#1AE4FA] text-center">Certified Excellence</h2>
-            </div>
-      {/* Gradient Box + Blurs */}
-      <div className="hidden lg:block absolute top-[30%] left-1/2 -translate-x-1/2 w-[86%] h-[56%] bg-gradient-to-r from-[#FA1AC2] via-[#11AAEE] to-[#11AAEE] p-[2px] rounded-[10px]">
+
+
+  return (
+    <div ref={sectionRef} className="w-full bg-[#0A131C] p-5 md:p-20 relative overflow-hidden">
+      <div className="hidden aboutpage-section-three md:block absolute top-[10%] left-1/2 -translate-x-1/2 w-[90%] h-[84%] bg-gradient-to-r from-[#FA1AC2] via-[#11AAEE] to-[#11AAEE] p-[2px] rounded-[10px]">
         <div className="w-full h-full bg-[#0A131C] rounded-[10px]"></div>
         <div className="w-[155px] h-[179px] bg-[#1AE4FA] rounded-full absolute top-[-4%] right-[-4%] blur-[250px]"></div>
         <div className="w-[155px] h-[179px] bg-[#1AE4FA] rounded-full absolute bottom-[-4%] left-[-4%] blur-[250px]"></div>
       </div>
 
-      <div className="w-full h-full section-three-bgImage pt-[120px]">
-        {/* Cards */}
-        <div className="relative w-full h-full mt-4 mb-[40px] sm:mt-6 p-0 md:p-6 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-14">
+      <div className="w-full aboutpage-section-three mx-auto h-full section-three-bgImage pt-2 sm:pt-4 md:pt-6">
+
+        <div className="relative section-three-title mt-[20px] md:mt-[40px]">
+          {/* <div className="w-[59vw] sm:w-[40vw] md:w-[20vw] h-1 bg-[#71C1E6] absolute left-[15.7%] sm:left-[28.5%] md:left-[38.5%] top-[5vw] sm:top-[20%] md:top-[18%]"></div> */}
+          <h1 className="w-[160px] md:w-[260px] mx-auto text-2xl sm:text-3xl md:text-4xl text-center pt-[10px] border-t-[3px] border-[#71C1E6] text-white">
+            See Our
+          </h1>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl text-center text-[#71C1E6] font-bold">
+            Latest Blog
+          </h2>
+        </div>
+
+
+        <div className="relative w-full mt-4 sm:mt-6 md:mt-0 p-0 md:p-6 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           <img
             src="/img/aboutpage/sectionthree/rightLogo.png"
-            className="hidden md:block absolute top-[-3%] right-[-4%] xl:top-[-7%] xl:right-[-1%]"
+            className="hidden md:block absolute top-[-18%] lg:top-[-200px] right-[-60px] lg:right-[-50px] xl:right-[-30px]" loading="lazy"
           />
+
           <img
-            src="/img/aboutpage/sectionthree/leftLogo.png"
-            className="hidden md:block absolute bottom-[-8%] left-[-4%] xl:bottom-[-14%] xl:left-[-1%]"
+            src="/img/aboutpage/sectionthree/leftLogo.png" loading="lazy"
+            className="hidden md:block absolute bottom-[-40px] left-[-60px] lg:bottom-[-13%] lg:left-[-50px] xl:left-[-30px]"
           />
 
           {projects.map((project, index) => (
             <div
               key={index}
               className="bg-gradient-to-br from-[#FA1AC2] via-[#11AAEE] to-[#1CDE63] 
-                project-card group w-[100%] h-auto 
-                sm:w-[40vw] md:w-[40vw]
-                sm:mt-6 gradient-border rounded-lg relative overflow-hidden
-                lg:w-[100%] lg:h-auto  
-                p-[.8vw] sm:p-[.4vw] md:p-1 cursor-pointer"
+              project-card group w-full h-[240px] sm:h-[340px] xl:h-[400px] sm:mt-6
+              gradient-border rounded-lg relative overflow-hidden  
+              p-[.8vw] sm:p-[.4vw] md:p-1 cursor-pointer"
             >
-              <div className="w-full h-full bg-[#0A131C] flex flex-col p-4 xl:p-2">
-                {/* Heading */}
-                <h3 className="text-white text-[18px] font-[600] text-center mb-4">
-                  COURSE <br/>
-                  {project.heading}
-                </h3>
+              <div className="w-full h-full bg-[#0A131C] flex flex-col 
+              p-[5px] xl:p-[10px] text-white text-center">
+                <h3 className="font-[600] text-[12px] sm:text-[16px] xl:text-[20px]">COURSE</h3>
+                <h4 className="font-[600] text-[12px] sm:text-[16px] xl:text-[20px]">{project.heading}</h4>
 
-                {/* List */}
-                <ul className="list-disc text-white text-[12px] text-start space-y-2 ps-[10px] mb-4">
-                  {project.items.map((item, i) => (
-                    <li key={i}>{item}</li>
+                <ul className="list-disc mt-[20px] sm:mt-[40px] text-start ms-[20px] sm:ms-[40px] text-[10px] sm:text-[14px] xl:text-[16px]">
+                  {project.items.map((item, idx) => (
+                    <li key={idx}>{item}</li>
                   ))}
                 </ul>
 
-                {/* Button */}
-                <button className="bg-white font-semibold w-[120px] px-2 py-1 rounded-md hover:opacity-90 transition">
-                  {project.button}
-                </button>
+                <button className="w-[50px] sm:w-[90px] h-[20px] sm:h-[28px] rounded-[3px] bg-white text-[#4C4886] mt-[20px] ms-[10px] sm:ms-[20px] text-[10px] sm:text-[12px]">Join Now</button>
               </div>
             </div>
           ))}

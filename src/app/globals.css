@@ -54,8 +54,6 @@ body {
   100% { transform: translateY(0); }
 }
 
-
-
 @keyframes upStepsColumns {
   /* Start at 0 */
   0%   { transform: translateY(0); }
@@ -79,9 +77,17 @@ body {
   100% { transform: translateY(0); }
 }
 
-
 .images:hover .first-column, .images:hover .second-column, .images:hover .third-column{
     animation-play-state: paused !important;
+}
+
+@media (min-width: 1440px) {
+  .header {
+    width: 1280px;
+  }
+  .homepage-section-one {
+    width: 1400px;
+  }
 }
 
 /* SECTION THREE STYLING */
@@ -102,8 +108,6 @@ body {
     background-size: 400% 400%; 
     animation: gradientMove 4s linear infinite;
 }
-
-
 
 
 /* SECTION FOUR STYLING */
@@ -155,7 +159,6 @@ body {
   background-repeat: no-repeat;
   background-position: center 160px;
 }
-
 
 
 /* SETION THREE STYLING */
@@ -216,27 +219,30 @@ body {
     height: 209.57px;
     margin-top: -68px;
   }
+  .homepage-section-six-faq {
+    width: 1200px;
+  }
 }
 
 
-/* .frequently-asked-question-border {
+.frequently-asked-question-border {
   border: 3px solid transparent; 
   border-image: linear-gradient(to right, #FA1AC2, #1AE4FA, #1CDE63D9) 1;
-} */
+}
 
-.frequently-asked-question-border {
+/* .frequently-asked-question-border {
   position: relative;
-  border-radius: 12px; /* same as Tailwind rounded-lg */
+  border-radius: 12px;
   background: linear-gradient(to right, #FA1AC2, #1AE4FA, #1CDE63D9);
-  padding: 2px; /* border thickness */
+  padding: 2px;
 
-  /* This creates the hollow center */
+  
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
           mask-composite: exclude;
-}
+} */
 
 
 .blur-edge {
@@ -271,5 +277,44 @@ body {
   }
   .left-image-logo {
     left: 20%;
+  }
+}
+
+@media (min-width: 2400px) {
+  .right-image-logo {
+    left: 70% ;
+  }
+  .left-image-logo {
+    left: 24%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .aboutpage-section-one, .servicepage-section-one, .servicepage-sectionthree, .servicepage-section-four,
+  .casestudiespage-sectionone, .careerspage-sectionone, .careerspage-section-four, .servicedetailspage-sectionone , 
+  .servicedetailspage-sectiontwo, .fagpage-sectionone, .faqpage-sectionthree, .packagespage-sectionone,
+  .packagespage-sectiontwo{
+    width: 1400px;
+  }
+  .servicedetailspage-sectionthree {
+    width: 1340px;
+  }
+  .aboutpage-section-three, .careerspage-sectionsix{
+    width: 1280px;
+  }
+  .casestudypage-sectionthree {
+    width: 1300px;
+  }
+  .careerspage-sectionfive {
+    width: 1305px;
+  }
+  .careerspage-sectionfive-newsblog {
+    margin-left: 10px;
+  }
+  .project-card {
+    width: 305px;
+  }
+  .homepage-sectionone-rightcircle {
+    left: 90%;
   }
 }

@@ -57,7 +57,7 @@ const Maq = () => {
                 openIndex === index ? "max-h-40 mt-3" : "max-h-0"
               }`}
             >
-              <p className="text-[12px] sm:text-[1.6vw] md:text-[1.2vw] text-gray-300">
+              <p className="text-[12px] sm:text-[1.6vw] md:text-[16px] xl:text-[18px] text-gray-300">
                 {item.a}
               </p>
             </div>

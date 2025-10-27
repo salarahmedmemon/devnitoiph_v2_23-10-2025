@@ -21,8 +21,8 @@ const SectionTwo = () => {
             </div>
 
             {/* IMAGE */}
-            <div className="lg:hidden w-[50%] h-[310px] md:w-[40%] mx-auto mt-[120px]">
-                <img src="/img/careerspage/image04.png" className="ms-[4%]"/>
+            <div className="lg:hidden w-[50%]  md:w-[40%] mx-auto mt-[120px]">
+                <img src="/img/packagespage/image02.png" className="ms-[4%]"/>
             </div>
 
             {/* CONTENT */}
@@ -55,7 +55,7 @@ const SectionTwo = () => {
 
 
             {/* FOR LARGE SCREEN */}
-            <div className="hidden lg:flex w-full h-[78%] lg:h-[80%] lg:mt-[20%] xl:mt-[14%] justify-between">
+            <div className="hidden lg:flex w-full mx-auto packagespage-sectiontwo h-[78%] lg:h-[80%] lg:mt-[20%] xl:mt-[240px] justify-between">
                 <div className="w-[522px] h-[424.51px] ms-[4%]">
                     <img src="/img/packagespage/image02.png" />
                 </div>

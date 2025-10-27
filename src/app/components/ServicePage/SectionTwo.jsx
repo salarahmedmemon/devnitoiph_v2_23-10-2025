@@ -2,6 +2,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -19,7 +20,7 @@ const SectionTwo = () => {
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: sectionRef.current,
-                    start: "top 80%", // when section enters viewport
+                    start: "top 100%", // when section enters viewport
                     end: "bottom 60%", // when section leaves
                 },
             });
@@ -28,146 +29,156 @@ const SectionTwo = () => {
             tl.fromTo(
                 headingRef.current,
                 { y: -100, opacity: 0 },
-                { y: 0, opacity: 1, duration: 1, ease: "power3.out" }
+                { y: 0, opacity: 1, duration: 1.6, ease: "power3.out" },
             );
 
             // Image → from left
             tl.fromTo(
                 imageRef.current,
                 { x: -150, opacity: 0 },
-                { x: 0, opacity: 1, duration: 1, ease: "power3.out" },
-                "0" // overlap
+                { x: 0, opacity: 1, duration: 1.6, ease: "power3.out" },
+                0
             );
 
             // Content → from right
             tl.fromTo(
                 contentRef.current,
                 { x: 150, opacity: 0 },
-                { x: 0, opacity: 1, duration: 1, ease: "power3.out" },
-                "0"
+                { x: 0, opacity: 1, duration: 1.6, ease: "power3.out" },
+                0
             );
+
         }, sectionRef);
 
         return () => ctx.revert();
     }, []);
 
-    // 2. functions/methods
+    // functions/methods
 
     // 3. return statement/jsx
     return (
-        <div ref={sectionRef}
-            className="w-full h-[782px] bg-[#EEEEEE] pt-10 overflow-hidden relative"
-        >
-           {/* RIGHT CIRCLE */}
+        <div ref={sectionRef} className="w-full h-[1168px] sm:h-[1500px] lg:h-[798px] bg-[#EEEEEE] overflow-hidden relative pt-[48px]">
+            {/* RIGHT CIRCLE */}
             <div className='w-[140px] sm:w-[300px] lg:w-[405.06px] h-[140px] sm:h-[300px] lg:h-[405.06px] rounded-full bg-[#BAD3EF] absolute top-[-20px] right-[-60px] sm:top-[-50px] lg:top-[-140px] sm:right-[-150px] lg:right-[-200px] xl:left-[85%] p-[3px]'>
                 <div className='w-full h-full rounded-full bg-gradient-to-b from-[#E2E8EE] to-[#E9EBEE]'></div>
             </div>
-            {/* LEFT CIRCLE */}
-            <div className="bg-white w-[50vw] h-[50vw] rounded-full p-1 absolute bottom-[-14vw] left-[-10vw]">
-                <div className="w-full h-full rounded-full bg-[#EEEEEE]"></div>
+
+            {/* HEADINGS */}
+            <div ref={headingRef} className="w-[500px] h-[100.77px] border-t-[3px] lg:border-t-[5px] border-[#4C4886] absolute left-1/2 -translate-x-1/2">
+                <h1 className="text-[32px] sm:text-[38px] lg:text-[44px] font-[500] text-center text-[#333333]">Services We Offering</h1>
+                <h2 className="text-[32px] sm:text-[38px] lg:text-[44px] font-[600] text-[#4C4886] text-center">Certified of Excellence</h2>
             </div>
 
-            {/* Heading */}
-            <div ref={headingRef} className="relative z-[50] mx-auto">
-                <div className="w-[60%] sm:w-[40%] md:w-[24%] mx-auto border-t-4 border-[#4C4886]">
-                    <h1 className="text-[6vw] sm:text-[4vw] md:text-[2.4vw] text-center">
-                        Services We Offering
-                    </h1>
+            {/* IMAGE */}
+            <div ref={imageRef} className="lg:hidden w-[90%] h-[310px] md:w-[40%] mx-auto mt-[120px]">
+                <div className="w-full h-full relative ms-[4%]">
+                    {/* <Image
+                        src="/img/aboutpage/image03.png"
+                        alt="image 03"
+                        fill="true"
+                        placeholder="blur"
+                        className="object-cover"
+                        blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAAklEQVR4AewaftIAAAEpSURBVGNmQAIXLl3it7WzlbYwN/+2e/fuvwxIgIUBCI4ePaolJ/jmT2xK4AM+TUOxzfPWPpi755y64KcH/4KCgm4zAAHzgQMH2A8fPvy2o3fKX2NdARc+IwMZRmYlpRWTmm/++/P7RVNHO8eKpUt/szx79kxG4dcfQWthaSajn/80+Yyk8z6fYV3No2X3nIdTlPH9y1dPGBgYHjKvXbv2va6D/fNX/xnf2d3/ycHurZ1+8ejrlcLiDFv+Mfx6UFtb+4EBCJgYgODz58/MfHx893SzYnK4vzAyRPibpj569OjFv3///jNAATMDEDAxMQmxsLDoSGmIGShIKAgcP3Xs+pEzV46dPn16/9evX38yoAEBbk4OWXc702B+Xh55BgYGIQYGBg4GKAAAOcJxrLqJHhsAAAAASUVORK5CYII="
+                    /> */}
+                    <img src="/img/servicepage/sectionone/image02.png" alt="left image" loading="lazy" className="w-full h-full object-cover" />
                 </div>
-                <h2 className="text-[7vw] sm:text-[5vw] md:text-[3vw] text-center text-[#4C4886] font-semibold">
-                    Certified of Excellence
-                </h2>
             </div>
 
-            {/* Main content */}
-            <div className="w-full mt-[60px] flex flex-col md:flex-row items-center">
-                {/* Left image */}
-                <div ref={imageRef}
-                    className="z-10 w-full md:w-[40%] h-full flex items-center justify-center">
-                    <img
-                        src="/img/servicepage/sectionone/image02.png"
-                        className="w-[80vw] sm:w-[60vw] md:w-[30vw]" loading="lazy"
-                    />
-                </div>
-
-                {/* Right text */}
-                <div ref={contentRef}
-                    className="w-[60%] h-full pt-10 md:ps-7 flex flex-col items-center md:items-start">
-                    <div className="w-[80%] sm:w-[45%] md:w-[24%] border-l-4 border-[#4C4886]">
-                        <h1 className="text-[8vw] sm:text-[4vw] md:text-[2.4vw] text-center">
-                            Our Services
-                        </h1>
+            {/* CONTENT */}
+            <div ref={contentRef} className="lg:hidden w-[94%] h-[629px] mx-auto flex flex-col items-center sm:mt-[50px]">
+                <h1 className="w-[202px] h-[40px] border-l-[3px] border-[#4C4886] text-[28px] sm:text-[32px] font-[600] text-[#4C4886] ps-[6px]">Our Principle</h1>
+                <p className="text-[16px] sm:text-[20px] font-[400] pt-[26px] text-center text-[#AAAAAA]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stancenturies,</p>
+                <span className="text-[12px] sm:text-[18px] text-[#4C4886] font-[700] mt-[24px]"> Cost-effective and Comprehensive IT Outsourcing Services:</span>
+                <div className="w-[242px] sm:w-[400px] mt-[24px] flex flex-col">
+                    <div className="w-full h-[134px] sm:h-[200px] text-center p-[10px] text-[12px]">
+                        <ul>
+                                <li>Hire Mobile App Developer</li>
+                                <li>Hire Scrum Master in Dubai</li>
+                                <li>Hire AWS Resources in Dubai</li>
+                                <li>Hire QA Resource in Dubai</li>
+                                <li>Hire Node.js Developer in Dubai</li>
+                                <li>Hire Azure Developer in Dubai</li>
+                            </ul>
                     </div>
-                    <p className="text-gray-500 text-center md:text-start mt-4 w-[95vw] sm:w-[90vw] md:w-[50vw] text-[3vw] sm:text-[2.4vw] md:text-[1.2vw]">
-                        when you land on a sample webpage or open an email template and see
-                        content beginning with "lorem ipsum", the page creator placed that
-                        apparent gibberish there on purpose. Page layout looks artists use
-                        lorem ipsum, also known as placeholder copy.
-                    </p>
-                    <p className="text-[#4C4886] font-semibold mt-4 text-center md:text-start w-[90vw] text-[3.2vw] sm:text-[2.4vw] md:text-[1.4vw]">
-                        Cost-effective and Comprehensive IT Outsourcing Services:
-                    </p>
-                    <div className="w-[90vw] relative z-[50] md:w-full flex flex-col sm:flex-row mt-4 items-center md:items-start justify-between gap-4 md:gap-0 p-4 text-[3vw] sm:text-[1.7vw] md:text-[1vw]">
-                        <ul className="flex flex-col gap-2">
-                            <li className="list-disc">
-                                <a href="#">Hire Mobile App Developer</a>
-                            </li>
-                            <li className="list-disc">
-                                <a href="#">Hire Scrum Master in Dubai</a>
-                            </li>
-                            <li className="list-disc">
-                                <a href="#">Hire AWS Resources in Dubai</a>
-                            </li>
-                            <li className="list-disc">
-                                <a href="#">Hire QA Resources in Dubai</a>
-                            </li>
-                            <li className="list-disc">
-                                <a href="#">Hire Node.js Developer in Dubai</a>
-                            </li>
-                            <li className="list-disc">
-                                <a href="#">Hire Azure Developer in Dubai</a>
-                            </li>
-                        </ul>
-                        <ul className="flex flex-col gap-2">
-                            <li className="list-disc">
-                                <a href="#">Hire Mobile App Developer</a>
-                            </li>
-                            <li className="list-disc">
-                                <a href="#">Hire Scrum Master in Dubai</a>
-                            </li>
-                            <li className="list-disc">
-                                <a href="#">Hire AWS Resources in Dubai</a>
-                            </li>
-                            <li className="list-disc">
-                                <a href="#">Hire QA Resources in Dubai</a>
-                            </li>
-                            <li className="list-disc">
-                                <a href="#">Hire Node.js Developer in Dubai</a>
-                            </li>
-                            <li className="list-disc">
-                                <a href="#">Hire Azure Developer in Dubai</a>
-                            </li>
-                        </ul>
-                        <ul className="flex flex-col gap-2">
-                            <li className="list-disc">
-                                <a href="#">Hire Mobile App Developer</a>
-                            </li>
-                            <li className="list-disc">
-                                <a href="#">Hire Scrum Master in Dubai</a>
-                            </li>
-                            <li className="list-disc">
-                                <a href="#">Hire AWS Resources in Dubai</a>
-                            </li>
-                            <li className="list-disc">
-                                <a href="#">Hire QA Resources in Dubai</a>
-                            </li>
-                            <li className="list-disc">
-                                <a href="#">Hire Node.js Developer in Dubai</a>
-                            </li>
-                            <li className="list-disc">
-                                <a href="#">Hire Azure Developer in Dubai</a>
-                            </li>
-                        </ul>
+
+                    <div className="w-full h-[134px] sm:h-[200px] text-center p-[10px] text-[12px]">
+                        <ul>
+                                <li>Hire Mobile App Developer</li>
+                                <li>Hire Scrum Master in Dubai</li>
+                                <li>Hire AWS Resources in Dubai</li>
+                                <li>Hire QA Resource in Dubai</li>
+                                <li>Hire Node.js Developer in Dubai</li>
+                                <li>Hire Azure Developer in Dubai</li>
+                            </ul>
+                    </div>
+
+                    <div className="w-full h-[134px] sm:h-[200px] text-center p-[10px] mt-[30px] sm:mt-0 text-[12px]">
+                        <ul>
+                                <li>Hire Mobile App Developer</li>
+                                <li>Hire Scrum Master in Dubai</li>
+                                <li>Hire AWS Resources in Dubai</li>
+                                <li>Hire QA Resource in Dubai</li>
+                                <li>Hire Node.js Developer in Dubai</li>
+                                <li>Hire Azure Developer in Dubai</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            {/* FOR LARGE SCREEN */}
+            <div className="hidden lg:flex w-full h-[78%] mt-[14%] xl:mt-[200px] justify-center gap-[100px]">
+                <div ref={imageRef} className="w-[419px] h-[350px] ms-[5%]">
+                    <div className="w-full h-full relative ms-[4%]">
+                        {/* <Image
+                            src="/img/aboutpage/image03.png"
+                            alt="image 03"
+                            fill="true"
+                            placeholder="blur"
+                            className="object-cover"
+                            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAAklEQVR4AewaftIAAAEpSURBVGNmQAIXLl3it7WzlbYwN/+2e/fuvwxIgIUBCI4ePaolJ/jmT2xK4AM+TUOxzfPWPpi755y64KcH/4KCgm4zAAHzgQMH2A8fPvy2o3fKX2NdARc+IwMZRmYlpRWTmm/++/P7RVNHO8eKpUt/szx79kxG4dcfQWthaSajn/80+Yyk8z6fYV3No2X3nIdTlPH9y1dPGBgYHjKvXbv2va6D/fNX/xnf2d3/ycHurZ1+8ejrlcLiDFv+Mfx6UFtb+4EBCJgYgODz58/MfHx893SzYnK4vzAyRPibpj569OjFv3///jNAATMDEDAxMQmxsLDoSGmIGShIKAgcP3Xs+pEzV46dPn16/9evX38yoAEBbk4OWXc702B+Xh55BgYGIQYGBg4GKAAAOcJxrLqJHhsAAAAASUVORK5CYII="
+                        /> */}
+                        <img src="/img/servicepage/sectionone/image02.png" alt="left image" loading="lazy" className="w-full h-full object-cover" />
+                    </div>
+                </div>
+
+                <div ref={contentRef} className="w-[700px] h-full me-[5%]">
+                    <h1 className="border-l-[3px] border-[#4C4886] text-[28px] font-[600] text-[#4C4886] ps-[6px]">Our Services</h1>
+                    <p className="text-[16px] font-[400] mt-[20px] text-[#AAAAAA]">When you land a sample webpage Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex unde commodi a labore quidem harum, provident omnis excepturi veritatis, neque quod, recusandae quis illo velit asperiores nobis. Ea, quae aliquid!</p>
+                    <span className="text-[12px] text-[#4C4886] block mt-[20px] font-[700]"> Cost-effective and Comprehensive IT Outsourcing Services:</span>
+                    <div className="w-full mt-[24px] flex items-center justify-between">
+                        <div className="w-full h-[134px]  sm:h-[200px] p-[10px] text-[12px]">
+                            <ul className="list-disc">
+                                <li>Hire Mobile App Developer</li>
+                                <li>Hire Scrum Master in Dubai</li>
+                                <li>Hire AWS Resources in Dubai</li>
+                                <li>Hire QA Resource in Dubai</li>
+                                <li>Hire Node.js Developer in Dubai</li>
+                                <li>Hire Azure Developer in Dubai</li>
+                            </ul>
+                        </div>
+
+                        <div className="w-full h-[134px] sm:h-[200px] p-[10px] text-[12px]">
+                            <ul className="list-disc">
+                                <li>Hire Mobile App Developer</li>
+                                <li>Hire Scrum Master in Dubai</li>
+                                <li>Hire AWS Resources in Dubai</li>
+                                <li>Hire QA Resource in Dubai</li>
+                                <li>Hire Node.js Developer in Dubai</li>
+                                <li>Hire Azure Developer in Dubai</li>
+                            </ul>
+                        </div>
+
+                        <div className="w-full h-[134px] sm:h-[200px] p-[10px] mt-[30px] sm:mt-0 text-[12px]">
+                            <ul className="list-disc">
+                                <li>Hire Mobile App Developer</li>
+                                <li>Hire Scrum Master in Dubai</li>
+                                <li>Hire AWS Resources in Dubai</li>
+                                <li>Hire QA Resource in Dubai</li>
+                                <li>Hire Node.js Developer in Dubai</li>
+                                <li>Hire Azure Developer in Dubai</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

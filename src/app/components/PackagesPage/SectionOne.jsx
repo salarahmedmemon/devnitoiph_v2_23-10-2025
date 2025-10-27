@@ -8,7 +8,7 @@ import { LoadContext } from "../ClientWrapper";
 
 const SectionOne = () => {
   // 1. states/hook variables
-    const { loaded } = useContext(LoadContext);
+  const { loaded } = useContext(LoadContext);
   const sectionRef = useRef(null);
 
   // LARGE SCREEN REFS
@@ -84,15 +84,15 @@ const SectionOne = () => {
       </div>
 
       <Header />
-      <div className="w-full h-full pt-0 relative overflow-hidden">
+      <div className="w-full packagespage-sectionone mx-auto h-full pt-0 relative overflow-hidden">
 
         <img ref={imgRef1}
           src="/img/aboutpage/sectionone/image01.png"
-          className="img-top hidden lg:block absolute top-[-6%] left-[30%] h-[16vw]"
+          className="img-top hidden lg:block absolute top-[-6%] left-[30%] w-[160px]"
         />
         <img ref={imgRef2}
           src="/img/aboutpage/sectionone/image02.png"
-          className="img-left-bottom hidden lg:block absolute top-[6%] right-[34%] rotate-30 w-[5vw]"
+          className="img-left-bottom hidden lg:block absolute top-[6%] right-[34%] rotate-30 w-[80px]"
         />
 
         <div className="w-full h-[80%] md:h-full flex flex-col-reverse lg:hidden items-center justify-center gap-0 md:gap-10 ps-25.5 pe-25.5">
@@ -118,7 +118,7 @@ const SectionOne = () => {
           <div className="main-img-container w-[234px] h-[212px] sm:w-[44vw] sm:h-full md:w-[350px] md:h-[100px] flex items-center justify-center">
             <img
               src="/img/packagespage/image01.png"
-              className="pt-0 sm:pt-10 md:pt-40"
+              className="pt-[20px] sm:pt-10 md:pt-40"
             />
           </div>
 

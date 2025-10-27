@@ -10,18 +10,19 @@ const SectionTwo = () => {
             <div className='w-[140px] sm:w-[300px] lg:w-[405.06px] h-[140px] sm:h-[300px] lg:h-[405.06px] rounded-full bg-[#BAD3EF] absolute top-[-20px] right-[-60px] sm:top-[-50px] lg:top-[-140px] sm:right-[-150px] lg:right-[-200px] xl:left-[85%] p-[3px]'>
                 <div className='w-full h-full rounded-full bg-gradient-to-b from-[#E2E8EE] to-[#E9EBEE]'></div>
             </div>
+
             {/* LEFT CIRCLE */}
-            <div className="bg-white w-[50vw] h-[50vw] rounded-full p-1 absolute bottom-[-14vw] left-[-10vw]">
-                <div className="w-full h-full rounded-full bg-[#EEEEEE]"></div>
+            <div className='w-[185.26px] h-[185.26px] sm:w-[400px] sm:h-[400px] lg:w-[754px] lg:h-[754px] rounded-full bg-[#fff] absolute bottom-[-20px] left-[-40px] sm:bottom-[-30px] sm:left-[-160px] lg:bottom-[-200px] lg:left-[-160px] p-[3px]'>
+                <div className='w-full h-full rounded-full bg-gradient-to-b from-[#F2F3F5] to-[#F1F2F2]'></div>
             </div>
 
 
-            <div className="w-[70%] relative z-[50]  border-t-3 border-[#4C4886] mx-auto text-center   sm:border-t-4 sm:w-[60%]   md:w-[26%]">
+            <div className="w-[300px] lg:w-[400px] relative z-[50]  border-t-3 border-[#4C4886] mx-auto text-center   sm:border-t-4">
                 <h1 className="text-[26px] font-[500]">Services We Offering</h1>
             </div>
             <h2 className="text-[#4C4886] relative z-[50] text-[38px] font-semibold text-center">Certified Excellence</h2>
 
-            <div className="w-full relative z-[50] flex items-center justify-center flex-wrap mt-[74px] gap-5 p-4 md:p-0 pb-[10vw]">
+            <div className="w-full servicedetailspage-sectiontwo mx-auto relative z-[50] flex items-center justify-center flex-wrap mt-[74px] gap-5 p-4 md:p-0 pb-[10vw]">
                 <div className="w-[414px] h-[223px] bg-[#16171C] rounded-lg p-5 ">
                     <div className="w-[37px] h-[37px] border-2 border-[#75BAFF] rounded sm:rounded-lg flex items-center justify-center">
                         <div className="w-[14.5px] h-[14.5px] rounded-full bg-[#75BAFF]"></div>

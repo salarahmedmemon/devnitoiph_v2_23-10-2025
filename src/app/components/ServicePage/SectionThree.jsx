@@ -61,7 +61,7 @@ const SectionThree = () => {
 
     return (
         <div className="w-full h-[810px] lg:h-[1921px] flex items-center justify-center bg-[#0A131C] overflow-hidden">
-            <div className="w-[80%] h-[50%] relative">
+            <div className="w-[80%] servicepage-sectionthree mx-auto h-[50%] relative">
                 {/* WHITE SHADOW BEHIND IMAGE */}
                 <div className="w-[220px] h-[476px] lg:w-[340px] lg:h-[660px] absolute bottom-[-80px] lg:bottom-[-10px] left-1/2 -translate-x-1/2 z-5 rounded-[40px] shadow-[0_0_80px_30px_rgba(255,255,255,0.35)]"></div>
 
@@ -140,7 +140,7 @@ const SectionThree = () => {
                 <ServiceBox
                     fname="Emerging"
                     sname="Tech Development"
-                    pos="top-[120px] xl:top-[240px] right-[-40px]"
+                    pos="top-[120px] lg:top-[240px] right-[-40px]"
                     image={serviceImages["Emerging Tech Development"]}
                     isActive={activeBox === "Emerging Tech Development"}
                     onHover={() => {
@@ -164,7 +164,7 @@ const SectionThree = () => {
                 <ServiceBox
                     fname="Website"
                     sname="Development"
-                    pos="top-[300px] xl:top-[500px] right-[-40px]"
+                    pos="top-[300px] lg:top-[500px] right-[-40px]"
                     image={serviceImages["Website Development"]}
                     isActive={activeBox === "Website Development"}
                     onHover={() => {

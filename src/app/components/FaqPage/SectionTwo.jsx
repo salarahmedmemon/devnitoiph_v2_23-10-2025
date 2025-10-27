@@ -2,6 +2,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -19,7 +20,7 @@ const SectionTwo = () => {
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: sectionRef.current,
-                    start: "top 80%", // when section enters viewport
+                    start: "top 100%", // when section enters viewport
                     end: "bottom 60%", // when section leaves
                 },
             });
@@ -28,118 +29,148 @@ const SectionTwo = () => {
             tl.fromTo(
                 headingRef.current,
                 { y: -100, opacity: 0 },
-                { y: 0, opacity: 1, duration: 1, ease: "power3.out" }
+                { y: 0, opacity: 1, duration: 1.6, ease: "power3.out" },
             );
 
             // Image → from left
             tl.fromTo(
                 imageRef.current,
                 { x: -150, opacity: 0 },
-                { x: 0, opacity: 1, duration: 1, ease: "power3.out" },
-                "0" // overlap
+                { x: 0, opacity: 1, duration: 1.6, ease: "power3.out" },
+                0
             );
 
             // Content → from right
             tl.fromTo(
                 contentRef.current,
                 { x: 150, opacity: 0 },
-                { x: 0, opacity: 1, duration: 1, ease: "power3.out" },
-                "0"
+                { x: 0, opacity: 1, duration: 1.6, ease: "power3.out" },
+                0
             );
+
         }, sectionRef);
 
         return () => ctx.revert();
     }, []);
 
-    // 2. functions/methods
+    // functions/methods
 
     // 3. return statement/jsx
     return (
-        <div ref={sectionRef}
-            className="w-full h-[940px] md:h-[700px] bg-[#EEEEEE] pt-10 overflow-hidden relative"
-        >
-           {/* RIGHT CIRCLE */}
+        <div ref={sectionRef} className="w-full h-[1100px] sm:h-[1140px] lg:h-[798px] bg-[#EEEEEE] overflow-hidden relative pt-0 md:pt-[48px]">
+            {/* RIGHT CIRCLE */}
             <div className='w-[140px] sm:w-[300px] lg:w-[405.06px] h-[140px] sm:h-[300px] lg:h-[405.06px] rounded-full bg-[#BAD3EF] absolute top-[-20px] right-[-60px] sm:top-[-50px] lg:top-[-140px] sm:right-[-150px] lg:right-[-200px] xl:left-[85%] p-[3px]'>
                 <div className='w-full h-full rounded-full bg-gradient-to-b from-[#E2E8EE] to-[#E9EBEE]'></div>
             </div>
 
-            {/* Main content */}
-            <div className="w-full mt-2 sm:mt-10 md:mt-[140px] flex flex-col md:flex-row items-center">
-                {/* Left image */}
-                <div ref={imageRef}
-                    className="z-10 w-full md:w-[40%] flex items-center justify-center">
-                    <img
-                        src="/img/faqpage/faq.png"
-                        className="w-[50%] md:w-[30vw]"
-                        loading="lazy"
-                    />
+            {/* IMAGE */}
+            <div ref={imageRef} className="lg:hidden w-[300px] h-[310px] md:w-[40%] mx-auto">
+                <div className="w-full h-full relative ms-[4%]">
+                    {/* <Image
+                        src="/img/aboutpage/image03.png"
+                        alt="image 03"
+                        fill="true"
+                        placeholder="blur"
+                        className="object-cover"
+                        blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAAklEQVR4AewaftIAAAEpSURBVGNmQAIXLl3it7WzlbYwN/+2e/fuvwxIgIUBCI4ePaolJ/jmT2xK4AM+TUOxzfPWPpi755y64KcH/4KCgm4zAAHzgQMH2A8fPvy2o3fKX2NdARc+IwMZRmYlpRWTmm/++/P7RVNHO8eKpUt/szx79kxG4dcfQWthaSajn/80+Yyk8z6fYV3No2X3nIdTlPH9y1dPGBgYHjKvXbv2va6D/fNX/xnf2d3/ycHurZ1+8ejrlcLiDFv+Mfx6UFtb+4EBCJgYgODz58/MfHx893SzYnK4vzAyRPibpj569OjFv3///jNAATMDEDAxMQmxsLDoSGmIGShIKAgcP3Xs+pEzV46dPn16/9evX38yoAEBbk4OWXc702B+Xh55BgYGIQYGBg4GKAAAOcJxrLqJHhsAAAAASUVORK5CYII="
+                    /> */}
+                    <img src="/img/faqpage/faq.png" alt="left image" loading="lazy" className="w-full h-full object-contain" />
+                </div>
+            </div>
+
+            {/* CONTENT */}
+            <div ref={contentRef} className="lg:hidden w-[94%] h-full mx-auto flex flex-col items-center sm:mt-[50px]">
+                <h1 className="w-[230px] h-[40px] border-l-[3px] border-[#4C4886] text-[28px] sm:text-[32px] font-[600] text-[#4C4886] ps-[6px]">Technical Faqs:</h1>
+                <p className="text-[16px] sm:text-[20px] font-[400] pt-[26px] text-center text-[#AAAAAA]">We are an IT outsourcing company in Dubai offering an extended range of services including End User Support,
+                    Application Investment, Cloud &amp; Infrastucture expertise. Our on-demand IT Staff Outsourcing solution in Dubai
+                    specializes exclusively for digital transformation with Custom Software Development, Software Testing &amp;
+                    QA, Cloud Computing, Mobile &amp; Web Development, Maintenance &amp; Support, Blockchain Consulting Data Science. 
+                </p>
+                <span className="text-[12px] sm:text-[18px] text-[#4C4886] font-[700] mt-[24px]"> Cost-effective and Comprehensive IT Outsourcing Services:</span>
+                <div className="w-[242px] sm:w-[400px] mt-[24px] flex flex-col">
+                    <div className="w-full h-[134px] text-center p-[10px] text-[12px]">
+                        <h3 className="text-[#4C4886] font-[600] text-[16px]">Manage</h3>
+                        <ul>
+                            <li>Essential IT Support</li>
+                            <li>Basic Security &amp; Monitoring</li>
+                            <li>Limited Cloud Storage</li>
+                            <li>24/7 Email Support</li>
+                        </ul>
+                    </div>
+
+                    <div className="w-full h-[134px] text-center p-[10px] text-[12px]">
+                        <h3 className="text-[#4C4886] font-[600] text-[16px]">Build</h3>
+                        <ul>
+                            <li>Advanced IT Support &am; Maintenance</li>
+                            <li>Enhanced Security &amp; Threat Detection</li>
+                            <li>Increased Cloud Storage</li>
+                            <li>24/7 Chat &amp; Email Support</li>
+                        </ul>
+                    </div>
+
+                    <div className="w-full h-[134px] text-center p-[10px] text-[12px]">
+                        <h3 className="text-[#4C4886] font-[600] text-[16px]">General</h3>
+                        <ul>
+                            <li>Fully Managed IT Services</li>
+                            <li>Enterprise Level Security &amp; Backups</li>
+                            <li>Unlimited Cloud Storage &amp; Backups</li>
+                            <li>24/7 Priority Support (Phone, Chat, Email)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            {/* FOR LARGE SCREEN */}
+            <div className="hidden lg:flex w-full h-[78%] mt-[14%] xl:mt-[200px] justify-center gap-[100px]">
+                <div ref={imageRef} className="w-[400px] h-[350px] ms-[5%]">
+                    <div className="w-full h-full relative ms-[5%]">
+                        {/* <Image
+                            src="/img/aboutpage/image03.png"
+                            alt="image 03"
+                            fill="true"
+                            placeholder="blur"
+                            className="object-cover"
+                            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAAklEQVR4AewaftIAAAEpSURBVGNmQAIXLl3it7WzlbYwN/+2e/fuvwxIgIUBCI4ePaolJ/jmT2xK4AM+TUOxzfPWPpi755y64KcH/4KCgm4zAAHzgQMH2A8fPvy2o3fKX2NdARc+IwMZRmYlpRWTmm/++/P7RVNHO8eKpUt/szx79kxG4dcfQWthaSajn/80+Yyk8z6fYV3No2X3nIdTlPH9y1dPGBgYHjKvXbv2va6D/fNX/xnf2d3/ycHurZ1+8ejrlcLiDFv+Mfx6UFtb+4EBCJgYgODz58/MfHx893SzYnK4vzAyRPibpj569OjFv3///jNAATMDEDAxMQmxsLDoSGmIGShIKAgcP3Xs+pEzV46dPn16/9evX38yoAEBbk4OWXc702B+Xh55BgYGIQYGBg4GKAAAOcJxrLqJHhsAAAAASUVORK5CYII="
+                        /> */}
+                        <img src="/img/faqpage/faq.png" alt="left image" loading="lazy" className="w-full h-full object-contain" />
+                    </div>
                 </div>
 
-                {/* Right text */}
-                <div ref={contentRef}
-                    className="w-[60%] h-[240px] pt-10 md:ps-7 flex flex-col items-center md:items-start">
-                    <div className="w-[100%] sm:w-[50%] md:w-[31%] lg:w-[210px] border-l-[3px] border-[#4C4886]">
-                        <h1 className="text-[8vw] sm:text-[4vw] md:text-[2.4vw] lg:text-[28px] font-[400] text-[#0A1119] text-center">
-                            Technical Faqs :
-                        </h1>
-                    </div>
-                    <p className="text-[#666666] text-center md:text-start mt-4 w-[95vw] sm:w-[90vw] md:w-[50vw] xl:w-[630px] lg:h-[332px] text-[12px] font-[400]">
-                        We are an IT Outsourcing company in Dubai offering an extended range of services 
-                        including End User Support, Application Investment, Cloud &amp; Infrastructure 
-                        expertise. Our on-demand IT staff Outsourcing solution in Dubai specializes exclusively 
-                        for digital transformation with Custom Software Development, Software Testing &amp; QA,
-                        Cloud Computing, Mobile &amp; Web Development, Maintenance &amp; Support, Blockchain 
-                        Consulting, Data Science.
-                    </p>
-                    <p className="text-[#4C4886] font-[700] mt-4 text-center md:text-start w-[90vw] text-[12px]">
-                        Cost-effective and Comprehensive IT Outsourcing Services:
-                    </p>
-                    <div className="w-[100%] lg:w-[94%] xl:w-[85%] relative z-[50] flex flex-col md:flex-row mt-4 lg:mt-2 items-center md:items-start justify-between gap-4 md:gap-0 p-4 ps-0 text-[3vw] sm:text-[1.7vw] md:text-[1vw]">
-                        <ul className="flex flex-col items-center md:items-start  text-[10px] font-[600] text-[#666666] gap-2">
-                            <h2 className="text-[#4C4886] font-[700] text-[16px]">Manage</h2>
-                            <li className="md:list-disc ms-[12px]">
-                                <a href="#">Essential IT Support</a>
-                            </li>
-                            <li className="md:list-disc ms-[12px]">
-                                <a href="#">Basic Security &amp; Monitoring</a>
-                            </li>
-                            <li className="md:list-disc ms-[12px]">
-                                <a href="#">Limited Cloud Storage</a>
-                            </li>
-                            <li className="md:list-disc ms-[12px]">
-                                <a href="#">24/7 Email Support</a>
-                            </li>
-                        </ul>
-                        <ul className="flex flex-col items-center md:items-start text-[10px] font-[600] text-[#666666] gap-2">
-                            <h2 className="text-[#4C4886] text-center md:text-start font-[700] text-[16px]">Build</h2>
-                            <li className="md:list-disc ms-[12px]">
-                                <a href="#">Advanced IT Support &amp; Maintenance</a>
-                            </li>
-                            <li className="md:list-disc ms-[12px]">
-                                <a href="#">Enhanced Security &amp; Threat Detection</a>
-                            </li>
-                            <li className="md:list-disc ms-[12px]">
-                                <a href="#">Increased Cloud Storage</a>
-                            </li>
-                            <li className="md:list-disc ms-[12px]">
-                                <a href="#">24/7 Chat &amp; Email Support</a>
-                            </li>
-                        </ul>
-                        <ul className="flex flex-col items-center md:items-start text-[10px] font-[600] text-[#666666] gap-2">
-                            <h2 className="text-[#4C4886] text-center md:text-start font-[700] text-[16px]">Gernal</h2>
-                            <li className="md:list-disc ms-[12px]">
-                                <a href="#">Fully Managed IT Services</a>
-                            </li>
-                            <li className="md:list-disc ms-[12px]">
-                                <a href="#">Enterprise-Level Security &amp; Backups</a>
-                            </li>
-                            <li className="md:list-disc ms-[12px]">
-                                <a href="#">Unlimited Cloud Storage &amp; Backups</a>
-                            </li>
-                            <li className="md:list-disc ms-[12px]">
-                                <a href="#">24/7 Priority Support (Phone, Chat, Email)</a>
-                            </li>
-                        </ul>
+                <div ref={contentRef} className="w-[900px] xl:w-[740px] h-full me-[5%]">
+                    <h1 className="border-l-[3px] border-[#4C4886] text-[28px] font-[600] text-[#4C4886] ps-[6px]">Technical Faqs:</h1>
+                    <p className="text-[16px] font-[400] mt-[20px] text-[#AAAAAA]">When you land a sample webpage Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex unde commodi a labore quidem harum, provident omnis excepturi veritatis, neque quod, recusandae quis illo velit asperiores nobis. Ea, quae aliquid!</p>
+                    <span className="text-[12px] text-[#4C4886] block mt-[20px] font-[700]"> Cost-effective and Comprehensive IT Outsourcing Services:</span>
+                    <div className="w-full mt-[24px] flex items-center justify-between xl:gap-[10px]">
+                        <div className="w-full xl:w-[600px] h-[134px] sm:h-[200px] p-[10px] text-[12px]">
+                            <h3 className="text-[#4C4886] font-[600] text-[16px]">Manage</h3>            
+                            <ul className="list-disc ps-[14px]">
+                                <li>Essential IT Support</li>
+                                <li>Basic Security &amp; Monitoring</li>
+                                <li>Limited Cloud Storage</li>
+                                <li>24/7 Email Support</li>
+                            </ul>
+                        </div>
+
+                        <div className="w-full xl:w-[840px] h-[134px] sm:h-[200px] p-[10px] text-[12px]">
+                            <h3 className="text-[#4C4886] font-[600] text-[16px]">Build</h3>
+                            <ul className="list-disc ps-[14px]">
+                                <li>Advanced IT Support &am; Maintenance</li>
+                                <li>Enhanced Security &amp; Threat Detection</li>
+                                <li>Increased Cloud Storage</li>
+                                <li>24/7 Chat &amp; Email Support</li>
+                            </ul>
+                        </div>
+
+                        <div className="w-full xl:w-[840px] h-[134px] sm:h-[200px] p-[10px] mt-[30px] sm:mt-0 text-[12px]">
+                            <h3 className="text-[#4C4886] font-[600] text-[16px]">General</h3>
+                            <ul className="list-disc ps-[14px]">
+                                <li>Fully Managed IT Services</li>
+                                <li>Enterprise Level Security &amp; Backups</li>
+                                <li>Unlimited Cloud Storage &amp; Backups</li>
+                                <li>24/7 Priority Support (Phone, Chat, Email)</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
