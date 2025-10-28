@@ -266,9 +266,9 @@ const SectionThree = () => {
                 </div>
 
                 {/* PROJECTS SHOWCASE FOR MOBILE */}
-                <div className="flex lg:hidden w-[87%] mx-auto mt-[16px] sm:mt-0 gap-[2px] sm:gap-[10px] flex-wrap">
+                <div className="flex lg:hidden w-[84.5%] mx-auto mt-[16px] sm:mt-0 gap-[2px] sm:gap-[10px] flex-wrap">
                     {/* PROJECT ONE */}
-                    <div className="w-[175px] h-[119px] sm:w-[33%] sm:h-[280px] p-[2px] gradient-border">
+                    <div className="w-[170px] h-[119px] sm:w-[33%] sm:h-[280px] p-[2px] gradient-border">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projectone.png')] bg-cover bg-center relative">
                             <div
                                 ref={(el) => (circleRefsMobile.current[0] = el)}
@@ -288,7 +288,7 @@ const SectionThree = () => {
                         </div>
                     </div>
                     {/* PROJECT TWO */}
-                    <div className="w-[173px] h-[66px] sm:w-[65%] sm:h-[160px] p-[2px] gradient-border group overflow-hidden">
+                    <div className="w-[168px] h-[66px] sm:w-[65%] sm:h-[160px] p-[2px] gradient-border group overflow-hidden">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projecttwo.jpg')] bg-cover bg-center relative">
                             <div
                                 ref={(el) => (circleRefsMobile.current[1] = el)}
@@ -312,7 +312,7 @@ const SectionThree = () => {
                         </div>
                     </div>
                     {/* PROJECT THREE */}
-                    <div className="w-[173.99px] h-[96.51px] sm:w-[33%] sm:h-[120px] mt-[10px] sm:mt-0 p-[2px] gradient-border group overflow-hidden">
+                    <div className="w-[168.99px] h-[96.51px] sm:w-[33%] sm:h-[120px] mt-[10px] sm:mt-0 p-[2px] gradient-border group overflow-hidden">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projectfour.png')] bg-cover bg-center relative">
                             <div
                                 ref={(el) => (circleRefsMobile.current[2] = el)}
@@ -333,7 +333,7 @@ const SectionThree = () => {
                         </div>
                     </div>
                     {/* PROJECT FOUR */}
-                    <div className="w-[174px] h-[121px] sm:w-[65%] sm:h-[240px] mt-[-44px] sm:mt-[-120px] p-[2px] gradient-border group overflow-hidden">
+                    <div className="w-[169px] h-[121px] sm:w-[65%] sm:h-[240px] mt-[-44px] sm:mt-[-120px] p-[2px] gradient-border group overflow-hidden">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projectthree.jpg')] bg-cover bg-center relative">
                             <div
                                 ref={(el) => (circleRefsMobile.current[3] = el)}
@@ -354,7 +354,7 @@ const SectionThree = () => {
                         </div>
                     </div>
                     {/* PROJECT FIVE */}
-                    <div className="w-[175px] h-[110px] sm:w-[49%] sm:h-[185px] mt-[10px] sm:mt-0 p-[2px] gradient-border group overflow-hidden">
+                    <div className="w-[170px] h-[110px] sm:w-[49%] sm:h-[185px] mt-[10px] sm:mt-0 p-[2px] gradient-border group overflow-hidden">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projectsix.png')] bg-cover bg-center relative">
                             <div
                                 ref={(el) => (circleRefsMobile.current[4] = el)}
@@ -375,7 +375,7 @@ const SectionThree = () => {
                         </div>
                     </div>
                     {/* PROJECT SIX */}
-                    <div className="w-[171px] h-[141px] sm:w-[49%] sm:h-[185px] mt-[-21px] sm:mt-0 p-[2px] gradient-border group overflow-hidden">
+                    <div className="w-[166px] h-[141px] sm:w-[49%] sm:h-[185px] mt-[-21px] sm:mt-0 p-[2px] gradient-border group overflow-hidden">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projectfive.jpg')] bg-cover bg-center relative">
                             <div
                                 ref={(el) => (circleRefsMobile.current[5] = el)}
