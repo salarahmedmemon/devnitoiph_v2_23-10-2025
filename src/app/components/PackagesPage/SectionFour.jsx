@@ -61,11 +61,11 @@ const SectionFive = () => {
             {/*  //? TITLE */}
             <div ref={titleRef} className="title relative text-center mt-[26px] mb-4">
                 {/* <div className="w-[60vw] sm:w-[35vw] md:w-[22vw] h-[.8vw] sm:h-[.3vw] md:h-[.2vw] bg-[#4C4886] absolute left-1/2 -translate-x-1/2 top-[5vw] sm:top-[20%] md:top-[18%]"></div> */}
-                <h1 className="w-[240px] md:w-[340px] mx-auto text-2xl sm:text-3xl md:text-4xl border-t-[3px] border-[#4C4886]">
-                    Lets Talk With Us
+                <h1 className="w-[240px] sm:w-[360px] mx-auto text-2xl sm:text-3xl md:text-4xl border-t-[3px] border-[#4C4886]">
+                    Ask For The Custom
                 </h1>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl text-[#4C4886] font-semibold">
-                    Contact Us
+                    Service And Package
                 </h2>
             </div>
 
@@ -76,30 +76,30 @@ const SectionFive = () => {
             >
                 <input
                     className="w-full md:w-[830px] lg:w-[400px] h-[54px] lg:h-[64px] rounded-lg ps-4 border-[2px] text-[22px] border-[#AAAAAA] text-[#AAAAAA]"
-                    placeholder="Enter Your Name:"
+                    placeholder="Enter Your Email:"
                     type="text"
                 />
                 <input
                     className="w-full md:w-[830px] lg:w-[400px] h-[54px] lg:h-[64px] rounded-lg ps-4 border-[2px] text-[22px] border-[#AAAAAA] text-[#AAAAAA]"
-                    placeholder="Enter Your Email:"
+                    placeholder="Enter Your Phone No:"
                     type="text"
                 />
 
                 <input
                     className="z-10 w-full md:w-[830px] lg:w-[400px] h-[54px] lg:h-[64px] rounded-lg ps-4 border-[2px] text-[22px] border-[#AAAAAA] text-[#AAAAAA]"
-                    placeholder="Enter Your Phone No:"
+                    placeholder="Select Package:"
                     type="text"
                 />
                 
                     <input
                         className="w-full md:w-[830px] lg:w-[400px] h-[54px] lg:h-[64px] rounded-lg ps-4 border-[2px] text-[22px] border-[#AAAAAA] text-[#AAAAAA]"
-                        placeholder="Enter Your Subject:"
+                        placeholder="Date: 20/Feb/2025"
                         type="text"
                     />
                     
                     <textarea
                         className="z-10 w-full md:w-[830px] h-[165px] rounded-lg ps-4 border-[2px] text-[22px] border-[#AAAAAA] text-[#AAAAAA]"
-                        placeholder="Enter Your Subject:"
+                        placeholder="Enter Your Messages:"
                     ></textarea>
                     
                     <div className="z-10 w-full md:w-[830px] flex items-start">

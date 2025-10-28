@@ -124,9 +124,13 @@ body {
 }
 
 /* SECTION FIVE STYLING */
-.blur-circle, .blur-circle1 {
+.blur-circle, .blur-circle1, .blur-circle1 {
   box-shadow: 90px 100px 100px 80px #ad1b88;
   transition: .4s ease;
+}
+
+.green-blur-circle {
+  box-shadow: 90px 100px 100px 80px #1CDE6380 !important;
 }
 
 .blur-circle1 {
@@ -317,4 +321,29 @@ body {
   .homepage-sectionone-rightcircle {
     left: 90%;
   }
+}
+
+
+
+
+
+/* Gradient border with clip-path */
+.border-layer {
+  background: linear-gradient(90deg, #FA1AC2, #1AE4FA, #1CDE63D9);
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 100%
+  );
+  border-radius: 10px;
+  padding: 2px;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+/* Clip-path rounding for inner box */
+.clip-rounded {
+  clip-path: inset(0 round 10px);
 }

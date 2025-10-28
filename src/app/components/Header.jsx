@@ -4,7 +4,9 @@ import Link from "next/link";
 import gsap from "gsap";
 import { usePathname } from "next/navigation";
 import { useLayoutEffect, useRef, useEffect, useState, useContext } from "react";
-import { LoadContext } from "./ClientWrapper"; // <-- adjust path if Header is in another folder
+
+
+import { LoadContext } from "./ClientWrapper";
 
 const Header = () => {
   const { loaded } = useContext(LoadContext);

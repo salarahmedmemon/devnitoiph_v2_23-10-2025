@@ -165,46 +165,89 @@ function FAQItem({ q, a1, a2, id }) {
   }, []);
 
   return (
-   <div
-      ref={wrapperRef}
-      className="relative w-full sm:w-[45%] lg:w-[90%] lg:mx-auto mt-[2vw] p-[2px] rounded-lg
-       bg-[#fff3] frequently-asked-question-border"
-    >
-    <div className="w-full px-8 md:px-14 py-3 md:py-6 flex flex-col justify-center transition-all duration-300 backdrop-blur-[2px]">
+  //  <div
+  //     ref={wrapperRef}
+  //     className="relative w-full sm:w-[45%] lg:w-[90%] lg:mx-auto mt-[2vw] p-[2px] rounded-lg
+  //      bg-[#fff3] frequently-asked-question-border"
+  //   >
+  //   <div className="w-full px-8 md:px-14 py-3 md:py-6 flex flex-col justify-center transition-all duration-300 backdrop-blur-[2px]">
       
-      <div className="flex items-center justify-between gap-4">
-        <p
-          className={`text-[4.2vw] sm:text-[1rem] md:text-[1.4rem] transition-colors duration-300 ${
-            open ? "text-green-500" : "text-white"
-          }`}
-        >
-          {q}
-        </p>
+  //     <div className="flex items-center justify-between gap-4">
+  //       <p
+  //         className={`text-[4.2vw] sm:text-[1rem] md:text-[1.4rem] transition-colors duration-300 ${
+  //           open ? "text-green-500" : "text-white"
+  //         }`}
+  //       >
+  //         {q}
+  //       </p>
 
-        <button
-          onClick={handleIconClick}
-          aria-expanded={open}
-          aria-controls={`faq-content-${id}`}
-          className={`w-7 h-7 md:w-8 md:h-8 flex items-center justify-center rounded cursor-pointer transition-colors duration-300 
-            ${open ? "bg-green-500 text-white" : "bg-white text-[#767C9E]"}`}
-        >
-          <span className="text-[24px] pb-0 md:pb-[5px]" ref={iconRef}>
-            +
-          </span>
-        </button>
-      </div>
+  //       <button
+  //         onClick={handleIconClick}
+  //         aria-expanded={open}
+  //         aria-controls={`faq-content-${id}`}
+  //         className={`w-7 h-7 md:w-8 md:h-8 flex items-center justify-center rounded cursor-pointer transition-colors duration-300 
+  //           ${open ? "bg-green-500 text-white" : "bg-white text-[#767C9E]"}`}
+  //       >
+  //         <span className="text-[24px] pb-0 md:pb-[5px]" ref={iconRef}>
+  //           +
+  //         </span>
+  //       </button>
+  //     </div>
 
-      <div
-        id={`faq-content-${id}`}
-        ref={contentRef}
-        className="overflow-hidden text-white"
-        style={{ height: 0, opacity: 0, visibility: "hidden" }}
+  //     <div
+  //       id={`faq-content-${id}`}
+  //       ref={contentRef}
+  //       className="overflow-hidden text-white"
+  //       style={{ height: 0, opacity: 0, visibility: "hidden" }}
+  //     >
+  //       <p className="mt-3 text-sm">{a1}</p>
+  //       <p className="mt-2 text-sm">{a2}</p>
+  //     </div>
+  //   </div>
+  //  </div>
+  <div
+  ref={wrapperRef}
+  className="relative w-full sm:w-[45%] lg:w-[90%] lg:mx-auto mt-[2vw] p-[2px]"
+>
+  {/* Border layer */}
+  <div className="absolute inset-0 z-0 rounded-[10px] border-layer"></div>
+
+  {/* Inner content */}
+  <div className="relative z-10 w-full px-4 md:px-14 py-3 md:py-6 flex flex-col justify-center transition-all duration-300 backdrop-blur-[2px] rounded-[10px] bg-[#ffffff17] clip-rounded">
+    <div className="flex items-center justify-between gap-4">
+      <p
+        className={`text-[4.2vw] sm:text-[1rem] md:text-[1.4rem] transition-colors duration-300 ${
+          open ? "text-green-500" : "text-white"
+        }`}
       >
-        <p className="mt-3 text-sm">{a1}</p>
-        <p className="mt-2 text-sm">{a2}</p>
-      </div>
+        {q}
+      </p>
+
+      <button
+        onClick={handleIconClick}
+        aria-expanded={open}
+        aria-controls={`faq-content-${id}`}
+        className={`w-7 h-7 md:w-8 md:h-8 flex items-center justify-center rounded cursor-pointer transition-colors duration-300 
+          ${open ? "bg-green-500 text-white" : "bg-white text-[#767C9E]"}`}
+      >
+        <span className="text-[24px] pb-0 md:pb-[5px]" ref={iconRef}>
+          +
+        </span>
+      </button>
     </div>
-   </div>
+
+    <div
+      id={`faq-content-${id}`}
+      ref={contentRef}
+      className="overflow-hidden text-white"
+      style={{ height: 0, opacity: 0, visibility: "hidden" }}
+    >
+      <p className="mt-3 text-sm">{a1}</p>
+      <p className="mt-2 text-sm">{a2}</p>
+    </div>
+  </div>
+</div>
+
 
   );
 }

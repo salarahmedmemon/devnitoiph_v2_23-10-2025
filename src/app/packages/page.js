@@ -1,4 +1,5 @@
 import Footer from "../components/Footer";
+import SectionFive from "../components/PackagesPage/SectionFive";
 import SectionFour from "../components/PackagesPage/SectionFour";
 import SectionOne from "../components/PackagesPage/SectionOne";
 import SectionThree from "../components/PackagesPage/SectionThree";
@@ -16,7 +17,8 @@ const Page = () => {
             <SectionTwo />
             <SectionThree />
             <SectionFour />
-            {/* <Footer /> */}
+            <SectionFive />
+            <Footer />
         </div>
     )
 };
