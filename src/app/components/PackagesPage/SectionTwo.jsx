@@ -5,29 +5,26 @@ const SectionTwo = () => {
 
     // 3. return statement/jsx
     return (
-        <div className="w-full h-[1200px] sm:h-[1500px] md:h-[1200px] lg:h-[900px] bg-[#EEEEEE] overflow-hidden relative pt-[48px]">
+        <div className="w-full h-[1100px] sm:h-[1500px] md:h-[1200px] lg:h-[900px] bg-[#EEEEEE] overflow-hidden relative pt-[48px]">
             {/* RIGHT CIRCLE */}
             <div className='w-[140px] sm:w-[300px] lg:w-[405.06px] h-[140px] sm:h-[300px] lg:h-[405.06px] rounded-full bg-[#BAD3EF] absolute top-[-20px] right-[-60px] sm:top-[-50px] lg:top-[-140px] sm:right-[-150px] lg:right-[-200px] xl:left-[85%] p-[3px]'>
                 <div className='w-full h-full rounded-full bg-gradient-to-b from-[#E2E8EE] to-[#E9EBEE]'></div>
             </div>
 
             {/* HEADINGS */}
-            <div className="w-[398px] h-[44px] border-t-[3px] 
-            lg:border-t-[5px] border-[#4C4886] 
-            absolute left-1/2 -translate-x-1/2
-            md:w-[400px]">
-                <h1 className="text-[32px] font-[500] text-center text-[#333333]">PACKAGES We Offering</h1>
-                <h2 className="text-[40px] font-[600] text-[#4C4886] text-center">Certified Excellence</h2>
+            <div className="w-[240px] sm:w-[398px] h-[44px] border-t-[3px] lg:border-t-[5px] border-[#4C4886] absolute left-1/2 -translate-x-1/2 md:w-[400px]">
+                <h1 className="text-[20px] sm:text-[32px] font-[500] text-center text-[#333333]">PACKAGES We Offering</h1>
+                <h2 className="text-[20px] sm:text-[40px] font-[600] text-[#4C4886] text-center">Certified Excellence</h2>
             </div>
 
             {/* IMAGE */}
-            <div className="lg:hidden w-[50%]  md:w-[40%] mx-auto mt-[120px]">
+            <div className="lg:hidden w-[50%]  md:w-[40%] mx-auto mt-[80px] sm:mt-[120px]">
                 <img src="/img/packagespage/image02.png" className="ms-[4%]"/>
             </div>
 
             {/* CONTENT */}
-            <div className="lg:hidden w-[92%] h-[629px] mx-auto flex flex-col items-start sm:mt-[220px] md:mt-[40px]">
-                <h1 className="w-[300px] sm:w-[520px] h-[40px] border-l-[3px] border-[#4C4886] text-[28px] sm:text-[32px] font-[600] text-[#4C4886] ps-[6px]">DISCOVERY PACKAGES</h1>
+            <div className="lg:hidden w-[92%] h-[629px] mx-auto flex flex-col items-start mt-[20px] sm:mt-[220px] md:mt-[40px]">
+                <h1 className="w-[300px] sm:w-[520px] h-[40px] border-l-[3px] border-[#4C4886] text-[20px] sm:text-[32px] font-[600] text-[#4C4886] ps-[6px]">DISCOVERY PACKAGES</h1>
                 <p className="text-[16px] sm:text-[20px] font-[400] pt-[26px] text-[#AAAAAA]">We are an IT outstanding company in Dubai offering an extended range of services including End User Support, 
                     Application Investment, Cloud & Infrastructure expertise. Our on-demand IT staff outsourcing solution in Dubai 
                     specializes exclusively for digital transformation with Custom Software Development, Software Testing & QA, Cloud 

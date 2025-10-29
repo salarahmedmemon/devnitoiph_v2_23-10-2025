@@ -347,3 +347,13 @@ body {
 .clip-rounded {
   clip-path: inset(0 round 10px);
 }
+
+
+@media (max-width: 335px) {
+  .firstpage-mainheading {
+    font-size: 36px;
+  }
+  .firstpage-button {
+    margin-top: 20px;
+  }
+}

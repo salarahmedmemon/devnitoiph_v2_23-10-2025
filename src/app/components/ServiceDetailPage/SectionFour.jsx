@@ -5,7 +5,7 @@ const SectionFour = () => {
 
     // 3. return statement/jsx
     return (
-        <div className="w-full h-[500px] sm:h-[600px] md:h-[737px] bg-[#EEEEEE] relative overflow-hidden flex flex-col-reverse items-center md:items-start md:flex-row ">
+        <div className="w-full h-[600px] md:h-[737px] bg-[#EEEEEE] relative overflow-hidden flex flex-col-reverse items-center md:items-start md:flex-row ">
 
             {/* RIGHT CIRCLE */}
             <div className='w-[140px] sm:w-[300px] lg:w-[405.06px] h-[140px] sm:h-[300px] lg:h-[405.06px] rounded-full bg-[#BAD3EF] absolute top-[-20px] right-[-60px] sm:top-[-50px] lg:top-[16px] sm:right-[-150px] lg:right-[-200px] p-[3px]'>
@@ -39,7 +39,7 @@ const SectionFour = () => {
                     </div>
 
                     <div className="w-[300px] sm:w-[489px] h-full">
-                        <img src="/img/servicedetailspage/image.png" loading="lazy" />
+                        <img src="/img/servicedetailspage/image.png" loading="lazy" className="pt-[50px]" />
                     </div>
                 </div>
             </div> 

@@ -71,7 +71,7 @@ const SectionOne = () => {
 
             {/* FOR SMALL SCREENS */}
             <div className="xl:hidden w-full h-full relative z-10">
-                <div className="w-[85%] h-[149px] md:w-[58%] lg:w-[60%] md:h-[30%] lg:h-[34%] flex gap-[20px] mt-[38px] mx-auto">
+                <div className="w-[85%] h-[120px] sm:h-[149px] md:w-[58%] lg:w-[60%] md:h-[30%] lg:h-[34%] flex gap-[20px] mt-[38px] mx-auto">
                     {/* IMAGE ONE */}
                     <div className="w-[100%] h-full rounded-[10px] z-10 border border-[#4AFFF0] shadow-[0_2px_7px_0_#5FFFE4] relative group overflow-hidden cursor-pointer">
                         <img src="/img/aboutpage/image01.png" alt="image one" className="w-full h-full object-cover" loading="lazy" />
@@ -92,7 +92,7 @@ const SectionOne = () => {
                     </div>
                 </div>
 
-                <div className="w-[90%] h-[190px] mx-auto mt-[19px] md:mt-[80px] xl:mt-0 flex flex-col items-center justify-center">
+                <div className="w-[90%] h-[190px] mx-auto mt-[36px] md:mt-[80px] xl:mt-0 flex flex-col items-center justify-center">
                     <button className="w-[121px] h-[38px] md:w-[150px] md:h-[48px] lg:w-[154px] lg:h-[48px] bg-white rounded-[10px] font-[600] text-[25px] lg:text-[34px] text-[#4C4886]">About</button>
                     <h1 className="font-[600] text-[48px] md:text-[55px] lg:text-[54px] text-white">Devnito</h1>
                     <p className="text-[12px] md:text-[24px] lg:text-[20px] text-center font-[300] text-white">DevNito is a leading provider of IT export services, offering custom software and SaaS solutions to businesses worldwide. With a focus on tailored excellence, transparent</p>

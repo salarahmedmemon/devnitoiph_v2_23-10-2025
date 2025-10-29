@@ -97,7 +97,7 @@ const SectionThree = () => {
                             p-[5px] xl:p-[10px]">
 
                                 <div className="w-full h-full">
-                                    <div className="w-full h-[140px] sm:h-[200px] md:h-[180px] lg:h-[190px] xl:h-[200px]">
+                                    <div className="w-full h-[130px] sm:h-[200px] md:h-[180px] lg:h-[190px] xl:h-[200px]">
                                         <img
                                             src={project.img} loading="lazy"
                                             className="w-full h-full transition-all duration-500 group-hover:opacity-30"

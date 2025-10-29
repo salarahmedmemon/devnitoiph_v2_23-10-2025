@@ -7,13 +7,22 @@ gsap.registerPlugin(ScrollTrigger);
 
 const SectionThree = () => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [isMediumUp, setIsMediumUp] = useState(false); // ✅ detect md breakpoint
 
   const topRef = useRef(null);
   const leftRef = useRef(null);
   const rightRef = useRef(null);
 
+  // ✅ Detect md breakpoint using window.matchMedia
   useEffect(() => {
-    // Title animation
+    const mediaQuery = window.matchMedia("(min-width: 768px)");
+    const handleResize = () => setIsMediumUp(mediaQuery.matches);
+    handleResize();
+    mediaQuery.addEventListener("change", handleResize);
+    return () => mediaQuery.removeEventListener("change", handleResize);
+  }, []);
+
+  useEffect(() => {
     gsap.fromTo(
       topRef.current,
       { y: -150, opacity: 0 },
@@ -29,7 +38,6 @@ const SectionThree = () => {
       }
     );
 
-    // Paragraph animation
     gsap.fromTo(
       leftRef.current,
       { x: -200, opacity: 0 },
@@ -45,7 +53,6 @@ const SectionThree = () => {
       }
     );
 
-    // Box area animation
     gsap.fromTo(
       rightRef.current,
       { x: 200, opacity: 0 },
@@ -62,12 +69,13 @@ const SectionThree = () => {
     );
   }, []);
 
+  // ✅ Hover handlers only work on md+
   const handleMouseEnter = () => {
-    setIsExpanded(true);
+    if (isMediumUp) setIsExpanded(true);
   };
 
   const handleMouseLeave = () => {
-    setIsExpanded(false);
+    if (isMediumUp) setIsExpanded(false);
   };
 
   return (
@@ -76,8 +84,9 @@ const SectionThree = () => {
         <div className="w-full h-full bg-[#0A131C] rounded-[1vw] text-white">
           {/* Top Section */}
           <div
-            className={`transition-all duration-700 ease-in-out ${isExpanded ? "-translate-y-[80px] md:-translate-y-[64px]" : "translate-y-0"
-              }`}
+            className={`transition-all duration-700 ease-in-out ${
+              isExpanded ? "-translate-y-[80px] md:-translate-y-[64px]" : "translate-y-0"
+            }`}
           >
             <div
               ref={topRef}
@@ -109,13 +118,14 @@ const SectionThree = () => {
             <div
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
-              className={`w-[280px] md:w-[600px] lg:w-[94%] gradient-border mx-auto rounded-lg p-[3px] mt-[40px] mb-[70px] transition-all duration-700 ease-in-out cursor-pointer ${isExpanded ? "scale-y-[1.15]" : "scale-y-[1]"
-                }`}
+              className={`w-[220px] md:w-[600px] lg:w-[94%] xl:w-[98%] gradient-border mx-auto rounded-lg p-[3px] mt-[40px] mb-[70px] transition-all duration-700 ease-in-out cursor-pointer ${
+                isExpanded ? "scale-y-[1.15]" : "scale-y-[1]"
+              }`}
               style={{ transformOrigin: "center center" }}
             >
               <div
                 ref={rightRef}
-                className="w-full bg-[#0A131C] rounded-lg pt-6 lg:p-8 flex items-start justify-between gap-6 flex-wrap"
+                className="w-full bg-[#0A131C] rounded-lg pt-6 lg:p-8 flex items-start justify-between gap-[10px] flex-wrap"
               >
                 {[
                   {
@@ -141,22 +151,26 @@ const SectionThree = () => {
                 ].map((item, i) => (
                   <div
                     key={i}
-                    className="flex flex-col items-center w-[250px] text-center space-y-4"
+                    className="flex flex-col items-center w-[250px] gap-0 text-center space-y-4"
                   >
                     <div className="w-[189px] h-[189px] rounded-lg overflow-hidden gradient-border p-[3px]">
                       <img
                         src={`/img/casestudiespage/sectionthree/${item.img}`}
-                        className="w-full h-full rounded-lg object-cover" loading="lazy"
+                        className="w-full h-full rounded-lg object-cover"
+                        loading="lazy"
                         alt={item.title}
                       />
                     </div>
 
-                    {/* Text appears when expanded */}
+                    {/* ✅ Text behavior changes based on screen */}
                     <div
-                      className={`transition-all mx-auto w-[70%] duration-700 ease-in-out overflow-hidden ${isExpanded
-                          ? "opacity-100 max-h-[300px] translate-y-0"
-                          : "opacity-0 max-h-0 translate-y-4"
-                        }`}
+                      className={`transition-all mx-auto w-[70%] duration-700 ease-in-out overflow-hidden ${
+                        isMediumUp
+                          ? isExpanded
+                            ? "opacity-100 max-h-[300px] translate-y-0"
+                            : "opacity-0 max-h-0 translate-y-4"
+                          : "opacity-100 max-h-[300px] translate-y-0"
+                      }`}
                     >
                       <h3 className="text-[18px] text-white font-semibold mb-2">
                         {item.title}

@@ -107,7 +107,7 @@ const SectionOne = () => {
           <div className="main-img-container w-[234px] h-[212px] sm:w-[44vw] sm:h-full md:w-[350px] md:h-[100px] flex items-center justify-center">
             <img
               src="/img/servicepage/sectionone/image01.png"
-              className="pt-0 sm:pt-10 md:pt-40" loading="lazy"
+              className="pt-[30px] sm:pt-10 md:pt-40" loading="lazy"
             />
           </div>
 

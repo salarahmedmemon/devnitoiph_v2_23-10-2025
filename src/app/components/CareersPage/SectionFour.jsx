@@ -17,7 +17,7 @@ const SectionFour = () => {
                 <div className='w-full h-full rounded-full bg-gradient-to-b from-[#F2F3F5] to-[#F1F2F2]'></div>
             </div>
 
-            <div className="w-full careerspage-section-four mx-auto h-full z-[999] pt-[14px] sm:pt-[60px] md:pt-[90px] lg:pt-[160px]">
+            <div className="w-full careerspage-section-four mx-auto h-full z-[999] pt-[32px] sm:pt-[60px] md:pt-[90px] lg:pt-[160px]">
                 <div className="w-[80%] h-[80%] mx-auto flex flex-col lg:flex-row items-center justify-center">
                     <div className="w-[300px] sm:w-[489px] h-full">
                         <img src="/img/careerspage/lady.png" loading="lazy" />

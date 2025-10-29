@@ -64,7 +64,7 @@ const SectionTwo = () => {
             </div>
 
             {/* HEADINGS */}
-            <div ref={headingRef} className="w-[303px] h-[100.77px] border-t-[3px] lg:border-t-[5px] border-[#4C4886] absolute left-1/2 -translate-x-1/2">
+            <div ref={headingRef} className="w-[260px] sm:w-[303px] lg:w-[360px] h-[100.77px] border-t-[3px] lg:border-t-[5px] border-[#4C4886] absolute left-1/2 -translate-x-1/2">
                 <h1 className="text-[32px] sm:text-[38px] lg:text-[44px] font-[500] text-center text-[#333333]">Our Company</h1>
                 <h2 className="text-[32px] sm:text-[38px] lg:text-[44px] font-[600] text-[#4C4886] text-center">Principle</h2>
             </div>
@@ -86,10 +86,10 @@ const SectionTwo = () => {
 
             {/* CONTENT */}
             <div ref={contentRef} className="lg:hidden w-[94%] h-[629px] mx-auto flex flex-col items-center sm:mt-[50px]">
-                <h1 className="w-[202px] h-[40px] border-l-[3px] border-[#4C4886] text-[28px] sm:text-[32px] font-[600] text-[#4C4886] ps-[6px]">Our Principle</h1>
+                <h1 className="w-[180px] sm:w-[202px] h-[40px] border-l-[3px] border-[#4C4886] text-[28px] sm:text-[32px] font-[600] text-[#4C4886] ps-[6px]">Our Principle</h1>
                 <p className="text-[16px] sm:text-[20px] font-[400] pt-[26px] text-center text-[#AAAAAA]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stancenturies,</p>
                 <span className="text-[12px] sm:text-[18px] text-[#4C4886] font-[700] mt-[24px]"> Cost-effective and Comprehensive IT Outsourcing Services:</span>
-                <div className="w-[242px] sm:w-[400px] mt-[24px] flex flex-col">
+                <div className="w-[242px] sm:w-[400px] mt-[18px] flex flex-col">
                     <div className="w-full h-[134px] sm:h-[200px] text-center p-[10px]">
                         <h3 className="text-[16px] sm:text-[24px] font-[500] text-[#4C4886]">Tailored Excellence</h3>
                         <p className="text-[12px] sm:text-[16px] font-[400] text-[#AAAAAA] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. </p>

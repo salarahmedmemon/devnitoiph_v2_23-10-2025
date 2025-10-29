@@ -17,10 +17,10 @@ const SectionTwo = () => {
             </div>
 
 
-            <div className="w-[300px] lg:w-[400px] relative z-[50]  border-t-3 border-[#4C4886] mx-auto text-center   sm:border-t-4">
+            <div className="w-[260px] sm:w-[300px] lg:w-[400px] relative z-[50]  border-t-3 border-[#4C4886] mx-auto text-center   sm:border-t-4">
                 <h1 className="text-[26px] font-[500]">Services We Offering</h1>
             </div>
-            <h2 className="text-[#4C4886] relative z-[50] text-[38px] font-semibold text-center">Certified Excellence</h2>
+            <h2 className="text-[#4C4886] relative z-[50] text-[28px] sm:text-[38px] font-semibold text-center">Certified Excellence</h2>
 
             <div className="w-full servicedetailspage-sectiontwo mx-auto relative z-[50] flex items-center justify-center flex-wrap mt-[74px] gap-5 p-4 md:p-0 pb-[10vw]">
                 <div className="w-[414px] h-[223px] bg-[#16171C] rounded-lg p-5 ">

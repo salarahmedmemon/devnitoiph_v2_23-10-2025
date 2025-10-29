@@ -117,16 +117,16 @@ const SectionOne = () => {
             <button className="w-[125px] h-[36px] sm:w-[140px] md:w-[160px] md:h-[40px] lg:w-[198px] lg:h-[65px] bg-white text-[#4C4886] text-[24px] lg:text-[40px] font-[600] rounded-lg mt-[16px] sm:mt-0 xl:mt-0">
               SEE OUR
             </button>
-            <h1 className="text-white text-center lg:text-start leading-[60px] lg:mt-[20px] w-[100vw] font-[600] text-[48px]  lg:text-[75px]  xl:text-[90px]">
+            <h1 className="firstpage-mainheading text-white text-center lg:text-start leading-[60px] lg:mt-[20px] w-[100vw] font-[600] text-[48px]  lg:text-[75px]  xl:text-[90px]">
               CAREERS BLOG
             </h1>
             {/* <span className="text-[24px] lg:text-[40px] lg:mt-[40px] font-[500] text-white leading-[14px]">DETAILS</span> */}
-            <p className="text-white text-[12px] w-[80%] text-center lg:text-start font-[500] mt-[20px]   sm:w-[70%] sm:text-[14px]  md:w-[100%] md:text-[16px]   lg:text-[20px] lg:w-[90%]  xl:mt-[30px] xl:w-[100%]">
+            <p className="firstpage-para text-white text-[12px] w-[80%] text-center lg:text-start font-[500] mt-[0px]   sm:w-[70%] sm:text-[14px]  md:w-[100%] md:text-[16px]   lg:text-[20px] lg:w-[90%]  lg:mt-[30px] xl:w-[100%]">
               Lorem ipsum is simply dummy text of the printing and typesetting
               industry. Lorem ipsum has been the industry's standard dummy text ever
               since the 1500s.
             </p>
-            <button className="w-[146px] h-[46px] sm:w-[200px] sm:h-[37px] bg-white text-[#4C4886] text-[12px] font-[600] rounded-[5px] mt-[8px]   md:w-[207px] md:h-[44px] md:text-[20px]   xl:mt-[40px] relative group">
+            <button className="firstpage-button w-[146px] sm:w-[200px] h-[37px] bg-white text-[#4C4886] text-[12px] font-[600] rounded-[5px] mt-[8px]   md:w-[207px] md:h-[44px] md:text-[20px]   xl:mt-[40px] relative group">
               Talk to our expert
               <span className="absolute left-1/2 -bottom-[2px] h-[3px] w-0 group-hover:w-full transition-all duration-200 ease-out -translate-x-1/2 bg-gradient-to-r from-[#1CDE63] via-[#FA1AC2] to-[#1AE4FA]"></span>
             </button>
@@ -134,7 +134,7 @@ const SectionOne = () => {
           <div ref={rightRef} className="main-img-container w-[196px] h-[201px] sm:w-[400px] sm:h-[100px]  xl:w-[500px]  xl:h-[200px]   flex items-center justify-center">
             <img
               src="/img/careerspage/image02.png" loading="lazy"
-              className="pt-0 sm:pt-[80px] md:pt-0  w-[95%] sm:w-[65%]  lg:w-[100%]"
+              className="pt-[30px] sm:pt-[80px] md:pt-0  w-[95%] sm:w-[65%]  lg:w-[100%]"
             />
           </div>
         </div>

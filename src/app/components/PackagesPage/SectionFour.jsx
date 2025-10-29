@@ -59,7 +59,7 @@ const SectionFive = () => {
             </div>
 
             {/*  //? TITLE */}
-            <div ref={titleRef} className="title relative text-center mt-[26px] mb-4">
+            <div ref={titleRef} className="title relative text-center mt-[26px] lg:mt-[100px] mb-4">
                 {/* <div className="w-[60vw] sm:w-[35vw] md:w-[22vw] h-[.8vw] sm:h-[.3vw] md:h-[.2vw] bg-[#4C4886] absolute left-1/2 -translate-x-1/2 top-[5vw] sm:top-[20%] md:top-[18%]"></div> */}
                 <h1 className="w-[240px] sm:w-[360px] mx-auto text-2xl sm:text-3xl md:text-4xl border-t-[3px] border-[#4C4886]">
                     Ask For The Custom

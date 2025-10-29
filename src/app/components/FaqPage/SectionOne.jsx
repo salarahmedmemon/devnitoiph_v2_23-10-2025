@@ -95,25 +95,25 @@ const SectionOne = () => {
 
         <div className="w-full h-[80%] md:h-full flex flex-col-reverse lg:hidden items-center justify-center gap-0 md:gap-10 ps-25.5 pe-25.5">
           <div className="text-container w-[50vw] sm:w-[90%] h-full flex flex-col items-center justify-center">
-            <button className="w-[136px] h-[36px] bg-white text-[#4C4886] text-[24px] sm:text-[3vw] md:text-[2.5vw] font-[600] rounded-[10px] mt-0 md:mt-10">
+            <button className="w-[136px] h-[36px] bg-white text-[#4C4886] text-[24px] sm:text-[3vw] md:text-[2.5vw] font-[600] rounded-[10px] mt-0  md:mt-10">
               OUR FAQ:S
             </button>
-            <h1 className="text-white font-[600] text-[48px] sm:text-[10vw] md:text-[6.5vw] sm:leading-[10vw] md:leading-[7vw]">
+            <h1 className="text-white font-[600] text-[48px] sm:text-[10vw] md:text-[6.5vw] leading-[44px] sm:leading-[10vw] md:leading-[7vw]">
               QUESTIONS
             </h1>
             <p className="text-white text-[12px] font-[500] sm:text-[2.4vw] md:text-[1.5vw] w-[90vw] sm:w-[100%] md:w-[70%] text-center mt-[1vw]">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
             </p>
-            <button className="w-[115px] h-[24px] sm:w-[200px] sm:h-[40px] bg-white text-[#4C4886] text-[12px] sm:text-[2.4vw] md:text-[1.2vw] font-[600] rounded-[5px] mt-4 relative group">
+            <button className="w-[115px] h-[24px] sm:w-[200px] sm:h-[40px] bg-white text-[#4C4886] text-[12px] sm:text-[2.4vw] md:text-[18px] font-[600] rounded-[5px] mt-4 relative group">
               Talk to our experts
               <span className="absolute left-1/2 -bottom-[2px] h-[3px] w-0 group-hover:w-full transition-all duration-500 ease-out -translate-x-1/2 bg-gradient-to-r from-[#1CDE63] via-[#FA1AC2] to-[#1AE4FA]"></span>
             </button>
           </div>
 
-          <div className="main-img-container w-[234px] h-[212px] sm:w-[44vw] sm:h-full md:w-[350px] md:h-[100px] flex items-center justify-center">
+          <div className="main-img-container w-[190px] sm:w-[300px] md:w-[300px] md:h-[100px] flex items-center justify-center">
             <img
-              src="/img/servicepage/sectionone/image01.png"
-              className="pt-0 sm:pt-10 md:pt-40"
+              src="/img/faqpage/image01.png"
+              className="pt-[35px] sm:pt-10 md:pt-40 object-contain"
               loading="lazy"
             />
           </div>

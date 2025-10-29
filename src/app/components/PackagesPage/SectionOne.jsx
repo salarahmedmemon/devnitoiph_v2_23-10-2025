@@ -115,10 +115,10 @@ const SectionOne = () => {
             </button>
           </div>
 
-          <div className="main-img-container w-[234px] h-[212px] sm:w-[44vw] sm:h-full md:w-[350px] md:h-[100px] flex items-center justify-center">
+          <div className="main-img-container w-[200px] h-[212px] sm:w-[44vw] sm:h-full md:w-[350px] md:h-[100px] flex items-center justify-center">
             <img
               src="/img/packagespage/image01.png"
-              className="pt-[20px] sm:pt-10 md:pt-40"
+              className="pt-[30px] sm:pt-10 md:pt-40"
             />
           </div>
 
