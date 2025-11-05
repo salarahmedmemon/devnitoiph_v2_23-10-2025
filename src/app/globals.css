@@ -357,3 +357,12 @@ body {
     margin-top: 20px;
   }
 }
+
+@media (max-width: 366px) {
+  .project-one, .project-three, .project-five {
+    width: 40vw;
+  }
+  .project-two, .project-four, .project-six {
+    width: 50vw;
+  }
+}

@@ -55,10 +55,10 @@ const SectionOne = () => {
 
                 <div className="images z-0 w-[400px] md:w-[600px] h-[600px] mx-auto relative lg:mt-[19.54px] lg:me-[80px] ps-[32px] overflow-hidden">
 
-                    <div className="block lg:hidden w-[98%] h-full bg-gradient-to-b from-[#31365C]/40 to-[#0A131C]/40 absolute top-0 z-[90]"></div>
+                    {/* <div className="block lg:hidden w-[98%] h-full bg-gradient-to-b from-[#31365C]/40 to-[#0A131C]/40 absolute top-0 z-[90]"></div> */}
 
                     {/* updated code */}
-                    <div className='first-column w-[168.12px] absolute top-[-200px] overflow-hidden'>
+                    <div className='first-column w-[168.12px] absolute top-[-200px] md:left-[140px] lg:left-[36px] overflow-hidden'>
                         <div
                             style={{
                                 clipPath: "polygon(0 0, 100% 10%, 100% 100%, 0 91%)",
@@ -194,7 +194,7 @@ const SectionOne = () => {
                     </div>
 
 
-                    <div className='second-column w-[168.12px] absolute top-[-200px] left-[230px] overflow-hidden'>
+                    <div className='second-column w-[168.12px] absolute top-[-200px] left-[230px] md:left-[340px] lg:left-[230px] overflow-hidden'>
                         <div
                           style={{
                               clipPath: "polygon(0 0, 100% 10%, 100% 100%, 0 91%)",
@@ -328,7 +328,7 @@ const SectionOne = () => {
                         </div>
                     </div>
 
-                    <div className='third-column hidden md:block w-[168.12px] absolute top-[-260px] right-[10px] overflow-hidden'>
+                    <div className='third-column hidden lg:block w-[168.12px] absolute top-[-260px] right-[10px] overflow-hidden'>
                        <div
                             style={{
                                 clipPath: "polygon(0 0, 100% 10.6%, 100% 100%, 0 88%)",

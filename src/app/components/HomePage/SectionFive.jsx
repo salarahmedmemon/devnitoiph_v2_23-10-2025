@@ -90,7 +90,7 @@ const SectionFive = () => {
     return (
         <div
             ref={sectionRef}
-            className="w-full h-[278px] sm:h-[318px] bg-[#0A1119] pt-[22px] sm:pt-[40px] xl:pt-[78px] relative overflow-hidden"
+            className="w-full min-h-[200px] sm:min-h-[318px] bg-[#0A1119] pt-[22px] sm:pt-[40px] xl:pt-[78px] relative pb-[20px] sm:mb-0 overflow-hidden"
         >
             <div className="hidden md:block w-0 h-0 rounded-full absolute top-[-100px] left-[43%] -translate-x-1/2 opacity-[50%]  blur-circle"></div>
             <div className="hidden md:block w-0 h-0 rounded-full absolute top-[20%] left-[-80px] opacity-[50%] blur-circle1"></div>
@@ -112,7 +112,7 @@ const SectionFive = () => {
                             <span className="text-[12px] md:text-[16px]">{c.label}</span>
                             <span
                                 ref={(el) => (counterRefs.current[c.id] = el)}
-                                className="font-[600] text-[20px] md:text-[32px]"
+                                className="font-[600] text-[20px] "
                                 aria-live="polite"
                             >
                                 {c.decimals

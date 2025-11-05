@@ -165,88 +165,47 @@ function FAQItem({ q, a1, a2, id }) {
   }, []);
 
   return (
-  //  <div
-  //     ref={wrapperRef}
-  //     className="relative w-full sm:w-[45%] lg:w-[90%] lg:mx-auto mt-[2vw] p-[2px] rounded-lg
-  //      bg-[#fff3] frequently-asked-question-border"
-  //   >
-  //   <div className="w-full px-8 md:px-14 py-3 md:py-6 flex flex-col justify-center transition-all duration-300 backdrop-blur-[2px]">
-      
-  //     <div className="flex items-center justify-between gap-4">
-  //       <p
-  //         className={`text-[4.2vw] sm:text-[1rem] md:text-[1.4rem] transition-colors duration-300 ${
-  //           open ? "text-green-500" : "text-white"
-  //         }`}
-  //       >
-  //         {q}
-  //       </p>
-
-  //       <button
-  //         onClick={handleIconClick}
-  //         aria-expanded={open}
-  //         aria-controls={`faq-content-${id}`}
-  //         className={`w-7 h-7 md:w-8 md:h-8 flex items-center justify-center rounded cursor-pointer transition-colors duration-300 
-  //           ${open ? "bg-green-500 text-white" : "bg-white text-[#767C9E]"}`}
-  //       >
-  //         <span className="text-[24px] pb-0 md:pb-[5px]" ref={iconRef}>
-  //           +
-  //         </span>
-  //       </button>
-  //     </div>
-
-  //     <div
-  //       id={`faq-content-${id}`}
-  //       ref={contentRef}
-  //       className="overflow-hidden text-white"
-  //       style={{ height: 0, opacity: 0, visibility: "hidden" }}
-  //     >
-  //       <p className="mt-3 text-sm">{a1}</p>
-  //       <p className="mt-2 text-sm">{a2}</p>
-  //     </div>
-  //   </div>
-  //  </div>
-  <div
-  ref={wrapperRef}
-  className="relative w-full sm:w-[45%] lg:w-[90%] lg:mx-auto mt-[2vw] p-[2px]"
->
-  {/* Border layer */}
-  <div className="absolute inset-0 z-0 rounded-[10px] border-layer"></div>
-
-  {/* Inner content */}
-  <div className="relative z-10 w-full px-4 md:px-14 py-3 md:py-6 flex flex-col justify-center transition-all duration-300 backdrop-blur-[2px] rounded-[10px] bg-[#ffffff17] clip-rounded">
-    <div className="flex items-center justify-between gap-4">
-      <p
-        className={`text-[4.2vw] sm:text-[1rem] md:text-[1.4rem] transition-colors duration-300 ${
-          open ? "text-green-500" : "text-white"
-        }`}
-      >
-        {q}
-      </p>
-
-      <button
-        onClick={handleIconClick}
-        aria-expanded={open}
-        aria-controls={`faq-content-${id}`}
-        className={`w-7 h-7 md:w-8 md:h-8 flex items-center justify-center rounded cursor-pointer transition-colors duration-300 
-          ${open ? "bg-green-500 text-white" : "bg-white text-[#767C9E]"}`}
-      >
-        <span className="text-[24px] pb-0 md:pb-[5px]" ref={iconRef}>
-          +
-        </span>
-      </button>
-    </div>
-
     <div
-      id={`faq-content-${id}`}
-      ref={contentRef}
-      className="overflow-hidden text-white"
-      style={{ height: 0, opacity: 0, visibility: "hidden" }}
+      ref={wrapperRef}
+      className="relative w-full sm:w-[45%] lg:w-[90%] lg:mx-auto mt-[2vw] p-[2px]"
     >
-      <p className="mt-3 text-sm">{a1}</p>
-      <p className="mt-2 text-sm">{a2}</p>
+      {/* Border layer */}
+      <div className="absolute inset-0 z-0 rounded-[10px] border-layer"></div>
+
+      {/* Inner content */}
+      <div className="relative z-10 w-full px-[20px] py-[10px] md:py-[20px] flex flex-col justify-center transition-all duration-300 backdrop-blur-[2px] rounded-[10px] bg-[#ffffff17] clip-rounded">
+        <div className="flex items-center justify-between gap-4">
+          <p
+            className={`text-[12px] md:text-[16px] lg:text-[18px] transition-colors duration-300 ${open ? "text-green-500" : "text-white"
+              }`}
+          >
+            {q}
+          </p>
+
+          <button
+            onClick={handleIconClick}
+            aria-expanded={open}
+            aria-controls={`faq-content-${id}`}
+            className={`w-7 h-7 md:w-8 md:h-8 flex items-center justify-center rounded cursor-pointer transition-colors duration-300 
+          ${open ? "bg-green-500 text-white" : "bg-white text-[#767C9E]"}`}
+          >
+            <span className="text-[24px] pb-[5px]" ref={iconRef}>
+              +
+            </span>
+          </button>
+        </div>
+
+        <div
+          id={`faq-content-${id}`}
+          ref={contentRef}
+          className="overflow-hidden text-white"
+          style={{ height: 0, opacity: 0, visibility: "hidden" }}
+        >
+          <p className="mt-3 text-sm">{a1}</p>
+          <p className="mt-2 text-sm">{a2}</p>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
 
   );
@@ -349,16 +308,16 @@ const SectionSix = () => {
   return (
     <section ref={sectionRef} className="homepage-section-six w-full lg:min-h-[780px] bg-[#000C1B] section-six relative overflow-hidden">
       <div className='w-full h-[83%] bg-[#000c1bf2] absolute bottom-0'></div>
-      
+
       <div className='w-[0vw] h-[0vw] rounded-full absolute top-[100px] left-[-60px] opacity-[50%] blur-circle2'></div>
 
       <div className="w-full h-[100px] sm:h-[150px] bg-white pt-[26px] ps-[26px] sm:pt-[39px] sm:ps-[86px]">
         <div className="w-[454px] h-[74px] homepage-section-six-heading">
           <h1 ref={h1Ref} className="border-t-[3px] border-[#4C4886] w-[50px] h-[24px] sm:w-[87px] sm:h-[42px] text-[20px] sm:text-[32px] font-[500]">FAQ's</h1>
           <h2 ref={h2Ref} className="text-[20px] sm:text-[32px] font-[600] text-[#4C4886]"> <span class="bg-gradient-to-r from-[#FA1AC2] via-[#1AE4FA] to-[#1CDE63D9] bg-clip-text text-transparent font-bold">
-                Frequently
-              </span>
-                Asked Questions
+            Frequently
+          </span>
+            Asked Questions
           </h2>
         </div>
       </div>
@@ -372,14 +331,14 @@ const SectionSix = () => {
 
         {/* Large Device Layout (2 fixed columns) */}
         <div className="hidden mx-auto homepage-section-six-faq w-full mt-[40px] lg:grid lg:grid-cols-2">
-         
+
           <div className="flex flex-col">
             {faqs.slice(0, 3).map((f) => (
               <FAQItem key={f.id} id={f.id} q={f.q} a1={f.a1} a2={f.a2} />
             ))}
           </div>
 
-        
+
           <div className="flex flex-col">
             {faqs.slice(3, 6).map((f) => (
               <FAQItem key={f.id} id={f.id} q={f.q} a1={f.a1} a2={f.a2} />
@@ -387,11 +346,11 @@ const SectionSix = () => {
           </div>
         </div>
       </div>
-          
+
       {/* Footer */}
       <div className='mt-[70px]'>
         <div className='w-full h-[2px] absolute bg-gradient-to-r from-[#1AE4FA] to-[#FA1AC2]'></div>
-        <Footer transparent={true}/>
+        <Footer transparent={true} />
       </div>
     </section>
   );

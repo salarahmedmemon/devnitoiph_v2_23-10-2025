@@ -649,7 +649,7 @@ const SectionTwo = () => {
 
             {/* MAIN CONTENT WITH IMAGE */}
             {/* {currentContent && ( */}
-            <div className="w-full sm:w-[640px] md:w-[940px] xl:w-[1262px] h-[344px] z-[2000] mt-[0px] sm:mt-[20px] lg:mt-[95px] mx-auto flex flex-col lg:flex-row gap-[5px] sm:gap-[20px]">
+            <div className="w-full sm:w-[640px] lg:w-[940px] xl:w-[1262px] h-[344px] z-[2000] mt-[0px] sm:mt-[20px] lg:mt-[95px] mx-auto flex flex-col lg:flex-row gap-[5px] sm:gap-[20px]">
                 {/* FIRST COLUMN FOR IMAGES IN JUST SMALL DEVICES sm - md */}
                 <div className="flex justify-center lg:hidden">
                     <div className="w-[290px] h-[173px] sm:w-[600px] lg:w-[350px] xl:w-[550px] sm:h-[400px] lg:h-[240px] xl:h-[344px] z-[1000]">
@@ -685,15 +685,15 @@ const SectionTwo = () => {
                 </div>
 
                 {/* SECOND COLUMN FOR CONTENT */}
-                <div ref={secondColRef} className="z-[1000] w-[298px] h-[161px] sm:w-[640px] sm:h-[341px] ms-[20px] sm:ms-[10px] md:ms-[30px] flex flex-col">
+                <div ref={secondColRef} className="z-[1000] w-[98%] h-[161px] sm:w-[640px] sm:h-[341px] ms-[10px] sm:ms-[10px] md:ms-[30px] flex flex-col">
                     <h2 className="text-[16px] sm:text-[26px] lg:text-[24px] xl:text-[28px] font-[400] text-[#0A1119] border-l-[3px] border-[#4C4886] ps-[5px]"> {currentContent.title}</h2>
 
-                    <p className="text-[8px] sm:text-[16px] lg:text-[12px] font-[400] pt-[20px] text-[#666666]">{currentContent.description}</p>
+                    <p className="text-[8px] sm:text-[16px] lg:text-[12px] font-[400] pt-[20px] text-[#666666] pe-[14px] sm:pe-0">{currentContent.description}</p>
 
                     <span className="text-[8px] sm:text-[16px] lg:text-[12px] font-[700] text-[#4C4886] pt-[10px] sm:pt-[20px]">{currentContent.listTitle}</span>
 
                     {/* LIST ITEMS FOR DESKTOP */}
-                    <ul className="hidden md:flex w-[780px] lg:w-[580px] xl:w-[640px] md:h-[115px] z-[1000] pt-[30px] md:pt-[60px] lg:pt-[20px] list-disc list-inside items-center justify-between xl:gap-[20px] flex-wrap">
+                    <ul className="hidden lg:flex w-[780px] lg:w-[580px] xl:w-[640px] md:h-[115px] z-[1000] pt-[30px] md:pt-[60px] lg:pt-[20px] list-disc list-inside items-center justify-between xl:gap-[20px] flex-wrap">
                         {Array.isArray(currentContent.listItemsDesktop)
                             ? currentContent.listItemsDesktop.map((item, i) => (
                                 <li key={i} className="text-[14px] lg:text-[10px] font-[600] text-[#666666]">{item}</li>
@@ -711,14 +711,14 @@ const SectionTwo = () => {
                     </ul>
 
                     {/* LIST ITEMS FOR MOBILE */}
-                    <ul className="flex md:hidden w-[298px] sm:w-[620px] md:w-[780px] ps-[14px] lg:w-[580px] xl:w-[640px] md:h-[115px] z-[1000] pt-[30px] md:pt-[60px] lg:pt-[20px] list-disc list-inside items-center justify-between xl:gap-[20px] flex-wrap">
+                    <ul className="flex lg:hidden sm:w-[620px] ps-[14px] lg:w-[580px] xl:w-[640px] md:h-[115px] z-[1000] pt-[30px] md:pt-[60px] lg:pt-[20px] list-disc list-inside items-center justify-baseline gap-[10px] sm:gap-[60px] xl:gap-[20px] flex-wrap">
                         {Array.isArray(currentContent.listItemsMobile)
                             ? currentContent.listItemsMobile.map((item, i) => (
                                 <li key={i} className="text-[14px] lg:text-[10px] font-[600] text-[#666666]">{item}</li>
                             ))
                             : Object.entries(currentContent.listItemsMobile).map(([colKey, colItems], colIndex) => (
-                                <div key={colIndex} className="md:w-[260px] lg:w-[174px] md:h-[115px] flex flex-col items-center justify-center lg:gap-[5px]">
-                                    <ul className="list-disc text-[8px] sm:text-[16px] md:text-[13px] lg:text-[10px] font-[600] text-[#666666]">
+                                <div key={colIndex} className="lg:w-[174px] md:h-[115px] flex flex-col items-center justify-center lg:gap-[5px] pe-[14px] sm:pe-0">
+                                    <ul className="list-disc text-[7px] sm:text-[16px] md:text-[13px] lg:text-[10px] font-[600] text-[#666666]">
                                         {colItems.map((item, i) => (
                                             <li key={i} className="mt-1">{item}</li>
                                         ))}
