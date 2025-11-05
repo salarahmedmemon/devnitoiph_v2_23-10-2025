@@ -68,14 +68,14 @@ const SectionThree = () => {
           </div>
 
 
-          <div className="relative w-full sm:w-[90%] sm:mx-auto  mt-4 sm:mt-6 md:mt-10 p-0 md:p-6 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-10">
+          <div className="relative w-full sm:w-[90%] md:w-[100%] sm:mx-auto  mt-4 sm:mt-6 md:mt-10 p-0 md:p-6 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-10">
             <img
               src="/img/aboutpage/sectionthree/rightLogo.png"
-              className="hidden md:block absolute top-[-220px] right-[-70px] lg:right-[-90px] xl:right-[-106px]" loading="lazy"
+              className="hidden md:block absolute top-[-220px] right-[-40px]" loading="lazy"
             />
             <img
               src="/img/aboutpage/sectionthree/leftLogo.png"
-              className="hidden md:block absolute bottom-[-40px] left-[-80px] xl:left-[-100px]" loading="lazy"
+              className="hidden md:block absolute bottom-[-40px] left-[-40px]" loading="lazy"
             />
 
             {projects.map((project, index) => (

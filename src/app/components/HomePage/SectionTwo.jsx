@@ -688,7 +688,7 @@ const SectionTwo = () => {
                 <div ref={secondColRef} className="z-[1000] w-[98%] h-[161px] sm:w-[640px] sm:h-[341px] ms-[10px] sm:ms-[10px] md:ms-[30px] flex flex-col">
                     <h2 className="text-[16px] sm:text-[26px] lg:text-[24px] xl:text-[28px] font-[400] text-[#0A1119] border-l-[3px] border-[#4C4886] ps-[5px]"> {currentContent.title}</h2>
 
-                    <p className="text-[8px] sm:text-[16px] lg:text-[12px] font-[400] pt-[20px] text-[#666666] pe-[14px] sm:pe-0">{currentContent.description}</p>
+                    <p className="text-[8px] sm:text-[16px] lg:text-[12px] font-[400] pt-[20px] text-[#666666] pe-[14px] md:pe-0">{currentContent.description}</p>
 
                     <span className="text-[8px] sm:text-[16px] lg:text-[12px] font-[700] text-[#4C4886] pt-[10px] sm:pt-[20px]">{currentContent.listTitle}</span>
 

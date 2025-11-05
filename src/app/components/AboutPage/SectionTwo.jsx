@@ -80,7 +80,7 @@ const SectionTwo = () => {
                         className="object-cover"
                         blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAAklEQVR4AewaftIAAAEpSURBVGNmQAIXLl3it7WzlbYwN/+2e/fuvwxIgIUBCI4ePaolJ/jmT2xK4AM+TUOxzfPWPpi755y64KcH/4KCgm4zAAHzgQMH2A8fPvy2o3fKX2NdARc+IwMZRmYlpRWTmm/++/P7RVNHO8eKpUt/szx79kxG4dcfQWthaSajn/80+Yyk8z6fYV3No2X3nIdTlPH9y1dPGBgYHjKvXbv2va6D/fNX/xnf2d3/ycHurZ1+8ejrlcLiDFv+Mfx6UFtb+4EBCJgYgODz58/MfHx893SzYnK4vzAyRPibpj569OjFv3///jNAATMDEDAxMQmxsLDoSGmIGShIKAgcP3Xs+pEzV46dPn16/9evX38yoAEBbk4OWXc702B+Xh55BgYGIQYGBg4GKAAAOcJxrLqJHhsAAAAASUVORK5CYII="
                     /> */}
-                    <img src="/img/aboutpage/image03.png" alt="left image" loading="lazy" className="w-full h-full object-cover" />
+                    <img src="/img/aboutpage/image03.png" alt="left image" loading="lazy" className="w-full h-full object-contain" />
                 </div>
             </div>
 
@@ -88,7 +88,7 @@ const SectionTwo = () => {
             <div ref={contentRef} className="lg:hidden w-[94%] h-[629px] mx-auto flex flex-col items-center sm:mt-[50px]">
                 <h1 className="w-[180px] sm:w-[202px] h-[40px] border-l-[3px] border-[#4C4886] text-[28px] sm:text-[32px] font-[600] text-[#4C4886] ps-[6px]">Our Principle</h1>
                 <p className="text-[16px] sm:text-[20px] font-[400] pt-[26px] text-center text-[#AAAAAA]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stancenturies,</p>
-                <span className="text-[12px] sm:text-[18px] text-[#4C4886] font-[700] mt-[24px]"> Cost-effective and Comprehensive IT Outsourcing Services:</span>
+                <span className="text-[12px] text-center sm:text-[18px] text-[#4C4886] font-[700] mt-[24px]"> Cost-effective and Comprehensive IT Outsourcing Services:</span>
                 <div className="w-[242px] sm:w-[400px] mt-[18px] flex flex-col">
                     <div className="w-full h-[134px] sm:h-[200px] text-center p-[10px]">
                         <h3 className="text-[16px] sm:text-[24px] font-[500] text-[#4C4886]">Tailored Excellence</h3>

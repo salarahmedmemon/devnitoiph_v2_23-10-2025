@@ -77,7 +77,7 @@ const SectionFour = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <p className="text-white mt-4 text-sm sm:text-base md:text-lg max-w-[600px] mx-auto">
+          <p className="hidden sm:block text-white mt-4 text-[12px] sm:text-base md:text-lg max-w-[600px] mx-auto">
             {testimonials[currentIndex].text}
           </p>
           <span className="text-white block mt-3 font-semibold text-lg">

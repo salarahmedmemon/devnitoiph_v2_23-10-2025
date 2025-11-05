@@ -87,36 +87,36 @@ const SectionThree = () => {
                             className="bg-gradient-to-br from-[#FA1AC2] via-[#11AAEE] to-[#1CDE63] 
                             project-card group w-full h-[280px] sm:h-[400px] sm:mt-6
                             gradient-border rounded-lg relative overflow-hidden  
-                            p-[.8vw] sm:p-[.4vw] md:p-1 cursor-pointer"
+                            p-[2px] md:p-[3px] md:p-1 cursor-pointer"
                         >
 
-                            <div className="w-full h-full bg-[#0A131C] flex flex-col items-center justify-center 
+                            <div className="w-full h-full bg-[#0A131C] flex flex-col items-center justify-center rounded-lg
                             p-[5px] xl:p-[10px]">
 
                                 <div className="w-full h-full">
                                     <div className="w-full h-[130px] sm:h-[200px] md:h-[180px] lg:h-[190px] xl:h-[200px]">
                                         <img
                                             src={project.img} loading="lazy"
-                                            className="w-full h-full transition-all duration-500 group-hover:opacity-30"
+                                            className="w-full h-full transition-all duration-500 group-hover:opacity-30 rounded-t-lg"
                                         />
                                     </div>
                                 </div>
                                 <div className="w-full h-full mt-[10px]">
                                     <div className="flex items-center justify-between">
-                                        <span className="flex items-center justify-between gap-2 text-white">
+                                        <span className="flex items-center justify-between gap-[3px] text-white">
                                             <img src="/img/careerspage/author.png" className="w-[3vw] lg:w-[20px]" loading="lazy" />
                                             <span className="text-[8px] sm:text-[12px] md:text-[16px] lg:text-[12px] xl:text-[14px]">|</span>
                                             <span className="text-[8px] sm:text-[12px] md:text-[16px] lg:text-[12px] xl:text-[14px]">Author</span>
                                         </span>
-                                        <span className="flex items-center justify-between gap-2 text-white">
+                                        <span className="flex items-center justify-between gap-[3px] text-white">
                                             <img src="/img/careerspage/image06.png" className="w-[3vw] lg:w-[20px]" loading="lazy" />
                                             <span className="text-[8px] sm:text-[12px] md:text-[16px] lg:text-[12px] xl:text-[14px]">|</span>
                                             <span className="text-[8px] sm:text-[12px] md:text-[16px] lg:text-[12px] xl:text-[14px]">1 Jan 2025</span>
                                         </span>
                                     </div>
-                                    <h4 className="w-[140px] sm:w-[200px] md:w-[260px] lg:w-[200px] xl:w-[200px] font-semibold text-[10px] sm:text-[14px] md:text-[18px] lg:text-[16px] text-white mt-[17px]">Few Words "Can Refer To A Phrase"</h4>
-                                    <p className="text-[#928D9B] text-[8px] sm:text-[12px] md:text-[16px] lg:text-[14px] mt-[14px]">Lorem ipsum is simply dummy text</p>
-                                    <button className="bg-white text-[#755E9D] w-[58px] h-[15px] sm:w-[70px] sm:h-[22px] rounded-[3px] text-[8px] sm:text-[12px] mt-[14px]">Read More</button>
+                                    <h4 className="w-[100%] xl:w-[200px] font-semibold text-[10px] sm:text-[14px] md:text-[18px] lg:text-[16px] text-white mt-[17px]">Few Words "Can Refer To A Phrase"</h4>
+                                    <p className="text-[#928D9B] text-[8px] sm:text-[12px] md:text-[16px] lg:text-[14px] mt-[10px] sm:mt-[14px]">Lorem ipsum is simply dummy text</p>
+                                    <button className="bg-white text-[#755E9D] w-[58px] h-[15px] sm:w-[70px] sm:h-[22px] rounded-[3px] text-[8px] sm:text-[12px] mt-[10px] sm:mt-[14px]">Read More</button>
                                 </div>
                             </div>
                         </div>

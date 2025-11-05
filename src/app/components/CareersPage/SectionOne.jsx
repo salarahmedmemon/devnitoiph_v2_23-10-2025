@@ -103,7 +103,7 @@ const SectionOne = () => {
       </div>
 
       <Header />
-      <div className="w-full careerspage-sectionone mx-auto h-full pt-[26px] sm:pt-0 relative overflow-hidden">
+      <div className="w-full careerspage-sectionone mx-auto h-full pt-[26px] sm:pt-[56px] md:pt-[90px] relative overflow-hidden">
         <img ref={imgRef1}
           src="/img/aboutpage/sectionone/image01.png" loading="lazy"
           className="img-top hidden lg:block absolute w-[173px] h-[217px] top-[-5%] left-[29%]"

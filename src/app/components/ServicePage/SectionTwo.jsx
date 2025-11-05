@@ -90,7 +90,7 @@ const SectionTwo = () => {
                 <p className="text-[16px] sm:text-[20px] font-[400] pt-[26px] text-center text-[#AAAAAA]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stancenturies,</p>
                 <span className="text-[12px] text-center sm:text-[18px] text-[#4C4886] font-[700] mt-[24px]"> Cost-effective and Comprehensive IT Outsourcing Services:</span>
                 <div className="w-[242px] sm:w-[400px] mt-[24px] flex flex-col">
-                    <div className="w-full h-[134px] sm:h-[145px] md:h-[200px] text-center p-[10px] text-[12px]">
+                    <div className="w-full h-[134px] sm:h-[145px] text-center p-[10px] text-[12px]">
                         <ul>
                                 <li>Hire Mobile App Developer</li>
                                 <li>Hire Scrum Master in Dubai</li>
@@ -101,7 +101,7 @@ const SectionTwo = () => {
                             </ul>
                     </div>
 
-                    <div className="w-full h-[134px] sm:h-[145px] md:h-[200px] text-center p-[10px] text-[12px]">
+                    <div className="w-full h-[134px] sm:h-[145px] text-center p-[10px] text-[12px]">
                         <ul>
                                 <li>Hire Mobile App Developer</li>
                                 <li>Hire Scrum Master in Dubai</li>
@@ -112,7 +112,7 @@ const SectionTwo = () => {
                             </ul>
                     </div>
 
-                    <div className="w-full h-[134px] sm:h-[145px] md:h-[200px] text-center p-[10px] mt-[30px] sm:mt-0 text-[12px]">
+                    <div className="w-full h-[134px] sm:h-[145px] text-center p-[10px] mt-[30px] sm:mt-0 text-[12px]">
                         <ul>
                                 <li>Hire Mobile App Developer</li>
                                 <li>Hire Scrum Master in Dubai</li>

@@ -69,7 +69,7 @@ const SectionTwo = () => {
             </div>
 
             {/* IMAGE */}
-            <div ref={imageRef} className="lg:hidden w-[90%] sm:w-[400px] h-[310px] mx-auto mt-[70px] sm:mt-[120px]">
+            <div ref={imageRef} className="lg:hidden w-[260px] sm:w-[400px] h-[310px] mx-auto mt-[70px] sm:mt-[120px]">
                 <div className="w-full h-full relative md:ms-[4%]">
                     {/* <Image
                         src="/img/aboutpage/image03.png"

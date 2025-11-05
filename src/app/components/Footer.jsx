@@ -66,7 +66,7 @@ const Footer = ({ transparent = false }) => {
         />
 
         {/* Navigation */}
-        <ul className=" fade-in-up text-white flex items-center justify-center text-[14px] sm:text-[16px] font-[500] gap-[30px] text-center pt-[48.43px]">
+        <ul className=" fade-in-up text-white flex items-center justify-center text-[12px] sm:text-[16px] font-[500] gap-[30px] text-center pt-[48.43px]">
           <li><a>IT Resource</a></li>
           <li><a>UI/UX Design</a></li>
           <li><a>Web Animation</a></li>
@@ -100,7 +100,7 @@ const Footer = ({ transparent = false }) => {
         <div className="fade-in-up w-full h-[1px] bg-white mt-[50px]"></div>
 
         {/* Footer Bottom */}
-        <div className="fade-in-up w-full h-[44px] bg-transparent text-white flex items-center justify-center text-[14px] sm:text-[16px] font-[400] gap-[14px] sm:gap-[30px]">
+        <div className="fade-in-up w-full h-[44px] bg-transparent text-white flex items-center justify-center text-[12px] md:text-[16px] font-[400] gap-[14px] sm:gap-[30px]">
           <span>&copy; Copyright Reserved 2025</span>
           <span>|</span>
           <Link href="/terms"><span>Terms &amp; Services</span></Link>

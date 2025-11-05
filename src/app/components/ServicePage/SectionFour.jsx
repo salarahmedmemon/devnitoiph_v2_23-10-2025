@@ -120,7 +120,7 @@ const SectionFour = () => {
                         </div>
                     ))}
 
-                    <button className="bg-[#4C4886] text-white mt-10 w-[100%] text-[20px] md:w-[40%] lg:w-[30%] px-5 py-[.6vw] rounded-lg">
+                    <button className="bg-[#4C4886] text-white mt-10 w-[100%] text-[20px] md:w-[40%] lg:w-[30%] px-5 py-[6px] flex items-center justify-center rounded-lg">
                         learn more
                     </button>
                 </div>
