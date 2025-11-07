@@ -64,9 +64,9 @@ const SectionTwo = () => {
             </div>
 
             {/* HEADINGS */}
-            <div ref={headingRef} className="w-[300px] sm:w-[500px] h-[100.77px] border-t-[3px] lg:border-t-[5px] border-[#4C4886] absolute left-1/2 -translate-x-1/2">
-                <h1 className="text-[28px] sm:text-[38px] lg:text-[44px] font-[500] text-center text-[#333333]">Services We Offering</h1>
-                <h2 className="text-[28px] sm:text-[38px] lg:text-[44px] font-[600] text-[#4C4886] text-center">Certified of Excellence</h2>
+            <div ref={headingRef} className="w-[260px] sm:w-[500px] h-[100.77px] border-t-[3px] lg:border-t-[5px] border-[#4C4886] absolute left-1/2 -translate-x-1/2">
+                <h1 className="text-[24px] sm:text-[38px] lg:text-[44px] font-[500] text-center text-[#333333]">Services We Offering</h1>
+                <h2 className="text-[24px] sm:text-[38px] lg:text-[44px] font-[600] text-[#4C4886] text-center">Certified of Excellence</h2>
             </div>
 
             {/* IMAGE */}
@@ -86,11 +86,11 @@ const SectionTwo = () => {
 
             {/* CONTENT */}
             <div ref={contentRef} className="lg:hidden w-[94%] h-[629px] mx-auto flex flex-col items-center sm:mt-[50px]">
-                <h1 className="w-[180px] sm:w-[200px] h-[40px] border-l-[3px] border-[#4C4886] text-[28px] sm:text-[32px] font-[600] text-[#4C4886] ps-[6px]">Our Services</h1>
+                <h1 className="w-[180px] sm:w-[200px] h-[40px] text-center sm:border-l-[3px] border-[#4C4886] text-[28px] sm:text-[32px] font-[600] text-[#4C4886] sm:ps-[6px]">Our Services</h1>
                 <p className="text-[16px] sm:text-[20px] font-[400] pt-[26px] text-center text-[#AAAAAA]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stancenturies,</p>
-                <span className="text-[12px] text-center sm:text-[18px] text-[#4C4886] font-[700] mt-[24px]"> Cost-effective and Comprehensive IT Outsourcing Services:</span>
-                <div className="w-[242px] sm:w-[400px] mt-[24px] flex flex-col">
-                    <div className="w-full h-[134px] sm:h-[145px] text-center p-[10px] text-[12px]">
+                <span className="text-[16px] text-center sm:text-[18px] text-[#4C4886] font-[700] mt-[24px]"> Cost-effective and Comprehensive IT Outsourcing Services:</span>
+                <div className="w-[242px] sm:w-[400px] mt-[24px] flex flex-col gap-[10px]">
+                    <div className="w-full h-[134px] sm:h-[145px] text-center p-[10px] text-[14px]">
                         <ul>
                                 <li>Hire Mobile App Developer</li>
                                 <li>Hire Scrum Master in Dubai</li>
@@ -101,7 +101,7 @@ const SectionTwo = () => {
                             </ul>
                     </div>
 
-                    <div className="w-full h-[134px] sm:h-[145px] text-center p-[10px] text-[12px]">
+                    <div className="w-full h-[134px] sm:h-[145px] text-center p-[10px] text-[14px]">
                         <ul>
                                 <li>Hire Mobile App Developer</li>
                                 <li>Hire Scrum Master in Dubai</li>
@@ -112,7 +112,7 @@ const SectionTwo = () => {
                             </ul>
                     </div>
 
-                    <div className="w-full h-[134px] sm:h-[145px] text-center p-[10px] mt-[30px] sm:mt-0 text-[12px]">
+                    <div className="w-full h-[134px] sm:h-[145px] text-center p-[10px]  text-[14px]">
                         <ul>
                                 <li>Hire Mobile App Developer</li>
                                 <li>Hire Scrum Master in Dubai</li>

@@ -90,19 +90,19 @@ const SectionThree = () => {
           >
             <div
               ref={topRef}
-              className="text-center w-[200px] sm:w-[300px] mx-auto pt-[100px] sm:pt-[120px]"
+              className="text-center w-[180px] sm:w-[300px] mx-auto pt-[40px] sm:pt-[120px]"
             >
-              <h1 className="text-[24px] sm:text-[5vw] md:text-[2.4vw] lg:text-[44px] border-t-3 border-t-[#77CCF3]">
+              <h1 className="text-[26px] sm:text-[5vw] md:text-[2.4vw] lg:text-[44px] border-t-3 border-t-[#77CCF3]">
                 Our Design
               </h1>
-              <h2 className="text-[32px] sm:text-[4.9vw] md:text-[3.2vw] lg:text-[50px] leading-[6vw] sm:leading-[4vw] md:leading-[3vw] text-[#77CCF3] font-semibold">
+              <h2 className="text-[26px] sm:text-[4.9vw] md:text-[3.2vw] lg:text-[50px] leading-[6vw] sm:leading-[4vw] md:leading-[3vw] text-[#77CCF3] font-semibold">
                 Process
               </h2>
             </div>
 
             <p
               ref={leftRef}
-              className="text-center p-6 sm:p-10 text-gray-300 max-w-[900px] mx-auto"
+              className="text-center text-[16px] p-6 sm:p-10 text-gray-300 max-w-[900px] mx-auto"
             >
               Lorem ipsum is simply dummy text of the printing and typsetting
               industry. Lorem ipsum has been the industry's standard dummy text
@@ -118,7 +118,7 @@ const SectionThree = () => {
             <div
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
-              className={`w-[220px] md:w-[600px] lg:w-[94%] xl:w-[98%] gradient-border mx-auto rounded-lg p-[3px] mt-[40px] mb-[70px] transition-all duration-700 ease-in-out cursor-pointer ${
+              className={`w-[220px] md:w-[600px] lg:w-[94%] xl:w-[98%] gradient-border mx-auto rounded-lg p-[3px] mt-[0px] sm:mt-[40px] mb-[70px] transition-all duration-700 ease-in-out cursor-pointer ${
                 isExpanded ? "scale-y-[1.15]" : "scale-y-[1]"
               }`}
               style={{ transformOrigin: "center center" }}
@@ -153,7 +153,7 @@ const SectionThree = () => {
                     key={i}
                     className="flex flex-col items-center w-[250px] gap-0 text-center space-y-4"
                   >
-                    <div className="w-[189px] h-[189px] rounded-lg overflow-hidden gradient-border p-[3px]">
+                    <div className="w-[189px] sm:h-[189px] rounded-lg overflow-hidden gradient-border p-[3px]">
                       <img
                         src={`/img/casestudiespage/sectionthree/${item.img}`}
                         className="w-full h-full rounded-lg object-cover"
@@ -175,7 +175,7 @@ const SectionThree = () => {
                       <h3 className="text-[18px] text-white font-semibold mb-2">
                         {item.title}
                       </h3>
-                      <p className="text-[12px] text-gray-300 leading-relaxed text-center md:text-start">
+                      <p className="text-[14px] text-gray-300 leading-relaxed text-center md:text-start">
                         {item.text}
                       </p>
                     </div>

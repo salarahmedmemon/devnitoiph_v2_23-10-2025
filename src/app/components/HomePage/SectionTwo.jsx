@@ -583,7 +583,7 @@ const SectionTwo = () => {
 
     // 3. return statement/jsx
     return (
-        <div ref={containerRef} className="w-full h-[600px] sm:h-[1300px] lg:h-[850px] overflow-hidden relative bg-[#EEEEEE]">
+        <div ref={containerRef} className="homepage-sectiontwo w-full h-[960px] sm:h-[1300px] lg:h-[850px] overflow-hidden relative bg-[#EEEEEE]">
 
             {/* RIGHT CIRCLE */}
             <div className='homepage-sectionone-rightcircle w-[140px] sm:w-[300px] lg:w-[405.06px] h-[140px] sm:h-[300px] lg:h-[405.06px] rounded-full bg-[#BAD3EF] absolute top-[-20px] right-[-60px] sm:top-[-50px] lg:top-[16px] sm:right-[-150px] lg:right-[-200px] xl:left-[85%] p-[3px]'>
@@ -616,7 +616,7 @@ const SectionTwo = () => {
             >
                 
                 <ul
-                    className="nav-list flex whitespace-nowrap gap-[20px] text-[8px] sm:text-[20px] md:text-[18px] lg:text-[14px] xl:text-[12px] absolute top-0"
+                    className="nav-list flex whitespace-nowrap gap-[20px] text-[12px] sm:text-[20px] md:text-[18px] lg:text-[14px] xl:text-[12px] absolute top-0"
                     ref={navListRef}
                     onMouseEnter={pauseAnimation}
                     style={{
@@ -628,7 +628,7 @@ const SectionTwo = () => {
                         <li
                             key={i}
                             className={`nav-item inline-block cursor-pointer ${i % links.length === activeIndex
-                                ? 'text-[12px] sm:text-[26px] md:text-[22px] xl:text-[20px] font-[500] h-[30px] leading-[18px] cursor-pointer'
+                                ? 'text-[14px] sm:text-[26px] md:text-[22px] xl:text-[20px] font-[500] h-[30px] leading-[18px] cursor-pointer'
                                 : 'text-[#ADADAD] h-[30px] leading-[22px] cursor-pointer'
                                 }`}
                         >
@@ -685,12 +685,12 @@ const SectionTwo = () => {
                 </div>
 
                 {/* SECOND COLUMN FOR CONTENT */}
-                <div ref={secondColRef} className="z-[1000] w-[98%] h-[161px] sm:w-[640px] sm:h-[341px] ms-[10px] sm:ms-[10px] md:ms-[30px] flex flex-col">
-                    <h2 className="text-[16px] sm:text-[26px] lg:text-[24px] xl:text-[28px] font-[400] text-[#0A1119] border-l-[3px] border-[#4C4886] ps-[5px]"> {currentContent.title}</h2>
+                <div ref={secondColRef} className="z-[1000] w-[98%] h-[100%] sm:w-[640px] sm:h-[341px] sm:ms-[10px] md:ms-[30px] flex flex-col">
+                    <h2 className="mx-auto sm:mx-0 text-[20px] sm:text-[26px] lg:text-[24px] xl:text-[28px] font-[400] text-[#0A1119] sm:border-l-[3px] sm:border-[#4C4886] sm:ps-[5px]"> {currentContent.title}</h2>
 
-                    <p className="text-[8px] sm:text-[16px] lg:text-[12px] font-[400] pt-[20px] text-[#666666] pe-[14px] md:pe-0">{currentContent.description}</p>
+                    <p className="mx-auto sm:mx-0 ms-[10px] sm:ms-0 text-center sm:text-start text-[14px] sm:text-[16px] lg:text-[12px] font-[400] pt-[20px] text-[#666666] pe-[14px] md:pe-0">{currentContent.description}</p>
 
-                    <span className="text-[8px] sm:text-[16px] lg:text-[12px] font-[700] text-[#4C4886] pt-[10px] sm:pt-[20px]">{currentContent.listTitle}</span>
+                    <span className="text-center mx-auto sm:mx-0 sm:text-start text-[16px] sm:text-[16px] lg:text-[12px] font-[700] text-[#4C4886] pt-[10px] sm:pt-[20px]">{currentContent.listTitle}</span>
 
                     {/* LIST ITEMS FOR DESKTOP */}
                     <ul className="hidden lg:flex w-[780px] lg:w-[580px] xl:w-[640px] md:h-[115px] z-[1000] pt-[30px] md:pt-[60px] lg:pt-[20px] list-disc list-inside items-center justify-between xl:gap-[20px] flex-wrap">
@@ -711,14 +711,14 @@ const SectionTwo = () => {
                     </ul>
 
                     {/* LIST ITEMS FOR MOBILE */}
-                    <ul className="flex lg:hidden sm:w-[620px] ps-[14px] lg:w-[580px] xl:w-[640px] md:h-[115px] z-[1000] pt-[30px] md:pt-[60px] lg:pt-[20px] list-disc list-inside items-center justify-baseline gap-[10px] sm:gap-[60px] xl:gap-[20px] flex-wrap">
+                    <ul className="flex flex-col sm:flex-row lg:hidden w-full sm:w-[620px] ps-[12px] lg:w-[580px] xl:w-[640px] md:h-[115px] z-[1000] pt-[10px] md:pt-[60px] lg:pt-[20px] list-disc list-inside items-center justify-baseline gap-[10px] sm:gap-[60px] xl:gap-[20px] flex-wrap">
                         {Array.isArray(currentContent.listItemsMobile)
                             ? currentContent.listItemsMobile.map((item, i) => (
                                 <li key={i} className="text-[14px] lg:text-[10px] font-[600] text-[#666666]">{item}</li>
                             ))
                             : Object.entries(currentContent.listItemsMobile).map(([colKey, colItems], colIndex) => (
-                                <div key={colIndex} className="lg:w-[174px] md:h-[115px] flex flex-col items-center justify-center lg:gap-[5px] pe-[14px] sm:pe-0">
-                                    <ul className="list-disc text-[7px] sm:text-[16px] md:text-[13px] lg:text-[10px] font-[600] text-[#666666]">
+                                <div key={colIndex} className="lg:w-[174px] md:h-[115px] flex flex-col lg:gap-[5px]">
+                                    <ul className="text-center sm:text-start text-[14px] sm:text-[16px] md:text-[13px] lg:text-[10px] font-[600] text-[#666666]">
                                         {colItems.map((item, i) => (
                                             <li key={i} className="mt-1">{item}</li>
                                         ))}

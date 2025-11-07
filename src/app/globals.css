@@ -297,8 +297,11 @@ body {
   .aboutpage-section-one, .servicepage-section-one, .servicepage-sectionthree, .servicepage-section-four,
   .casestudiespage-sectionone, .careerspage-sectionone, .careerspage-section-four, .servicedetailspage-sectionone , 
   .servicedetailspage-sectiontwo, .fagpage-sectionone, .faqpage-sectionthree, .packagespage-sectionone,
-  .packagespage-sectiontwo{
+  .packagespage-sectiontwo, .homepage-sectionfour{
     width: 1400px;
+  }
+  .homepage-sectionsix {
+    width: 1230px;
   }
   .servicedetailspage-sectionthree {
     width: 1340px;
@@ -359,10 +362,14 @@ body {
 }
 
 @media (max-width: 366px) {
-  .project-one, .project-three, .project-five {
+  /* .project-one, .project-three, .project-five {
     width: 40vw;
   }
   .project-two, .project-four, .project-six {
     width: 50vw;
+  } */
+
+  .homepage-sectiontwo {
+    height: 1000px;
   }
 }

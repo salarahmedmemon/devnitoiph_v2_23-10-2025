@@ -67,7 +67,7 @@ const SectionOne = () => {
 
   // 3. return statment/jsx
   return (
-    <div ref={sectionRef} className="w-full h-[514px] sm:h-[560px] md:h-[640px] xl:h-[725px] pt-[9px] md:pt-[20px] xl:pt-[30px]">
+    <div ref={sectionRef} className="w-full h-[514px] sm:h-[560px] md:h-[640px] xl:h-[725px] pt-[70px] sm:pt-[0px] md:pt-[20px] lg:pt-[80px]">
 
       <div className="w-full h-[514px] sm:h-[560px] md:h-[640px] xl:h-[725px] absolute top-0 left-0 bg-[#141d24]">
         <div className="w-full h-full opacity-65">
@@ -75,7 +75,7 @@ const SectionOne = () => {
         </div>
       </div>
 
-      <Header />
+      {/* <Header /> */}
 
       <div className="w-full casestudiespage-sectionone mx-auto h-full pt-[26px] sm:mt-4 lg:mt-0 xl:pt-0 relative overflow-hidden">
         <img ref={imgRef1}
@@ -86,7 +86,7 @@ const SectionOne = () => {
           src="/img/aboutpage/sectionone/image02.png" loading="lazy"
           className="img-left-bottom hidden lg:block absolute w-[66px] h-[136px] rotate-[28deg] top-[16%] left-[55%]"
         />
-        <div className="w-full h-[80%] sm:h-full md:w-[88%] md:h-full lg:h-[84%] flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-between mx-auto">
+        <div className="w-full h-[80%] sm:h-full md:w-[88%] md:h-full lg:h-[84%] flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-between mx-auto sm:mt-[80px] lg:mt-0">
           <div ref={contentRef} className="text-container w-[100%] h-full md:w-[491px] md:h-[420px] xl:h-full flex flex-col items-center lg:items-start justify-center">
             <button className="w-[125px] h-[36px] sm:w-[140px] md:w-[160px] md:h-[40px] lg:w-[198px] lg:h-[65px] bg-white text-[#4C4886] text-[24px] lg:text-[40px] font-[600] rounded-lg mt-[16px] sm:mt-0 xl:mt-0">
               OUR CASE

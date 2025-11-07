@@ -65,7 +65,7 @@ const SectionOne = () => {
 
   // 3. return statement/jsx
   return (
-    <div ref={sectionRef} className="w-full h-[450px] sm:h-[650px] lg:[844px] xl:h-[731px] pt-[14px] lg:pt-[36px]">
+    <div ref={sectionRef} className="w-full h-[450px] sm:h-[650px] lg:[844px] xl:h-[731px] pt-[70px] sm:pt-[120px] lg:pt-[80px]">
 
       <div className="w-full h-[450px] sm:h-[650px] lg:[844px] xl:h-[731px] absolute top-0 left-0 bg-[#04080B]">
         <div className="w-full h-full opacity-90">
@@ -81,7 +81,7 @@ const SectionOne = () => {
         </div>
       </div>
 
-      <Header />
+      {/* <Header /> */}
       <div className="w-full mx-auto fagpage-sectionone h-full pt-0 relative overflow-hidden">
 
         <img ref={imgRef1}
@@ -120,7 +120,8 @@ const SectionOne = () => {
 
         </div>
 
-        <div className="w-[90%] h-full mx-auto flex justify-between">
+        {/* FOR LARGE DEVICES */}
+        <div className="hidden w-[90%] h-full mx-auto lg:flex justify-between">
           <div ref={contentRef} className="w-full h-full">
             <button className="w-[256px] h-[66px] text-[44px] bg-white text-[#4C4886] font-[600] rounded-[10px] mt-[90px] xl:mt-[140px]">OUR FAQ:S</button>
             <h1 className="text-white font-[600] text-[92px] leading-[100px]">QUESTION</h1>

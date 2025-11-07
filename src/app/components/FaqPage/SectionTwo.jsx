@@ -57,7 +57,7 @@ const SectionTwo = () => {
 
     // 3. return statement/jsx
     return (
-        <div ref={sectionRef} className="w-full h-[1000px] sm:h-[1100px] lg:h-[798px] bg-[#EEEEEE] overflow-hidden relative pt-0 md:pt-[48px]">
+        <div ref={sectionRef} className="w-full h-[1200px] sm:h-[1100px] lg:h-[798px] bg-[#EEEEEE] overflow-hidden relative pt-0 md:pt-[48px]">
             {/* RIGHT CIRCLE */}
             <div className='w-[140px] sm:w-[300px] lg:w-[405.06px] h-[140px] sm:h-[300px] lg:h-[405.06px] rounded-full bg-[#BAD3EF] absolute top-[-20px] right-[-60px] sm:top-[-50px] lg:top-[-140px] sm:right-[-150px] lg:right-[-200px] xl:left-[85%] p-[3px]'>
                 <div className='w-full h-full rounded-full bg-gradient-to-b from-[#E2E8EE] to-[#E9EBEE]'></div>
@@ -80,18 +80,17 @@ const SectionTwo = () => {
 
             {/* CONTENT */}
             <div ref={contentRef} className="lg:hidden w-[94%] h-full mx-auto flex flex-col items-center sm:mt-[50px]">
-                {/* <h1 className="w-[230px] h-[40px] border-l-[3px] border-[#4C4886] text-[28px] sm:text-[32px] font-[600] text-[#4C4886] ps-[6px]">Technical Faqs:</h1> */}
-                <h1 className="border-l-[3px] border-[#4C4886] text-[28px] sm:text-[32px] font-[600] text-[#4C4886] ps-[6px]">Technical Faqs:</h1>
-                <p className="text-[12px] sm:text-[20px] font-[400] pt-[26px] text-center text-[#AAAAAA]">We are an IT outsourcing company in Dubai offering an extended range of services including End User Support,
+                <h1 className="sm:border-l-[3px] border-[#4C4886] text-[26px] sm:text-[32px] font-[600] text-[#4C4886] ps-[6px]">Technical Faqs:</h1>
+                <p className="text-[16px] sm:text-[20px] font-[400] pt-[26px] text-center text-[#AAAAAA]">We are an IT outsourcing company in Dubai offering an extended range of services including End User Support,
                     Application Investment, Cloud &amp; Infrastucture expertise. Our on-demand IT Staff Outsourcing solution in Dubai
                     specializes exclusively for digital transformation with Custom Software Development, Software Testing &amp;
                     QA, Cloud Computing, Mobile &amp; Web Development, Maintenance &amp; Support, Blockchain Consulting Data Science. 
                 </p>
-                <span className="text-[12px] text-center sm:text-[18px] text-[#4C4886] font-[700] mt-[24px]"> Cost-effective and Comprehensive IT Outsourcing Services:</span>
+                <span className="text-[16px] sm:text-[12px] text-center sm:text-[18px] text-[#4C4886] font-[700] mt-[24px]"> Cost-effective and Comprehensive IT Outsourcing Services:</span>
                 <div className="w-[242px] sm:w-[400px] mt-[24px] flex flex-col">
-                    <div className="w-full h-[134px] text-center p-[10px] text-[12px]">
+                    <div className="w-full h-[134px] text-center p-[10px] sm:text-[12px]">
                         <h3 className="text-[#4C4886] font-[600] text-[16px]">Manage</h3>
-                        <ul>
+                        <ul className="text-[14px]">
                             <li>Essential IT Support</li>
                             <li>Basic Security &amp; Monitoring</li>
                             <li>Limited Cloud Storage</li>
@@ -99,9 +98,9 @@ const SectionTwo = () => {
                         </ul>
                     </div>
 
-                    <div className="w-full h-[134px] text-center p-[10px] text-[12px]">
+                    <div className="w-full h-[134px] text-center p-[10px] sm:text-[12px]">
                         <h3 className="text-[#4C4886] font-[600] text-[16px]">Build</h3>
-                        <ul>
+                        <ul className="text-[14px]">
                             <li>Advanced IT Support &am; Maintenance</li>
                             <li>Enhanced Security &amp; Threat Detection</li>
                             <li>Increased Cloud Storage</li>
@@ -109,9 +108,9 @@ const SectionTwo = () => {
                         </ul>
                     </div>
 
-                    <div className="w-full h-[134px] text-center p-[10px] text-[12px]">
+                    <div className="w-full h-[134px] text-center p-[10px] sm:text-[12px] mt-[40px] sm:mt-0">
                         <h3 className="text-[#4C4886] font-[600] text-[16px]">General</h3>
-                        <ul>
+                        <ul className="text-[14px]">
                             <li>Fully Managed IT Services</li>
                             <li>Enterprise Level Security &amp; Backups</li>
                             <li>Unlimited Cloud Storage &amp; Backups</li>

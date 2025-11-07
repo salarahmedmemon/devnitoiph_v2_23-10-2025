@@ -68,7 +68,7 @@ const SectionOne = () => {
 
   // 3. return statement/jsx
   return (
-    <div ref={sectionRef} className="w-full h-[450px] sm:h-[650px] lg:[844px] xl:h-[731px] pt-[14px] lg:pt-[36px]">
+    <div ref={sectionRef} className="w-full h-[450px] sm:h-[650px] lg:[844px] xl:h-[731px] pt-[40px] sm:pt-[120px] md:pt-[20px] lg:pt-[80px]">
 
       <div className="w-full h-[450px] sm:h-[650px] lg:[844px] xl:h-[731px] absolute top-0 left-0 bg-[#04080B]">
         <div className="w-full h-full opacity-70">
@@ -83,7 +83,7 @@ const SectionOne = () => {
         </div>
       </div>
 
-      <Header />
+      {/* <Header /> */}
       <div className="w-full packagespage-sectionone mx-auto h-full pt-0 relative overflow-hidden">
 
         <img ref={imgRef1}
@@ -115,16 +115,16 @@ const SectionOne = () => {
             </button>
           </div>
 
-          <div className="main-img-container w-[200px] h-[212px] sm:w-[44vw] sm:h-full md:w-[350px] md:h-[100px] flex items-center justify-center">
+          <div className="main-img-container w-[200px] h-[240px] sm:w-[44vw] sm:h-full md:w-[350px] md:h-[300px] flex items-center justify-center">
             <img
               src="/img/packagespage/image01.png"
-              className="pt-[30px] sm:pt-10 md:pt-40"
+              className="pt-[100px] sm:pt-10 md:pt-40"
             />
           </div>
 
         </div>
 
-        <div className="w-[90%] h-full mx-auto flex">
+        <div className="hidden w-[90%] h-full mx-auto lg:flex">
           <div ref={contentRef} className="w-full h-full">
             <button className="w-[219px] h-[64px] text-[40px] bg-white text-[#4C4886] font-[600] rounded-[10px] mt-[108px]">Flexible IT</button>
             <h1 className="text-white font-[600] text-[90px] leading-[100px]">SOLUTION</h1>

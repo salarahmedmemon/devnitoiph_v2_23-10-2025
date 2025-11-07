@@ -111,7 +111,7 @@ const SectionThree = () => {
 
 
     return (
-        <div ref={containerRef} className="projects w-full h-[465px] sm:h-[790px] lg:h-[980px] relative bg-[#0A131C] pt-[15px] sm:pt-[20px] lg:pt-[58px] overflow-hidden">
+        <div ref={containerRef} className="projects w-full h-[840px] sm:h-[790px] lg:h-[980px] relative bg-[#0A131C] pt-[15px] sm:pt-[20px] lg:pt-[58px] overflow-hidden">
             {/* Background image (sharp outside, blurred inside glass) */}
             {/* RIGHT LOGO */}
             <img src="/img/aboutpage/sectionthree/rightlogo.png" className='right-image-logo block w-[60px] sm:w-[80px] md:w-[100px] lg:w-[144px] absolute top-[14px] lg:top-[40px] left-[85%] rotate-50' />
@@ -120,7 +120,7 @@ const SectionThree = () => {
 
 
             {/* Main glass box */}
-            <div className="main-glass w-[96%] md:w-[88%] mx-auto h-[425px] sm:h-[740px] lg:h-[800px] xl:h-[800px] rounded-[5px] xl:rounded-[26px] border-2 xl:border border-[#4279E8]/40
+            <div className="main-glass w-[96%] md:w-[88%] mx-auto h-[810px] sm:h-[740px] lg:h-[800px] xl:h-[800px] rounded-[5px] xl:rounded-[26px] border-2 xl:border border-[#4279E8]/40
                             backdrop-blur-xl opacity-96
                             shadow-[0_8px_26px_rgba(0,0,0,0.6)]
                             relative overflow-hidden">
@@ -268,7 +268,7 @@ const SectionThree = () => {
                 {/* PROJECTS SHOWCASE FOR MOBILE */}
                 <div className="flex justify-center lg:hidden w-[84.5%] mx-auto mt-[16px] sm:mt-0 gap-[2px] sm:gap-[10px] flex-wrap">
                     {/* PROJECT ONE */}
-                    <div className="project-one w-[170px] h-[119px] sm:w-[33%] sm:h-[280px] p-[2px] gradient-border">
+                    <div className="project-one w-[80%] h-[119px] sm:w-[33%] sm:h-[280px] p-[2px] gradient-border">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projectone.png')] bg-cover bg-center relative">
                             <div
                                 ref={(el) => (circleRefsMobile.current[0] = el)}
@@ -288,7 +288,7 @@ const SectionThree = () => {
                         </div>
                     </div>
                     {/* PROJECT TWO */}
-                    <div className="project-two w-[168px] h-[66px] sm:w-[64%] sm:h-[160px] p-[2px] gradient-border group overflow-hidden">
+                    <div className="project-two w-[80%] h-[119px] sm:w-[64%] sm:h-[160px] p-[2px] gradient-border group overflow-hidden">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projecttwo.jpg')] bg-cover bg-center relative">
                             <div
                                 ref={(el) => (circleRefsMobile.current[1] = el)}
@@ -312,7 +312,7 @@ const SectionThree = () => {
                         </div>
                     </div>
                     {/* PROJECT THREE */}
-                    <div className="project-three w-[168.99px] h-[96.51px] sm:w-[33%] sm:h-[120px] mt-[10px] sm:mt-0 p-[2px] gradient-border group overflow-hidden">
+                    <div className="project-three w-[80%] h-[119px] sm:w-[33%] sm:h-[120px] p-[2px] gradient-border group overflow-hidden">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projectfour.png')] bg-cover bg-center relative">
                             <div
                                 ref={(el) => (circleRefsMobile.current[2] = el)}
@@ -333,7 +333,7 @@ const SectionThree = () => {
                         </div>
                     </div>
                     {/* PROJECT FOUR */}
-                    <div className="project-four w-[169px] h-[121px] sm:w-[64%] sm:h-[240px] mt-[-44px] sm:mt-[-120px] p-[2px] gradient-border group overflow-hidden">
+                    <div className="project-four w-[80%] h-[119px] sm:w-[64%] sm:h-[240px] sm:mt-[-120px] p-[2px] gradient-border group overflow-hidden">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projectthree.jpg')] bg-cover bg-center relative">
                             <div
                                 ref={(el) => (circleRefsMobile.current[3] = el)}
@@ -354,7 +354,7 @@ const SectionThree = () => {
                         </div>
                     </div>
                     {/* PROJECT FIVE */}
-                    <div className="project-five w-[170px] h-[110px] sm:w-[49%] sm:h-[185px] mt-[10px] sm:mt-0 p-[2px] gradient-border group overflow-hidden">
+                    <div className="project-five w-[80%] h-[119px] sm:w-[49%] sm:h-[185px] sm:mt-0 p-[2px] gradient-border group overflow-hidden">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projectsix.png')] bg-cover bg-center relative">
                             <div
                                 ref={(el) => (circleRefsMobile.current[4] = el)}
@@ -375,7 +375,7 @@ const SectionThree = () => {
                         </div>
                     </div>
                     {/* PROJECT SIX */}
-                    <div className="project-six w-[166px] h-[141px] sm:w-[48%] sm:h-[185px] mt-[-21px] sm:mt-0 p-[2px] gradient-border group overflow-hidden">
+                    <div className="project-six w-[80%] h-[119px] sm:w-[48%] sm:h-[185px] sm:mt-0 p-[2px] gradient-border group overflow-hidden">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projectfive.jpg')] bg-cover bg-center relative">
                             <div
                                 ref={(el) => (circleRefsMobile.current[5] = el)}

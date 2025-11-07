@@ -60,7 +60,7 @@ const SectionOne = () => {
 
   // 3. return statement/jsx
   return (
-    <div ref={sectionRef} className="w-full h-[450px] sm:h-[650px] lg:[844px] xl:h-[731px] pt-[14px] lg:pt-[36px]">
+    <div ref={sectionRef} className="w-full h-[450px] sm:h-[650px] lg:[844px] xl:h-[731px] pt-[50px] sm:pt-[140px] md:pt-[34px] lg:pt-[80px]">
 
       <div className="hidden md:block w-full h-[450px] sm:h-[650px] lg:[844px] xl:h-[731px] absolute top-0 left-0 bg-[#04080B]">
         <div className="w-full h-full opacity-24">
@@ -74,7 +74,7 @@ const SectionOne = () => {
         </div>
       </div>
 
-      <Header />
+      {/* <Header /> */}
       <div className="w-full servicepage-section-one mx-auto h-full pt-0 relative overflow-hidden">
 
         <img ref={imgRef1}
@@ -104,10 +104,10 @@ const SectionOne = () => {
             </button>
           </div>
 
-          <div className="main-img-container w-[234px] h-[212px] sm:w-[44vw] sm:h-full md:w-[350px] md:h-[100px] flex items-center justify-center">
+          <div className="main-img-container w-[234px] h-[240px] sm:w-[44vw] sm:h-full md:w-[350px] md:h-[200px] flex items-center justify-center">
             <img
               src="/img/servicepage/sectionone/image01.png"
-              className="pt-[30px] sm:pt-10 md:pt-40" loading="lazy"
+              className="pt-[54px] sm:pt-10 md:pt-40" loading="lazy"
             />
           </div>
 

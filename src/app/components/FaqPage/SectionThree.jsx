@@ -98,7 +98,7 @@ const SectionThree = () => {
 
       {/* Category buttons */}
       <div ref={rightRef} className="mx-auto w-fit mt-[60px] text-[16px] flex gap-[20px] text-[#AAAAAA]">
-        <button className="bg-transparent w-[70px] sm:w-[120px] h-[30px] border-[2px] sm:px-[20px] rounded-[5px] sm:rounded-[10px] border-[#4C4886] text-[#4C4886] font-[500]">General</button>
+        <button className="bg-transparent w-[70px] sm:w-[120px] h-[30px] sm:border-[2px] sm:px-[20px] rounded-[5px] sm:rounded-[10px] border-[#4C4886] text-[#4C4886] font-[500]">General</button>
         <button>Build</button>
         <button>Promote</button>
         <button>Integration</button>

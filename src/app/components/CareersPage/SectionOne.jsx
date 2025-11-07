@@ -96,13 +96,13 @@ const SectionOne = () => {
 
   // 3. return statment/jsx
   return (
-    <div ref={sectionRef} className="w-full h-[514px] sm:h-[560px] md:h-[640px] xl:h-[725px] pt-[9px] md:pt-[20px] xl:pt-[30px]">
+    <div ref={sectionRef} className="w-full h-[514px] sm:h-[560px] md:h-[640px] xl:h-[725px] pt-[50px] sm:pt-[70px] md:pt-[40px] lg:pt-[80px]">
       {/* LARGE SCREEN BACKGROUND IMAGE */}
       <div className="w-full h-[514px] sm:h-[560px] md:h-[640px] xl:h-[725px] absolute top-0 left-0">
         <img src="/img/careerspage/bgimage.png" alt="background image" className="w-full h-full object-cover" loading="lazy" />
       </div>
 
-      <Header />
+      {/* <Header /> */}
       <div className="w-full careerspage-sectionone mx-auto h-full pt-[26px] sm:pt-[56px] md:pt-[90px] relative overflow-hidden">
         <img ref={imgRef1}
           src="/img/aboutpage/sectionone/image01.png" loading="lazy"
@@ -131,10 +131,10 @@ const SectionOne = () => {
               <span className="absolute left-1/2 -bottom-[2px] h-[3px] w-0 group-hover:w-full transition-all duration-200 ease-out -translate-x-1/2 bg-gradient-to-r from-[#1CDE63] via-[#FA1AC2] to-[#1AE4FA]"></span>
             </button>
           </div>
-          <div ref={rightRef} className="main-img-container w-[196px] h-[201px] sm:w-[400px] sm:h-[100px]  xl:w-[500px]  xl:h-[200px]   flex items-center justify-center">
+          <div ref={rightRef} className="main-img-container w-[196px] h-[230px] sm:w-[400px] sm:h-[200px]  xl:w-[500px]  xl:h-[200px]   flex items-center justify-center">
             <img
               src="/img/careerspage/image02.png" loading="lazy"
-              className="pt-[30px] sm:pt-[80px] md:pt-0  w-[95%] sm:w-[65%]  lg:w-[100%]"
+              className="pt-[55px] sm:pt-[0px] md:pt-0  w-[95%] sm:w-[65%]  lg:w-[100%]"
             />
           </div>
         </div>

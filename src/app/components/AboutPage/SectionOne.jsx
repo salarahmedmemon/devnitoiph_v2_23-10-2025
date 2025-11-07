@@ -61,13 +61,13 @@ const SectionOne = () => {
 
     // 3. return statement/jsx
     return (
-        <div ref={sectionRef} className="w-full h-[472px] sm:h-[550px] md:h-[734px] pt-[9px] xl:pt-[43.34px] overflow-hidden">
+        <div ref={sectionRef} className="w-full h-[472px] sm:h-[550px] md:h-[734px] pt-[50px] sm:pt-[85px] overflow-hidden">
             {/* LARGE SCREEN BACKGROUND IMAGE */}
             <div className="w-full h-[472px] sm:h-[550px] md:h-[734px] absolute top-0 left-0 blur-[4px]">
                 <img src="/img/aboutpage/image.svg" alt="background image" className="w-full h-full object-cover" loading="lazy"/>
             </div>
 
-            <Header />
+            {/* <Header /> */}
 
             {/* FOR SMALL SCREENS */}
             <div className="xl:hidden w-full h-full relative z-10">

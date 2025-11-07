@@ -3,6 +3,7 @@ import SectionFour from "../components/ServiceDetailPage/SectionFour";
 import SectionOne from "../components/ServiceDetailPage/SectionOne";
 import SectionThree from "../components/ServiceDetailPage/SectionThree";
 import SectionTwo from "../components/ServiceDetailPage/SectionTwo";
+import UpdatedHeader from "../components/UpdatedHeader.jsx";
 
 
 const Page = () => {
@@ -13,6 +14,7 @@ const Page = () => {
     // 3. return statement/jsx
     return (
         <div className="overflow-hidden">
+            <UpdatedHeader />
             <SectionOne />
             <SectionTwo />
             <SectionThree />

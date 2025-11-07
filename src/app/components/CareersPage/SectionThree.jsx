@@ -73,7 +73,7 @@ const SectionThree = () => {
                 </div>
 
 
-                <div className="relative w-full mt-4 sm:mt-6 md:mt-0 p-0 md:p-6 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="relative w-full mt-4 sm:mt-6 md:mt-0 p-0 md:p-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
                     <img
                         src="/img/aboutpage/sectionthree/rightLogo.png"
                         className="hidden md:block absolute top-[-18%] lg:top-[-200px] right-[-60px] lg:right-[-50px] xl:right-[-30px]" loading="lazy"
@@ -109,17 +109,17 @@ const SectionThree = () => {
                                         <span className="flex items-center justify-between gap-[3px] text-white">
                                             <img src="/img/careerspage/author.png" className="w-[3vw] lg:w-[20px]" loading="lazy" />
                                             <span className="text-[8px] sm:text-[12px] md:text-[16px] lg:text-[12px] xl:text-[14px]">|</span>
-                                            <span className="text-[8px] sm:text-[12px] md:text-[16px] lg:text-[12px] xl:text-[14px]">Author</span>
+                                            <span className="text-[10px] sm:text-[12px] md:text-[16px] lg:text-[12px] xl:text-[14px]">Author</span>
                                         </span>
                                         <span className="flex items-center justify-between gap-[3px] text-white">
                                             <img src="/img/careerspage/image06.png" className="w-[3vw] lg:w-[20px]" loading="lazy" />
                                             <span className="text-[8px] sm:text-[12px] md:text-[16px] lg:text-[12px] xl:text-[14px]">|</span>
-                                            <span className="text-[8px] sm:text-[12px] md:text-[16px] lg:text-[12px] xl:text-[14px]">1 Jan 2025</span>
+                                            <span className="text-[10px] sm:text-[12px] md:text-[16px] lg:text-[12px] xl:text-[14px]">1 Jan 2025</span>
                                         </span>
                                     </div>
-                                    <h4 className="w-[100%] xl:w-[200px] font-semibold text-[10px] sm:text-[14px] md:text-[18px] lg:text-[16px] text-white mt-[10px] sm:mt-[17px]">Few Words "Can Refer To A Phrase"</h4>
-                                    <p className="text-[#928D9B] text-[8px] sm:text-[12px] md:text-[16px] lg:text-[14px] mt-[6px] sm:mt-[14px]">Lorem ipsum is simply dummy text</p>
-                                    <button className="bg-white text-[#755E9D] w-[58px] h-[15px] sm:w-[70px] sm:h-[22px] rounded-[3px] text-[8px] sm:text-[12px] mt-[14px]">Read More</button>
+                                    <h4 className="w-[100%] xl:w-[200px] font-semibold text-[14px] md:text-[18px] lg:text-[16px] text-white mt-[10px] sm:mt-[17px]">Few Words "Can Refer To A Phrase"</h4>
+                                    <p className="text-[#928D9B] text-[12px] md:text-[16px] lg:text-[14px] mt-[6px] sm:mt-[14px]">Lorem ipsum is simply dummy text</p>
+                                    <button className="bg-white text-[#755E9D] w-[67px] h-[24px] sm:w-[70px] sm:h-[22px] rounded-[3px] text-[12px] mt-[14px]">Read More</button>
                                 </div>
                             </div>
                         </div>

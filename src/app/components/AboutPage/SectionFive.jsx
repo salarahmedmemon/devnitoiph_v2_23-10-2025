@@ -45,7 +45,7 @@ const SectionFive = () => {
     // }, []);
 
     return (
-        <div className="w-full h-[802px] bg-[#EEEEEE] relative overflow-hidden">
+        <div className="w-full sm:h-[802px] bg-[#EEEEEE] relative overflow-hidden">
             {/* //? RIGHT CIRCLE */}
             <div className='w-[180px] sm:w-[300px] lg:w-[405.06px] h-[180px] sm:h-[300px] lg:h-[405.06px] rounded-full bg-[#BAD3EF] absolute top-[-20px] right-[-60px] sm:top-[-50px] lg:top-[16px] xl:top-[-14px] sm:right-[-150px] lg:right-[-200px] xl:right-[-6vw] p-[3px]'>
                 <div className='w-full h-full rounded-full bg-gradient-to-b from-[#E2E8EE] to-[#E9EBEE]'></div>
@@ -73,24 +73,24 @@ const SectionFive = () => {
                 className="form w-full md:w-[80%] lg:w-[900px] mx-auto flex flex-wrap gap-8 p-4 mt-[40px] lg:mt-[100px] relative z-[100]"
             >
                 <input
-                    className="w-full md:w-[830px] lg:w-[400px] h-[54px] lg:h-[64px] rounded-lg ps-4 border-[2px] text-[22px] border-[#AAAAAA] text-[#AAAAAA]"
+                    className="w-full md:w-[830px] lg:w-[400px] h-[46px] sm:h-[54px] lg:h-[64px] rounded-lg ps-4 border-[2px] text-[22px] border-[#AAAAAA] text-[#AAAAAA]"
                     placeholder="Enter Your Name:"
                     type="text"
                 />
                 <input
-                    className="w-full md:w-[830px] lg:w-[400px] h-[54px] lg:h-[64px] rounded-lg ps-4 border-[2px] text-[22px] border-[#AAAAAA] text-[#AAAAAA]"
+                    className="w-full md:w-[830px] lg:w-[400px] h-[46px] sm:h-[54px] lg:h-[64px] rounded-lg ps-4 border-[2px] text-[22px] border-[#AAAAAA] text-[#AAAAAA]"
                     placeholder="Enter Your Email:"
                     type="text"
                 />
 
                 <input
-                    className="z-10 w-full md:w-[830px] lg:w-[400px] h-[54px] lg:h-[64px] rounded-lg ps-4 border-[2px] text-[22px] border-[#AAAAAA] text-[#AAAAAA]"
+                    className="z-10 w-full md:w-[830px] lg:w-[400px] h-[46px] sm:h-[54px] lg:h-[64px] rounded-lg ps-4 border-[2px] text-[22px] border-[#AAAAAA] text-[#AAAAAA]"
                     placeholder="Enter Your Phone No:"
                     type="text"
                 />
                 
                     <input
-                        className="w-full md:w-[830px] lg:w-[400px] h-[54px] lg:h-[64px] rounded-lg ps-4 border-[2px] text-[22px] border-[#AAAAAA] text-[#AAAAAA]"
+                        className="w-full md:w-[830px] lg:w-[400px] h-[46px] sm:h-[54px] lg:h-[64px] rounded-lg ps-4 border-[2px] text-[22px] border-[#AAAAAA] text-[#AAAAAA]"
                         placeholder="Enter Your Subject:"
                         type="text"
                     />

@@ -57,20 +57,20 @@ const SectionTwo = () => {
 
     // 3. return statement/jsx
     return (
-        <div ref={sectionRef} className="w-full h-[1178px] sm:h-[1400px] lg:h-[798px] bg-[#EEEEEE] overflow-hidden relative pt-[48px]">
+        <div ref={sectionRef} className="w-full h-[1240px] sm:h-[1400px] lg:h-[798px] bg-[#EEEEEE] overflow-hidden relative pt-[48px]">
             {/* RIGHT CIRCLE */}
             <div className='w-[140px] sm:w-[300px] lg:w-[405.06px] h-[140px] sm:h-[300px] lg:h-[405.06px] rounded-full bg-[#BAD3EF] absolute top-[-20px] right-[-60px] sm:top-[-50px] lg:top-[-140px] sm:right-[-150px] lg:right-[-200px] xl:left-[85%] p-[3px]'>
                 <div className='w-full h-full rounded-full bg-gradient-to-b from-[#E2E8EE] to-[#E9EBEE]'></div>
             </div>
 
             {/* HEADINGS */}
-            <div ref={headingRef} className="w-[240px] sm:w-[303px] h-[100.77px] border-t-[3px] lg:border-t-[5px] border-[#4C4886] absolute left-1/2 -translate-x-1/2">
-                <h1 className="text-[32px] sm:text-[38px] lg:text-[44px] font-[500] text-center text-[#333333]">Our Careers</h1>
-                <h2 className="text-[32px] sm:text-[38px] lg:text-[44px] font-[600] text-[#4C4886] text-center">Blog</h2>
+            <div ref={headingRef} className="w-[190px] sm:w-[303px] h-[100.77px] border-t-[3px] lg:border-t-[5px] border-[#4C4886] absolute left-1/2 -translate-x-1/2">
+                <h1 className="text-[28px] sm:text-[38px] lg:text-[44px] font-[500] text-center text-[#333333]">Our Careers</h1>
+                <h2 className="text-[28px] sm:text-[38px] lg:text-[44px] font-[600] text-[#4C4886] text-center">Blog</h2>
             </div>
 
             {/* IMAGE */}
-            <div ref={imageRef} className="lg:hidden w-[90%] h-[310px] md:w-[40%] mx-auto mt-[120px]">
+            <div ref={imageRef} className="lg:hidden w-[90%] h-[310px] md:w-[40%] mx-auto mt-[80px] sm:mt-[120px]">
                 <div className="w-full h-full relative ms-[4%]">
                     {/* <Image
                         src="/img/aboutpage/image03.png"
@@ -85,25 +85,24 @@ const SectionTwo = () => {
             </div>
 
             {/* CONTENT */}
-            <div ref={contentRef} className="lg:hidden w-[94%] h-[629px] mx-auto flex flex-col items-center sm:mt-[50px]">
-                {/* <h1 className="w-[190px] sm:w-[202px] h-[40px] border-l-[3px] border-[#4C4886] text-[28px] sm:text-[32px] font-[600] text-[#4C4886] ps-[6px]">Our Blog</h1> */}
-                <h1 className="text-[28px] sm:text-[32px] font-[600] text-[#4C4886] border-l-[3px] border-[#4C4886] ps-[6px] mt-[10px]">Our Blog</h1>
+            <div ref={contentRef} className="lg:hidden w-[94%] sm:h-[629px] mx-auto flex flex-col items-center sm:mt-[50px]">
+                <h1 className="text-[24px] sm:text-[32px] font-[600] text-[#4C4886] sm:border-l-[3px] border-[#4C4886] sm:ps-[6px] mt-[10px]">Our Blog</h1>
                 <p className="text-[16px] sm:text-[20px] font-[400] pt-[26px] text-center text-[#AAAAAA]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stancenturies,</p>
-                <span className="text-[12px] text-center sm:text-[18px] text-[#4C4886] font-[700] mt-[24px]"> Cost-effective and Comprehensive IT Outsourcing Services:</span>
-                <div className="w-[242px] sm:w-[400px] mt-[24px] flex flex-col">
+                <span className="text-[16px] text-center sm:text-[18px] text-[#4C4886] font-[700] mt-[24px]"> Cost-effective and Comprehensive IT Outsourcing Services:</span>
+                <div className="w-[242px] sm:w-[400px] mt-[24px] flex flex-col gap-[20px]">
                     <div className="w-full h-[126px] sm:h-[200px] text-center p-[10px]">
                         <h3 className="text-[16px] sm:text-[24px] font-[500] text-[#4C4886]">Alsthetic</h3>
-                        <p className="text-[12px] sm:text-[16px] font-[400] text-[#AAAAAA] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. </p>
+                        <p className="text-[14px] sm:text-[16px] font-[400] text-[#AAAAAA] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. </p>
                     </div>
 
                     <div className="w-full h-[126px] sm:h-[200px] text-center p-[10px]">
                         <h3 className="text-[16px] sm:text-[24px]  font-[500] text-[#4C4886]">MenaJobs.ai</h3>
-                        <p className="text-[12px] sm:text-[16px]  font-[400] text-[#AAAAAA] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. Our team ensures excellence in every aspect of our services.</p>
+                        <p className="text-[14px] sm:text-[16px]  font-[400] text-[#AAAAAA] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. Our team ensures excellence in every aspect of our services.</p>
                     </div>
 
-                    <div className="w-full h-[126px] sm:h-[200px] text-center p-[10px] mt-[30px] sm:mt-0">
+                    <div className="w-full h-[126px] sm:h-[200px] text-center p-[10px] mt-[40px]">
                         <h3 className="text-[16px] sm:text-[24px]  font-[500] text-[#4C4886]">APK Hub</h3>
-                        <p className="text-[12px] sm:text-[16px]  font-[400] text-[#AAAAAA] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. Our team ensures excellence in every aspect of our services.</p>
+                        <p className="text-[14px] sm:text-[16px]  font-[400] text-[#AAAAAA] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. Our team ensures excellence in every aspect of our services.</p>
                     </div>
                 </div>
             </div>

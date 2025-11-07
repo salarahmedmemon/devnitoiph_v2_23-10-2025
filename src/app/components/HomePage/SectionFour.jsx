@@ -83,7 +83,7 @@ export const SectionFour = () => {
             </div>
 
             {/* IMAGES */}
-            <div className="w-[82%] mx-auto overflow-visible">
+            <div className="w-[82%] homepage-sectionfour mx-auto overflow-visible">
 
                 <div className='overflow-x-hidden'>
                     <div className='w-full h-[200px] sm:min-h-[290px] sm:mt-[50px] flex items-center blur-edge'>

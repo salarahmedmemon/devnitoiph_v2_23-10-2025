@@ -1,31 +1,29 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const ServiceBox = ({ fname, sname, pos, image, isActive, onHover }) => {
+const ServiceBox = ({ fname, sname, pos, image, isActive, onHover, isCarousel = false }) => {
     return (
         <div
-            className={`w-[92px] h-[86px] lg:w-[200px] lg:h-[134px] absolute ${pos} flex flex-col items-center justify-between cursor-pointer`}
+            className={`${isCarousel ? "relative" : `absolute ${pos}`
+                } w-[92px] h-[86px] lg:w-[200px] lg:h-[134px] flex flex-col items-center justify-between cursor-pointer`}
             onMouseEnter={onHover}
         >
             {/* Outer Box */}
             <div
                 className={`w-[47px] h-[44px] lg:w-[70px] lg:h-[70px] rounded-[10px] border flex items-center justify-center transition-all duration-300
-                ${
-                    isActive
+                ${isActive
                         ? "border-[#75BAFF] shadow-[0_0_4px_0_#0080FF]"
                         : "border-[#75baff9b] opacity-60"
-                }`}
+                    }`}
             >
-                {/* Inner Circle */}
                 <div
                     className={`w-[16px] h-[16px] lg:w-[27px] lg:h-[27px] rounded-full transition-all duration-300
-                    ${
-                        isActive
+                    ${isActive
                             ? "bg-[#75BAFF] shadow-[0_0_4px_0_#0080FF]"
                             : "bg-[#75baff9b] opacity-60"
-                    }`}
+                        }`}
                 ></div>
             </div>
 
@@ -41,11 +39,71 @@ const ServiceBox = ({ fname, sname, pos, image, isActive, onHover }) => {
     );
 };
 
+
 const SectionThree = () => {
+    const serviceList = [
+        {
+            fname: "Mobile",
+            sname: "App Development",
+            key: "Mobile App Development",
+            img: "/img/servicepage/sectionthree/mobileapp.png",
+        },
+        {
+            fname: "IT",
+            sname: "Resource",
+            key: "IT Resource",
+            img: "/img/servicepage/sectionthree/itresource.png",
+        },
+        {
+            fname: "E-Commerce",
+            sname: "Web Development",
+            key: "E-Commerce Web Development",
+            img: "/img/servicepage/sectionthree/ecommerce.png",
+        },
+        {
+            fname: "UI/UX",
+            sname: "Design",
+            key: "UI/UX Design",
+            img: "/img/servicepage/sectionthree/uiux.png",
+        },
+        {
+            fname: "Emerging",
+            sname: "Tech Development",
+            key: "Emerging Tech Development",
+            img: "/img/servicepage/sectionthree/emerging.png",
+        },
+        {
+            fname: "Digital Branding &",
+            sname: "Communication",
+            key: "Digital Branding & Communication",
+            img: "/img/servicepage/sectionthree/dbc.png",
+        },
+        {
+            fname: "Website",
+            sname: "Development",
+            key: "Website Development",
+            img: "/img/servicepage/sectionthree/webdevelopment.png",
+        },
+        {
+            fname: "Video",
+            sname: "Animation",
+            key: "Video Animation",
+            img: "/img/servicepage/sectionthree/video.png",
+        },
+        {
+            fname: "Digital",
+            sname: "Branding",
+            key: "Digital Branding",
+            img: "/img/servicepage/sectionthree/marketing.png",
+        },
+    ];
     const [activeImage, setActiveImage] = useState(
         "/img/servicepage/sectionthree/mobileapp.png"
     );
     const [activeBox, setActiveBox] = useState("Mobile App Development");
+    const [activeIndex, setActiveIndex] = useState(0);
+    const activeService = serviceList[activeIndex];
+    const carouselRef = useRef(null);
 
     const serviceImages = {
         "Mobile App Development": "/img/servicepage/sectionthree/mobileapp.png",
@@ -59,19 +117,39 @@ const SectionThree = () => {
         "Digital Branding": "/img/servicepage/sectionthree/marketing.png",
     };
 
+    const handleDragEnd = (event, info) => {
+        const offset = info.offset.x;
+        const velocity = info.velocity.x;
+
+        if (offset < -50 || velocity < -500) {
+            // Swipe Left → Next
+            setActiveIndex((prev) => (prev + 1) % serviceList.length);
+        } else if (offset > 50 || velocity > 500) {
+            // Swipe Right → Prev
+            setActiveIndex((prev) =>
+                prev === 0 ? serviceList.length - 1 : prev - 1
+            );
+        }
+    };
+
+
+
+
+
+
     return (
         <div className="w-full h-[810px] lg:h-[1921px] flex items-center justify-center bg-[#0A131C] overflow-hidden">
             <div className="w-[80%] servicepage-sectionthree mx-auto h-[50%] relative">
                 {/* WHITE SHADOW BEHIND IMAGE */}
-                <div className="w-[220px] h-[476px] lg:w-[340px] lg:h-[660px] absolute bottom-[-80px] lg:bottom-[-10px] left-1/2 -translate-x-1/2 z-5 rounded-[40px] shadow-[0_0_80px_30px_rgba(255,255,255,0.35)]"></div>
+                <div className="w-[220px] h-[476px] lg:w-[340px] lg:h-[660px] absolute bottom-[60px] sm:bottom-[-80px] lg:bottom-[-10px] left-1/2 -translate-x-1/2 z-5 rounded-[40px] shadow-[0_0_80px_30px_rgba(255,255,255,0.35)]"></div>
 
                 {/* IMAGE FRAME */}
-                <div className="w-[210px] h-[476px] lg:w-[340px] lg:h-[660px] absolute bottom-[-80px] lg:bottom-0 left-1/2 -translate-x-1/2 z-10 overflow-hidden rounded-[30px]">
+                <div className="w-[210px] h-[476px] lg:w-[340px] lg:h-[660px] absolute bottom-[60px] sm:bottom-[-80px] lg:bottom-0 left-1/2 -translate-x-1/2 z-10 overflow-hidden rounded-[30px]">
                     <AnimatePresence mode="wait">
                         <motion.img
-                            key={activeImage}
-                            src={activeImage}
-                            alt="iphone image"
+                            key={activeService.img}
+                            src={activeService.img}
+                            alt={activeService.key}
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={{ opacity: 1, scale: 1 }}
                             exit={{ opacity: 0, scale: 1.05 }}
@@ -83,119 +161,172 @@ const SectionThree = () => {
                 </div>
 
                 {/* CIRCLE BACKGROUND */}
-                <div
-                    className="w-[481px] h-[481px] lg:w-[783px] lg:h-[783px] rounded-full absolute bottom-[-80%] lg:bottom-[-60%] 
-                    left-1/2 -translate-x-1/2 opacity-[30%] bg-gradient-to-r to-[#EEEEEE4D] via-[#33333300] from-[#EEEEEE4D]"
-                ></div>
+                <div className="w-[481px] h-[481px] lg:w-[783px] lg:h-[783px] rounded-full absolute bottom-[-80%] lg:bottom-[-60%] left-1/2 -translate-x-1/2 opacity-[30%] bg-gradient-to-r to-[#EEEEEE4D] via-[#33333300] from-[#EEEEEE4D]"></div>
 
-                {/* SERVICE BOXES */}
-                <ServiceBox
-                    fname="Mobile"
-                    sname="App Development"
-                    pos="top-[-120px] lg:top-[120px] left-1/2 -translate-x-1/2"
-                    image={serviceImages["Mobile App Development"]}
-                    isActive={activeBox === "Mobile App Development"}
-                    onHover={() => {
-                        setActiveImage(serviceImages["Mobile App Development"]);
-                        setActiveBox("Mobile App Development");
-                    }}
-                />
+                {/* DESKTOP/TABLET SERVICE BOXES (unchanged layout) */}
+                <div className="hidden sm:block">
+                    {/* === Existing Service Boxes === */}
+                    {/* Keep all your original <ServiceBox ... /> code here exactly as before */}
+                    <ServiceBox
+                        fname="Mobile"
+                        sname="App Development"
+                        pos="top-[-120px] lg:top-[120px] left-1/2 -translate-x-1/2"
+                        image={serviceImages["Mobile App Development"]}
+                        isActive={activeBox === "Mobile App Development"}
+                        onHover={() => {
+                            setActiveImage(serviceImages["Mobile App Development"]);
+                            setActiveBox("Mobile App Development");
+                        }}
+                    />
 
-                <ServiceBox
-                    fname="IT"
-                    sname="Resource"
-                    pos="top-[-60px] left-[-40px] lg:top-[60px] lg:left-[90px]"
-                    image={serviceImages["IT Resource"]}
-                    isActive={activeBox === "IT Resource"}
-                    onHover={() => {
-                        setActiveImage(serviceImages["IT Resource"]);
-                        setActiveBox("IT Resource");
-                    }}
-                />
+                    <ServiceBox
+                        fname="IT"
+                        sname="Resource"
+                        pos="top-[-60px] left-[-40px] lg:top-[60px] lg:left-[90px]"
+                        image={serviceImages["IT Resource"]}
+                        isActive={activeBox === "IT Resource"}
+                        onHover={() => {
+                            setActiveImage(serviceImages["IT Resource"]);
+                            setActiveBox("IT Resource");
+                        }}
+                    />
 
-                <ServiceBox
-                    fname="UI/UX"
-                    sname="Design"
-                    pos="top-[-60px] right-[-40px] lg:top-[60px] lg:right-[90px]"
-                    image={serviceImages["UI/UX Design"]}
-                    isActive={activeBox === "UI/UX Design"}
-                    onHover={() => {
-                        setActiveImage(serviceImages["UI/UX Design"]);
-                        setActiveBox("UI/UX Design");
-                    }}
-                />
+                    <ServiceBox
+                        fname="UI/UX"
+                        sname="Design"
+                        pos="top-[-60px] right-[-40px] lg:top-[60px] lg:right-[90px]"
+                        image={serviceImages["UI/UX Design"]}
+                        isActive={activeBox === "UI/UX Design"}
+                        onHover={() => {
+                            setActiveImage(serviceImages["UI/UX Design"]);
+                            setActiveBox("UI/UX Design");
+                        }}
+                    />
 
-                <ServiceBox
-                    fname="E-Commerce"
-                    sname="Web Development"
-                    pos="top-[120px] lg:top-[240px] left-[-40px]"
-                    image={serviceImages["E-Commerce Web Development"]}
-                    isActive={activeBox === "E-Commerce Web Development"}
-                    onHover={() => {
-                        setActiveImage(serviceImages["E-Commerce Web Development"]);
-                        setActiveBox("E-Commerce Web Development");
-                    }}
-                />
+                    <ServiceBox
+                        fname="E-Commerce"
+                        sname="Web Development"
+                        pos="top-[120px] lg:top-[240px] left-[-40px]"
+                        image={serviceImages["E-Commerce Web Development"]}
+                        isActive={activeBox === "E-Commerce Web Development"}
+                        onHover={() => {
+                            setActiveImage(serviceImages["E-Commerce Web Development"]);
+                            setActiveBox("E-Commerce Web Development");
+                        }}
+                    />
 
-                <ServiceBox
-                    fname="Emerging"
-                    sname="Tech Development"
-                    pos="top-[120px] lg:top-[240px] right-[-40px]"
-                    image={serviceImages["Emerging Tech Development"]}
-                    isActive={activeBox === "Emerging Tech Development"}
-                    onHover={() => {
-                        setActiveImage(serviceImages["Emerging Tech Development"]);
-                        setActiveBox("Emerging Tech Development");
-                    }}
-                />
+                    <ServiceBox
+                        fname="Emerging"
+                        sname="Tech Development"
+                        pos="top-[120px] lg:top-[240px] right-[-40px]"
+                        image={serviceImages["Emerging Tech Development"]}
+                        isActive={activeBox === "Emerging Tech Development"}
+                        onHover={() => {
+                            setActiveImage(serviceImages["Emerging Tech Development"]);
+                            setActiveBox("Emerging Tech Development");
+                        }}
+                    />
 
-                <ServiceBox
-                    fname="Digital Branding &"
-                    sname="Communication"
-                    pos="top-[300px] lg:top-[500px] left-[-40px]"
-                    image={serviceImages["Digital Branding & Communication"]}
-                    isActive={activeBox === "Digital Branding & Communication"}
-                    onHover={() => {
-                        setActiveImage(serviceImages["Digital Branding & Communication"]);
-                        setActiveBox("Digital Branding & Communication");
-                    }}
-                />
+                    <ServiceBox
+                        fname="Digital Branding &"
+                        sname="Communication"
+                        pos="top-[300px] lg:top-[500px] left-[-40px]"
+                        image={serviceImages["Digital Branding & Communication"]}
+                        isActive={activeBox === "Digital Branding & Communication"}
+                        onHover={() => {
+                            setActiveImage(serviceImages["Digital Branding & Communication"]);
+                            setActiveBox("Digital Branding & Communication");
+                        }}
+                    />
 
-                <ServiceBox
-                    fname="Website"
-                    sname="Development"
-                    pos="top-[300px] lg:top-[500px] right-[-40px]"
-                    image={serviceImages["Website Development"]}
-                    isActive={activeBox === "Website Development"}
-                    onHover={() => {
-                        setActiveImage(serviceImages["Website Development"]);
-                        setActiveBox("Website Development");
-                    }}
-                />
+                    <ServiceBox
+                        fname="Website"
+                        sname="Development"
+                        pos="top-[300px] lg:top-[500px] right-[-40px]"
+                        image={serviceImages["Website Development"]}
+                        isActive={activeBox === "Website Development"}
+                        onHover={() => {
+                            setActiveImage(serviceImages["Website Development"]);
+                            setActiveBox("Website Development");
+                        }}
+                    />
 
-                <ServiceBox
-                    fname="Video"
-                    sname="Animation"
-                    pos="top-[500px] left-[0px] lg:top-[700px] lg:left-[90px]"
-                    image={serviceImages["Video Animation"]}
-                    isActive={activeBox === "Video Animation"}
-                    onHover={() => {
-                        setActiveImage(serviceImages["Video Animation"]);
-                        setActiveBox("Video Animation");
-                    }}
-                />
+                    <ServiceBox
+                        fname="Video"
+                        sname="Animation"
+                        pos="top-[500px] left-[0px] lg:top-[700px] lg:left-[90px]"
+                        image={serviceImages["Video Animation"]}
+                        isActive={activeBox === "Video Animation"}
+                        onHover={() => {
+                            setActiveImage(serviceImages["Video Animation"]);
+                            setActiveBox("Video Animation");
+                        }}
+                    />
 
-                <ServiceBox
-                    fname="Digital"
-                    sname="Branding"
-                    pos="top-[500px] right-[0px] lg:top-[700px] lg:right-[90px]"
-                    image={serviceImages["Digital Branding"]}
-                    isActive={activeBox === "Digital Branding"}
-                    onHover={() => {
-                        setActiveImage(serviceImages["Digital Branding"]);
-                        setActiveBox("Digital Branding");
-                    }}
-                />
+                    <ServiceBox
+                        fname="Digital"
+                        sname="Branding"
+                        pos="top-[500px] right-[0px] lg:top-[700px] lg:right-[90px]"
+                        image={serviceImages["Digital Branding"]}
+                        isActive={activeBox === "Digital Branding"}
+                        onHover={() => {
+                            setActiveImage(serviceImages["Digital Branding"]);
+                            setActiveBox("Digital Branding");
+                        }}
+                    />
+                </div>
+
+                {/* MOBILE CAROUSEL */}
+                {/* MOBILE CAROUSEL */}
+                <div className="sm:hidden absolute bottom-[-140px] left-1/2 -translate-x-1/2 w-full h-[150px] flex items-center justify-center overflow-hidden">
+                    <motion.div
+                        key={activeIndex}
+                        className="flex gap-4 items-center justify-center"
+                        initial={{ x: 50, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        exit={{ x: -50, opacity: 0 }}
+                        transition={{ duration: 0.4, ease: "easeInOut" }}
+                    >
+                        {[-1, 0, 1].map((offset) => {
+                            const index = (activeIndex + offset + serviceList.length) % serviceList.length;
+                            const service = serviceList[index];
+                            const isActive = offset === 0;
+
+                            return (
+                                <motion.div
+                                    key={service.key}
+                                    className="flex-shrink-0"
+                                    animate={{
+                                        scale: isActive ? 1.2 : 0.9,
+                                        opacity: isActive ? 1 : 0.5,
+                                        y: isActive ? -10 : 0,
+                                    }}
+                                    transition={{ duration: 0.3 }}
+                                    onClick={() => {
+                                        if (offset === 1) {
+                                            // Move forward
+                                            setActiveIndex((prev) => (prev + 1) % serviceList.length);
+                                        } else if (offset === -1) {
+                                            // Move backward
+                                            setActiveIndex((prev) =>
+                                                prev === 0 ? serviceList.length - 1 : prev - 1
+                                            );
+                                        }
+                                    }}
+                                >
+                                    <ServiceBox
+                                        fname={service.fname}
+                                        sname={service.sname}
+                                        isActive={isActive}
+                                        isCarousel={true}
+                                    />
+
+                                </motion.div>
+                            );
+                        })}
+                    </motion.div>
+                </div>
+
             </div>
         </div>
     );

@@ -37,10 +37,10 @@ const SectionOne = () => {
 
     // 3. return statement/jsx
     return (
-        <div ref={sectionRef} className="w-full h-[240px] sm:h-[550px] md:h-[600px] lg:h-[640px] xl:h-[731px] bg-gradient-to-b from-[#31365C] to-[#0A131C] pt-[8px] sm:pt-[36.54px] overflow-hidden opacity-0">
-            <div className="z-[9999]">
+        <div ref={sectionRef} className="w-full h-[240px] sm:h-[550px] md:h-[600px] lg:h-[640px] xl:h-[731px] bg-gradient-to-b from-[#31365C] to-[#0A131C] pt-[8px] sm:pt-[36.54px] overflow-hidden opacity-0 pt-[50px] sm:pt-[96px]">
+            {/* <div className="z-[9999]">
                 <Header />
-            </div>
+            </div> */}
 
             <div className="relative mx-auto homepage-section-one lg:flex lg:justify-between">
                 <div className="z-[1000] w-[154px] h-[158px] sm:w-[420px] sm:h-[391px] text-center lg:text-start absolute left-1/2 -translate-x-1/2 lg:left-auto lg:translate-x-0 lg:ms-[80px] text-white mt-[14px] sm:mt-[30px] md:mt-[50px] lg:mt-[70px] xl:mt-[113.46px]">
@@ -58,7 +58,7 @@ const SectionOne = () => {
                     {/* <div className="block lg:hidden w-[98%] h-full bg-gradient-to-b from-[#31365C]/40 to-[#0A131C]/40 absolute top-0 z-[90]"></div> */}
 
                     {/* updated code */}
-                    <div className='first-column w-[168.12px] absolute top-[-200px] md:left-[140px] lg:left-[36px] overflow-hidden'>
+                    <div className='hidden sm:block first-column w-[168.12px] absolute top-[-200px] md:left-[140px] lg:left-[36px] overflow-hidden'>
                         <div
                             style={{
                                 clipPath: "polygon(0 0, 100% 10%, 100% 100%, 0 91%)",
@@ -194,7 +194,7 @@ const SectionOne = () => {
                     </div>
 
 
-                    <div className='second-column w-[168.12px] absolute top-[-200px] left-[230px] md:left-[340px] lg:left-[230px] overflow-hidden'>
+                    <div className='hidden sm:block second-column w-[168.12px] absolute top-[-200px] left-[230px] md:left-[340px] lg:left-[230px] overflow-hidden'>
                         <div
                           style={{
                               clipPath: "polygon(0 0, 100% 10%, 100% 100%, 0 91%)",

@@ -105,7 +105,7 @@ const Header = () => {
         <img className="w-[16.89px] sm:w-[40px]" src="/img/homepage/hamburger.png" alt="Menu" />
         <div
           ref={menuRef}
-          className="w-[100px] sm:w-[200px] top-[50px] sm:top-[80px] left-[0%] fixed bg-white z-[9999] rounded shadow-xl"
+          className="w-[100px] sm:w-[200px] top-[50px] sm:top-[80px] left-[0%] fixed bg-[#ffffff06] z-[9999] rounded shadow-xl"
           style={{ transform: "translateX(-120%)", opacity: 0 }}
         >
           <ul className="flex flex-col items-start gap-2 sm:gap-3 z-[9999] p-2 text-[10px] sm:text-[20px]">

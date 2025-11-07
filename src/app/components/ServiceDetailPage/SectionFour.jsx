@@ -5,7 +5,7 @@ const SectionFour = () => {
 
     // 3. return statement/jsx
     return (
-        <div className="w-full h-[600px] md:h-[737px] bg-[#EEEEEE] relative overflow-hidden flex flex-col-reverse items-center md:items-start md:flex-row ">
+        <div className="w-full h-[640px] sm:h-[600px] md:h-[737px] bg-[#EEEEEE] relative overflow-hidden flex flex-col-reverse items-center md:items-start md:flex-row ">
 
             {/* RIGHT CIRCLE */}
             <div className='w-[140px] sm:w-[300px] lg:w-[405.06px] h-[140px] sm:h-[300px] lg:h-[405.06px] rounded-full bg-[#BAD3EF] absolute top-[-20px] right-[-60px] sm:top-[-50px] lg:top-[16px] sm:right-[-150px] lg:right-[-200px] p-[3px]'>
@@ -28,12 +28,12 @@ const SectionFour = () => {
                         </p>
                         <div className="w-full mt-[20px]">
                             <ul className="flex flex-wrap items-center justify-center lg:justify-start  gap-4">
-                                <li className="w-[158px] sm:w-[200px] xl:w-[284px] sm:h-[49px] text-[10px] sm:text-[16px] xl:text-[20px] font-[600] text-[#4C4886] bg-white rounded-[7px] p-[10px] border-l-[2px] border-[#4C4886] hover:bg-[#4C4886] hover:text-white transition-all duration-200 ease-in-out cursor-pointer">Protect Your Business</li>
-                                <li className="w-[158px] sm:w-[200px] xl:w-[284px] sm:h-[49px] text-[10px] sm:text-[16px] xl:text-[20px] font-[600] text-[#4C4886] bg-white rounded-[7px] p-[10px] border-l-[2px] border-[#4C4886] hover:bg-[#4C4886] hover:text-white transition-all duration-200 ease-in-out cursor-pointer">Network Security</li>
-                                <li className="w-[158px] sm:w-[200px] xl:w-[284px] sm:h-[49px] text-[10px] sm:text-[16px] xl:text-[20px] font-[600] text-[#4C4886] bg-white rounded-[7px] p-[10px] border-l-[2px] border-[#4C4886] hover:bg-[#4C4886] hover:text-white transition-all duration-200 ease-in-out cursor-pointer">Data Security</li>
-                                <li className="w-[158px] sm:w-[200px] xl:w-[284px] sm:h-[49px] text-[10px] sm:text-[16px] xl:text-[20px] font-[600] text-[#4C4886] bg-white rounded-[7px] p-[10px] border-l-[2px] border-[#4C4886] hover:bg-[#4C4886] hover:text-white transition-all duration-200 ease-in-out cursor-pointer">Small Business Owners</li>
-                                <li className="w-[158px] sm:w-[200px] xl:w-[284px] sm:h-[49px] text-[10px] sm:text-[16px] xl:text-[20px] font-[600] text-[#4C4886] bg-white rounded-[7px] p-[10px] border-l-[2px] border-[#4C4886] hover:bg-[#4C4886] hover:text-white transition-all duration-200 ease-in-out cursor-pointer">Running Your Business</li>
-                                <li className="w-[158px] sm:w-[200px] xl:w-[284px] sm:h-[49px] text-[10px] sm:text-[16px] xl:text-[20px] font-[600] text-[#4C4886] bg-white rounded-[7px] p-[10px] border-l-[2px] border-[#4C4886] hover:bg-[#4C4886] hover:text-white transition-all duration-200 ease-in-out cursor-pointer">Network Monitoring</li>
+                                <li className="w-full sm:w-[200px] xl:w-[284px] sm:h-[49px] text-[16px] xl:text-[20px] font-[600] text-[#4C4886] bg-white rounded-[7px] p-[10px] border-l-[2px] border-[#4C4886] hover:bg-[#4C4886] hover:text-white transition-all duration-200 ease-in-out cursor-pointer">Protect Your Business</li>
+                                <li className="w-full sm:w-[200px] xl:w-[284px] sm:h-[49px] text-[16px] xl:text-[20px] font-[600] text-[#4C4886] bg-white rounded-[7px] p-[10px] border-l-[2px] border-[#4C4886] hover:bg-[#4C4886] hover:text-white transition-all duration-200 ease-in-out cursor-pointer">Network Security</li>
+                                <li className="w-full sm:w-[200px] xl:w-[284px] sm:h-[49px] text-[16px] xl:text-[20px] font-[600] text-[#4C4886] bg-white rounded-[7px] p-[10px] border-l-[2px] border-[#4C4886] hover:bg-[#4C4886] hover:text-white transition-all duration-200 ease-in-out cursor-pointer">Data Security</li>
+                                <li className="w-full sm:w-[200px] xl:w-[284px] sm:h-[49px] text-[16px] xl:text-[20px] font-[600] text-[#4C4886] bg-white rounded-[7px] p-[10px] border-l-[2px] border-[#4C4886] hover:bg-[#4C4886] hover:text-white transition-all duration-200 ease-in-out cursor-pointer">Small Business Owners</li>
+                                <li className="w-full sm:w-[200px] xl:w-[284px] sm:h-[49px] text-[16px] xl:text-[20px] font-[600] text-[#4C4886] bg-white rounded-[7px] p-[10px] border-l-[2px] border-[#4C4886] hover:bg-[#4C4886] hover:text-white transition-all duration-200 ease-in-out cursor-pointer">Running Your Business</li>
+                                <li className="w-full sm:w-[200px] xl:w-[284px] sm:h-[49px] text-[16px] xl:text-[20px] font-[600] text-[#4C4886] bg-white rounded-[7px] p-[10px] border-l-[2px] border-[#4C4886] hover:bg-[#4C4886] hover:text-white transition-all duration-200 ease-in-out cursor-pointer">Network Monitoring</li>
                             </ul>
                         </div>
                     </div>

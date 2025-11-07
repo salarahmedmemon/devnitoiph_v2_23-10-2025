@@ -9,6 +9,7 @@ import SectionFive from "./components/HomePage/SectionFive";
 import SectionSix from "./components/HomePage/SectionSix";
 import gsap from "gsap";
 import SectionThree from "./components/HomePage/SectionThree";
+import UpdatedHeader from "./components/UpdatedHeader.jsx";
 
 const page = () => {
   // 1. states/hook variables
@@ -39,6 +40,7 @@ const page = () => {
   // 3. return statement/jsx
   return (
     <div>
+      <UpdatedHeader />
       <SectionOne />
       <SectionTwo />
       <SectionThree />
