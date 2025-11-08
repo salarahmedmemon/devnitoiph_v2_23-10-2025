@@ -130,7 +130,7 @@ const UpdatedHeader = () => {
                     {/* MENU */}
                     <div
                         ref={menuRef}
-                        className="menu w-[200px] md:w-[216px] h-screen absolute top-[29px] sm:top-[56px] md:top-[60px] left-[-20px]
+                        className="menu w-[200px] md:w-[216px] h-screen absolute top-[38px] sm:top-[64px] md:top-[64px] left-[-20px]
           bg-gradient-to-b from-[#31365C] to-[#0A131C] transform -translate-x-full opacity-0"
                     >
                         {links.map(({ href, label }, i) => {

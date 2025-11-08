@@ -60,7 +60,7 @@ const SectionOne = () => {
 
   // 3. return statement/jsx
   return (
-    <div ref={sectionRef} className="w-full h-[450px] sm:h-[650px] lg:[844px] xl:h-[731px] pt-[50px] sm:pt-[140px] md:pt-[34px] lg:pt-[80px]">
+    <div ref={sectionRef} className="w-full h-[450px] sm:h-[650px] lg:[844px] xl:h-[731px] pt-[50px] sm:pt-[80px] md:pt-[34px] lg:pt-[80px]">
 
       <div className="hidden md:block w-full h-[450px] sm:h-[650px] lg:[844px] xl:h-[731px] absolute top-0 left-0 bg-[#04080B]">
         <div className="w-full h-full opacity-24">
@@ -104,16 +104,16 @@ const SectionOne = () => {
             </button>
           </div>
 
-          <div className="main-img-container w-[234px] h-[240px] sm:w-[44vw] sm:h-full md:w-[350px] md:h-[200px] flex items-center justify-center">
+          <div className="main-img-container w-[234px] h-[240px] sm:w-[44vw] sm:h-[360px] md:w-[350px] md:h-[300px] flex items-center justify-center">
             <img
               src="/img/servicepage/sectionone/image01.png"
-              className="pt-[54px] sm:pt-10 md:pt-40" loading="lazy"
+              className="pt-[54px] sm:pt-[80px] md:pt-40" loading="lazy"
             />
           </div>
 
         </div>
 
-        <div className="w-[90%] h-full mx-auto flex">
+        <div className="hidden w-[90%] h-full mx-auto lg:flex">
           <div ref={contentRef} className="w-full h-full">
             <button className="w-[219px] h-[64px] text-[40px] bg-white text-[#4C4886] font-[600] rounded-[10px] mt-[108px]">WE OFFER</button>
             <h1 className="text-white font-[600] text-[90px] leading-[100px]">SERVICES</h1>

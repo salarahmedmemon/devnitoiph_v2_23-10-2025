@@ -65,7 +65,7 @@ const SectionOne = () => {
 
   // 3. return statement/jsx
   return (
-    <div ref={sectionRef} className="w-full h-[450px] sm:h-[650px] lg:[844px] xl:h-[731px] pt-[70px] sm:pt-[120px] lg:pt-[80px]">
+    <div ref={sectionRef} className="w-full h-[450px] sm:h-[650px] lg:[844px] xl:h-[731px] pt-[70px] sm:pt-[100px] md:pt-[80px] lg:pt-[80px]">
 
       <div className="w-full h-[450px] sm:h-[650px] lg:[844px] xl:h-[731px] absolute top-0 left-0 bg-[#04080B]">
         <div className="w-full h-full opacity-90">
@@ -95,7 +95,7 @@ const SectionOne = () => {
 
         <div className="w-full h-[80%] md:h-full flex flex-col-reverse lg:hidden items-center justify-center gap-0 md:gap-10 ps-25.5 pe-25.5">
           <div className="text-container w-[50vw] sm:w-[90%] h-full flex flex-col items-center justify-center">
-            <button className="w-[136px] h-[36px] bg-white text-[#4C4886] text-[24px] sm:text-[3vw] md:text-[2.5vw] font-[600] rounded-[10px] mt-0  md:mt-10">
+            <button className="w-[136px] h-[36px] bg-white text-[#4C4886] text-[24px] sm:text-[3vw] md:text-[2.5vw] font-[600] rounded-[10px] md:mt-[-20px] lg:mt-0">
               OUR FAQ:S
             </button>
             <h1 className="text-white font-[600] text-[48px] sm:text-[10vw] md:text-[6.5vw] leading-[44px] sm:leading-[10vw] md:leading-[7vw]">
@@ -110,10 +110,10 @@ const SectionOne = () => {
             </button>
           </div>
 
-          <div className="main-img-container w-[190px] sm:w-[300px] md:w-[300px] md:h-[100px] flex items-center justify-center">
+          <div className="main-img-container w-[190px] sm:w-[300px] md:w-[300px] md:h-[300px] flex items-center justify-center">
             <img
               src="/img/faqpage/image01.png"
-              className="pt-[35px] sm:pt-10 md:pt-40 object-contain"
+              className="pt-[35px] sm:pt-20 md:pt-0 object-contain"
               loading="lazy"
             />
           </div>
