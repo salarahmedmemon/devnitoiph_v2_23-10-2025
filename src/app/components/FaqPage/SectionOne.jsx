@@ -105,7 +105,7 @@ const SectionOne = () => {
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
             </p>
             <button className="w-[115px] h-[24px] sm:w-[200px] sm:h-[40px] bg-white text-[#4C4886] text-[12px] sm:text-[2.4vw] md:text-[18px] font-[600] rounded-[5px] mt-4 relative group">
-              Talk to our experts
+              Talk to our Experts
               <span className="absolute left-1/2 -bottom-[2px] h-[3px] w-0 group-hover:w-full transition-all duration-500 ease-out -translate-x-1/2 bg-gradient-to-r from-[#1CDE63] via-[#FA1AC2] to-[#1AE4FA]"></span>
             </button>
           </div>
@@ -129,7 +129,7 @@ const SectionOne = () => {
               Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
             </p>
-            <button className="w-[208px] h-[46px] bg-white text-[#4C4886] font-[600] rounded-[5px] mt-[35px] relative group">Talk to our experts
+            <button className="w-[208px] h-[46px] bg-white text-[#4C4886] font-[600] rounded-[5px] mt-[35px] relative group">Talk to our Experts
               <span className="absolute left-1/2 -bottom-[2px] h-[3px] w-0 group-hover:w-full transition-all duration-500 ease-out -translate-x-1/2 bg-gradient-to-r from-[#1CDE63] via-[#FA1AC2] to-[#1AE4FA]"></span>
             </button>
 

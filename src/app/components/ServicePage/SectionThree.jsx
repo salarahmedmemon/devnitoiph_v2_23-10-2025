@@ -8,7 +8,10 @@ const ServiceBox = ({ fname, sname, pos, image, isActive, onHover, isCarousel = 
         <div
             className={`${isCarousel ? "relative" : `absolute ${pos}`
                 } w-[92px] h-[86px] lg:w-[200px] lg:h-[134px] flex flex-col items-center justify-between cursor-pointer`}
+            
+            // 💡 FIX: trigger image change on both hover and click
             onMouseEnter={onHover}
+            onClick={onHover}
         >
             {/* Outer Box */}
             <div
@@ -38,6 +41,7 @@ const ServiceBox = ({ fname, sname, pos, image, isActive, onHover, isCarousel = 
         </div>
     );
 };
+
 
 
 const SectionThree = () => {
@@ -138,13 +142,13 @@ const SectionThree = () => {
 
 
     return (
-        <div className="w-full h-[810px] lg:h-[1921px] flex items-center justify-center bg-[#0A131C] overflow-hidden">
+        <div className="w-full h-[810px] lg:h-[1240px] flex items-center justify-center bg-[#0A131C] overflow-hidden">
             <div className="w-[80%] servicepage-sectionthree mx-auto h-[50%] relative">
                 {/* WHITE SHADOW BEHIND IMAGE */}
-                <div className="w-[220px] h-[476px] lg:w-[340px] lg:h-[660px] absolute bottom-[60px] sm:bottom-[-80px] lg:bottom-[-10px] left-1/2 -translate-x-1/2 z-5 rounded-[40px] shadow-[0_0_80px_30px_rgba(255,255,255,0.35)]"></div>
+                <div className="w-[220px] h-[476px] lg:w-[330px] lg:h-[654px] absolute bottom-[60px] sm:bottom-[-80px] lg:bottom-[-160px] left-1/2 -translate-x-1/2 z-5 rounded-[40px] shadow-[0_0_80px_30px_rgba(255,255,255,0.35)]"></div>
 
                 {/* IMAGE FRAME */}
-                <div className="w-[210px] h-[476px] lg:w-[340px] lg:h-[660px] absolute bottom-[60px] sm:bottom-[-80px] lg:bottom-0 left-1/2 -translate-x-1/2 z-10 overflow-hidden rounded-[30px]">
+                <div className="md:hidden w-[210px] h-[476px] lg:w-[340px] lg:h-[660px] absolute bottom-[60px] sm:bottom-[-80px] lg:bottom-[-160px] left-1/2 -translate-x-1/2 z-10 overflow-hidden rounded-[30px]">
                     <AnimatePresence mode="wait">
                         <motion.img
                             key={activeService.img}
@@ -159,9 +163,26 @@ const SectionThree = () => {
                         />
                     </AnimatePresence>
                 </div>
+                {/* IMAGE FRAME */}
+                <div className="hidden md:block w-[210px] h-[476px] lg:w-[340px] lg:h-[660px] absolute bottom-[60px] sm:bottom-[-80px] lg:bottom-[-160px] left-1/2 -translate-x-1/2 z-10 overflow-hidden rounded-[30px]">
+                <AnimatePresence mode="wait">
+                    <motion.img
+                    key={activeImage} // 🔥 fixed here
+                    src={activeImage}
+                    alt={activeBox}
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 1.05 }}
+                    transition={{ duration: 0.4, ease: "easeInOut" }}
+                    className="w-full h-full object-cover rounded-[30px]"
+                    loading="lazy"
+                    />
+                </AnimatePresence>
+                </div>
+
 
                 {/* CIRCLE BACKGROUND */}
-                <div className="w-[481px] h-[481px] lg:w-[783px] lg:h-[783px] rounded-full absolute bottom-[-80%] lg:bottom-[-60%] left-1/2 -translate-x-1/2 opacity-[30%] bg-gradient-to-r to-[#EEEEEE4D] via-[#33333300] from-[#EEEEEE4D]"></div>
+                <div className="w-[481px] h-[481px] lg:w-[783px] lg:h-[783px] rounded-full absolute bottom-[-80%] lg:bottom-[-100%] left-1/2 -translate-x-1/2 opacity-[30%] bg-gradient-to-r to-[#EEEEEE4D] via-[#33333300] from-[#EEEEEE4D]"></div>
 
                 {/* DESKTOP/TABLET SERVICE BOXES (unchanged layout) */}
                 <div className="hidden sm:block">
@@ -170,7 +191,7 @@ const SectionThree = () => {
                     <ServiceBox
                         fname="Mobile"
                         sname="App Development"
-                        pos="top-[-120px] lg:top-[120px] left-1/2 -translate-x-1/2"
+                        pos="top-[-160px] xl:top-[-180px] left-1/2 -translate-x-1/2"
                         image={serviceImages["Mobile App Development"]}
                         isActive={activeBox === "Mobile App Development"}
                         onHover={() => {
@@ -182,7 +203,7 @@ const SectionThree = () => {
                     <ServiceBox
                         fname="IT"
                         sname="Resource"
-                        pos="top-[-60px] left-[-40px] lg:top-[60px] lg:left-[90px]"
+                        pos="top-[-60px] lg:top-[0px] left-[0px] xl:top-[-40px] xl:left-[100px]"
                         image={serviceImages["IT Resource"]}
                         isActive={activeBox === "IT Resource"}
                         onHover={() => {
@@ -194,7 +215,7 @@ const SectionThree = () => {
                     <ServiceBox
                         fname="UI/UX"
                         sname="Design"
-                        pos="top-[-60px] right-[-40px] lg:top-[60px] lg:right-[90px]"
+                        pos="top-[-60px] lg:top-[0px] right-[0px] xl:top-[-40px] xl:right-[100px]"
                         image={serviceImages["UI/UX Design"]}
                         isActive={activeBox === "UI/UX Design"}
                         onHover={() => {
@@ -206,7 +227,7 @@ const SectionThree = () => {
                     <ServiceBox
                         fname="E-Commerce"
                         sname="Web Development"
-                        pos="top-[120px] lg:top-[240px] left-[-40px]"
+                        pos="top-[120px] lg:top-[240px] xl:top-[200px] left-[-40px] xl:left-[40px]"
                         image={serviceImages["E-Commerce Web Development"]}
                         isActive={activeBox === "E-Commerce Web Development"}
                         onHover={() => {
@@ -214,11 +235,11 @@ const SectionThree = () => {
                             setActiveBox("E-Commerce Web Development");
                         }}
                     />
-
+ 
                     <ServiceBox
                         fname="Emerging"
                         sname="Tech Development"
-                        pos="top-[120px] lg:top-[240px] right-[-40px]"
+                        pos="top-[120px] lg:top-[240px] xl:top-[200px] right-[-40px] xl:right-[40px]"
                         image={serviceImages["Emerging Tech Development"]}
                         isActive={activeBox === "Emerging Tech Development"}
                         onHover={() => {
@@ -230,7 +251,7 @@ const SectionThree = () => {
                     <ServiceBox
                         fname="Digital Branding &"
                         sname="Communication"
-                        pos="top-[300px] lg:top-[500px] left-[-40px]"
+                        pos="top-[300px] lg:top-[460px] xl:top-[460px] left-[-40px] xl:left-[0px]"
                         image={serviceImages["Digital Branding & Communication"]}
                         isActive={activeBox === "Digital Branding & Communication"}
                         onHover={() => {
@@ -242,7 +263,7 @@ const SectionThree = () => {
                     <ServiceBox
                         fname="Website"
                         sname="Development"
-                        pos="top-[300px] lg:top-[500px] right-[-40px]"
+                        pos="top-[300px] lg:top-[460px] xl:top-[460px] right-[-40px] xl:right-[0px]"
                         image={serviceImages["Website Development"]}
                         isActive={activeBox === "Website Development"}
                         onHover={() => {
@@ -254,7 +275,7 @@ const SectionThree = () => {
                     <ServiceBox
                         fname="Video"
                         sname="Animation"
-                        pos="top-[500px] left-[0px] lg:top-[700px] lg:left-[90px]"
+                        pos="top-[470px] lg:top-[670px] left-[0px] xl:top-[700px] xl:left-[200px]"
                         image={serviceImages["Video Animation"]}
                         isActive={activeBox === "Video Animation"}
                         onHover={() => {
@@ -266,7 +287,7 @@ const SectionThree = () => {
                     <ServiceBox
                         fname="Digital"
                         sname="Branding"
-                        pos="top-[500px] right-[0px] lg:top-[700px] lg:right-[90px]"
+                        pos="top-[470px] lg:top-[670px] right-[0px] xl:top-[700px] xl:right-[200px]"
                         image={serviceImages["Digital Branding"]}
                         isActive={activeBox === "Digital Branding"}
                         onHover={() => {

@@ -127,7 +127,7 @@ const SectionOne = () => {
               since the 1500s.
             </p>
             <button className="firstpage-button w-[146px] sm:w-[200px] h-[37px] bg-white text-[#4C4886] text-[12px] font-[600] rounded-[5px] mt-[8px]   md:w-[207px] md:h-[44px] md:text-[20px]   xl:mt-[40px] relative group">
-              Talk to our expert
+              Talk to our Expert
               <span className="absolute left-1/2 -bottom-[2px] h-[3px] w-0 group-hover:w-full transition-all duration-200 ease-out -translate-x-1/2 bg-gradient-to-r from-[#1CDE63] via-[#FA1AC2] to-[#1AE4FA]"></span>
             </button>
           </div>

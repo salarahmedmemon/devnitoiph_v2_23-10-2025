@@ -36,7 +36,7 @@ const UpdatedHeader = () => {
         all.forEach((el) => {
             const underline = el.querySelector(".underline");
             if (!underline) return;
-            const onEnter = () => gsap.to(underline, { width: "100%", duration: 0.35, ease: "power2.out" });
+            const onEnter = () => gsap.to(underline, { width: "120%", duration: 0.35, ease: "power2.out" });
             const onLeave = () => gsap.to(underline, { width: "0%", duration: 0.35, ease: "power2.in" });
             el.addEventListener("mouseenter", onEnter);
             el.addEventListener("mouseleave", onLeave);
@@ -134,19 +134,19 @@ const UpdatedHeader = () => {
           bg-gradient-to-b from-[#31365C] to-[#0A131C] transform -translate-x-full opacity-0"
                     >
                         {links.map(({ href, label }, i) => {
-                            const isActive = pathname === href; // check active route
+                            const isActive = pathname === href;
                             return (
-                                <Link href={href}>
+                                <Link href={href} key={href}> {/* ✅ unique key here */}
                                     <div
-                                    key={i}
-                                    className={`w-full h-[46px] text-[16px] sm:text-[18px] md:text-[20px] flex items-center justify-center border-b-[2px] border-[#31365C]
-          ${isActive ? "bg-[#31365C] text-white" : "bg-white text-black"}`}
-                                >
-                                    {label}
-                                </div>
+                                        className={`w-full h-[46px] text-[16px] sm:text-[18px] md:text-[20px] flex items-center justify-center border-b-[2px] border-[#31365C]
+        ${isActive ? "bg-[#31365C] text-white" : "bg-white text-black"}`}
+                                    >
+                                        {label}
+                                    </div>
                                 </Link>
                             );
                         })}
+
                     </div>
 
                 </div>
@@ -169,13 +169,12 @@ const UpdatedHeader = () => {
                         {links.map(({ href, label }, index) => {
                             const isActive = pathname === href;
                             return (
-                                <li
-                                    key={href}
+                                <li key={href}
                                     ref={(el) => (desktopLinkRefs.current[index] = el)}
                                     className={`relative cursor-pointer py-1 overflow-visible ${isActive ? "text-[#4C4886] font-semibold" : "text-gray-700"}`}
                                 >
                                     <Link href={href} className="relative z-10 inline-block">{label}</Link>
-                                    <span className={`underline absolute left-1/2 -translate-x-1/2 bottom-0 h-[2px] transition-all ${isActive ? "w-full bg-[#4C4886]" : "w-0 bg-black"}`}></span>
+                                    <span className={`underline absolute left-1/2 -translate-x-1/2 bottom-[-6px] h-[2px] transition-all ${isActive ? "w-[140%] bg-[#4C4886]" : "w-0 bg-black"}`}></span>
                                 </li>
                             );
                         })}

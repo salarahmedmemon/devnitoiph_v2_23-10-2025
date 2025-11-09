@@ -1,8 +1,10 @@
 import SectionOne from "../components/CareersPage/SectionOne";
 import SectionTwo from "../components/CareersPage/SectionTwo";
 import SectionThree from "../components/CareersPage/SectionThree";
+import UpdatedSectionThree from "../components/CareersPage/UpdatedSectionThree";
 import SectionFour from "../components/CareersPage/SectionFour";
 import SectionFive from "../components/CareersPage/SectionFive";
+import UpdatedSectionFive from "../components/CareersPage/UpdatedSectionFive";
 import SectionSix from "../components/CareersPage/SectionSix";
 import Footer from "../components/Footer";
 import UpdatedHeader from "../components/UpdatedHeader";
@@ -18,11 +20,13 @@ const Page = () => {
             <UpdatedHeader />
             <SectionOne />
             <SectionTwo />
-            <SectionThree />
+            <UpdatedSectionThree />
+            {/* <SectionThree /> */}
             <SectionFour />
-            <SectionFive />
+            {/* <SectionFive /> */}
+            <UpdatedSectionFive />
             <SectionSix />
-            <Footer />
+            <Footer /> 
         </div>
     );
 };

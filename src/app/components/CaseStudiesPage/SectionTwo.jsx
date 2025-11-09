@@ -56,7 +56,7 @@ const SectionTwo = () => {
 
     // 3. return statement/jsx
     return (
-        <div ref={sectionRef} className="w-full h-[1168px] sm:h-[1500px] lg:h-[798px] bg-[#EEEEEE] overflow-hidden relative pt-[48px]">
+        <div ref={sectionRef} className="w-full h-[1168px] sm:h-[1500px] lg:h-[748px] bg-[#EEEEEE] overflow-hidden relative pt-[48px]">
             {/* RIGHT CIRCLE */}
             <div className='w-[140px] sm:w-[300px] lg:w-[405.06px] h-[140px] sm:h-[300px] lg:h-[405.06px] rounded-full bg-[#BAD3EF] absolute top-[-20px] right-[-60px] sm:top-[-50px] lg:top-[-140px] sm:right-[-150px] lg:right-[-200px] xl:left-[85%] p-[3px]'>
                 <div className='w-full h-full rounded-full bg-gradient-to-b from-[#E2E8EE] to-[#E9EBEE]'></div>
@@ -125,22 +125,22 @@ const SectionTwo = () => {
 
                 <div ref={contentRef} className="w-[700px] h-full me-[5%]">
                     <h1 className="border-l-[3px] border-[#4C4886] text-[28px] font-[600] text-[#4C4886] ps-[6px]">Our Principle</h1>
-                    <p className="text-[16px] font-[400] mt-[20px] text-[#AAAAAA]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stancenturies,</p>
+                    <p className="text-[16px] xl:text-[12px] font-[400] mt-[20px] text-[#666]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stancenturies,</p>
                     <span className="text-[12px] text-[#4C4886] block mt-[20px] font-[700]"> Cost-effective and Comprehensive IT Outsourcing Services:</span>
                     <div className="w-full mt-[24px] flex items-center justify-between">
                         <div className="w-full h-[134px]  sm:h-[200px] p-[10px]">
-                            <h3 className="text-[16px]font-[500] text-[#4C4886]">Tailored Excellence</h3>
-                            <p className="text-[12px]font-[400] text-[#AAAAAA] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. </p>
+                            <h3 className="text-[12px] font-[500] text-[#4C4886]">Tailored Excellence</h3>
+                            <p className="text-[10px] font-[400] text-[#666] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. </p>
                         </div>
 
                         <div className="w-full h-[134px] sm:h-[200px] p-[10px]">
-                            <h3 className="text-[16px] font-[500] text-[#4C4886]">Transparent Collaboration</h3>
-                            <p className="text-[12px] font-[400] text-[#AAAAAA] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. Our team ensures excellence in every aspect of our services.</p>
+                            <h3 className="text-[12px] font-[500] text-[#4C4886]">Transparent Collaboration</h3>
+                            <p className="text-[10px] font-[400] text-[#666] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. Our team ensures excellence in every aspect of our services.</p>
                         </div>
 
                         <div className="w-full h-[134px] sm:h-[200px] p-[10px] mt-[30px] sm:mt-0">
-                            <h3 className="text-[16px] font-[500] text-[#4C4886]">clients security</h3>
-                            <p className="text-[12px] font-[400] text-[#AAAAAA] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. Our team ensures excellence in every aspect of our services.</p>
+                            <h3 className="text-[12px] font-[500] text-[#4C4886]">clients security</h3>
+                            <p className="text-[10px] font-[400] text-[#666] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. Our team ensures excellence in every aspect of our services.</p>
                         </div>
                     </div>
                 </div>

@@ -8,6 +8,7 @@ import gsap from "gsap";
 import SectionOne from "../components/AboutPage/SectionOne";
 import SectionTwo from "../components/AboutPage/SectionTwo";
 import SectionThree from "../components/AboutPage/SectionThree";
+import UpdatedSectionThree from "../components/AboutPage/UpdatedSectionThree";
 import {SectionFour as SF} from "../components/HomePage/SectionFour";
 import SectionFour from "../components/AboutPage/SectionFour";
 import SectionFive from "../components/AboutPage/SectionFive";
@@ -40,7 +41,8 @@ const Page = () => {
             <UpdatedHeader />
             <SectionOne />
             <SectionTwo />
-            <SectionThree />
+            {/* <SectionThree /> */}
+            <UpdatedSectionThree />
             <div className="hidden md:block"> <SF /> </div>
             <SectionFour />
             <SectionFive />

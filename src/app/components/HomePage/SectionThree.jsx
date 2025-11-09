@@ -107,9 +107,6 @@ const SectionThree = () => {
         return () => ctx.revert();
     }, []);
 
-
-
-
     return (
         <div ref={containerRef} className="projects w-full h-[840px] sm:h-[790px] lg:h-[980px] relative bg-[#0A131C] pt-[15px] sm:pt-[20px] lg:pt-[58px] overflow-hidden">
             {/* Background image (sharp outside, blurred inside glass) */}

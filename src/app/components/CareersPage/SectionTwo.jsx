@@ -126,22 +126,22 @@ const SectionTwo = () => {
 
                 <div ref={contentRef} className="w-[700px] h-full me-[5%]">
                     <h1 className="border-l-[3px] border-[#4C4886] text-[28px] font-[600] text-[#4C4886] ps-[6px]">Our Blog</h1>
-                    <p className="text-[16px] font-[400] mt-[20px] text-[#AAAAAA]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stancenturies,</p>
+                    <p className="text-[16px] xl:text-[12px] font-[400] mt-[20px] text-[#666]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stancenturies,</p>
                     <span className="text-[12px] text-[#4C4886] block mt-[20px] font-[700]"> Cost-effective and Comprehensive IT Outsourcing Services:</span>
                     <div className="w-full mt-[24px] flex items-center justify-between">
                         <div className="w-full h-[134px]  sm:h-[200px] p-[10px]">
-                            <h3 className="text-[16px]font-[500] text-[#4C4886]">Alsthetic</h3>
-                            <p className="text-[12px]font-[400] text-[#AAAAAA] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. </p>
+                            <h3 className="text-[12px] font-[500] text-[#4C4886]">Alsthetic</h3>
+                            <p className="text-[10px] font-[400] text-[#666] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. </p>
                         </div>
 
                         <div className="w-full h-[134px] sm:h-[200px] p-[10px]">
-                            <h3 className="text-[16px] font-[500] text-[#4C4886]">MenaJobs.ai</h3>
-                            <p className="text-[12px] font-[400] text-[#AAAAAA] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. Our team ensures excellence in every aspect of our services.</p>
+                            <h3 className="text-[12px] font-[500] text-[#4C4886]">MenaJobs.ai</h3>
+                            <p className="text-[10px] font-[400] text-[#666] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. Our team ensures excellence in every aspect of our services.</p>
                         </div>
 
                         <div className="w-full h-[134px] sm:h-[200px] p-[10px] mt-[30px] sm:mt-0">
-                            <h3 className="text-[16px] font-[500] text-[#4C4886]">APK Hub</h3>
-                            <p className="text-[12px] font-[400] text-[#AAAAAA] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. Our team ensures excellence in every aspect of our services.</p>
+                            <h3 className="text-[12px] font-[500] text-[#4C4886]">APK Hub</h3>
+                            <p className="text-[10px] font-[400] text-[#666] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. Our team ensures excellence in every aspect of our services.</p>
                         </div>
                     </div>
                 </div>

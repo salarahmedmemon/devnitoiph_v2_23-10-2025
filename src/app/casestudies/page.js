@@ -3,6 +3,7 @@ import SectionThree from "../components/CaseStudiesPage/SectionThree";
 import SectionTwo from "../components/CaseStudiesPage/SectionTwo";
 import Footer from "../components/Footer";
 import UpdatedHeader from "../components/UpdatedHeader";
+import UpdateSectionThree from "../components/CaseStudiesPage/UpdateSectionThree";
 
 const Page = () => {
     // 1. states/hook variables
@@ -15,7 +16,8 @@ const Page = () => {
             <UpdatedHeader />
             <SectionOne />
             <SectionTwo />
-            <SectionThree />
+            {/* <SectionThree /> */}
+            <UpdateSectionThree />
             <Footer />
         </div>
     );

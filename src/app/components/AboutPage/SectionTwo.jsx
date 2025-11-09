@@ -2,10 +2,8 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
-
 
 const SectionTwo = () => {
     // 1. states/hook variables
@@ -64,22 +62,14 @@ const SectionTwo = () => {
             </div>
 
             {/* HEADINGS */}
-            <div ref={headingRef} className="w-[220px] sm:w-[303px] lg:w-[360px] h-[100.77px] border-t-[3px] lg:border-t-[5px] border-[#4C4886] absolute left-1/2 -translate-x-1/2">
-                <h1 className="text-[26px] sm:text-[38px] lg:text-[44px] font-[500] text-center text-[#333333]">Our Company</h1>
-                <h2 className="text-[26px] sm:text-[38px] lg:text-[44px] font-[600] text-[#4C4886] text-center">Principle</h2>
+            <div ref={headingRef} className="w-[220px] sm:w-[303px] lg:w-[360px] h-[100.77px] border-t-[3px] border-[#4C4886] absolute left-1/2 -translate-x-1/2">
+                <h1 className="text-[26px] sm:text-[38px] font-[600] text-center text-[#333333]">Our Company</h1>
+                <h2 className="text-[26px] sm:text-[38px] font-[600] text-[#4C4886] text-center">Principle</h2>
             </div>
 
             {/* IMAGE */}
             <div ref={imageRef} className="lg:hidden w-[90%] h-[310px] md:w-[40%] mx-auto mt-[60px] sm:mt-[120px]">
                 <div className="w-full h-full relative ms-[4%]">
-                    {/* <Image
-                        src="/img/aboutpage/image03.png"
-                        alt="image 03"
-                        fill="true"
-                        placeholder="blur"
-                        className="object-cover"
-                        blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAAklEQVR4AewaftIAAAEpSURBVGNmQAIXLl3it7WzlbYwN/+2e/fuvwxIgIUBCI4ePaolJ/jmT2xK4AM+TUOxzfPWPpi755y64KcH/4KCgm4zAAHzgQMH2A8fPvy2o3fKX2NdARc+IwMZRmYlpRWTmm/++/P7RVNHO8eKpUt/szx79kxG4dcfQWthaSajn/80+Yyk8z6fYV3No2X3nIdTlPH9y1dPGBgYHjKvXbv2va6D/fNX/xnf2d3/ycHurZ1+8ejrlcLiDFv+Mfx6UFtb+4EBCJgYgODz58/MfHx893SzYnK4vzAyRPibpj569OjFv3///jNAATMDEDAxMQmxsLDoSGmIGShIKAgcP3Xs+pEzV46dPn16/9evX38yoAEBbk4OWXc702B+Xh55BgYGIQYGBg4GKAAAOcJxrLqJHhsAAAAASUVORK5CYII="
-                    /> */}
                     <img src="/img/aboutpage/image03.png" alt="left image" loading="lazy" className="w-full h-full object-contain" />
                 </div>
             </div>
@@ -112,36 +102,28 @@ const SectionTwo = () => {
             <div className="hidden lg:flex w-full h-[78%] mt-[14%] xl:mt-[200px] justify-center gap-[100px]">
                 <div ref={imageRef} className="w-[511px] h-[419px] ms-[5%]">
                     <div className="w-full h-full relative ms-[4%]">
-                        {/* <Image
-                            src="/img/aboutpage/image03.png"
-                            alt="image 03"
-                            fill="true"
-                            placeholder="blur"
-                            className="object-cover"
-                            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAAklEQVR4AewaftIAAAEpSURBVGNmQAIXLl3it7WzlbYwN/+2e/fuvwxIgIUBCI4ePaolJ/jmT2xK4AM+TUOxzfPWPpi755y64KcH/4KCgm4zAAHzgQMH2A8fPvy2o3fKX2NdARc+IwMZRmYlpRWTmm/++/P7RVNHO8eKpUt/szx79kxG4dcfQWthaSajn/80+Yyk8z6fYV3No2X3nIdTlPH9y1dPGBgYHjKvXbv2va6D/fNX/xnf2d3/ycHurZ1+8ejrlcLiDFv+Mfx6UFtb+4EBCJgYgODz58/MfHx893SzYnK4vzAyRPibpj569OjFv3///jNAATMDEDAxMQmxsLDoSGmIGShIKAgcP3Xs+pEzV46dPn16/9evX38yoAEBbk4OWXc702B+Xh55BgYGIQYGBg4GKAAAOcJxrLqJHhsAAAAASUVORK5CYII="
-                        /> */}
                         <img src="/img/aboutpage/image03.png" alt="left image" loading="lazy" className="w-full h-full object-cover" />
                     </div>
                 </div>
 
                 <div ref={contentRef} className="w-[700px] h-full me-[5%]">
                     <h1 className="border-l-[3px] border-[#4C4886] text-[28px] font-[600] text-[#4C4886] ps-[6px]">Our Principle</h1>
-                    <p className="text-[16px] font-[400] mt-[20px] text-[#AAAAAA]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stancenturies,</p>
+                    <p className="text-[16px] lg:text-[12px] font-[400] mt-[20px] text-[#666666]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stancenturies,</p>
                     <span className="text-[12px] text-[#4C4886] block mt-[20px] font-[700]"> Cost-effective and Comprehensive IT Outsourcing Services:</span>
                     <div className="w-full mt-[24px] flex items-center justify-between">
                         <div className="w-full h-[134px]  sm:h-[200px] p-[10px]">
-                            <h3 className="text-[16px]font-[500] text-[#4C4886]">Tailored Excellence</h3>
-                            <p className="text-[12px]font-[400] text-[#AAAAAA] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. </p>
+                            <h3 className="text-[12px] font-[500] text-[#4C4886]">Tailored Excellence</h3>
+                            <p className="text-[10px] font-[400] text-[#666666] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. </p>
                         </div>
 
                         <div className="w-full h-[134px] sm:h-[200px] p-[10px]">
-                            <h3 className="text-[16px] font-[500] text-[#4C4886]">Transparent Collaboration</h3>
-                            <p className="text-[12px] font-[400] text-[#AAAAAA] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. Our team ensures excellence in every aspect of our services.</p>
+                            <h3 className="text-[12px] font-[500] text-[#4C4886]">Transparent Collaboration</h3>
+                            <p className="text-[10px] font-[400] text-[#666666] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. Our team ensures excellence in every aspect of our services.</p>
                         </div>
 
                         <div className="w-full h-[134px] sm:h-[200px] p-[10px] mt-[30px] sm:mt-0">
-                            <h3 className="text-[16px] font-[500] text-[#4C4886]">clients security</h3>
-                            <p className="text-[12px] font-[400] text-[#AAAAAA] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. Our team ensures excellence in every aspect of our services.</p>
+                            <h3 className="text-[12px] font-[500] text-[#4C4886]">clients security</h3>
+                            <p className="text-[10px] font-[400] text-[#666666] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. Our team ensures excellence in every aspect of our services.</p>
                         </div>
                     </div>
                 </div>

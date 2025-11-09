@@ -1,5 +1,4 @@
 'use client';
-
 import gsap from 'gsap';
 import { useEffect, useRef, useState } from 'react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -579,8 +578,6 @@ const SectionTwo = () => {
         animationFrameId.current = requestAnimationFrame(animateToCenter);
     };
 
-    // 2. functions/methods
-
     // 3. return statement/jsx
     return (
         <div ref={containerRef} className="homepage-sectiontwo w-full h-[960px] sm:h-[1300px] lg:h-[850px] overflow-hidden relative bg-[#EEEEEE]">
@@ -648,7 +645,6 @@ const SectionTwo = () => {
             </div>
 
             {/* MAIN CONTENT WITH IMAGE */}
-            {/* {currentContent && ( */}
             <div className="w-full sm:w-[640px] lg:w-[940px] xl:w-[1262px] h-[344px] z-[2000] mt-[0px] sm:mt-[20px] lg:mt-[95px] mx-auto flex flex-col lg:flex-row gap-[5px] sm:gap-[20px]">
                 {/* FIRST COLUMN FOR IMAGES IN JUST SMALL DEVICES sm - md */}
                 <div className="flex justify-center lg:hidden">
@@ -670,18 +666,6 @@ const SectionTwo = () => {
                 {/* FIRST COLUMN FOR IMAGES IN JUST FOR LARGE DEVICES */}
                 <div className="hidden lg:block w-[600px] lg:w-[350px] xl:w-[550px] h-[400px] lg:h-[240px] xl:h-[344px] z-[1000]">
                     <img ref={imageRef} src={image} alt='image' className='w-full h-full object-contain' />
-                    {/* <div className='w-full h-full relative'>
-                        <Image
-                            ref={imageRef}
-                            src={image}
-                            fill
-                            placeholder='blur'
-                            alt="service"
-                            className="object-cover"
-                            blurDataURL="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBA=="
-
-                        />
-                    </div> */}
                 </div>
 
                 {/* SECOND COLUMN FOR CONTENT */}
@@ -738,7 +722,6 @@ const SectionTwo = () => {
                     </div>
                 </div>
             </div>
-            {/* )} */}
         </div>
     );
 };

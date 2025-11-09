@@ -83,20 +83,20 @@ const SectionThree = () => {
                 className="bg-gradient-to-br from-[#FA1AC2] via-[#11AAEE] to-[#1CDE63] project-card group w-[100%] h-[205px] sm:h-[180px] md:h-[320px] sm:w-[40vw] md:w-[23vw] xl:w-[340px] gradient-border rounded-lg relative overflow-hidden flex items-center justify-center p-[3px] cursor-pointer"
               >
                 <div className="w-full h-full rounded-lg bg-[#0A131C]">
-                  
-                <img
-                  src={project.img}
-                  className="rounded-lg w-full h-full object-cover transition-all duration-500 group-hover:opacity-30" loading="lazy"
-                />
 
-                <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  <span className="text-white text-lg sm:text-xl md:text-2xl font-semibold opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                    {project.name}
-                  </span>
-                  <span className="text-white text-center text-[3vw] sm:text-lg font-semibold opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                    {project.subname}
-                  </span>
-                </div>
+                  <img
+                    src={project.img}
+                    className="rounded-lg w-full h-full object-cover transition-all duration-500 group-hover:opacity-30" loading="lazy"
+                  />
+
+                  <div className="absolute inset-0 flex flex-col items-center justify-center">
+                    <span className="text-white text-lg sm:text-xl md:text-2xl font-semibold opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                      {project.name}
+                    </span>
+                    <span className="text-white text-center text-[3vw] sm:text-lg font-semibold opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                      {project.subname}
+                    </span>
+                  </div>
                 </div>
               </div>
             ))}

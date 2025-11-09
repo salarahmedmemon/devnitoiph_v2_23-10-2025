@@ -226,6 +226,17 @@ body {
   .homepage-section-six-faq {
     width: 1200px;
   }
+  .updatedsectionthree {
+    height: 760px;
+  }
+
+  .updatedsectionthreeglass {
+    width: 1360px;
+    height: 640px;
+  }
+  .leftimagelogo {
+    bottom: 40px
+  }
 }
 
 
