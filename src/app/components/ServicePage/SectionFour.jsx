@@ -99,7 +99,7 @@ const SectionFour = () => {
                     {[
                         { title: "Consulting", width: "90%" },
                         { title: "Cloud Solution", width: "75%" },
-                        { title: "It Service", width: "100%" },
+                        { title: "IT Service", width: "100%" },
                     ].map((item, index) => (
                         <div
                             key={index}
