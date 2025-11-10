@@ -265,122 +265,174 @@ const SectionThree = () => {
                 {/* PROJECTS SHOWCASE FOR MOBILE */}
                 <div className="flex justify-center lg:hidden w-[84.5%] mx-auto mt-[16px] sm:mt-0 gap-[2px] sm:gap-[10px] flex-wrap">
                     {/* PROJECT ONE */}
-                    <div className="project-one w-[80%] h-[119px] sm:w-[33%] sm:h-[280px] p-[2px] gradient-border">
+                    <div className="project-one w-[80%] h-[119px] sm:w-[33%] sm:h-[280px] p-[2px] gradient-border group">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projectone.png')] bg-cover bg-center relative">
                             <div
-                                ref={(el) => (circleRefsMobile.current[0] = el)}
-                                className="w-[10vw] sm:w-[5vw] h-[10vw] sm:h-[5vw] rounded-full bg-[#ebebeb46] p-2 absolute top-[4%] right-[2%] flex items-center justify-center opacity-0 scale-0"
+                            ref={(el) => (circleRefsMobile.current[0] = el)}
+                            className="w-[10vw] sm:w-[5vw] h-[10vw] sm:h-[5vw] rounded-full bg-[#ebebeb46] p-2 absolute top-[4%] right-[2%] flex items-center justify-center opacity-0 scale-0"
                             >
-                                <div className="w-full h-full rounded-full bg-white"></div>
+                            <div className="w-full h-full rounded-full bg-white"></div>
                             </div>
 
                             {/* OVERLAY */}
-                            <div className="group-hover:w-[60%] group-hover:sm:w-full group-hover:h-full group-hover:sm:h-[80%] group-hover:md:h-[200px] bg-[#000] absolute bottom-0 right-0 pt-[50px] group-hover:-opacity-[80%] rounded-tl-full w-0 h-0 opacity-0 transition-all duration-500 ease-in-out">
-                                <h3 className="font-[500] text-[12px] text-[#FFFFFF] absolute top-[10px] sm:top-[40px] right-[14px]">Printing Media</h3>
-                                <h4 className="text-[#1AE4FA] text-[8px] absolute top-[26px] sm:top-[56px] right-[14px]">Short Detail Here</h4>
-                                <p className="w-[76%] sm:w-[80%] md:w-[80%] text-[6px] md:text-[8px] text-[#CCCCCC] absolute top-[40px] sm:top-[80px] right-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, nisi praesentium? Doloremque excepturi sit eaque exercitationem officiis, eligendi quasi nam ea dolore.</p>
-                                <span className="text-[7px] sm:text-[6px] text-[#CCCCCC] absolute bottom-[8px] left-[40px] sm:left-[30px]">Visit Main Link</span>
-                                <span className="text-[7px] sm:text-[6px] text-[#CCCCCC] absolute bottom-[8px] right-[10px]">More Info</span>
+                            <div className="group-hover:w-[60%] sm:group-hover:w-full group-hover:h-full sm:group-hover:h-[80%] md:group-hover:h-[200px] bg-[#000] absolute bottom-0 right-0 pt-[50px] group-hover:opacity-80 rounded-tl-full w-0 h-0 opacity-0 transition-all duration-500 ease-in-out z-10">
+                            <h3 className="font-[500] text-[12px] text-[#FFFFFF] absolute top-[10px] sm:top-[40px] right-[14px]">Printing Media</h3>
+                            <h4 className="text-[#1AE4FA] text-[8px] absolute top-[26px] sm:top-[56px] right-[14px]">Short Detail Here</h4>
+                            <p className="w-[76%] sm:w-[80%] md:w-[80%] text-[6px] md:text-[8px] text-[#CCCCCC] absolute top-[40px] sm:top-[80px] right-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, nisi praesentium? Doloremque excepturi sit eaque exercitationem officiis, eligendi quasi nam ea dolore.</p>
+                            <span className="text-[7px] sm:text-[6px] text-[#CCCCCC] absolute bottom-[8px] left-[40px] sm:left-[30px]">Visit Main Link</span>
+                            <span className="text-[7px] sm:text-[6px] text-[#CCCCCC] absolute bottom-[8px] right-[10px]">More Info</span>
                             </div>
                         </div>
                     </div>
+
                     {/* PROJECT TWO */}
                     <div className="project-two w-[80%] h-[119px] sm:w-[64%] sm:h-[160px] p-[2px] gradient-border group overflow-hidden">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projecttwo.jpg')] bg-cover bg-center relative">
                             <div
-                                ref={(el) => (circleRefsMobile.current[1] = el)}
-                                className="w-[10vw] sm:w-[5vw] h-[10vw] sm:h-[5vw] rounded-full bg-[#ebebeb46] p-2 absolute top-[4%] right-[2%] flex items-center justify-center opacity-0 scale-0"
+                            ref={(el) => (circleRefsMobile.current[1] = el)}
+                            className="w-[10vw] sm:w-[5vw] h-[10vw] sm:h-[5vw] rounded-full bg-[#ebebeb46] p-2 absolute top-[4%] right-[2%] flex items-center justify-center opacity-0 scale-0"
                             >
-                                <div className="w-full h-full rounded-full bg-white"></div>
+                            <div className="w-full h-full rounded-full bg-white"></div>
                             </div>
 
                             {/* OVERLAY */}
-                            <div className="group-hover:w-[60%] group-hover:sm:w-full group-hover:h-full group-hover:sm:h-[80%] group-hover:md:h-[200px] bg-[#000] absolute bottom-0 right-0 pt-[50px] group-hover:-opacity-[80%] rounded-tl-full w-0 h-0 opacity-0 transition-all duration-500 ease-in-out">
-                                <h3 className="font-[500] text-[12px] text-[#FFFFFF] absolute top-[10px] sm:top-[40px] right-[14px]">Printing Media</h3>
-                                <h4 className="text-[#1AE4FA] text-[8px] absolute top-[26px] sm:top-[56px] right-[14px]">Short Detail Here</h4>
-                                <p className="w-[76%] sm:w-[80%] md:w-[80%] text-[6px] md:text-[8px] text-[#CCCCCC] absolute top-[40px] sm:top-[80px] right-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, nisi praesentium? Doloremque excepturi sit eaque exercitationem officiis, eligendi quasi nam ea dolore.</p>
-                                <span className="text-[7px] sm:text-[6px] text-[#CCCCCC] absolute bottom-[8px] left-[40px] sm:left-[30px]">Visit Main Link</span>
-                                <span className="text-[7px] sm:text-[6px] text-[#CCCCCC] absolute bottom-[8px] right-[10px]">More Info</span>
+                            <div className="absolute bottom-0 right-0 pt-[50px] bg-[#000] rounded-tl-full w-0 h-0 opacity-0 z-10 transition-all duration-500 ease-in-out 
+                                            group-hover:w-[60%] sm:group-hover:w-full group-hover:h-full sm:group-hover:h-[80%] md:group-hover:h-[200px] group-hover:opacity-80">
+                            <h3 className="font-[500] text-[12px] text-[#FFFFFF] absolute top-[10px] sm:top-[40px] right-[14px]">Printing Media</h3>
+                            <h4 className="text-[#1AE4FA] text-[8px] absolute top-[26px] sm:top-[56px] right-[14px]">Short Detail Here</h4>
+                            <p className="w-[76%] sm:w-[80%] md:w-[80%] text-[6px] md:text-[8px] text-[#CCCCCC] absolute top-[40px] sm:top-[80px] right-0">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, nisi praesentium? Doloremque excepturi sit eaque exercitationem officiis, eligendi quasi nam ea dolore.
+                            </p>
+                            <span className="text-[7px] sm:text-[6px] text-[#CCCCCC] absolute bottom-[8px] left-[40px] sm:left-[30px]">Visit Main Link</span>
+                            <span className="text-[7px] sm:text-[6px] text-[#CCCCCC] absolute bottom-[8px] right-[10px]">More Info</span>
                             </div>
                         </div>
                     </div>
+
                     {/* PROJECT THREE */}
-                    <div className="project-three w-[80%] h-[119px] sm:w-[33%] sm:h-[120px] p-[2px] gradient-border group overflow-hidden">
+                    <div className="project-three w-[80%] h-[119px] sm:w-[33%] sm:h-[120px] p-[2px] gradient-border group overflow-hidden relative">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projectfour.png')] bg-cover bg-center relative">
                             <div
-                                ref={(el) => (circleRefsMobile.current[2] = el)}
-                                className="w-[10vw] sm:w-[5vw] h-[10vw] sm:h-[5vw] rounded-full bg-[#ebebeb46] p-2 absolute top-[4%] right-[2%] flex items-center justify-center opacity-0 scale-0"
+                            ref={(el) => (circleRefsMobile.current[2] = el)}
+                            className="w-[10vw] sm:w-[5vw] h-[10vw] sm:h-[5vw] rounded-full bg-[#ebebeb46] p-2 absolute top-[4%] right-[2%] flex items-center justify-center opacity-0 scale-0"
                             >
-                                <div className="w-full h-full rounded-full bg-white"></div>
+                            <div className="w-full h-full rounded-full bg-white"></div>
                             </div>
 
                             {/* OVERLAY */}
-                            <div className="group-hover:w-[60%] group-hover:sm:w-full group-hover:h-full group-hover:sm:h-[80%] group-hover:md:h-[200px] bg-[#000] absolute bottom-0 right-0 pt-[50px] group-hover:-opacity-[80%] rounded-tl-full w-0 h-0 opacity-0 transition-all duration-500 ease-in-out">
-                                <h3 className="font-[500] text-[12px] text-[#FFFFFF] absolute top-[10px] sm:top-[40px] right-[14px]">Printing Media</h3>
-                                <h4 className="text-[#1AE4FA] text-[8px] absolute top-[26px] sm:top-[56px] right-[14px]">Short Detail Here</h4>
-                                <p className="w-[76%] sm:w-[80%] md:w-[80%] text-[6px] md:text-[8px] text-[#CCCCCC] absolute top-[40px] sm:top-[80px] right-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, nisi praesentium? Doloremque excepturi sit eaque exercitationem officiis, eligendi quasi nam ea dolore.</p>
-                                <span className="text-[7px] sm:text-[6px] text-[#CCCCCC] absolute bottom-[8px] left-[40px] sm:left-[30px]">Visit Main Link</span>
-                                <span className="text-[7px] sm:text-[6px] text-[#CCCCCC] absolute bottom-[8px] right-[10px]">More Info</span>
+                            <div className="absolute bottom-0 right-0 w-0 h-0 opacity-0 bg-black rounded-tl-full pt-[50px] z-10 transition-all duration-500 ease-in-out
+                                            group-hover:w-[60%] sm:group-hover:w-full group-hover:h-full sm:group-hover:h-[80%] md:group-hover:h-[200px] group-hover:opacity-80">
+                            <h3 className="font-[500] text-[12px] text-white absolute top-[10px] sm:top-[40px] right-[14px]">
+                                Printing Media
+                            </h3>
+                            <h4 className="text-[#1AE4FA] text-[8px] absolute top-[26px] sm:top-[56px] right-[14px]">
+                                Short Detail Here
+                            </h4>
+                            <p className="w-[76%] sm:w-[80%] md:w-[80%] text-[6px] md:text-[8px] text-[#CCCCCC] absolute top-[40px] sm:top-[80px] right-0">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, nisi praesentium? Doloremque excepturi sit eaque exercitationem officiis, eligendi quasi nam ea dolore.
+                            </p>
+                            <span className="text-[7px] sm:text-[6px] text-[#CCCCCC] absolute bottom-[8px] left-[40px] sm:left-[30px]">
+                                Visit Main Link
+                            </span>
+                            <span className="text-[7px] sm:text-[6px] text-[#CCCCCC] absolute bottom-[8px] right-[10px]">
+                                More Info
+                            </span>
                             </div>
                         </div>
                     </div>
+
                     {/* PROJECT FOUR */}
-                    <div className="project-four w-[80%] h-[119px] sm:w-[64%] sm:h-[240px] sm:mt-[-120px] p-[2px] gradient-border group overflow-hidden">
+                    <div className="project-four w-[80%] h-[119px] sm:w-[64%] sm:h-[240px] sm:mt-[-120px] p-[2px] gradient-border group overflow-hidden relative">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projectthree.jpg')] bg-cover bg-center relative">
                             <div
-                                ref={(el) => (circleRefsMobile.current[3] = el)}
-                                className="w-[10vw] sm:w-[5vw] h-[10vw] sm:h-[5vw] rounded-full bg-[#ebebeb46] p-2 absolute top-[4%] right-[2%] flex items-center justify-center opacity-0 scale-0"
+                            ref={(el) => (circleRefsMobile.current[3] = el)}
+                            className="w-[10vw] sm:w-[5vw] h-[10vw] sm:h-[5vw] rounded-full bg-[#ebebeb46] p-2 absolute top-[4%] right-[2%] flex items-center justify-center opacity-0 scale-0"
                             >
-                                <div className="w-full h-full rounded-full bg-white"></div>
+                            <div className="w-full h-full rounded-full bg-white"></div>
                             </div>
 
                             {/* OVERLAY */}
-                            <div className="group-hover:w-[60%] group-hover:sm:w-full group-hover:h-full group-hover:sm:h-[80%] group-hover:md:h-[200px] bg-[#000] absolute bottom-0 right-0 pt-[50px] group-hover:-opacity-[80%] rounded-tl-full w-0 h-0 opacity-0 transition-all duration-500 ease-in-out">
-                                <h3 className="font-[500] text-[12px] text-[#FFFFFF] absolute top-[10px] sm:top-[40px] right-[14px]">Printing Media</h3>
-                                <h4 className="text-[#1AE4FA] text-[8px] absolute top-[26px] sm:top-[56px] right-[14px]">Short Detail Here</h4>
-                                <p className="w-[76%] sm:w-[80%] md:w-[80%] text-[6px] md:text-[8px] text-[#CCCCCC] absolute top-[40px] sm:top-[80px] right-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, nisi praesentium? Doloremque excepturi sit eaque exercitationem officiis, eligendi quasi nam ea dolore.</p>
-                                <span className="text-[7px] sm:text-[6px] text-[#CCCCCC] absolute bottom-[8px] left-[40px] sm:left-[30px]">Visit Main Link</span>
-                                <span className="text-[7px] sm:text-[6px] text-[#CCCCCC] absolute bottom-[8px] right-[10px]">More Info</span>
+                            <div className="absolute bottom-0 right-0 w-0 h-0 opacity-0 bg-black rounded-tl-full pt-[50px] z-10 transition-all duration-500 ease-in-out
+                                            group-hover:w-[60%] sm:group-hover:w-full group-hover:h-full sm:group-hover:h-[80%] md:group-hover:h-[200px] group-hover:opacity-80">
+                            <h3 className="font-[500] text-[12px] text-white absolute top-[10px] sm:top-[40px] right-[14px]">
+                                Printing Media
+                            </h3>
+                            <h4 className="text-[#1AE4FA] text-[8px] absolute top-[26px] sm:top-[56px] right-[14px]">
+                                Short Detail Here
+                            </h4>
+                            <p className="w-[76%] sm:w-[80%] md:w-[80%] text-[6px] md:text-[8px] text-[#CCCCCC] absolute top-[40px] sm:top-[80px] right-0">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, nisi praesentium? Doloremque excepturi sit eaque exercitationem officiis, eligendi quasi nam ea dolore.
+                            </p>
+                            <span className="text-[7px] sm:text-[6px] text-[#CCCCCC] absolute bottom-[8px] left-[40px] sm:left-[30px]">
+                                Visit Main Link
+                            </span>
+                            <span className="text-[7px] sm:text-[6px] text-[#CCCCCC] absolute bottom-[8px] right-[10px]">
+                                More Info
+                            </span>
                             </div>
                         </div>
                     </div>
+
                     {/* PROJECT FIVE */}
-                    <div className="project-five w-[80%] h-[119px] sm:w-[49%] sm:h-[185px] sm:mt-0 p-[2px] gradient-border group overflow-hidden">
+                    <div className="project-five w-[80%] h-[119px] sm:w-[49%] sm:h-[185px] sm:mt-0 p-[2px] gradient-border group overflow-hidden relative">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projectsix.png')] bg-cover bg-center relative">
                             <div
-                                ref={(el) => (circleRefsMobile.current[4] = el)}
-                                className="w-[10vw] sm:w-[5vw] h-[10vw] sm:h-[5vw] rounded-full bg-[#ebebeb46] p-2 absolute top-[4%] right-[2%] flex items-center justify-center opacity-0 scale-0"
+                            ref={(el) => (circleRefsMobile.current[4] = el)}
+                            className="w-[10vw] sm:w-[5vw] h-[10vw] sm:h-[5vw] rounded-full bg-[#ebebeb46] p-2 absolute top-[4%] right-[2%] flex items-center justify-center opacity-0 scale-0"
                             >
-                                <div className="w-full h-full rounded-full bg-white"></div>
+                            <div className="w-full h-full rounded-full bg-white"></div>
                             </div>
 
                             {/* OVERLAY */}
-                            <div className="group-hover:w-[60%] group-hover:sm:w-full group-hover:h-full group-hover:sm:h-[80%] group-hover:md:h-[200px] bg-[#000] absolute bottom-0 right-0 pt-[50px] group-hover:-opacity-[80%] rounded-tl-full w-0 h-0 opacity-0 transition-all duration-500 ease-in-out">
-                                <h3 className="font-[500] text-[12px] text-[#FFFFFF] absolute top-[10px] sm:top-[40px] right-[14px]">Printing Media</h3>
-                                <h4 className="text-[#1AE4FA] text-[8px] absolute top-[26px] sm:top-[56px] right-[14px]">Short Detail Here</h4>
-                                <p className="w-[76%] sm:w-[80%] md:w-[80%] text-[6px] md:text-[8px] text-[#CCCCCC] absolute top-[40px] sm:top-[80px] right-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, nisi praesentium? Doloremque excepturi sit eaque exercitationem officiis, eligendi quasi nam ea dolore.</p>
-                                <span className="text-[7px] sm:text-[6px] text-[#CCCCCC] absolute bottom-[8px] left-[40px] sm:left-[30px]">Visit Main Link</span>
-                                <span className="text-[7px] sm:text-[6px] text-[#CCCCCC] absolute bottom-[8px] right-[10px]">More Info</span>
+                            <div className="absolute bottom-0 right-0 w-0 h-0 opacity-0 bg-black rounded-tl-full pt-[50px] z-10 transition-all duration-500 ease-in-out
+                                            group-hover:w-[60%] sm:group-hover:w-full group-hover:h-full sm:group-hover:h-[80%] md:group-hover:h-[200px] group-hover:opacity-80">
+                            <h3 className="font-[500] text-[12px] text-white absolute top-[10px] sm:top-[40px] right-[14px]">
+                                Printing Media
+                            </h3>
+                            <h4 className="text-[#1AE4FA] text-[8px] absolute top-[26px] sm:top-[56px] right-[14px]">
+                                Short Detail Here
+                            </h4>
+                            <p className="w-[76%] sm:w-[80%] md:w-[80%] text-[6px] md:text-[8px] text-[#CCCCCC] absolute top-[40px] sm:top-[80px] right-0">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, nisi praesentium? Doloremque excepturi sit eaque exercitationem officiis, eligendi quasi nam ea dolore.
+                            </p>
+                            <span className="text-[7px] sm:text-[6px] text-[#CCCCCC] absolute bottom-[8px] left-[40px] sm:left-[30px]">
+                                Visit Main Link
+                            </span>
+                            <span className="text-[7px] sm:text-[6px] text-[#CCCCCC] absolute bottom-[8px] right-[10px]">
+                                More Info
+                            </span>
                             </div>
                         </div>
                     </div>
+
                     {/* PROJECT SIX */}
-                    <div className="project-six w-[80%] h-[119px] sm:w-[48%] sm:h-[185px] sm:mt-0 p-[2px] gradient-border group overflow-hidden">
+                    <div className="project-six w-[80%] h-[119px] sm:w-[48%] sm:h-[185px] sm:mt-0 p-[2px] gradient-border group overflow-hidden relative">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projectfive.jpg')] bg-cover bg-center relative">
                             <div
-                                ref={(el) => (circleRefsMobile.current[5] = el)}
-                                className="w-[10vw] sm:w-[5vw] h-[10vw] sm:h-[5vw] rounded-full bg-[#ebebeb46] p-2 absolute top-[4%] right-[2%] flex items-center justify-center opacity-0 scale-0"
+                            ref={(el) => (circleRefsMobile.current[5] = el)}
+                            className="w-[10vw] sm:w-[5vw] h-[10vw] sm:h-[5vw] rounded-full bg-[#ebebeb46] p-2 absolute top-[4%] right-[2%] flex items-center justify-center opacity-0 scale-0"
                             >
-                                <div className="w-full h-full rounded-full bg-white"></div>
+                            <div className="w-full h-full rounded-full bg-white"></div>
                             </div>
 
-                            {/* OVERLAY */}
-                            <div className="group-hover:w-[60%] group-hover:sm:w-full group-hover:h-full group-hover:sm:h-[80%] group-hover:md:h-[200px] bg-[#000] absolute bottom-0 right-0 pt-[50px] group-hover:-opacity-[80%] rounded-tl-full w-0 h-0 opacity-0 transition-all duration-500 ease-in-out">
-                                <h3 className="font-[500] text-[12px] text-[#FFFFFF] absolute top-[10px] sm:top-[40px] right-[14px]">Printing Media</h3>
-                                <h4 className="text-[#1AE4FA] text-[8px] absolute top-[26px] sm:top-[56px] right-[14px]">Short Detail Here</h4>
-                                <p className="w-[76%] sm:w-[80%] md:w-[80%] text-[6px] md:text-[8px] text-[#CCCCCC] absolute top-[40px] sm:top-[80px] right-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, nisi praesentium? Doloremque excepturi sit eaque exercitationem officiis, eligendi quasi nam ea dolore.</p>
-                                <span className="text-[7px] sm:text-[6px] text-[#CCCCCC] absolute bottom-[8px] left-[40px] sm:left-[30px]">Visit Main Link</span>
-                                <span className="text-[7px] sm:text-[6px] text-[#CCCCCC] absolute bottom-[8px] right-[10px]">More Info</span>
+                            {/* ✅ FIXED OVERLAY */}
+                            <div className="absolute bottom-0 right-0 w-0 h-0 opacity-0 bg-black rounded-tl-full pt-[50px] z-10 transition-all duration-500 ease-in-out
+                                            group-hover:w-[60%] sm:group-hover:w-full group-hover:h-full sm:group-hover:h-[80%] md:group-hover:h-[200px] group-hover:opacity-80">
+                            <h3 className="font-[500] text-[12px] text-white absolute top-[10px] sm:top-[40px] right-[14px]">
+                                Printing Media
+                            </h3>
+                            <h4 className="text-[#1AE4FA] text-[8px] absolute top-[26px] sm:top-[56px] right-[14px]">
+                                Short Detail Here
+                            </h4>
+                            <p className="w-[76%] sm:w-[80%] md:w-[80%] text-[6px] md:text-[8px] text-[#CCCCCC] absolute top-[40px] sm:top-[80px] right-0">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, nisi praesentium? Doloremque excepturi sit eaque exercitationem officiis, eligendi quasi nam ea dolore.
+                            </p>
+                            <span className="text-[7px] sm:text-[6px] text-[#CCCCCC] absolute bottom-[8px] left-[40px] sm:left-[30px]">
+                                Visit Main Link
+                            </span>
+                            <span className="text-[7px] sm:text-[6px] text-[#CCCCCC] absolute bottom-[8px] right-[10px]">
+                                More Info
+                            </span>
                             </div>
                         </div>
                     </div>
