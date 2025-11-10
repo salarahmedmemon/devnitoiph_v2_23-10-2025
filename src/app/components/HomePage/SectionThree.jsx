@@ -148,8 +148,8 @@ const SectionThree = () => {
 
                             {/* OVERLAY */}
                             <div className="w-0 h-0 bg-black absolute bottom-0 right-0 pt-[50px] opacity-0 transition-all duration-500 ease-in-out rounded-tl-full group-hover:w-full group-hover:h-[238px] group-hover:opacity-80">
-                                <h3 className="font-500 text-[18px] xl:text-[20px] text-[#FFFFFF] absolute right-[30px] xl:right-[14px]">Printing Media</h3>
-                                <h4 className="text-[#CCCCCC] text-[12px] mt-[30px] absolute right-[14px]">Short Detail Here</h4>
+                                <h3 className="font-500 text-[18px] xl:text-[20px] text-[#FFFFFF] absolute right-[8px] xl:right-[14px]">Printing Media</h3>
+                                <h4 className="text-[#1AE4FA] text-[12px] mt-[30px] absolute right-[5px] xl:right-[14px]">Short Detail Here</h4>
                                 <p className="w-[80%] text-[8px] text-[#CCCCCC] absolute lg:left-[36px] xl:left-[50px] mt-[68px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, nisi praesentium? Doloremque excepturi sit eaque exercitationem officiis, eligendi quasi nam ea dolore.</p>
                                 <span className="text-[10px] text-[#CCCCCC] absolute bottom-[16px] left-[18px]">Visit Main Link</span>
                                 <span className="text-[10px] text-[#CCCCCC] absolute bottom-[16px] right-[18px]">More Info</span>
@@ -170,8 +170,8 @@ const SectionThree = () => {
                     group-hover:w-[54%] group-hover:h-full group-hover:opacity-80
                     bg-[#000] rounded-tl-full pt-[40px] xl:pt-[50px] ">
 
-                                <h3 className="font-[500] text-[20px] text-[#FFFFFF] absolute right-[24px]">Printing Media</h3>
-                                <h4 className="text-[#1AE4FA] text-[12px] mt-[30px] absolute right-[14px]">Short Detail Here</h4>
+                                <h3 className="font-[500] text-[20px] text-[#FFFFFF] absolute right-[8px] xl:right-[24px]">Printing Media</h3>
+                                <h4 className="text-[#1AE4FA] text-[12px] mt-[30px] absolute right-[5px] xl:right-[14px]">Short Detail Here</h4>
                                 <p className="w-[80%] xl:w-[90%] text-[8px] text-right text-[#CCCCCC] absolute left-[30px] xl:left-[10px] mt-[54px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, nisi praesentium? Doloremque excepturi</p>
                                 <span className="text-[10px] text-[#CCCCCC] absolute bottom-[16px] left-[18px]">Visit Main Link</span>
                                 <span className="text-[10px] text-[#CCCCCC] absolute bottom-[16px] right-[18px]">More Info</span>
@@ -252,7 +252,7 @@ const SectionThree = () => {
                             {/* OVERLAY */}
                             <div className="w-0 h-0 group-hover:w-[50%] group-hover:h-full bg-[#000] absolute bottom-0 right-0 opacity-0
                     transition-all duration-500 ease-in-out pt-[46px] group-hover:opacity-80 rounded-tl-full">
-                                <h3 className="font-[500] text-[18px] xl:text-[20px] text-[#FFFFFF] absolute right-[20px] xl:right-[14px]">Printing Media</h3>
+                                <h3 className="font-[500] text-[18px] xl:text-[20px] text-[#FFFFFF] absolute right-[8px] xl:right-[14px]">Printing Media</h3>
                                 <h4 className="text-[#1AE4FA] text-[12px] mt-[24px] xl:mt-[30px] absolute right-[14px]">Short Detail Here</h4>
                                 <p className="w-[80%] text-[8px] text-[#CCCCCC] absolute left-[36px] xl:left-[50px] mt-[50px] xl:mt-[55px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, nisi praesentium? Doloremque excepturi sit eaque exercitationem officiis, eligendi quasi nam ea dolore.</p>
                                 <span className="text-[10px] text-[#CCCCCC] absolute bottom-[16px] left-[18px]">Visit Main Link</span>
@@ -297,7 +297,7 @@ const SectionThree = () => {
 
                             {/* OVERLAY */}
                             <div className="absolute bottom-0 right-0 pt-[50px] bg-[#000] rounded-tl-full w-0 h-0 opacity-0 z-10 transition-all duration-500 ease-in-out 
-                                            group-hover:w-[60%] sm:group-hover:w-full group-hover:h-full sm:group-hover:h-[80%] md:group-hover:h-[200px] group-hover:opacity-80">
+                                            group-hover:w-[60%] sm:group-hover:w-[70%] md:group-hover:w-[50%] group-hover:h-full sm:group-hover:h-full group-hover:opacity-80">
                             <h3 className="font-[500] text-[12px] text-[#FFFFFF] absolute top-[10px] sm:top-[40px] right-[14px]">Printing Media</h3>
                             <h4 className="text-[#1AE4FA] text-[8px] absolute top-[26px] sm:top-[56px] right-[14px]">Short Detail Here</h4>
                             <p className="w-[76%] sm:w-[80%] md:w-[80%] text-[6px] md:text-[8px] text-[#CCCCCC] absolute top-[40px] sm:top-[80px] right-0">
@@ -321,14 +321,14 @@ const SectionThree = () => {
 
                             {/* OVERLAY */}
                             <div className="absolute bottom-0 right-0 w-0 h-0 opacity-0 bg-black rounded-tl-full pt-[50px] z-10 transition-all duration-500 ease-in-out
-                                            group-hover:w-[60%] sm:group-hover:w-full group-hover:h-full sm:group-hover:h-[80%] md:group-hover:h-[200px] group-hover:opacity-80">
-                            <h3 className="font-[500] text-[12px] text-white absolute top-[10px] sm:top-[40px] right-[14px]">
+                                            group-hover:w-[60%] sm:group-hover:w-full md:group-hover:w-[96%] group-hover:h-full sm:group-hover:h-full group-hover:opacity-80">
+                            <h3 className="font-[500] text-[12px] text-white absolute top-[10px] sm:top-[10px] right-[14px]">
                                 Printing Media
                             </h3>
-                            <h4 className="text-[#1AE4FA] text-[8px] absolute top-[26px] sm:top-[56px] right-[14px]">
+                            <h4 className="text-[#1AE4FA] text-[8px] absolute top-[26px] sm:top-[26px] right-[14px]">
                                 Short Detail Here
                             </h4>
-                            <p className="w-[76%] sm:w-[80%] md:w-[80%] text-[6px] md:text-[8px] text-[#CCCCCC] absolute top-[40px] sm:top-[80px] right-0">
+                            <p className="w-[76%] sm:w-[80%] md:w-[80%] text-[6px] md:text-[8px] text-[#CCCCCC] absolute top-[40px] sm:top-[40px] right-0">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, nisi praesentium? Doloremque excepturi sit eaque exercitationem officiis, eligendi quasi nam ea dolore.
                             </p>
                             <span className="text-[7px] sm:text-[6px] text-[#CCCCCC] absolute bottom-[8px] left-[40px] sm:left-[30px]">
@@ -353,7 +353,7 @@ const SectionThree = () => {
 
                             {/* OVERLAY */}
                             <div className="absolute bottom-0 right-0 w-0 h-0 opacity-0 bg-black rounded-tl-full pt-[50px] z-10 transition-all duration-500 ease-in-out
-                                            group-hover:w-[60%] sm:group-hover:w-full group-hover:h-full sm:group-hover:h-[80%] md:group-hover:h-[200px] group-hover:opacity-80">
+                                            group-hover:w-[60%] group-hover:h-full sm:group-hover:h-[80%] md:group-hover:h-[200px] group-hover:opacity-80">
                             <h3 className="font-[500] text-[12px] text-white absolute top-[10px] sm:top-[40px] right-[14px]">
                                 Printing Media
                             </h3>
@@ -385,7 +385,7 @@ const SectionThree = () => {
 
                             {/* OVERLAY */}
                             <div className="absolute bottom-0 right-0 w-0 h-0 opacity-0 bg-black rounded-tl-full pt-[50px] z-10 transition-all duration-500 ease-in-out
-                                            group-hover:w-[60%] sm:group-hover:w-full group-hover:h-full sm:group-hover:h-[80%] md:group-hover:h-[200px] group-hover:opacity-80">
+                                            group-hover:w-[60%] sm:group-hover:w-full md:group-hover:w-[80%] group-hover:h-full sm:group-hover:h-full group-hover:opacity-80">
                             <h3 className="font-[500] text-[12px] text-white absolute top-[10px] sm:top-[40px] right-[14px]">
                                 Printing Media
                             </h3>
@@ -417,7 +417,7 @@ const SectionThree = () => {
 
                             {/* ✅ FIXED OVERLAY */}
                             <div className="absolute bottom-0 right-0 w-0 h-0 opacity-0 bg-black rounded-tl-full pt-[50px] z-10 transition-all duration-500 ease-in-out
-                                            group-hover:w-[60%] sm:group-hover:w-full group-hover:h-full sm:group-hover:h-[80%] md:group-hover:h-[200px] group-hover:opacity-80">
+                                            group-hover:w-[60%] sm:group-hover:w-full md:group-hover:w-[80%] group-hover:h-full sm:group-hover:h-full group-hover:opacity-80">
                             <h3 className="font-[500] text-[12px] text-white absolute top-[10px] sm:top-[40px] right-[14px]">
                                 Printing Media
                             </h3>
