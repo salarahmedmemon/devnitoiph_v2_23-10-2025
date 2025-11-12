@@ -2,6 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ArrowRight, ChevronRight } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -133,19 +134,19 @@ const SectionThree = () => {
               <div
                 key={i}
                 onClick={() => setActiveIndex(i)}
-                className={`w-full h-[16%] md:h-[6vh] flex items-center justify-between px-[20px] cursor-pointer rounded-lg ${
-                  activeIndex === i
+                className={`w-full h-[40px] sm:h-[50px] flex items-center justify-between px-[20px] cursor-pointer rounded-lg ${activeIndex === i
                     ? "bg-[#4C4886] text-white"
                     : "border-[2px] border-gray-200 text-white"
-                }`}
+                  }`}
               >
                 <>
-                  <h2 className="font-semibold text-[12px] md:text-[16px]">
-                    {q.title}
-                  </h2>
-                  <img src="/img/faqpage/whitearrow.png" className="w-[26px]" />
+                  <h2 className="font-semibold text-[12px] md:text-[16px]">{q.title}</h2>
+                  <ArrowRight
+                    size={26}
+                  />
                 </>
               </div>
+
             ))}
           </div>
 
