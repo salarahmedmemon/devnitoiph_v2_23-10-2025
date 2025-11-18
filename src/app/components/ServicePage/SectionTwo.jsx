@@ -144,10 +144,10 @@ const SectionTwo = () => {
 
                 <div ref={contentRef} className="w-[700px] h-full me-[5%]">
                     <h1 className="border-l-[3px] border-[#4C4886] text-[28px] font-[600] text-[#4C4886] ps-[6px]">Our Services</h1>
-                    <p className="text-[16px] font-[400] mt-[20px] text-[#666666]">When you land a sample webpage Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex unde commodi a labore quidem harum, provident omnis excepturi veritatis, neque quod, recusandae quis illo velit asperiores nobis. Ea, quae aliquid!</p>
+                    <p className="text-[16px] lg:text-[12px] font-[400] mt-[20px] text-[#666666]">When you land a sample webpage Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex unde commodi a labore quidem harum, provident omnis excepturi veritatis, neque quod, recusandae quis illo velit asperiores nobis. Ea, quae aliquid!</p>
                     <span className="text-[12px] text-[#4C4886] block mt-[20px] font-[700]"> Cost-effective and Comprehensive IT Outsourcing Services:</span>
                     <div className="w-full mt-[24px] flex items-center justify-between">
-                        <div className="w-full h-[134px]  sm:h-[200px] p-[10px] text-[12px]">
+                        <div className="w-full h-[134px]  sm:h-[200px] p-[10px] text-[10px]">
                             <ul className="list-disc text-[#666666]">
                                 <li>Hire Mobile App Developer</li>
                                 <li>Hire Scrum Master in Dubai</li>
@@ -158,7 +158,7 @@ const SectionTwo = () => {
                             </ul>
                         </div>
 
-                        <div className="w-full h-[134px] sm:h-[200px] p-[10px] text-[12px]">
+                        <div className="w-full h-[134px] sm:h-[200px] p-[10px] text-[10px]">
                             <ul className="list-disc text-[#666666]">
                                 <li>Hire Mobile App Developer</li>
                                 <li>Hire Scrum Master in Dubai</li>
@@ -169,7 +169,7 @@ const SectionTwo = () => {
                             </ul>
                         </div>
 
-                        <div className="w-full h-[134px] sm:h-[200px] p-[10px] mt-[30px] sm:mt-0 text-[12px]">
+                        <div className="w-full h-[134px] sm:h-[200px] p-[10px] mt-[30px] sm:mt-0 text-[10px]">
                             <ul className="list-disc text-[#666666]">
                                 <li>Hire Mobile App Developer</li>
                                 <li>Hire Scrum Master in Dubai</li>
