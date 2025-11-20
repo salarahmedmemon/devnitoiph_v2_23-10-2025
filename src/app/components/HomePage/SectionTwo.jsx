@@ -580,7 +580,7 @@ const SectionTwo = () => {
 
     // 3. return statement/jsx
     return (
-        <div ref={containerRef} className="homepage-sectiontwo w-full h-[960px] sm:h-[1300px] lg:h-[850px] overflow-hidden relative bg-[#EEEEEE]">
+        <div ref={containerRef} className="homepage-sectiontwo w-full h-[960px] sm:h-[1300px] lg:h-[1000px] xl:h-[900px] overflow-hidden relative bg-[#EEEEEE]">
 
             {/* RIGHT CIRCLE */}
             <div className='homepage-sectionone-rightcircle w-[140px] sm:w-[300px] lg:w-[405.06px] h-[140px] sm:h-[300px] lg:h-[405.06px] rounded-full bg-[#BAD3EF] absolute top-[-20px] right-[-60px] sm:top-[-50px] lg:top-[16px] sm:right-[-150px] lg:right-[-200px] xl:left-[85%] p-[3px]'>
@@ -601,7 +601,7 @@ const SectionTwo = () => {
             </div>
 
             {/* NAVIGATIONS */}
-            <div className="nav-wrapper w-full sm:w-[768px] lg:w-[1024px] xl:w-[1280px] h-[40px] sm:h-[60px] mt-[24px] sm:mt-[70px] lg:mt-[60px] xl:mt-[50px] mx-auto overflow-hidden relative"
+            <div className="nav-wrapper w-full sm:w-[768px] lg:w-[94%] xl:w-[1280px] h-[40px] sm:h-[60px] mt-[24px] sm:mt-[70px] lg:mt-[60px] xl:mt-[50px] mx-auto overflow-hidden relative"
             style={{
                 WebkitMaskImage:
                 "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
@@ -645,7 +645,7 @@ const SectionTwo = () => {
             </div>
 
             {/* MAIN CONTENT WITH IMAGE */}
-            <div className="w-full sm:w-[640px] lg:w-[940px] xl:w-[1262px] h-[344px] z-[2000] mt-[0px] sm:mt-[20px] lg:mt-[95px] mx-auto flex flex-col lg:flex-row gap-[5px] sm:gap-[20px]">
+            <div className="w-full sm:w-[640px] lg:w-[94%] xl:w-[1262px] h-[344px] z-[2000] mt-[0px] sm:mt-[20px] lg:mt-[95px] mx-auto flex flex-col lg:flex-row gap-[5px] lg:items-center lg:justify-between sm:gap-[20px] lg:gap-0 xl:gap-[14px]">
                 {/* FIRST COLUMN FOR IMAGES IN JUST SMALL DEVICES sm - md */}
                 <div className="flex justify-center lg:hidden">
                     <div className="w-[290px] h-[173px] sm:w-[600px] lg:w-[350px] xl:w-[550px] sm:h-[400px] lg:h-[240px] xl:h-[344px] z-[1000]">
@@ -664,27 +664,27 @@ const SectionTwo = () => {
                 </div>
 
                 {/* FIRST COLUMN FOR IMAGES IN JUST FOR LARGE DEVICES */}
-                <div className="hidden lg:block w-[600px] lg:w-[350px] xl:w-[550px] h-[400px] lg:h-[240px] xl:h-[344px] z-[1000]">
+                <div className="hidden lg:block w-[600px] lg:w-[35%] h-[400px] lg:h-[240px] xl:h-[344px] z-[1000]">
                     <img ref={imageRef} src={image} alt='image' className='w-full h-full object-contain' />
                 </div>
 
                 {/* SECOND COLUMN FOR CONTENT */}
-                <div ref={secondColRef} className="z-[1000] w-[98%] h-[100%] sm:w-[640px] sm:h-[341px] sm:ms-[10px] md:ms-[30px] flex flex-col">
+                <div ref={secondColRef} className="z-[1000] w-[98%] h-[100%] sm:w-[640px] lg:w-[50%] xl:w-[64%] sm:h-[341px] sm:ms-[10px] md:ms-[30px] flex flex-col">
                     <h2 className="mx-auto sm:mx-0 text-[20px] sm:text-[26px] lg:text-[24px] xl:text-[28px] font-[400] text-[#0A1119] sm:border-l-[3px] sm:border-[#4C4886] sm:ps-[5px]"> {currentContent.title}</h2>
 
-                    <p className="mx-auto sm:mx-0 ms-[10px] sm:ms-0 text-center sm:text-start text-[14px] sm:text-[16px] lg:text-[12px] font-[400] pt-[20px] text-[#666666] pe-[14px] md:pe-0">{currentContent.description}</p>
+                    <p className="mx-auto sm:mx-0 ms-[10px] sm:ms-0 text-center sm:text-start text-[14px] sm:text-[16px] font-[400] pt-[20px] text-[#666666] pe-[14px] md:pe-0">{currentContent.description}</p>
 
-                    <span className="text-center mx-auto sm:mx-0 sm:text-start text-[16px] sm:text-[16px] lg:text-[12px] font-[700] text-[#4C4886] pt-[10px] sm:pt-[20px]">{currentContent.listTitle}</span>
+                    <span className="text-center mx-auto sm:mx-0 sm:text-start text-[16px] sm:text-[16px]  font-[700] text-[#4C4886] pt-[10px] sm:pt-[20px]">{currentContent.listTitle}</span>
 
                     {/* LIST ITEMS FOR DESKTOP */}
-                    <ul className="hidden lg:flex w-[780px] lg:w-[580px] xl:w-[640px] md:h-[115px] z-[1000] pt-[30px] md:pt-[60px] lg:pt-[20px] list-disc list-inside items-center justify-between xl:gap-[20px] flex-wrap">
+                    <ul className="hidden lg:flex w-[780px] lg:w-[98%] ms-[14px] md:h-[115px] z-[1000] pt-[30px] md:pt-[60px] lg:pt-[20px] list-disc list-inside items-center justify-between xl:gap-[20px] flex-wrap">
                         {Array.isArray(currentContent.listItemsDesktop)
                             ? currentContent.listItemsDesktop.map((item, i) => (
                                 <li key={i} className="text-[14px] lg:text-[10px] font-[600] text-[#666666]">{item}</li>
                             ))
                             : Object.entries(currentContent.listItemsDesktop).map(([colKey, colItems], colIndex) => (
-                                <div key={colIndex} className="w-[260px] lg:w-[174px] h-[115px] flex flex-col items-center justify-center lg:gap-[5px]">
-                                    <ul className="list-disc text-[13px] lg:text-[10px] font-[600] text-[#666666]">
+                                <div key={colIndex} className="w-[30%] h-[220px] flex flex-col items-center">
+                                    <ul className="list-disc text-[13px] lg:text-[16px] font-[600] text-[#666666]">
                                         {colItems.map((item, i) => (
                                             <li key={i} className="mt-1">{item}</li>
                                         ))}

@@ -57,7 +57,7 @@ const SectionTwo = () => {
 
     // 3. return statement/jsx
     return (
-        <div ref={sectionRef} className="w-full h-[1168px] sm:h-[1200px] lg:h-[700px] bg-[#EEEEEE] overflow-hidden relative pt-[48px]">
+        <div ref={sectionRef} className="w-full h-[1168px] sm:h-[1200px] lg:h-[860px] xl:h-[760px] bg-[#EEEEEE] overflow-hidden relative pt-[48px]">
             {/* RIGHT CIRCLE */}
             <div className='w-[140px] sm:w-[300px] lg:w-[405.06px] h-[140px] sm:h-[300px] lg:h-[405.06px] rounded-full bg-[#BAD3EF] absolute top-[-20px] right-[-60px] sm:top-[-50px] lg:top-[-140px] sm:right-[-150px] lg:right-[-200px] xl:left-[85%] p-[3px]'>
                 <div className='w-full h-full rounded-full bg-gradient-to-b from-[#E2E8EE] to-[#E9EBEE]'></div>
@@ -89,8 +89,8 @@ const SectionTwo = () => {
                 <h1 className="w-[180px] sm:w-[200px] h-[40px] text-center sm:border-l-[3px] border-[#4C4886] text-[28px] sm:text-[32px] font-[600] text-[#4C4886] sm:ps-[6px]">Our Services</h1>
                 <p className="text-[16px] sm:text-[20px] font-[400] pt-[26px] text-center text-[#AAAAAA]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stancenturies,</p>
                 <span className="text-[16px] text-center sm:text-[18px] text-[#4C4886] font-[700] mt-[24px]"> Cost-effective and Comprehensive IT Outsourcing Services:</span>
-                <div className="w-[242px] sm:w-[400px] mt-[24px] flex flex-col gap-[10px]">
-                    <div className="w-full h-[134px] sm:h-[145px] text-center p-[10px] text-[14px]">
+                <div className="w-[242px] sm:w-[400px] mt-[24px] flex flex-col gap-[10px] text-[#666666]">
+                    <div className="w-full h-[134px] sm:h-[145px] text-center p-[10px] text-[14px] ">
                         <ul>
                                 <li>Hire Mobile App Developer</li>
                                 <li>Hire Scrum Master in Dubai</li>
@@ -127,7 +127,7 @@ const SectionTwo = () => {
 
 
             {/* FOR LARGE SCREEN */}
-            <div className="hidden lg:flex w-full h-[78%] mt-[14%] xl:mt-[200px] justify-center gap-[100px]">
+            <div className="hidden lg:flex w-full h-[78%] mt-[200px] justify-center gap-[100px]">
                 <div ref={imageRef} className="w-[419px] h-[350px] ms-[5%]">
                     <div className="w-full h-full relative ms-[4%]">
                         {/* <Image
@@ -138,16 +138,16 @@ const SectionTwo = () => {
                             className="object-cover"
                             blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAAklEQVR4AewaftIAAAEpSURBVGNmQAIXLl3it7WzlbYwN/+2e/fuvwxIgIUBCI4ePaolJ/jmT2xK4AM+TUOxzfPWPpi755y64KcH/4KCgm4zAAHzgQMH2A8fPvy2o3fKX2NdARc+IwMZRmYlpRWTmm/++/P7RVNHO8eKpUt/szx79kxG4dcfQWthaSajn/80+Yyk8z6fYV3No2X3nIdTlPH9y1dPGBgYHjKvXbv2va6D/fNX/xnf2d3/ycHurZ1+8ejrlcLiDFv+Mfx6UFtb+4EBCJgYgODz58/MfHx893SzYnK4vzAyRPibpj569OjFv3///jNAATMDEDAxMQmxsLDoSGmIGShIKAgcP3Xs+pEzV46dPn16/9evX38yoAEBbk4OWXc702B+Xh55BgYGIQYGBg4GKAAAOcJxrLqJHhsAAAAASUVORK5CYII="
                         /> */}
-                        <img src="/img/servicepage/sectionone/image02.png" alt="left image" loading="lazy" className="w-full h-full object-cover" />
+                        <img src="/img/servicepage/sectionone/image02.png" alt="left image" loading="lazy" className="w-full h-full object-contain" />
                     </div>
                 </div>
 
                 <div ref={contentRef} className="w-[700px] h-full me-[5%]">
                     <h1 className="border-l-[3px] border-[#4C4886] text-[28px] font-[600] text-[#4C4886] ps-[6px]">Our Services</h1>
-                    <p className="text-[16px] lg:text-[12px] font-[400] mt-[20px] text-[#666666]">When you land a sample webpage Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex unde commodi a labore quidem harum, provident omnis excepturi veritatis, neque quod, recusandae quis illo velit asperiores nobis. Ea, quae aliquid!</p>
-                    <span className="text-[12px] text-[#4C4886] block mt-[20px] font-[700]"> Cost-effective and Comprehensive IT Outsourcing Services:</span>
-                    <div className="w-full mt-[24px] flex items-center justify-between">
-                        <div className="w-full h-[134px]  sm:h-[200px] p-[10px] text-[10px]">
+                    <p className="text-[16px] font-[400] mt-[20px] text-[#666666]">When you land a sample webpage Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex unde commodi a labore quidem harum, provident omnis excepturi veritatis, neque quod, recusandae quis illo velit asperiores nobis. Ea, quae aliquid!</p>
+                    <span className="text-[12px] lg:text-[16px] text-[#4C4886] block mt-[20px] font-[700]"> Cost-effective and Comprehensive IT Outsourcing Services:</span>
+                    <div className="w-full ms-[10px] mt-[24px] flex items-center justify-between gap-[14px]">
+                        <div className="w-full h-[134px]  sm:h-[200px] p-[10px] text-[10px] lg:text-[16px]">
                             <ul className="list-disc text-[#666666]">
                                 <li>Hire Mobile App Developer</li>
                                 <li>Hire Scrum Master in Dubai</li>
@@ -158,7 +158,7 @@ const SectionTwo = () => {
                             </ul>
                         </div>
 
-                        <div className="w-full h-[134px] sm:h-[200px] p-[10px] text-[10px]">
+                        <div className="w-full h-[134px] sm:h-[200px] p-[10px] text-[10px] lg:text-[16px]">
                             <ul className="list-disc text-[#666666]">
                                 <li>Hire Mobile App Developer</li>
                                 <li>Hire Scrum Master in Dubai</li>
@@ -169,7 +169,7 @@ const SectionTwo = () => {
                             </ul>
                         </div>
 
-                        <div className="w-full h-[134px] sm:h-[200px] p-[10px] mt-[30px] sm:mt-0 text-[10px]">
+                        <div className="w-full h-[134px] sm:h-[200px] p-[10px] mt-[30px] sm:mt-0 text-[10px] lg:text-[16px]">
                             <ul className="list-disc text-[#666666]">
                                 <li>Hire Mobile App Developer</li>
                                 <li>Hire Scrum Master in Dubai</li>

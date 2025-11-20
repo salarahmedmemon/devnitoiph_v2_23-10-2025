@@ -57,7 +57,7 @@ const SectionTwo = () => {
 
     // 3. return statement/jsx
     return (
-        <div ref={sectionRef} className="w-full h-[1200px] sm:h-[1100px] lg:h-[798px] bg-[#EEEEEE] overflow-hidden relative pt-0 md:pt-[48px]">
+        <div ref={sectionRef} className="w-full h-[1200px] sm:h-[1100px] lg:h-[600px] bg-[#EEEEEE] overflow-hidden relative pt-0 md:pt-[28px]">
             {/* RIGHT CIRCLE */}
             <div className='w-[140px] sm:w-[300px] lg:w-[405.06px] h-[140px] sm:h-[300px] lg:h-[405.06px] rounded-full bg-[#BAD3EF] absolute top-[-20px] right-[-60px] sm:top-[-50px] lg:top-[-140px] sm:right-[-150px] lg:right-[-200px] xl:left-[85%] p-[3px]'>
                 <div className='w-full h-full rounded-full bg-gradient-to-b from-[#E2E8EE] to-[#E9EBEE]'></div>
@@ -122,7 +122,7 @@ const SectionTwo = () => {
 
 
             {/* FOR LARGE SCREEN */}
-            <div className="hidden lg:flex w-full h-[78%] mt-[14%] xl:mt-[200px] justify-center gap-[100px]">
+            <div className="hidden lg:flex w-full h-[78%] mt-[60px] justify-center gap-[100px]">
                 <div ref={imageRef} className="w-[400px] h-[350px] ms-[5%]">
                     <div className="w-full h-full relative ms-[5%]">
                         {/* <Image
@@ -139,12 +139,12 @@ const SectionTwo = () => {
 
                 <div ref={contentRef} className="w-[900px] xl:w-[740px] h-full me-[5%]">
                     <h1 className="border-l-[3px] border-[#4C4886] text-[28px] font-[600] text-[#4C4886] ps-[6px]">Technical Faqs:</h1>
-                    <p className="text-[16px] xl:text-[12px] font-[400] mt-[20px] text-[#666]">When you land a sample webpage Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex unde commodi a labore quidem harum, provident omnis excepturi veritatis, neque quod, recusandae quis illo velit asperiores nobis. Ea, quae aliquid!</p>
-                    <span className="text-[12px] text-[#4C4886] block mt-[20px] font-[700]"> Cost-effective and Comprehensive IT Outsourcing Services:</span>
-                    <div className="w-full mt-[24px] flex items-center justify-between xl:gap-[10px]">
-                        <div className="w-full xl:w-[600px] h-[134px] sm:h-[200px] p-[10px] text-[12px]">
-                            <h3 className="text-[#4C4886] font-[600] text-[16px] xl:text-[12px]">Manage</h3>            
-                            <ul className="list-disc ps-[14px] text-[10px] text-[#666]">
+                    <p className="text-[16px] font-[400] mt-[20px] text-[#666]">When you land a sample webpage Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex unde commodi a labore quidem harum, provident omnis excepturi veritatis, neque quod, recusandae quis illo velit asperiores nobis. Ea, quae aliquid!</p>
+                    <span className="text-[12px] lg:text-[16px] text-[#4C4886] block mt-[20px] font-[700]"> Cost-effective and Comprehensive IT Outsourcing Services:</span>
+                    <div className="w-full mt-[24px] flex items-center justify-between gap-[14px]">
+                        <div className="w-full h-[134px] sm:h-[200px] text-[16px]">
+                            <h3 className="text-[#4C4886] font-[600] text-[16px] ">Manage</h3>            
+                            <ul className="list-disc ps-[14px] text-[16px] text-[#666]">
                                 <li>Essential IT Support</li>
                                 <li>Basic Security &amp; Monitoring</li>
                                 <li>Limited Cloud Storage</li>
@@ -152,9 +152,9 @@ const SectionTwo = () => {
                             </ul>
                         </div>
 
-                        <div className="w-full xl:w-[840px] h-[134px] sm:h-[200px] p-[10px] text-[12px]">
-                            <h3 className="text-[#4C4886] font-[600] text-[16px] xl:text-[12px]">Build</h3>
-                            <ul className="list-disc ps-[14px] text-[10px] text-[#666]">
+                        <div className="w-full h-[134px] sm:h-[200px] text-[16px]">
+                            <h3 className="text-[#4C4886] font-[600] text-[16px] ">Build</h3>
+                            <ul className="list-disc ps-[14px] text-[#666]">
                                 <li>Advanced IT Support &am; Maintenance</li>
                                 <li>Enhanced Security &amp; Threat Detection</li>
                                 <li>Increased Cloud Storage</li>
@@ -162,9 +162,9 @@ const SectionTwo = () => {
                             </ul>
                         </div>
 
-                        <div className="w-full xl:w-[840px] h-[134px] sm:h-[200px] p-[10px] mt-[30px] sm:mt-0 text-[12px]">
-                            <h3 className="text-[#4C4886] font-[600] text-[16px] xl:text-[12px]">General</h3>
-                            <ul className="list-disc ps-[14px] text-[10px] text-[#666]">
+                        <div className="w-full h-[134px] sm:h-[200px] text-[16px]">
+                            <h3 className="text-[#4C4886] font-[600] text-[16px]">General</h3>
+                            <ul className="list-disc ps-[14px] text-[#666]">
                                 <li>Fully Managed IT Services</li>
                                 <li>Enterprise Level Security &amp; Backups</li>
                                 <li>Unlimited Cloud Storage &amp; Backups</li>

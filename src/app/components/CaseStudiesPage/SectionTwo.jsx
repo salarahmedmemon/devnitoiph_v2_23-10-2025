@@ -90,17 +90,17 @@ const SectionTwo = () => {
                 <span className="text-[16px] text-center sm:text-[18px] text-[#4C4886] font-[700] mt-[24px]"> Cost-effective and Comprehensive IT Outsourcing Services:</span>
                 <div className="w-[242px] sm:w-[400px] mt-[24px] flex flex-col gap-[20px]">
                     <div className="w-full h-[134px] sm:h-[200px] text-center p-[10px]">
-                        <h3 className="text-[16px] sm:text-[24px] font-[500] text-[#4C4886]">.Problem Statement</h3>
+                        <h3 className="text-[16px] sm:text-[24px] font-[500] text-[#4C4886]">Problem Statement</h3>
                         <p className="text-[14px] sm:text-[16px] font-[400] text-[#AAAAAA] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. </p>
                     </div>
 
                     <div className="w-full h-[134px] sm:h-[200px] text-center p-[10px]">
-                        <h3 className="text-[16px] sm:text-[24px]  font-[500] text-[#4C4886]">.Possible Solution</h3>
+                        <h3 className="text-[16px] sm:text-[24px]  font-[500] text-[#4C4886]">Possible Solution</h3>
                         <p className="text-[14px] sm:text-[16px]  font-[400] text-[#AAAAAA] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. Our team ensures excellence in every aspect of our services.</p>
                     </div>
 
                     <div className="w-full h-[134px] sm:h-[200px] text-center p-[10px] mt-[30px] sm:mt-0">
-                        <h3 className="text-[16px] sm:text-[24px]  font-[500] text-[#4C4886]">.Design Process</h3>
+                        <h3 className="text-[16px] sm:text-[24px]  font-[500] text-[#4C4886]">Design Process</h3>
                         <p className="text-[14px] sm:text-[16px]  font-[400] text-[#AAAAAA] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. Our team ensures excellence in every aspect of our services.</p>
                     </div>
                 </div>
@@ -108,8 +108,8 @@ const SectionTwo = () => {
 
 
             {/* FOR LARGE SCREEN */}
-            <div className="hidden lg:flex w-full h-[78%] mt-[14%] xl:mt-[200px] justify-center gap-[100px]">
-                <div ref={imageRef} className="w-[511px] h-[419px] ms-[5%]">
+            <div className="hidden lg:flex w-full h-[78%] mt-[200px] justify-center gap-[100px]">
+                <div ref={imageRef} className="w-[30%] xl:w-[511px] h-[419px] ms-[5%]">
                     <div className="w-[400px] xl:w-full h-full relative ms-[4%]">
                         {/* <Image
                             src="/img/aboutpage/image03.png"
@@ -119,28 +119,28 @@ const SectionTwo = () => {
                             className="object-cover"
                             blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAAklEQVR4AewaftIAAAEpSURBVGNmQAIXLl3it7WzlbYwN/+2e/fuvwxIgIUBCI4ePaolJ/jmT2xK4AM+TUOxzfPWPpi755y64KcH/4KCgm4zAAHzgQMH2A8fPvy2o3fKX2NdARc+IwMZRmYlpRWTmm/++/P7RVNHO8eKpUt/szx79kxG4dcfQWthaSajn/80+Yyk8z6fYV3No2X3nIdTlPH9y1dPGBgYHjKvXbv2va6D/fNX/xnf2d3/ycHurZ1+8ejrlcLiDFv+Mfx6UFtb+4EBCJgYgODz58/MfHx893SzYnK4vzAyRPibpj569OjFv3///jNAATMDEDAxMQmxsLDoSGmIGShIKAgcP3Xs+pEzV46dPn16/9evX38yoAEBbk4OWXc702B+Xh55BgYGIQYGBg4GKAAAOcJxrLqJHhsAAAAASUVORK5CYII="
                         /> */}
-                        <img src="/img/casestudiespage/image02.png" alt="left image" loading="lazy" className="w-full h-full xl:object-cover" />
+                        <img src="/img/casestudiespage/image02.png" alt="left image" loading="lazy" className="w-full h-full xl:object-contain" />
                     </div>
                 </div>
 
-                <div ref={contentRef} className="w-[700px] h-full me-[5%]">
+                <div ref={contentRef} className="w-[70%] xl:w-[700px] h-full me-[5%]">
                     <h1 className="border-l-[3px] border-[#4C4886] text-[28px] font-[600] text-[#4C4886] ps-[6px]">Our Principle</h1>
-                    <p className="text-[16px] xl:text-[12px] font-[400] mt-[20px] text-[#666]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stancenturies,</p>
-                    <span className="text-[12px] text-[#4C4886] block mt-[20px] font-[700]"> Cost-effective and Comprehensive IT Outsourcing Services:</span>
-                    <div className="w-full mt-[24px] flex items-center justify-between">
-                        <div className="w-full h-[134px]  sm:h-[200px] p-[10px]">
-                            <h3 className="text-[12px] font-[500] text-[#4C4886]">Tailored Excellence</h3>
-                            <p className="text-[10px] font-[400] text-[#666] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. </p>
+                    <p className="text-[16px] font-[400] mt-[20px] text-[#666]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stancenturies,</p>
+                    <span className="text-[12px] lg:text-[16px] text-[#4C4886] block mt-[20px] font-[700]"> Cost-effective and Comprehensive IT Outsourcing Services:</span>
+                    <div className="w-full mt-[24px] flex items-center justify-between gap-[14px]">
+                        <div className="w-full h-[134px]  sm:h-[200px] ">
+                            <h3 className="text-[12px] lg:text-[16px] font-[500] text-[#4C4886]">Tailored Excellence</h3>
+                            <p className="text-[10px] lg:text-[16px] font-[400] text-[#666] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. </p>
                         </div>
 
-                        <div className="w-full h-[134px] sm:h-[200px] p-[10px]">
-                            <h3 className="text-[12px] font-[500] text-[#4C4886]">Transparent Collaboration</h3>
-                            <p className="text-[10px] font-[400] text-[#666] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. Our team ensures excellence in every aspect of our services.</p>
+                        <div className="w-full h-[134px] sm:h-[200px] ">
+                            <h3 className="text-[12px] lg:text-[16px] font-[500] text-[#4C4886]">Transparent Collaboration</h3>
+                            <p className="text-[10px] lg:text-[16px] font-[400] text-[#666] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. Our team ensures excellence in every aspect of our services.</p>
                         </div>
 
-                        <div className="w-full h-[134px] sm:h-[200px] p-[10px] mt-[30px] sm:mt-0">
-                            <h3 className="text-[12px] font-[500] text-[#4C4886]">clients security</h3>
-                            <p className="text-[10px] font-[400] text-[#666] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. Our team ensures excellence in every aspect of our services.</p>
+                        <div className="w-full h-[134px] sm:h-[200px]  mt-[30px] sm:mt-0">
+                            <h3 className="text-[12px] lg:text-[16px] font-[500] text-[#4C4886]">clients security</h3>
+                            <p className="text-[10px] lg:text-[16px] font-[400] text-[#666] pt-[17px]">We deliver custom software and SaaS solutions that are specifically designed to meet the unique needs of your business. Our team ensures excellence in every aspect of our services.</p>
                         </div>
                     </div>
                 </div>
