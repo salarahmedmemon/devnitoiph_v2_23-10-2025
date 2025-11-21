@@ -141,7 +141,7 @@ const SectionTwo = () => {
                     <h1 className="border-l-[3px] border-[#4C4886] text-[28px] font-[600] text-[#4C4886] ps-[6px]">Technical Faqs:</h1>
                     <p className="text-[16px] font-[400] mt-[20px] text-[#666]">When you land a sample webpage Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex unde commodi a labore quidem harum, provident omnis excepturi veritatis, neque quod, recusandae quis illo velit asperiores nobis. Ea, quae aliquid!</p>
                     <span className="text-[12px] lg:text-[16px] text-[#4C4886] block mt-[20px] font-[700]"> Cost-effective and Comprehensive IT Outsourcing Services:</span>
-                    <div className="w-full mt-[24px] flex items-center justify-between gap-[14px]">
+                    <div className="w-[98%] ms-[6px] mt-[24px] flex items-center justify-between gap-[14px]">
                         <div className="w-full h-[134px] sm:h-[200px] text-[16px]">
                             <h3 className="text-[#4C4886] font-[600] text-[16px] ">Manage</h3>            
                             <ul className="list-disc ps-[14px] text-[16px] text-[#666]">
