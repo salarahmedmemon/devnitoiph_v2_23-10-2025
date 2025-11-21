@@ -123,13 +123,13 @@ const UpdatedSectionThree = () => {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
               className={`w-[220px] md:w-[600px] lg:w-[94%] xl:w-[98%] gradient-border mx-auto rounded-lg p-[3px] mt-[0px] sm:mt-[40px] mb-[70px] transition-all duration-700 ease-in-out cursor-pointer ${
-                isExpanded ? "scale-y-[1.05]" : "scale-y-[1]"
+                isExpanded ? "scale-y-[1]" : "scale-y-[1]"
               }`}
               style={{ transformOrigin: "center center" }}
             >
               <div
                 ref={rightRef}
-                className="w-full bg-[#0A131C] rounded-lg pt-6 lg:p-8 flex items-start justify-between gap-[10px] flex-wrap transition-all duration-700 ease-in-out"
+                className="w-full bg-[#0A131C] rounded-lg pt-6 lg:p-8 flex items-start justify-between gap-[10px] xl:gap-0 flex-wrap transition-all duration-700 ease-in-out"
               >
                 {[
                   {
