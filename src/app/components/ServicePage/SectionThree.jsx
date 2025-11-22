@@ -148,7 +148,7 @@ const SectionThree = () => {
                 <div className="w-[220px] h-[476px] lg:w-[330px] lg:h-[654px] absolute bottom-[60px] sm:bottom-[-80px] lg:bottom-[-160px] left-1/2 -translate-x-1/2 z-5 rounded-[40px] shadow-[0_0_80px_30px_rgba(255,255,255,0.35)]"></div>
 
                 {/* IMAGE FRAME */}
-                <div className="md:hidden w-[210px] h-[476px] lg:w-[340px] lg:h-[660px] absolute bottom-[60px] sm:bottom-[-80px] lg:bottom-[-160px] left-1/2 -translate-x-1/2 z-10 overflow-hidden rounded-[30px]">
+                <div className="sm:hidden w-[210px] h-[476px] lg:w-[340px] lg:h-[660px] absolute bottom-[60px] sm:bottom-[-80px] lg:bottom-[-160px] left-1/2 -translate-x-1/2 z-10 overflow-hidden rounded-[30px]">
                     <AnimatePresence mode="wait">
                         <motion.img
                             key={activeService.img}
@@ -164,7 +164,7 @@ const SectionThree = () => {
                     </AnimatePresence>
                 </div>
                 {/* IMAGE FRAME */}
-                <div className="hidden md:block w-[210px] h-[476px] lg:w-[340px] lg:h-[660px] absolute bottom-[60px] sm:bottom-[-80px] lg:bottom-[-160px] left-1/2 -translate-x-1/2 z-10 overflow-hidden rounded-[30px]">
+                <div className="hidden sm:block w-[210px] h-[476px] lg:w-[340px] lg:h-[660px] absolute bottom-[60px] sm:bottom-[-80px] lg:bottom-[-160px] left-1/2 -translate-x-1/2 z-10 overflow-hidden rounded-[30px]">
                 <AnimatePresence mode="wait">
                     <motion.img
                     key={activeImage} // 🔥 fixed here

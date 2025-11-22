@@ -669,7 +669,7 @@ const SectionTwo = () => {
                 </div>
 
                 {/* SECOND COLUMN FOR CONTENT */}
-                <div ref={secondColRef} className="z-[1000] w-[98%] h-[100%] sm:w-[640px] lg:w-[50%] xl:w-[64%] sm:h-[341px] sm:ms-[10px] md:ms-[30px] flex flex-col">
+                <div ref={secondColRef} className="z-[1000] w-[98%] h-[100%] sm:w-[640px] lg:w-[50%] xl:w-[64%] sm:h-[341px] sm:ms-[14px] md:ms-[30px] flex flex-col">
                     <h2 className="mx-auto sm:mx-0 text-[20px] sm:text-[26px] lg:text-[24px] xl:text-[28px] font-[400] text-[#0A1119] sm:border-l-[3px] sm:border-[#4C4886] sm:ps-[5px]"> {currentContent.title}</h2>
 
                     <p className="mx-auto sm:mx-0 ms-[10px] sm:ms-0 text-center sm:text-start text-[14px] sm:text-[16px] font-[400] pt-[20px] text-[#666666] pe-[14px] md:pe-0">{currentContent.description}</p>
@@ -695,7 +695,7 @@ const SectionTwo = () => {
                     </ul>
 
                     {/* LIST ITEMS FOR MOBILE */}
-                    <ul className="flex flex-col sm:flex-row lg:hidden w-full sm:w-[620px] ps-[12px] lg:w-[580px] xl:w-[640px] md:h-[115px] z-[1000] pt-[10px] md:pt-[60px] lg:pt-[20px] list-disc list-inside items-center justify-baseline gap-[10px] sm:gap-[60px] xl:gap-[20px] flex-wrap">
+                    <ul className="flex flex-col sm:flex-row lg:hidden w-full sm:w-[620px] ps-[12px] sm:ps-0 lg:w-[580px] xl:w-[640px] md:h-[115px] z-[1000] pt-[10px] md:pt-[60px] lg:pt-[20px] list-disc list-inside items-center justify-baseline gap-[10px] sm:gap-[60px] xl:gap-[20px] flex-wrap">
                         {Array.isArray(currentContent.listItemsMobile)
                             ? currentContent.listItemsMobile.map((item, i) => (
                                 <li key={i} className="text-[14px] lg:text-[10px] font-[600] text-[#666666]">{item}</li>

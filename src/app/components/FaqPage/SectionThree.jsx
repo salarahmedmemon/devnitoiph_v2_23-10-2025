@@ -140,7 +140,7 @@ const SectionThree = () => {
                   }`}
               >
                 <>
-                  <h2 className="font-semibold text-[12px] md:text-[16px]">{q.title}</h2>
+                  <h2 className="font-semibold text-[12px] sm:text-[16px] md:text-[16px]">{q.title}</h2>
                   <ArrowRight
                     size={26}
                   />
@@ -154,10 +154,10 @@ const SectionThree = () => {
 
           {/* Right Column */}
           <div className="w-[97%] md:w-[48%] h-full">
-            <h3 className="text-[#4A4783] font-[500] text-[16px] md:text-[20px]">
+            <h3 className="text-[#4A4783] font-[500] text-[16px] sm:text-[18px] md:text-[20px]">
               {questions[activeIndex].title}
             </h3>
-            <p className="text-[#56585A] text-[12px] md:text-[18px] mt-[20px]">
+            <p className="text-[#56585A] text-[12px] sm:text-[16px] md:text-[18px] mt-[20px]">
               {questions[activeIndex].content}
             </p>
           </div>

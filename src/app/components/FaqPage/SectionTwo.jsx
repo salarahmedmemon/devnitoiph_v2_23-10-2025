@@ -90,7 +90,7 @@ const SectionTwo = () => {
                 <div className="w-[242px] sm:w-[400px] mt-[24px] flex flex-col">
                     <div className="w-full h-[134px] text-center p-[10px] sm:text-[12px]">
                         <h3 className="text-[#4C4886] font-[600] text-[16px]">Manage</h3>
-                        <ul className="text-[14px]">
+                        <ul className="text-[14px] sm:text-[16px]">
                             <li>Essential IT Support</li>
                             <li>Basic Security &amp; Monitoring</li>
                             <li>Limited Cloud Storage</li>
@@ -100,7 +100,7 @@ const SectionTwo = () => {
 
                     <div className="w-full h-[134px] text-center p-[10px] sm:text-[12px]">
                         <h3 className="text-[#4C4886] font-[600] text-[16px]">Build</h3>
-                        <ul className="text-[14px]">
+                        <ul className="text-[14px] sm:text-[16px]">
                             <li>Advanced IT Support &am; Maintenance</li>
                             <li>Enhanced Security &amp; Threat Detection</li>
                             <li>Increased Cloud Storage</li>
@@ -110,7 +110,7 @@ const SectionTwo = () => {
 
                     <div className="w-full h-[134px] text-center p-[10px] sm:text-[12px] mt-[40px] sm:mt-0">
                         <h3 className="text-[#4C4886] font-[600] text-[16px]">General</h3>
-                        <ul className="text-[14px]">
+                        <ul className="text-[14px] sm:text-[16px]">
                             <li>Fully Managed IT Services</li>
                             <li>Enterprise Level Security &amp; Backups</li>
                             <li>Unlimited Cloud Storage &amp; Backups</li>

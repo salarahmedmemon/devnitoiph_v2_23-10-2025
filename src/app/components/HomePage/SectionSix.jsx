@@ -311,7 +311,7 @@ const SectionSix = () => {
 
       <div className='w-[0vw] h-[0vw] rounded-full absolute top-[100px] left-[-60px] opacity-[50%] blur-circle2'></div>
 
-      <div className="w-full h-[100px] sm:h-[150px] bg-white pt-[26px] ps-[26px] sm:pt-[39px] sm:ps-[86px]">
+      <div className="w-full h-[100px] sm:h-[150px] bg-white pt-[26px] ps-[40px] sm:pt-[39px] md:ps-[50px] xl:ps-[86px]">
         <div className="w-full homepage-sectionsix mx-auto">
           <div className="w-[454px] h-[74px] homepage-section-six-heading">
             <h1 ref={h1Ref} className="border-t-[3px] border-[#4C4886] w-[50px] h-[24px] sm:w-[87px] sm:h-[42px] text-[20px] sm:text-[32px] font-[500]">FAQ's</h1>

@@ -129,7 +129,7 @@ const UpdatedSectionThree = () => {
             >
               <div
                 ref={rightRef}
-                className="w-full bg-[#0A131C] rounded-lg pt-6 lg:p-8 flex items-start justify-between gap-[10px] xl:gap-0 flex-wrap transition-all duration-700 ease-in-out"
+                className="w-full bg-[#0A131C] rounded-lg pt-6 lg:p-8 pb-[20px] flex items-start justify-between gap-[10px] xl:gap-0 flex-wrap transition-all duration-700 ease-in-out"
               >
                 {[
                   {
