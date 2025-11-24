@@ -105,7 +105,7 @@ const SectionOne = () => {
             {/* FOR LARGE SCREENS */}
             <div className="hidden xl:flex w-full aboutpage-section-one mx-auto h-full justify-between pt-[120px] relative">
                 {/* ASTRAUNOT IMAGE */}
-                <div ref={imgRef1} className="absolute w-[173.36px] h-[217.96px] top-[-3%] left-[32%]">
+                <div ref={imgRef1} className="absolute w-[173.36px] h-[217.96px] top-[-6%] left-[32%]">
                     <img src="/img/aboutpage/sectionone/image01.png" alt="astrounaot image" loading="lazy" className="w-full h-full object-cover"/>
                     {/* <Image 
                         src="" alt="" placeholder="" blurDataURL="" priority={true}
