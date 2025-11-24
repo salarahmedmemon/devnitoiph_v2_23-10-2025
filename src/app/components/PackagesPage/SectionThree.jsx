@@ -140,7 +140,7 @@ const SectionThree = () => {
             <div
               key={index}
               className="bg-gradient-to-br from-[#FA1AC2] via-[#11AAEE] to-[#1CDE63] 
-              project-card group w-full h-[240px] sm:h-[340px] xl:h-[400px] sm:mt-6
+              project-card group w-full min-h-[240px] sm:h-[340px] xl:h-[400px] sm:mt-6
               gradient-border rounded-lg relative overflow-hidden  
               p-[.8vw] sm:p-[.4vw] md:p-1 cursor-pointer"
             >

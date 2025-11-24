@@ -1,11 +1,61 @@
+"use client";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 const SectionTwo = () => {
     // 1. states/hook variables
+    const sectionRef = useRef(null);
+    const headingRef = useRef(null);
+    const imageRef = useRef(null);
+    const contentRef = useRef(null);
+
+    useEffect(() => {
+        if (!sectionRef.current) return;
+        let ctx = gsap.context(() => {
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: sectionRef.current,
+                    start: "top 100%", // when section enters viewport
+                    end: "bottom 60%", // when section leaves
+                },
+            });
+
+            // Headings → from top
+            tl.fromTo(
+                headingRef.current,
+                { y: -100, opacity: 0 },
+                { y: 0, opacity: 1, duration: 1.6, ease: "power3.out" },
+            );
+
+            // Image → from left
+            tl.fromTo(
+                imageRef.current,
+                { x: -150, opacity: 0 },
+                { x: 0, opacity: 1, duration: 1.6, ease: "power3.out" },
+                0
+            );
+
+            // Content → from right
+            tl.fromTo(
+                contentRef.current,
+                { x: 150, opacity: 0 },
+                { x: 0, opacity: 1, duration: 1.6, ease: "power3.out" },
+                0
+            );
+
+        }, sectionRef);
+
+        return () => ctx.revert();
+    }, []);
 
     // functions/methods
 
     // 3. return statement/jsx
     return (
-        <div className="w-full h-[1100px] sm:h-[1500px] md:h-[1200px] lg:h-[900px] bg-[#EEEEEE] overflow-hidden relative pt-[48px]">
+        <div className="w-full h-[1100px] sm:h-[1100px] lg:h-[900px] bg-[#EEEEEE] overflow-hidden relative pt-[48px]">
             {/* RIGHT CIRCLE */}
             <div className='w-[140px] sm:w-[300px] lg:w-[405.06px] h-[140px] sm:h-[300px] lg:h-[405.06px] rounded-full bg-[#BAD3EF] absolute top-[-20px] right-[-60px] sm:top-[-50px] lg:top-[-140px] sm:right-[-150px] lg:right-[-200px] xl:left-[85%] p-[3px]'>
                 <div className='w-full h-full rounded-full bg-gradient-to-b from-[#E2E8EE] to-[#E9EBEE]'></div>
@@ -22,37 +72,85 @@ const SectionTwo = () => {
                 <img src="/img/packagespage/image02.png" className="ms-[4%]"/>
             </div>
 
-            {/* CONTENT */}
-            <div className="lg:hidden w-[92%] h-[629px] mx-auto flex flex-col items-start mt-[20px] sm:mt-[220px] md:mt-[40px]">
-                <h1 className="w-[300px] sm:w-[520px] h-[40px] border-l-[3px] border-[#4C4886] text-[20px] sm:text-[32px] font-[600] text-[#4C4886] ps-[6px]">DISCOVERY PACKAGES</h1>
-                <p className="text-[16px] sm:text-[20px] font-[400] pt-[26px] text-[#AAAAAA]">We are an IT outstanding company in Dubai offering an extended range of services including End User Support, 
+            {/* For small screens CONTENT */}
+            <div className="lg:hidden w-[92%] h-[629px] mx-auto flex flex-col items-center mt-[20px] sm:mt-[20px] md:mt-[40px]">
+                <h1 className="w-[300px] sm:w-[520px] h-[40px] text-center lg:border-l-[3px] lg:border-[#4C4886] text-[20px] sm:text-[32px] font-[600] text-[#4C4886] ps-[6px]">DISCOVERY PACKAGES</h1>
+                <p className="text-[16px] font-[400] pt-[26px] text-center text-[#AAAAAA]">We are an IT outstanding company in Dubai offering an extended range of services including End User Support, 
                     Application Investment, Cloud & Infrastructure expertise. Our on-demand IT staff outsourcing solution in Dubai 
                     specializes exclusively for digital transformation with Custom Software Development, Software Testing & QA, Cloud 
                     Computing, Mobile & Web Development, Maintenance & Support, Blockchain Consulting, Data Science.
                 </p>
-                <span className="text-[12px] sm:text-[18px] text-[#4C4886] font-[700] mt-[24px]"> Cost-effective and Comprehensive IT Outsourcing Services:</span>
-                <div className="w-[242px] sm:w-[400px] mt-[24px] flex flex-col">
-                    <div className="w-full h-[134px] sm:h-[200px] p-[10px]">
+                <span className="text-[16px] text-[#4C4886] text-center font-[700] mt-[24px]"> Cost-effective and Comprehensive IT Outsourcing Services:</span>
+                <div className="w-[242px] sm:w-[400px] mt-[24px] mx-auto text-center flex flex-col">
+                    <div className="w-full p-[10px]">
                         <h3 className="text-[16px] sm:text-[24px] font-[500] text-[#4C4886]">Basic Plan</h3>
-                        <li className="list-disc text-[16px] text-[#AAA]">Essential IT Support</li>
-                        <li className="list-disc text-[16px] text-[#AAA]">Basic Security &amp; Monitoring</li>
-                        <li className="list-disc text-[16px] text-[#AAA]">Limited Cloud Storage</li>
-                        <li className="list-disc text-[16px] text-[#AAA]">24/7 Email Support</li>
+                        <li className="text-[16px] text-[#AAA] list-none">Essential IT Support</li>
+                        <li className="text-[16px] text-[#AAA] list-none">Basic Security &amp; Monitoring</li>
+                        <li className="text-[16px] text-[#AAA] list-none">Limited Cloud Storage</li>
+                        <li className="text-[16px] text-[#AAA] list-none">24/7 Email Support</li>
                     </div>
 
-                    <div className="w-full h-[134px] sm:h-[200px] p-[10px]">
+                    <div className="w-full p-[10px]">
                         <h3 className="text-[16px] sm:text-[24px]  font-[500] text-[#4C4886]">Standard Plan</h3>
-                        <li className="list-disc text-[16px] text-[#AAA]">Advanced IT Support &amp; Maintenance</li>
-                        <li className="list-disc text-[16px] text-[#AAA]">Enhanced Security &amp; Threat Detection</li>
-                        <li className="list-disc text-[16px] text-[#AAA]">Increased Cloud Storage</li>
-                        <li className="list-disc text-[16px] text-[#AAA]">24/7 Chat &amp; Email Support</li>
+                        <li className="text-[16px] text-[#AAA] list-none">Advanced IT Support &amp; Maintenance</li>
+                        <li className="text-[16px] text-[#AAA] list-none">Enhanced Security &amp; Threat Detection</li>
+                        <li className="text-[16px] text-[#AAA] list-none">Increased Cloud Storage</li>
+                        <li className="text-[16px] text-[#AAA] list-none">24/7 Chat &amp; Email Support</li>
                     </div>
                 </div>
             </div>
 
 
             {/* FOR LARGE SCREEN */}
-            <div className="hidden lg:flex w-full mx-auto packagespage-sectiontwo h-[78%] lg:h-[80%] lg:mt-[20%] xl:mt-[240px] justify-between">
+            <div className="hidden lg:flex w-full h-[78%] mt-[14%] xl:mt-[200px] justify-center gap-[100px]">
+                <div ref={imageRef} className="w-[511px] h-[419px] ms-[5%]">
+                    <div className="w-full h-full relative ms-[4%]">
+                        <img src="/img/packagespage/image02.png" loading="lazy" className="w-full h-full object-contain" />
+                    </div>
+                </div>
+
+                <div ref={contentRef} className="w-[700px] h-full me-[5%]">
+                    <h1 className="border-l-[3px] border-[#4C4886] text-[28px] font-[600] text-[#4C4886] ps-[6px]">DISCOVERY PACKAGES</h1>
+                    <p className="text-[16px] font-[400] mt-[20px] text-[#666666]">We are an IT outstanding company in Dubai offering an extended range of services including End User Support, 
+                    Application Investment, Cloud & Infrastructure expertise. Our on-demand IT staff outsourcing solution in Dubai 
+                    specializes exclusively for digital transformation with Custom Software Development, Software Testing & QA, Cloud 
+                    Computing, Mobile & Web Development, Maintenance & Support, Blockchain Consulting, Data Science.</p>
+                    <span className="text-[16px] text-[#4C4886] block mt-[20px] font-[700]"> Cost-effective and Comprehensive IT Outsourcing Services:</span>
+                    <div className="w-full mt-[24px] flex items-center justify-between gap-[14px]">
+                        <div className="w-full h-[134px] sm:h-[200px]">
+                            <h3 className="text-[16px] font-[500] text-[#4C4886]">Basic Plan</h3>
+                            <ul className="list-disc ps-[18px]">
+                                <li className="text-[14px] lg:text-[16px] font-[400] text-[#666666] pt-[6px]">Essential IT Support</li>
+                                <li className="text-[14px] lg:text-[16px] font-[400] text-[#666666] pt-[6px]">Basic Security &amp; Monitoring</li>
+                                <li className="text-[14px] lg:text-[16px] font-[400] text-[#666666] pt-[6px]">Limited Cloud Storage</li>
+                                <li className="text-[14px] lg:text-[16px] font-[400] text-[#666666] pt-[6px]">24/7 Email Support</li>
+                            </ul>
+                        </div>
+
+                        <div className="w-full h-[134px] sm:h-[200px]">
+                            <h3 className="text-[16px] font-[500] text-[#4C4886]">Standard Plan</h3>
+                            <ul className="list-disc ps-[18px]">
+                                <li className="text-[14px] lg:text-[16px] font-[400] text-[#666666] pt-[6px]">Advanced IT Support &amp; Maintenance</li>
+                                <li className="text-[14px] lg:text-[16px] font-[400] text-[#666666] pt-[6px]">Enhanced Security &amp; Threat Detection</li>
+                                <li className="text-[14px] lg:text-[16px] font-[400] text-[#666666] pt-[6px]">Increased Cloud Storage</li>
+                                <li className="text-[14px] lg:text-[16px] font-[400] text-[#666666] pt-[6px]">24/7 Chat &amp; Email Support</li>
+                            </ul>
+                        </div>
+
+                        <div className="w-full h-[134px] sm:h-[200px] mt-[30px] sm:mt-0">
+                            <h3 className="text-[16px] font-[500] text-[#4C4886]">Premium Plan</h3>
+                            <ul className="list-disc ps-[18px]">
+                                <li className="text-[14px] lg:text-[16px] font-[400] text-[#666666] pt-[6px]">Fully Managed IT Services</li>
+                                <li className="text-[14px] lg:text-[16px] font-[400] text-[#666666] pt-[6px]">Enterprise-Level Security &amp; Backups</li>
+                                <li className="text-[14px] lg:text-[16px] font-[400] text-[#666666] pt-[6px]">Unlimited Cloud Storage &amp; Backups</li>
+                                <li className="text-[14px] lg:text-[16px] font-[400] text-[#666666] pt-[6px]">24/7 Priority Support (Phone, Chat, Email)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* <div className="hidden lg:flex w-full mx-auto packagespage-sectiontwo h-[78%] lg:h-[80%] lg:mt-[20%] xl:mt-[240px] justify-between">
                 <div className="w-[522px] h-[424.51px] ms-[4%]">
                     <img src="/img/packagespage/image02.png" />
                 </div>
@@ -93,7 +191,7 @@ const SectionTwo = () => {
                     </div>
                     <button className="w-[217px] h-[46px] mt-[26px] bg-[#4C4886] text-[20px] font-[600] rounded-[5px] text-white">TALK TO OUR EXPERT</button>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };

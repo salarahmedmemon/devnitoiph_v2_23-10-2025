@@ -67,16 +67,15 @@ const SectionOne = () => {
 
   // 3. return statment/jsx
   return (
-    <div ref={sectionRef} className="w-full h-[514px] sm:h-[560px] md:h-[640px] xl:h-[725px] pt-[70px] sm:pt-[0px] md:pt-[20px] lg:pt-[80px]">
+    <div ref={sectionRef} className="w-full h-[514px] sm:h-[600px] md:h-[640px] xl:h-[725px] pt-[70px] sm:pt-[0px] md:pt-[20px] lg:pt-[80px]">
 
-      <div className="w-full h-[514px] sm:h-[560px] md:h-[640px] xl:h-[725px] absolute top-0 left-0 bg-[#141d24]">
+      <div className="w-full h-[514px] sm:h-[640px] md:h-[640px] xl:h-[725px] absolute top-0 left-0 bg-[#141d24]">
         <div className="w-full h-full opacity-65">
           <img src="/img/casestudiespage/image.png" alt="background image" className="w-full h-full object-cover" loading="lazy" />
         </div>
       </div>
 
-      {/* <Header /> */}
-
+      {/* Main Content */}
       <div className="w-full casestudiespage-sectionone mx-auto h-full pt-[26px] sm:mt-4 lg:mt-0 xl:pt-0 relative overflow-hidden">
         <img ref={imgRef1}
           src="/img/aboutpage/sectionone/image01.png"
@@ -99,7 +98,7 @@ const SectionOne = () => {
               We have made quality our habit. It's not something that we just strive for - we live
               by this principle every day.
             </p>
-            <button className="w-[146px] h-[37px] sm:w-[200px] bg-white text-[#4C4886] text-[12px] font-[600] rounded-[5px] mt-[8px]   md:w-[207px] md:h-[44px] md:text-[20px]   xl:mt-[40px] relative group">
+            <button className="w-[146px] h-[37px] sm:w-[200px] bg-white text-[#4C4886] text-[12px] sm:text-[16px] font-[600] rounded-[5px] mt-[8px]   md:w-[207px] md:h-[44px]   lg:mt-[40px] relative group">
               Talk to our Expert
               <span className="absolute left-1/2 -bottom-[2px] h-[3px] w-0 group-hover:w-full transition-all duration-200 ease-out -translate-x-1/2 bg-gradient-to-r from-[#1CDE63] via-[#FA1AC2] to-[#1AE4FA]"></span>
             </button>

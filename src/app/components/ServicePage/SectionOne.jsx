@@ -61,20 +61,19 @@ const SectionOne = () => {
   // 3. return statement/jsx
   return (
     <div ref={sectionRef} className="w-full h-[450px] sm:h-[650px] lg:[844px] xl:h-[731px] pt-[50px] sm:pt-[80px] md:pt-[34px] lg:pt-[80px]">
-
+      {/* large devices image */}
       <div className="hidden md:block w-full h-[450px] sm:h-[650px] lg:[844px] xl:h-[731px] absolute top-0 left-0 bg-[#04080B]">
         <div className="w-full h-full opacity-24">
           <img src="/img/servicepage/image.png" alt="background image" loading="lazy" className="w-full h-full object-cover" />
         </div>
       </div>
-
+      {/* large devices image */}
       <div className="block md:hidden w-full h-[450px] sm:h-[650px] lg:[844px] xl:h-[731px] absolute top-0 left-0 bg-[#04080B]">
         <div className="w-full h-full opacity-15">
           <img src="/img/aboutpage/image.png" alt="background image" className="w-full h-full object-cover" loading="lazy" />
         </div>
       </div>
-
-      {/* <Header /> */}
+      {/* Main Content */}
       <div className="w-full servicepage-section-one mx-auto h-full pt-0 relative overflow-hidden">
 
         <img ref={imgRef1}
@@ -85,7 +84,7 @@ const SectionOne = () => {
           src="/img/aboutpage/sectionone/image02.png" loading="lazy"
           className="img-left-bottom hidden lg:block absolute top-[0vw] right-[10vw] rotate-30 w-[66px]"
         />
-
+        {/* For Small devices */}
         <div className="w-full h-[80%] md:h-full flex flex-col-reverse lg:hidden items-center justify-center gap-0 md:gap-10 ps-25.5 pe-25.5">
           <div className="text-container w-[50vw] sm:w-[90%] h-full flex flex-col items-center justify-center">
             <button className="w-[136px] h-[36px] bg-white text-[#4C4886] text-[24px] sm:text-[3vw] md:text-[2.5vw] font-[600] rounded-[10px] mt-0 md:mt-10">
@@ -98,7 +97,7 @@ const SectionOne = () => {
               We have made quality our habit. It's not something that we just strive for - we live
               by this principle every day.
             </p>
-            <button className="w-[115px] h-[24px] sm:w-[200px] sm:h-[40px] bg-white text-[#4C4886] text-[12px] sm:text-[2.4vw] md:text-[1.2vw] font-[600] rounded-[5px] mt-4 relative group">
+            <button className="w-[126px] h-[26px] sm:w-[200px] sm:h-[40px] bg-white text-[#4C4886] text-[12px] sm:text-[16px] font-[600] rounded-[5px] mt-4 relative group">
               VIEW ALL SERVICES
               <span className="absolute left-1/2 -bottom-[2px] h-[3px] w-0 group-hover:w-full transition-all duration-500 ease-out -translate-x-1/2 bg-gradient-to-r from-[#1CDE63] via-[#FA1AC2] to-[#1AE4FA]"></span>
             </button>
@@ -112,7 +111,7 @@ const SectionOne = () => {
           </div>
 
         </div>
-
+        {/* For Large devices */}
         <div className="hidden w-[90%] h-full mx-auto lg:flex">
           <div ref={contentRef} className="w-full h-full">
             <button className="w-[219px] h-[64px] text-[40px] bg-white text-[#4C4886] font-[600] rounded-[10px] mt-[108px]">WE OFFER</button>

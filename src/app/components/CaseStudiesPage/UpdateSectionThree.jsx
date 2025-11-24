@@ -94,12 +94,12 @@ const UpdatedSectionThree = () => {
           >
             <div
               ref={topRef}
-              className="text-center w-[180px] sm:w-[300px] mx-auto pt-[40px] sm:pt-[120px]"
+              className="text-center w-[180px] sm:w-[260px] mx-auto pt-[40px] sm:pt-[60px] md:pt-[120px]"
             >
-              <h1 className="text-[26px] sm:text-[5vw] md:text-[2.4vw] lg:text-[44px] border-t-3 border-t-[#77CCF3]">
+              <h1 className="text-[26px] lg:text-[44px] border-t-3 border-t-[#77CCF3]">
                 Our Design
               </h1>
-              <h2 className="text-[26px] sm:text-[4.9vw] md:text-[3.2vw] lg:text-[50px] leading-[6vw] sm:leading-[4vw] md:leading-[3vw] text-[#77CCF3] font-semibold">
+              <h2 className="text-[26px] lg:text-[50px] leading-[6vw] sm:leading-[4vw] md:leading-[3vw] text-[#77CCF3] font-semibold">
                 Process
               </h2>
             </div>

@@ -68,9 +68,9 @@ const SectionOne = () => {
 
   // 3. return statement/jsx
   return (
-    <div ref={sectionRef} className="w-full h-[450px] sm:h-[650px] lg:[844px] xl:h-[731px] pt-[40px] sm:pt-[120px] md:pt-[20px] lg:pt-[80px]">
+    <div ref={sectionRef} className="w-full h-[480px] sm:h-[650px] lg:[844px] xl:h-[731px] pt-[40px] sm:pt-[100px] md:pt-[20px] lg:pt-[80px]">
 
-      <div className="w-full h-[450px] sm:h-[650px] lg:[844px] xl:h-[731px] absolute top-0 left-0 bg-[#04080B]">
+      <div className="w-full h-[480px] sm:h-[650px] lg:[844px] xl:h-[731px] absolute top-0 left-0 bg-[#04080B]">
         <div className="w-full h-full opacity-70">
           <Image
             src="/img/packagespage/image.png"
@@ -103,13 +103,13 @@ const SectionOne = () => {
             <h1 className="text-white font-[600] text-[48px] sm:text-[10vw] md:text-[6.5vw] sm:leading-[10vw] md:leading-[7vw]">
               SOLUTION
             </h1>
-            <p className="text-white text-[10px] font-[500] w-[96vw] text-center mt-[1vw]">
+            <p className="text-white text-[12px] sm:text-[16px] font-[500] w-[96vw] text-center mt-[1vw]">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
               when an unknown printer took a galley of type and scrambled it to make a type specimen book.
               It has survived not only five centuries.
             </p>
-            <button className="w-[115px] h-[24px] sm:w-[200px] sm:h-[40px] bg-white text-[#4C4886] text-[12px] sm:text-[2.4vw] md:text-[1.2vw] font-[600] rounded-[5px] mt-4 relative group">
+            <button className="w-[126px] h-[24px] sm:w-[200px] sm:h-[40px] bg-white text-[#4C4886] text-[12px] sm:text-[16px] font-[600] rounded-[5px] mt-4 relative group">
               VIEW ALL PACKAGES
               <span className="absolute left-1/2 -bottom-[2px] h-[3px] w-0 group-hover:w-full transition-all duration-500 ease-out -translate-x-1/2 bg-gradient-to-r from-[#1CDE63] via-[#FA1AC2] to-[#1AE4FA]"></span>
             </button>
@@ -118,7 +118,7 @@ const SectionOne = () => {
           <div className="main-img-container w-[200px] h-[240px] sm:w-[44vw] sm:h-full md:w-[350px] md:h-[300px] flex items-center justify-center">
             <img
               src="/img/packagespage/image01.png"
-              className="pt-[100px] sm:pt-10 md:pt-40"
+              className="pt-[100px] sm:pt-14 md:pt-40"
             />
           </div>
 

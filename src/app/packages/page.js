@@ -2,7 +2,8 @@ import Footer from "../components/Footer";
 import SectionFive from "../components/PackagesPage/SectionFive";
 import SectionFour from "../components/PackagesPage/SectionFour";
 import SectionOne from "../components/PackagesPage/SectionOne";
-import SectionThree from "../components/PackagesPage/SectionThree";
+// import SectionThree from "../components/PackagesPage/SectionThree";
+import UpdatedSectionThree from "../components/PackagesPage/UpdatedSectionThree";
 import SectionTwo from "../components/PackagesPage/SectionTwo";
 import UpdatedHeader from "../components/UpdatedHeader";
 
@@ -17,7 +18,8 @@ const Page = () => {
             <UpdatedHeader />
             <SectionOne />
             <SectionTwo />
-            <SectionThree />
+            {/* <SectionThree /> */}
+            <UpdatedSectionThree />
             <SectionFour />
             <SectionFive />
             <Footer />

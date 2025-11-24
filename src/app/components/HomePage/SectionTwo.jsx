@@ -580,7 +580,7 @@ const SectionTwo = () => {
 
     // 3. return statement/jsx
     return (
-        <div ref={containerRef} className="homepage-sectiontwo w-full h-[960px] sm:h-[1300px] lg:h-[1000px] xl:h-[900px] overflow-hidden relative bg-[#EEEEEE]">
+        <div ref={containerRef} className="homepage-sectiontwo w-full h-[960px] sm:h-[1200px] lg:h-[1000px] xl:h-[900px] overflow-hidden relative bg-[#EEEEEE]">
 
             {/* RIGHT CIRCLE */}
             <div className='homepage-sectionone-rightcircle w-[140px] sm:w-[300px] lg:w-[405.06px] h-[140px] sm:h-[300px] lg:h-[405.06px] rounded-full bg-[#BAD3EF] absolute top-[-20px] right-[-60px] sm:top-[-50px] lg:top-[16px] sm:right-[-150px] lg:right-[-200px] xl:left-[85%] p-[3px]'>
@@ -657,7 +657,7 @@ const SectionTwo = () => {
                                 placeholder="blur"
                                 blurDataURL="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBA=="
                                 alt="service"
-                                className="object-cover"
+                                className="object-contain"
                             />
                         </div>
                     </div>
