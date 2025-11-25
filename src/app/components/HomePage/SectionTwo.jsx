@@ -645,7 +645,7 @@ const SectionTwo = () => {
             </div>
 
             {/* MAIN CONTENT WITH IMAGE */}
-            <div className="w-full sm:w-[640px] lg:w-[94%] xl:w-[1262px] h-[344px] z-[2000] mt-[0px] sm:mt-[20px] lg:mt-[95px] mx-auto flex flex-col lg:flex-row gap-[5px] lg:items-center lg:justify-between sm:gap-[20px] lg:gap-0 xl:gap-[14px]">
+            <div className="w-full sm:w-[640px] lg:w-[94%] xl:w-[1262px] h-[344px] z-[2000] mt-[0px] sm:mt-[20px] lg:mt-[20px] xl:mt-[80px] mx-auto flex flex-col lg:flex-row gap-[5px] lg:items-center lg:justify-between sm:gap-[20px] lg:gap-0 xl:gap-[14px]">
                 {/* FIRST COLUMN FOR IMAGES IN JUST SMALL DEVICES sm - md */}
                 <div className="flex justify-center lg:hidden">
                     <div className="w-[290px] h-[173px] sm:w-[600px] lg:w-[350px] xl:w-[550px] sm:h-[400px] lg:h-[240px] xl:h-[344px] z-[1000]">

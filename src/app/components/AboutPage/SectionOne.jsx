@@ -63,7 +63,7 @@ const SectionOne = () => {
     return (
         <div ref={sectionRef} className="w-full h-[472px] sm:h-[550px] md:h-[734px] pt-[50px] sm:pt-[85px] overflow-hidden">
             {/* LARGE SCREEN BACKGROUND IMAGE */}
-            <div className="w-full h-[472px] sm:h-[550px] md:h-[734px] absolute top-0 left-0 blur-[4px]">
+            <div className="w-full h-[472px] sm:h-[550px] md:h-[734px] absolute top-0 left-0">
                 <img src="/img/aboutpage/image.svg" alt="background image" className="w-full h-full object-cover" loading="lazy"/>
             </div>
 

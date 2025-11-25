@@ -70,8 +70,8 @@ const Footer = ({ transparent = false }) => {
           <li><a>IT Resource</a></li>
           <li><a>UI/UX Design</a></li>
           <li><a>Web Animation</a></li>
-          <li className="hidden sm:block"><a>Digital Marketing</a></li>
-          <li className="hidden sm:block"><a>Video Animation</a></li>
+          <li className="hidden md:block"><a>Digital Marketing</a></li>
+          <li className="hidden md:block"><a>Video Animation</a></li>
         </ul>
 
         {/* Social Icons */}

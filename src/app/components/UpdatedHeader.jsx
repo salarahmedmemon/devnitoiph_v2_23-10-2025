@@ -154,13 +154,20 @@ const UpdatedHeader = () => {
 
                 {/* LOGO */}
                 <div className="block sm:hidden">
-                    <img className="cursor-pointer w-[105px] h-[32px]" src="/img/homepage/mobile_logo.png" alt="Logo" />
+                    <Link href="/">
+                        <img className="cursor-pointer w-[105px] h-[32px]" src="/img/homepage/mobile_logo.png" alt="Logo" />
+                    </Link>
                 </div>
 
                 {/* DESKTOP LOGO */}
-                <div className="hidden sm:flex w-[174px] cursor-pointer items-center justify-between">
-                    <img src="/img/homepage/desktop-logo/icon.svg" />
-                    <img src="/img/homepage/desktop-logo/heading.svg" />
+                
+                <div className="hidden sm:flex w-[174px] cursor-pointer">
+                    <Link href="/">
+                        <div className="w-full flex items-center justify-between gap-[10px]">
+                            <img src="/img/homepage/desktop-logo/icon.svg" />
+                            <img src="/img/homepage/desktop-logo/heading.svg" />
+                        </div>
+                    </Link>
                 </div>
 
                 {/* DESKTOP NAVIGATIONS */}
@@ -174,7 +181,7 @@ const UpdatedHeader = () => {
                                     className={`relative cursor-pointer py-1 overflow-visible ${isActive ? "text-[#4C4886] font-semibold" : "text-gray-700"}`}
                                 >
                                     <Link href={href} className="relative z-10 inline-block">{label}</Link>
-                                    <span className={`underline absolute left-1/2 -translate-x-1/2 bottom-[-6px] h-[2px] transition-all ${isActive ? "w-[140%] bg-[#4C4886]" : "w-0 bg-black"}`}></span>
+                                    <span className={`underline absolute left-1/2 -translate-x-1/2 bottom-[-6px] h-[2px] transition-all ${isActive ? "w-[140%] bg-[#4C4886]" : "w-0 bg-[#4C4886]"}`}></span>
                                 </li>
                             );
                         })}

@@ -143,12 +143,16 @@ const Header = () => {
       <div className="block sm:hidden">
         <img className="cursor-pointer w-[105px] h-[32px]" src="/img/homepage/mobile_logo.png" alt="Logo" />
       </div>
+      
 
       {/* DESKTOP LOGO */}
-      <div className="hidden sm:flex w-[174px] cursor-pointer items-center justify-between">
-        <img src="/img/homepage/desktop-logo/icon.svg" />
-        <img src="/img/homepage/desktop-logo/heading.svg" />
-      </div>
+      {/* <div className="hidden sm:flex w-[174px] cursor-pointer">
+          <div className="w-full h-full flex items-center justify-between">
+            <img src="/img/homepage/desktop-logo/icon.svg" />
+            <img src="/img/homepage/desktop-logo/heading.svg" />
+          </div>
+      </div> */}
+
 
       {/* DESKTOP NAVIGATIONS */}
       <div className="hidden lg:block">
