@@ -81,20 +81,20 @@ const UpdatedSectionThree = () => {
   };
 
   return (
-    <div className="w-full min-h-screen bg-[#0A131C] p-5 sm:p-20 transition-all duration-700 ease-in-out">
+    <div className="w-full bg-[#0A131C] p-5 sm:p-20 transition-all duration-700 ease-in-out">
       <div className="w-[99%] casestudypage-sectionthree gradient-border rounded-[1vw] p-1 mx-auto">
         <div className="w-full bg-[#0A131C] rounded-[1vw] text-white">
           {/* Top Section */}
           <div
             className={`transition-all duration-700 ease-in-out ${
               isExpanded
-                ? "-translate-y-[80px] md:-translate-y-[64px]"
+                ? "-translate-y-[80px] md:-translate-y-[64px] md:pt-[40px]"
                 : "translate-y-0"
             }`}
           >
             <div
               ref={topRef}
-              className="text-center w-[180px] sm:w-[260px] mx-auto pt-[40px] sm:pt-[60px] md:pt-[120px]"
+              className="text-center w-[180px] sm:w-[260px] mx-auto pt-[40px] sm:pt-[60px]"
             >
               <h1 className="text-[26px] lg:text-[44px] border-t-3 border-t-[#77CCF3]">
                 Our Design
