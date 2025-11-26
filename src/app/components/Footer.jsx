@@ -1,9 +1,9 @@
 "use client";
-
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
+import { FaTwitter, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -27,12 +27,26 @@ const Footer = ({ transparent = false }) => {
         ease: "power2.out",
       });
 
-      // Hover rotation for icons
+      // Hover rotation for icons (works with multiple icons)
       iconRefs.current.forEach((icon) => {
+        // reset initial rotation
+        gsap.set(icon, { rotate: 0 });
+
+        // create a separate tween for each icon, paused by default
+        const hoverTween = gsap.to(icon, {
+          rotate: 360,
+          duration: 0.6,
+          ease: "power2.inOut",
+          paused: true,
+        });
+
+        // restart tween on hover
         icon.addEventListener("mouseenter", () => {
-          gsap.to(icon, { rotate: "+=360", duration: 0.6, ease: "power2.inOut" });
+          hoverTween.restart();
         });
       });
+
+
     }, footerRef);
 
     return () => ctx.revert();
@@ -75,7 +89,7 @@ const Footer = ({ transparent = false }) => {
         </ul>
 
         {/* Social Icons */}
-        <div className="fade-in-up mt-[35px]">
+        {/* <div className="fade-in-up mt-[35px]">
           <div className="flex items-center justify-center gap-[10px]">
             {[
               { src: "/img/homepage/footer/twitter.png", alt: "twitter" },
@@ -94,7 +108,31 @@ const Footer = ({ transparent = false }) => {
               </div>
             ))}
           </div>
+        </div> */}
+
+        {/* Social Icons */}
+        <div className="fade-in-up mt-[35px]">
+          <div className="flex items-center justify-center gap-[10px]">
+            {[
+              { Icon: FaTwitter, alt: "twitter" },
+              { Icon: FaFacebookF, alt: "facebook" },
+              { Icon: FaLinkedinIn, alt: "linkedin" }
+            ].map((item, idx) => {
+              const Icon = item.Icon;
+              return (
+                <div
+                  key={idx}
+                  ref={(el) => (iconRefs.current[idx] = el)}
+                  className="w-[40px] h-[40px] rounded-[10px] bg-white flex items-center justify-center social-icon overflow-hidden cursor-pointer text-[#4C4886]"
+                >
+                  <Icon className="w-5 h-5" />
+                </div>
+              );
+            })}
+          </div>
         </div>
+
+
 
         {/* Divider */}
         <div className="fade-in-up w-full h-[1px] bg-white mt-[50px]"></div>

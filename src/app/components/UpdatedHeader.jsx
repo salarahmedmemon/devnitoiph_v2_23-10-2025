@@ -4,9 +4,12 @@ import Link from "next/link";
 import gsap from "gsap";
 import { usePathname } from "next/navigation";
 import { useLayoutEffect, useRef, useEffect, useState, useContext } from "react";
+import { FaWhatsapp } from "react-icons/fa";
 
 
 import { LoadContext } from "./ClientWrapper";
+import { SiGmail } from "react-icons/si";
+import { MdEmail } from "react-icons/md";
 
 
 const UpdatedHeader = () => {
@@ -190,14 +193,20 @@ const UpdatedHeader = () => {
 
                 {/* CONTACT BUTTONS */}
                 <div className="header-btns flex items-center gap-3">
-                    <button className="w-[28px] h-[26px] sm:w-[40px] sm:h-[39.44px] bg-[#4C4886] flex items-center justify-center rounded-[5px] sm:rounded-[10px] rotate-once cursor-pointer">
+                    <button className="w-[28px] h-[26px] sm:w-[40px] sm:h-[39.44px] bg-[#4C4886] flex items-center justify-center rounded-[5px] sm:rounded-[10px] rotate-once cursor-pointer text-white text-[18px] sm:text-[24px] overflow-hidden">
+                        <FaWhatsapp />
+                    </button>
+                    <button className="w-[28px] h-[26px] sm:w-[40px] sm:h-[39.44px] bg-[#4C4886] flex items-center justify-center rounded-[5px] sm:rounded-[10px] rotate-once cursor-pointer text-white text-[18px] sm:text-[24px] overflow-hidden">
+                        <MdEmail />
+                    </button>
+                    {/* <button className="w-[28px] h-[26px] sm:w-[40px] sm:h-[39.44px] bg-[#4C4886] flex items-center justify-center rounded-[5px] sm:rounded-[10px] rotate-once cursor-pointer">
                         <img className="hidden sm:block" src="/img/homepage/whatsapp.png" alt="WhatsApp" />
                         <img className="block sm:hidden w-[10.98px] h-[]10.78px]" src="/img/homepage/whatsapp.png" alt="WhatsApp" />
-                    </button>
-                    <button className="w-[28px] h-[26px] sm:w-[40px] sm:h-[39.44px] bg-[#4C4886] flex items-center justify-center rounded-[5px] sm:rounded-[10px] rotate-once cursor-pointer">
+                    </button> */}
+                    {/* <button className="w-[28px] h-[26px] sm:w-[40px] sm:h-[39.44px] bg-[#4C4886] flex items-center justify-center rounded-[5px] sm:rounded-[10px] rotate-once cursor-pointer">
                         <img className="hidden sm:block" src="/img/homepage/gmail.png" alt="Gmail" />
                         <img className="block sm:hidden w-[10.98px] h-[]10.78px]" src="/img/homepage/gmail.png" alt="Gmail" />
-                    </button>
+                    </button> */}
                 </div>
             </div>
         </div>
