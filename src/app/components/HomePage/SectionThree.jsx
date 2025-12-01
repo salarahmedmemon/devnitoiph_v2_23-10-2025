@@ -108,7 +108,8 @@ const SectionThree = () => {
     }, []);
 
     return (
-        <div ref={containerRef} className="projects w-full h-[856px] sm:h-[790px] lg:h-[980px] relative bg-[#0A131C] pt-[15px] sm:pt-[20px] lg:pt-[58px] overflow-hidden">
+        // min-h-[856px]
+        <div ref={containerRef} className="projects w-full h-[1020px]  sm:h-[790px] lg:h-[980px] relative bg-[#0A131C] pt-[15px] sm:pt-[20px] lg:pt-[58px] overflow-hidden">
             {/* Background image (sharp outside, blurred inside glass) */}
             {/* RIGHT LOGO */}
             <img src="/img/aboutpage/sectionthree/rightlogo.png" className='right-image-logo block w-[60px] sm:w-[80px] md:w-[100px] lg:w-[144px] absolute top-[14px] lg:top-[40px] left-[85%] rotate-50' />
@@ -117,7 +118,7 @@ const SectionThree = () => {
 
 
             {/* Main glass box */}
-            <div className="main-glass w-[96%] md:w-[88%] mx-auto h-[826px] sm:h-[740px] lg:h-[800px] xl:h-[800px] rounded-[5px] xl:rounded-[26px] border-2 xl:border border-[#4279E8]/40
+            <div className="main-glass w-[96%] md:w-[88%] mx-auto h-[984px] sm:h-[740px] lg:h-[800px] xl:h-[800px] rounded-[5px] xl:rounded-[26px] border-2 xl:border border-[#4279E8]/40
                             backdrop-blur-xl opacity-96
                             shadow-[0_8px_26px_rgba(0,0,0,0.6)]
                             relative overflow-hidden">
@@ -135,7 +136,7 @@ const SectionThree = () => {
                 {/* PROJECTS SHOWCASE FOR DESKTOP */}
                 <div className="desktop-projects w-[94%] hidden lg:flex mx-auto lg:mt-[50px] flex-wrap md:gap-[8px]">
                     {/* PROJECT ONE */}
-                    <div className="project-one w-[20%] h-[260px] lg:h-[350px] p-[2px] gradient-border group">
+                    <div className="cursor-pointer project-one w-[20%] h-[260px] lg:h-[350px] p-[2px] gradient-border group">
 
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projectone.png')] bg-cover bg-center relative">
                             <div
@@ -157,7 +158,7 @@ const SectionThree = () => {
                         </div>
                     </div>
                     {/* PROJECT TWO */}
-                    <div className="project-two w-[40%] h-[150px] lg:h-[190px] p-[2px] gradient-border group overflow-hidden">
+                    <div className="cursor-pointer project-two w-[40%] h-[150px] lg:h-[190px] p-[2px] gradient-border group overflow-hidden">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projecttwo.jpg')] bg-cover bg-center relative">
                             <div
                                 ref={(el) => (circleRefsDesktop.current[1] = el)}
@@ -179,7 +180,7 @@ const SectionThree = () => {
                         </div>
                     </div>
                     {/* PROJECT THREE */}
-                    <div className="project-three w-[38%] h-[260px] lg:h-[350px] p-[2px] gradient-border group overflow-hidden">
+                    <div className="cursor-pointer project-three w-[38%] h-[260px] lg:h-[350px] p-[2px] gradient-border group overflow-hidden">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projectthree.jpg')] bg-cover bg-center relative">
                             <div
                                 ref={(el) => (circleRefsDesktop.current[2] = el)}
@@ -199,7 +200,7 @@ const SectionThree = () => {
                         </div>
                     </div>
                     {/* PROJECT FOUR */}
-                    <div className="project-four w-[20%] h-[130px] lg:h-[200px] p-[2px] gradient-border group overflow-hidden">
+                    <div className="cursor-pointer project-four w-[20%] h-[130px] lg:h-[200px] p-[2px] gradient-border group overflow-hidden">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projectfour.png')] bg-cover bg-center relative">
                             <div
                                 ref={(el) => (circleRefsDesktop.current[3] = el)}
@@ -219,7 +220,7 @@ const SectionThree = () => {
                         </div>
                     </div>
                     {/* PROJECT FIVE */}
-                    <div className="project-five w-[40%] h-[240px] lg:h-[360px] p-[2px] mt-[-110px] lg:mt-[-160px] gradient-border group overflow-hidden">
+                    <div className="cursor-pointer project-five w-[40%] h-[240px] lg:h-[360px] p-[2px] mt-[-110px] lg:mt-[-160px] gradient-border group overflow-hidden">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projectfive.jpg')] bg-cover bg-center relative">
                             <div
                                 ref={(el) => (circleRefsDesktop.current[4] = el)}
@@ -241,7 +242,7 @@ const SectionThree = () => {
                         </div>
                     </div>
                     {/* PROJECT SIX */}
-                    <div className="project-six w-[38%] lg:h-[200px] p-[2px] gradient-border group overflow-hidden">
+                    <div className="cursor-pointer project-six w-[38%] lg:h-[200px] p-[2px] gradient-border group overflow-hidden">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projectsix.png')] bg-cover bg-center relative">
                             <div
                                 ref={(el) => (circleRefsDesktop.current[5] = el)}
@@ -265,7 +266,7 @@ const SectionThree = () => {
                 {/* PROJECTS SHOWCASE FOR MOBILE */}
                 <div className="flex justify-center lg:hidden w-[84.5%] mx-auto mt-[16px] sm:mt-0 gap-[6px] sm:gap-[10px] flex-wrap">
                     {/* PROJECT ONE */}
-                    <div className="project-one w-[80%] h-[119px] sm:w-[33%] sm:h-[280px] p-[2px] gradient-border group">
+                    <div className="project-one w-[80%] h-[144px] sm:w-[33%] sm:h-[280px] p-[2px] gradient-border group cursor-pointer">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projectone.png')] bg-cover bg-center relative">
                             <div
                                 ref={(el) => (circleRefsMobile.current[0] = el)}
@@ -276,9 +277,9 @@ const SectionThree = () => {
 
                             {/* OVERLAY */}
                             <div className="group-hover:w-[66%] sm:group-hover:w-full group-hover:h-full sm:group-hover:h-[80%] md:group-hover:h-[200px] bg-[#000] absolute bottom-0 right-0 pt-[50px] group-hover:opacity-80 rounded-tl-full w-0 h-0 opacity-0 transition-all duration-500 ease-in-out z-10 overflow-hidden">
-                                <h3 className="font-[500] text-[12px] text-[#FFFFFF] absolute top-[10px] sm:top-[40px] right-[20px]">Printing Media</h3>
-                                <h4 className="text-[#1AE4FA] text-[10px] absolute top-[26px] sm:top-[56px] right-[10px]">Short Detail Here</h4>
-                                <p className="text-[12px] text-[#CCCCCC] ms-[52px] sm:ms-[32px] md:ms-[40px] mt-[-4px] sm:mt-[40px]">Lorem ipsum dolor sit amet consectetur elit.</p>
+                                <h3 className="font-[500] text-[12px] text-[#FFFFFF] absolute top-[18px] sm:top-[40px] right-[20px]">Printing Media</h3>
+                                <h4 className="text-[#1AE4FA] text-[10px] absolute top-[32px] sm:top-[56px] right-[10px]">Short Detail Here</h4>
+                                <p className="text-[12px] text-[#CCCCCC] ms-[52px] sm:ms-[32px] md:ms-[40px] mt-[6px] sm:mt-[40px]">Lorem ipsum dolor sit amet consectetur elit.</p>
                                 <span className="text-[10px] text-[#CCCCCC] absolute bottom-[8px] left-[6px]">Visit Main Link</span>
                                 <span className="text-[10px] text-[#CCCCCC] absolute bottom-[8px] right-[10px]">More Info</span>
                             </div>
@@ -286,7 +287,7 @@ const SectionThree = () => {
                     </div>
 
                     {/* PROJECT TWO */}
-                    <div className="project-two w-[80%] h-[119px] sm:w-[64%] sm:h-[160px] p-[2px] gradient-border group overflow-hidden">
+                    <div className="project-two w-[80%] h-[144px] sm:w-[64%] sm:h-[160px] p-[2px] gradient-border group overflow-hidden cursor-pointer">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projecttwo.jpg')] bg-cover bg-center relative">
                             <div
                                 ref={(el) => (circleRefsMobile.current[1] = el)}
@@ -297,9 +298,9 @@ const SectionThree = () => {
 
                             {/* OVERLAY */}
                             <div className="group-hover:w-[66%] sm:group-hover:w-[60%] group-hover:h-full sm:group-hover:h-full bg-[#000] absolute bottom-0 right-0 pt-[50px] group-hover:opacity-80 rounded-tl-full w-0 h-0 opacity-0 transition-all duration-500 ease-in-out z-10 overflow-hidden">
-                                <h3 className="font-[500] text-[12px] text-[#FFFFFF] absolute top-[10px] sm:top-[40px] right-[20px]">Printing Media</h3>
-                                <h4 className="text-[#1AE4FA] text-[10px] absolute top-[26px] sm:top-[56px] right-[10px]">Short Detail Here</h4>
-                                <p className="text-[12px] text-[#CCCCCC] ms-[52px] sm:ms-[32px] md:ms-[40px] mt-[-4px] sm:mt-[30px]">Lorem ipsum dolor sit amet consectetur elit.</p>
+                                <h3 className="font-[500] text-[12px] text-[#FFFFFF] absolute top-[18px] sm:top-[40px] right-[20px]">Printing Media</h3>
+                                <h4 className="text-[#1AE4FA] text-[10px] absolute top-[32px] sm:top-[56px] right-[10px]">Short Detail Here</h4>
+                                <p className="text-[12px] text-[#CCCCCC] ms-[52px] sm:ms-[32px] md:ms-[40px] mt-[6px] sm:mt-[30px]">Lorem ipsum dolor sit amet consectetur elit.</p>
                                 <span className="text-[10px] text-[#CCCCCC] absolute bottom-[8px] left-[6px]">Visit Main Link</span>
                                 <span className="text-[10px] text-[#CCCCCC] absolute bottom-[8px] right-[10px]">More Info</span>
                             </div>
@@ -307,7 +308,7 @@ const SectionThree = () => {
                     </div>
 
                     {/* PROJECT THREE */}
-                    <div className="project-three w-[80%] h-[119px] sm:w-[33%] sm:h-[120px] p-[2px] gradient-border group overflow-hidden relative">
+                    <div className="project-three w-[80%] h-[144px] sm:w-[33%] sm:h-[120px] p-[2px] gradient-border group overflow-hidden relative cursor-pointer">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projectfour.png')] bg-cover bg-center relative">
                             <div
                                 ref={(el) => (circleRefsMobile.current[2] = el)}
@@ -318,9 +319,9 @@ const SectionThree = () => {
 
                             {/* OVERLAY */}
                             <div className="group-hover:w-[66%] sm:group-hover:w-full group-hover:h-full sm:group-hover:h-full bg-[#000] absolute bottom-0 right-0 pt-[50px] group-hover:opacity-80 rounded-tl-full w-0 h-0 opacity-0 transition-all duration-500 ease-in-out z-10 overflow-hidden">
-                                <h3 className="font-[500] text-[12px] text-[#FFFFFF] absolute top-[10px] sm:top-[16px] right-[20px]">Printing Media</h3>
-                                <h4 className="text-[#1AE4FA] text-[10px] absolute top-[26px] sm:top-[30px] right-[10px]">Short Detail Here</h4>
-                                <p className="text-[12px] text-[#CCCCCC] ms-[52px] sm:ms-[32px] md:ms-[40px] mt-[-4px] sm:mt-[0px]">Lorem ipsum dolor sit amet consectetur elit.</p>
+                                <h3 className="font-[500] text-[12px] text-[#FFFFFF] absolute top-[18px] sm:top-[16px] right-[20px]">Printing Media</h3>
+                                <h4 className="text-[#1AE4FA] text-[10px] absolute top-[32px] sm:top-[30px] right-[10px]">Short Detail Here</h4>
+                                <p className="text-[12px] text-[#CCCCCC] ms-[52px] sm:ms-[32px] md:ms-[40px] mt-[6px] sm:mt-[0px]">Lorem ipsum dolor sit amet consectetur elit.</p>
                                 <span className="text-[10px] text-[#CCCCCC] absolute bottom-[8px] left-[6px]">Visit Main Link</span>
                                 <span className="text-[10px] text-[#CCCCCC] absolute bottom-[8px] right-[10px]">More Info</span>
                             </div>
@@ -328,7 +329,7 @@ const SectionThree = () => {
                     </div>
 
                     {/* PROJECT FOUR */}
-                    <div className="project-four w-[80%] h-[119px] sm:w-[64%] sm:h-[240px] sm:mt-[-120px] p-[2px] gradient-border group overflow-hidden relative">
+                    <div className="project-four w-[80%] h-[144px] sm:w-[64%] sm:h-[240px] sm:mt-[-120px] p-[2px] gradient-border group overflow-hidden  cursor-pointer">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projectthree.jpg')] bg-cover bg-center relative">
                             <div
                                 ref={(el) => (circleRefsMobile.current[3] = el)}
@@ -339,9 +340,9 @@ const SectionThree = () => {
 
                             {/* OVERLAY */}
                             <div className="group-hover:w-[66%] group-hover:h-full sm:group-hover:h-[80%] md:group-hover:h-[200px] bg-[#000] absolute bottom-0 right-0 pt-[50px] group-hover:opacity-80 rounded-tl-full w-0 h-0 opacity-0 transition-all duration-500 ease-in-out z-10 overflow-hidden">
-                                <h3 className="font-[500] text-[12px] text-[#FFFFFF] absolute top-[10px] sm:top-[40px] right-[20px]">Printing Media</h3>
-                                <h4 className="text-[#1AE4FA] text-[10px] absolute top-[26px] sm:top-[56px] right-[10px]">Short Detail Here</h4>
-                                <p className="text-[12px] text-[#CCCCCC] ms-[52px] sm:ms-[44px] md:ms-[96px] mt-[-4px] sm:mt-[40px]">Lorem ipsum dolor sit amet consectetur elit.</p>
+                                <h3 className="font-[500] text-[12px] text-[#FFFFFF] absolute top-[18px] sm:top-[40px] right-[20px]">Printing Media</h3>
+                                <h4 className="text-[#1AE4FA] text-[10px] absolute top-[32px] sm:top-[56px] right-[10px]">Short Detail Here</h4>
+                                <p className="text-[12px] text-[#CCCCCC] ms-[52px] sm:ms-[44px] md:ms-[96px] mt-[6px] sm:mt-[40px]">Lorem ipsum dolor sit amet consectetur elit.</p>
                                 <span className="text-[10px] text-[#CCCCCC] absolute bottom-[8px] left-[6px]">Visit Main Link</span>
                                 <span className="text-[10px] text-[#CCCCCC] absolute bottom-[8px] right-[10px]">More Info</span>
                             </div>
@@ -349,7 +350,7 @@ const SectionThree = () => {
                     </div>
 
                     {/* PROJECT FIVE */}
-                    <div className="project-five w-[80%] h-[119px] sm:w-[49%] sm:h-[185px] sm:mt-0 p-[2px] gradient-border group overflow-hidden relative">
+                    <div className="project-five w-[80%] h-[144px] sm:w-[49%] sm:h-[185px] sm:mt-0 p-[2px] gradient-border group overflow-hidden relative cursor-pointer">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projectsix.png')] bg-cover bg-center relative">
                             <div
                                 ref={(el) => (circleRefsMobile.current[4] = el)}
@@ -360,9 +361,9 @@ const SectionThree = () => {
 
                             {/* OVERLAY */}
                             <div className="group-hover:w-[66%] group-hover:h-full sm:group-hover:h-[80%] md:group-hover:h-full bg-[#000] absolute bottom-0 right-0 pt-[50px] group-hover:opacity-80 rounded-tl-full w-0 h-0 opacity-0 transition-all duration-500 ease-in-out z-10 overflow-hidden">
-                                <h3 className="font-[500] text-[12px] text-[#FFFFFF] absolute top-[10px] sm:top-[40px] right-[20px]">Printing Media</h3>
-                                <h4 className="text-[#1AE4FA] text-[10px] absolute top-[26px] sm:top-[56px] right-[10px]">Short Detail Here</h4>
-                                <p className="text-[12px] text-[#CCCCCC] ms-[52px] sm:ms-[32px] md:ms-[40px] mt-[-4px] sm:mt-[26px] md:mt-[32px]">Lorem ipsum dolor sit amet consectetur elit.</p>
+                                <h3 className="font-[500] text-[12px] text-[#FFFFFF] absolute top-[18px] sm:top-[40px] right-[20px]">Printing Media</h3>
+                                <h4 className="text-[#1AE4FA] text-[10px] absolute top-[32px] sm:top-[56px] right-[10px]">Short Detail Here</h4>
+                                <p className="text-[12px] text-[#CCCCCC] ms-[52px] sm:ms-[32px] md:ms-[40px] mt-[6px] sm:mt-[26px] md:mt-[32px]">Lorem ipsum dolor sit amet consectetur elit.</p>
                                 <span className="text-[10px] text-[#CCCCCC] absolute bottom-[8px] left-[6px]">Visit Main Link</span>
                                 <span className="text-[10px] text-[#CCCCCC] absolute bottom-[8px] right-[10px]">More Info</span>
                             </div>
@@ -370,7 +371,7 @@ const SectionThree = () => {
                     </div>
 
                     {/* PROJECT SIX */}
-                    <div className="project-six w-[80%] h-[119px] sm:w-[48%] sm:h-[185px] sm:mt-0 p-[2px] gradient-border group overflow-hidden relative">
+                    <div className="project-six w-[80%] h-[144px] sm:w-[48%] sm:h-[185px] sm:mt-0 p-[2px] gradient-border group overflow-hidden relative cursor-pointer">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projectfive.jpg')] bg-cover bg-center relative">
                             <div
                                 ref={(el) => (circleRefsMobile.current[5] = el)}
@@ -381,9 +382,9 @@ const SectionThree = () => {
 
                             {/* OVERLAY */}
                             <div className="group-hover:w-[66%] sm:group-hover:w-full md:group-hover:w-[66%] group-hover:h-full bg-[#000] absolute bottom-0 right-0 pt-[50px] group-hover:opacity-80 rounded-tl-full w-0 h-0 opacity-0 transition-all duration-500 ease-in-out z-10 overflow-hidden">
-                                <h3 className="font-[500] text-[12px] text-[#FFFFFF] absolute top-[10px] sm:top-[40px] right-[20px]">Printing Media</h3>
-                                <h4 className="text-[#1AE4FA] text-[10px] absolute top-[26px] sm:top-[56px] right-[10px]">Short Detail Here</h4>
-                                <p className="text-[12px] text-[#CCCCCC] ms-[52px] sm:ms-[70px] md:ms-[30px] mt-[-4px] sm:mt-[40px]">Lorem ipsum dolor sit amet consectetur elit.</p>
+                                <h3 className="font-[500] text-[12px] text-[#FFFFFF] absolute top-[18px] sm:top-[40px] right-[20px]">Printing Media</h3>
+                                <h4 className="text-[#1AE4FA] text-[10px] absolute top-[32px] sm:top-[56px] right-[10px]">Short Detail Here</h4>
+                                <p className="text-[12px] text-[#CCCCCC] ms-[52px] sm:ms-[70px] md:ms-[30px] mt-[6px] sm:mt-[40px]">Lorem ipsum dolor sit amet consectetur elit.</p>
                                 <span className="text-[10px] text-[#CCCCCC] absolute bottom-[8px] left-[6px]">Visit Main Link</span>
                                 <span className="text-[10px] text-[#CCCCCC] absolute bottom-[8px] right-[10px]">More Info</span>
                             </div>

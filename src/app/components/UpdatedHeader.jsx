@@ -133,7 +133,7 @@ const UpdatedHeader = () => {
                     {/* MENU */}
                     <div
                         ref={menuRef}
-                        className="menu w-[200px] md:w-[216px] h-screen absolute top-[38px] sm:top-[64px] md:top-[64px] left-[-20px]
+                        className="menu w-[200px] md:w-[216px] h-screen absolute top-[38px] sm:top-[64px] md:top-[64px] left-[-48px] md:left-[-84px]
           bg-gradient-to-b from-[#31365C] to-[#0A131C] transform -translate-x-full opacity-0"
                     >
                         {links.map(({ href, label }, i) => {
@@ -141,7 +141,7 @@ const UpdatedHeader = () => {
                             return (
                                 <Link href={href} key={href}> {/* ✅ unique key here */}
                                     <div
-                                        className={`w-full h-[46px] text-[16px] sm:text-[18px] md:text-[20px] flex items-center justify-center border-b-[2px] border-[#31365C]
+                                        className={`w-full h-[46px] text-[16px] sm:text-[18px] md:text-[20px] flex items-center justify-center 
         ${isActive ? "bg-[#31365C] text-white" : "bg-white text-black"}`}
                                     >
                                         {label}

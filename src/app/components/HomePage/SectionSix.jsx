@@ -16,15 +16,15 @@ const faqs = [
   { id: 6, q: 'Can NoCode scale for businesses?', a1: 'Many NoCode platforms can scale for small-to-medium needs, but architecture matters.', a2: 'For very large or highly-custom use-cases, hybrid or custom solutions are often used.' },
 ];
 
-function FAQItem({ q, a1, a2, id }) {
+function FAQItem({ q, a1, a2, id, onOpen }) {
   const [open, setOpen] = useState(false);
-  const openRef = useRef(false); // keep immediate state for event listeners
+  const openRef = useRef(false); // immediate state for mouse events
   const contentRef = useRef(null);
   const iconRef = useRef(null);
   const wrapperRef = useRef(null);
   const iconTimeoutRef = useRef(null);
 
-  // initialize content hidden & icon
+  // initialize content & icon
   useEffect(() => {
     const content = contentRef.current;
     const icon = iconRef.current;
@@ -36,17 +36,12 @@ function FAQItem({ q, a1, a2, id }) {
     if (icon) icon.textContent = '+';
 
     return () => {
-      // cleanup timeouts and GSAP tweens
-      if (iconTimeoutRef.current) {
-        clearTimeout(iconTimeoutRef.current);
-        iconTimeoutRef.current = null;
-      }
+      if (iconTimeoutRef.current) clearTimeout(iconTimeoutRef.current);
       gsap.killTweensOf(content);
       gsap.killTweensOf(icon);
     };
   }, []);
 
-  // keep openRef synced immediately
   useEffect(() => {
     openRef.current = open;
   }, [open]);
@@ -56,15 +51,10 @@ function FAQItem({ q, a1, a2, id }) {
     const icon = iconRef.current;
     if (!content || !icon) return;
 
-    // stop any ongoing tweens/timeouts
-    if (iconTimeoutRef.current) {
-      clearTimeout(iconTimeoutRef.current);
-      iconTimeoutRef.current = null;
-    }
+    if (iconTimeoutRef.current) clearTimeout(iconTimeoutRef.current);
     gsap.killTweensOf(content);
     gsap.killTweensOf(icon);
 
-    // open animation
     content.style.visibility = 'visible';
     content.style.height = 'auto';
     const fullHeight = content.scrollHeight;
@@ -80,7 +70,6 @@ function FAQItem({ q, a1, a2, id }) {
       },
     });
 
-    // icon rotate + swap to minus
     gsap.to(icon, { rotate: 90, duration: 0.18, ease: 'power2.out' });
     iconTimeoutRef.current = setTimeout(() => {
       icon.textContent = '−';
@@ -88,9 +77,11 @@ function FAQItem({ q, a1, a2, id }) {
       iconTimeoutRef.current = null;
     }, 160);
 
-    // update state (and immediate ref) so document listener sees it
     openRef.current = true;
     setOpen(true);
+
+    // notify parent to close other FAQs
+    if (onOpen) onOpen(closeContent);
   };
 
   const closeContent = () => {
@@ -98,14 +89,10 @@ function FAQItem({ q, a1, a2, id }) {
     const icon = iconRef.current;
     if (!content || !icon) return;
 
-    if (iconTimeoutRef.current) {
-      clearTimeout(iconTimeoutRef.current);
-      iconTimeoutRef.current = null;
-    }
+    if (iconTimeoutRef.current) clearTimeout(iconTimeoutRef.current);
     gsap.killTweensOf(content);
     gsap.killTweensOf(icon);
 
-    // freeze current height to animate to 0
     const currentHeight = content.getBoundingClientRect().height;
     content.style.height = `${currentHeight}px`;
 
@@ -119,7 +106,6 @@ function FAQItem({ q, a1, a2, id }) {
       },
     });
 
-    // icon rotate back + swap to plus
     gsap.to(icon, { rotate: -10, duration: 0.14, ease: 'power2.in' });
     iconTimeoutRef.current = setTimeout(() => {
       icon.textContent = '+';
@@ -137,7 +123,7 @@ function FAQItem({ q, a1, a2, id }) {
     else openContent();
   };
 
-  // document-level pointer listener that closes when pointer is outside wrapper rect
+  // pointer listener to auto-close on mouse leave
   useEffect(() => {
     const onPointerMove = (ev) => {
       if (!openRef.current) return;
@@ -148,37 +134,22 @@ function FAQItem({ q, a1, a2, id }) {
       const x = ev.clientX;
       const y = ev.clientY;
 
-      // If pointer outside rect, close
       if (x < rect.left || x > rect.right || y < rect.top || y > rect.bottom) {
-        // extra guard: tiny delay to avoid immediate close during rapid clicks
-        // but don't queue if already closing
         closeContent();
       }
     };
 
-    // pointermove covers mouse and touch pointer types
     document.addEventListener('pointermove', onPointerMove);
-
-    return () => {
-      document.removeEventListener('pointermove', onPointerMove);
-    };
+    return () => document.removeEventListener('pointermove', onPointerMove);
   }, []);
 
   return (
-    <div
-      ref={wrapperRef}
-      className="relative w-full sm:w-[45%] lg:w-[90%] lg:mx-auto mt-[2vw] p-[2px]"
-    >
-      {/* Border layer */}
+    <div ref={wrapperRef} className="relative w-full sm:w-[90%] sm:mx-auto mt-[2vw] mb-[20px] sm:mb-0 sm:mt-[2vw] p-[2px]">
       <div className="absolute inset-0 z-0 rounded-[10px] border-layer"></div>
 
-      {/* Inner content */}
-      <div className="relative z-10 w-full px-[20px] py-[10px] md:py-[20px] flex flex-col justify-center transition-all duration-300 backdrop-blur-[2px] rounded-[10px] bg-[#ffffff17] clip-rounded">
+      <div className="relative z-10 w-full px-[20px] py-[14px] md:py-[20px] flex flex-col justify-center transition-all duration-300 backdrop-blur-[2px] rounded-[10px] bg-[#ffffff17] clip-rounded">
         <div className="flex items-center justify-between gap-4">
-          <p
-            className={`text-[12px] md:text-[16px] lg:text-[18px] transition-colors duration-300 ${open ? "text-green-500" : "text-white"
-              }`}
-          >
+          <p className={`text-[12px] md:text-[16px] lg:text-[18px] transition-colors duration-300 ${open ? "text-green-500" : "text-white"}`}>
             {q}
           </p>
 
@@ -186,12 +157,9 @@ function FAQItem({ q, a1, a2, id }) {
             onClick={handleIconClick}
             aria-expanded={open}
             aria-controls={`faq-content-${id}`}
-            className={`w-7 h-7 md:w-8 md:h-8 flex items-center justify-center rounded cursor-pointer transition-colors duration-300 
-          ${open ? "bg-green-500 text-white" : "bg-white text-[#767C9E]"}`}
+            className={`w-7 h-7 md:w-8 md:h-8 flex items-center justify-center rounded cursor-pointer transition-colors duration-300 ${open ? "bg-green-500 text-white" : "bg-white text-[#767C9E]"}`}
           >
-            <span className="text-[24px] pb-[5px]" ref={iconRef}>
-              +
-            </span>
+            <span className="text-[24px] pb-[5px]" ref={iconRef}>+</span>
           </button>
         </div>
 
@@ -206,8 +174,6 @@ function FAQItem({ q, a1, a2, id }) {
         </div>
       </div>
     </div>
-
-
   );
 }
 
@@ -216,6 +182,16 @@ const SectionSix = () => {
   const h2Ref = useRef(null);
   const iconsRef = useRef(null);
   const sectionRef = useRef(null);
+
+  // store close functions for all FAQs
+  const faqRefs = useRef({});
+
+  const handleFaqOpen = (id, closeFn) => {
+    Object.entries(faqRefs.current).forEach(([key, fn]) => {
+      if (parseInt(key) !== id && fn) fn();
+    });
+    faqRefs.current[id] = closeFn;
+  };
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -246,7 +222,6 @@ const SectionSix = () => {
 
       if (iconsRef.current) {
         const icons = iconsRef.current.querySelectorAll('.social-icon');
-
         gsap.fromTo(
           icons,
           { rotation: 360, scale: 0, opacity: 0 },
@@ -277,9 +252,7 @@ const SectionSix = () => {
                 scale: 1.12,
                 duration: 0.6,
                 ease: 'power2.out',
-                onComplete: () => {
-                  gsap.to(icon, { scale: 1, duration: 0.15, ease: 'power2.out' });
-                },
+                onComplete: () => gsap.to(icon, { scale: 1, duration: 0.15, ease: 'power2.out' }),
               }
             );
           };
@@ -295,9 +268,7 @@ const SectionSix = () => {
       const handlers = iconsRef.current?.__hoverHandlers;
       if (handlers && Array.isArray(handlers)) {
         handlers.forEach(({ icon, handler }) => {
-          try {
-            icon.removeEventListener('mouseenter', handler);
-          } catch (e) { }
+          try { icon.removeEventListener('mouseenter', handler); } catch (e) {}
         });
       }
       ctx.revert();
@@ -307,43 +278,41 @@ const SectionSix = () => {
 
   return (
     <section ref={sectionRef} className="homepage-section-six w-full lg:min-h-[780px] bg-[#000C1B] section-six relative overflow-hidden">
-      <div className='w-full h-[83%] bg-[#000c1bf2] absolute bottom-0'></div>
-
+      <div className='w-full h-[86%] sm:h-[82%] bg-[#000c1bf2] absolute bottom-0'></div>
       <div className='w-[0vw] h-[0vw] rounded-full absolute top-[100px] left-[-60px] opacity-[50%] blur-circle2'></div>
 
       <div className="w-full h-[100px] sm:h-[150px] bg-white pt-[26px] ps-[40px] sm:pt-[39px] md:ps-[50px] xl:ps-[86px]">
         <div className="w-full homepage-sectionsix mx-auto">
           <div className="w-[454px] h-[74px] homepage-section-six-heading">
             <h1 ref={h1Ref} className="border-t-[3px] border-[#4C4886] w-[50px] h-[24px] sm:w-[87px] sm:h-[42px] text-[20px] sm:text-[32px] font-[500]">FAQ's</h1>
-            <h2 ref={h2Ref} className="text-[20px] sm:text-[32px] font-[600] text-[#4C4886]"> <span className="bg-gradient-to-r from-[#FA1AC2] via-[#1AE4FA] to-[#1CDE63D9] bg-clip-text text-transparent font-bold">
-              Frequently
-            </span>
+            <h2 ref={h2Ref} className="text-[20px] sm:text-[32px] font-[600] text-[#4C4886]">
+              <span className="bg-gradient-to-r from-[#FA1AC2] via-[#1AE4FA] to-[#1CDE63D9] bg-clip-text text-transparent font-bold">
+                Frequently
+              </span>
               Asked Questions
             </h2>
           </div>
         </div>
       </div>
+
       <div className="w-full p-5">
-        {/* Mobile / Tablet Layout (stacked with flex-wrap) */}
-        <div className="flex items-center justify-center sm:gap-4 flex-wrap mt-[6vw] mb-[3vw] lg:hidden">
+        {/* Mobile / Tablet */}
+        <div className="flex items-center justify-center sm:gap-4 flex-wrap mt-[6vw] mb-[3vw] sm:hidden">
           {faqs.map((f) => (
-            <FAQItem key={f.id} id={f.id} q={f.q} a1={f.a1} a2={f.a2} />
+            <FAQItem key={f.id} id={f.id} q={f.q} a1={f.a1} a2={f.a2} onOpen={(closeFn) => handleFaqOpen(f.id, closeFn)} />
           ))}
         </div>
 
-        {/* Large Device Layout (2 fixed columns) */}
-        <div className="hidden mx-auto homepage-section-six-faq w-full mt-[40px] lg:grid lg:grid-cols-2">
-
+        {/* Large Devices */}
+        <div className="hidden mx-auto homepage-section-six-faq w-full mt-[40px] sm:grid sm:grid-cols-2">
           <div className="flex flex-col">
             {faqs.slice(0, 3).map((f) => (
-              <FAQItem key={f.id} id={f.id} q={f.q} a1={f.a1} a2={f.a2} />
+              <FAQItem key={f.id} id={f.id} q={f.q} a1={f.a1} a2={f.a2} onOpen={(closeFn) => handleFaqOpen(f.id, closeFn)} />
             ))}
           </div>
-
-
           <div className="flex flex-col">
             {faqs.slice(3, 6).map((f) => (
-              <FAQItem key={f.id} id={f.id} q={f.q} a1={f.a1} a2={f.a2} />
+              <FAQItem key={f.id} id={f.id} q={f.q} a1={f.a1} a2={f.a2} onOpen={(closeFn) => handleFaqOpen(f.id, closeFn)} />
             ))}
           </div>
         </div>

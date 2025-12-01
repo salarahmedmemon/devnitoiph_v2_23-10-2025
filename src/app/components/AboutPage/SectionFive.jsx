@@ -45,7 +45,7 @@ const SectionFive = () => {
     // }, []);
 
     return (
-        <div className="w-full sm:h-[802px] bg-[#EEEEEE] relative overflow-hidden">
+        <div className="w-full sm:h-[802px] bg-[#EEEEEE] relative overflow-hidden pt-[60px]">
             {/* //? RIGHT CIRCLE */}
             <div className='w-[180px] sm:w-[300px] lg:w-[405.06px] h-[180px] sm:h-[300px] lg:h-[405.06px] rounded-full bg-[#BAD3EF] absolute top-[-20px] right-[-60px] sm:top-[-50px] lg:top-[16px] xl:top-[-14px] sm:right-[-150px] lg:right-[-200px] xl:right-[-6vw] p-[3px]'>
                 <div className='w-full h-full rounded-full bg-gradient-to-b from-[#E2E8EE] to-[#E9EBEE]'></div>
@@ -57,7 +57,7 @@ const SectionFive = () => {
             </div>
 
             {/*  //? TITLE */}
-            <div ref={titleRef} className="title relative text-center mt-[26px] mb-4">
+            <div ref={titleRef} className="title relative text-center mb-4">
                 {/* <div className="w-[60vw] sm:w-[35vw] md:w-[22vw] h-[.8vw] sm:h-[.3vw] md:h-[.2vw] bg-[#4C4886] absolute left-1/2 -translate-x-1/2 top-[5vw] sm:top-[20%] md:top-[18%]"></div> */}
                 <h1 className="w-[240px] md:w-[340px] mx-auto text-2xl sm:text-3xl md:text-4xl border-t-[3px] border-[#4C4886]">
                     Lets Talk With Us
@@ -73,35 +73,35 @@ const SectionFive = () => {
                 className="form w-full md:w-[80%] lg:w-[900px] mx-auto flex flex-wrap gap-8 p-4 mt-[40px] lg:mt-[100px] relative z-[100]"
             >
                 <input
-                    className="w-full md:w-[830px] lg:w-[400px] h-[46px] sm:h-[54px] lg:h-[64px] rounded-lg ps-4 border-[2px] text-[22px] border-[#AAAAAA] text-[#AAAAAA]"
+                    className="w-full md:w-[830px] lg:w-[400px] h-[46px] sm:h-[54px] lg:h-[64px] rounded-lg ps-4 border-[2px] text-[16px] border-[#AAAAAA] text-[#AAAAAA]"
                     placeholder="Enter Your Name:"
                     type="text"
                 />
                 <input
-                    className="w-full md:w-[830px] lg:w-[400px] h-[46px] sm:h-[54px] lg:h-[64px] rounded-lg ps-4 border-[2px] text-[22px] border-[#AAAAAA] text-[#AAAAAA]"
+                    className="w-full md:w-[830px] lg:w-[400px] h-[46px] sm:h-[54px] lg:h-[64px] rounded-lg ps-4 border-[2px] text-[16px] border-[#AAAAAA] text-[#AAAAAA]"
                     placeholder="Enter Your Email:"
                     type="text"
                 />
 
                 <input
-                    className="z-10 w-full md:w-[830px] lg:w-[400px] h-[46px] sm:h-[54px] lg:h-[64px] rounded-lg ps-4 border-[2px] text-[22px] border-[#AAAAAA] text-[#AAAAAA]"
+                    className="z-10 w-full md:w-[830px] lg:w-[400px] h-[46px] sm:h-[54px] lg:h-[64px] rounded-lg ps-4 border-[2px] text-[16px] border-[#AAAAAA] text-[#AAAAAA]"
                     placeholder="Enter Your Phone No:"
                     type="text"
                 />
                 
                     <input
-                        className="w-full md:w-[830px] lg:w-[400px] h-[46px] sm:h-[54px] lg:h-[64px] rounded-lg ps-4 border-[2px] text-[22px] border-[#AAAAAA] text-[#AAAAAA]"
+                        className="w-full md:w-[830px] lg:w-[400px] h-[46px] sm:h-[54px] lg:h-[64px] rounded-lg ps-4 border-[2px] text-[16px] border-[#AAAAAA] text-[#AAAAAA]"
                         placeholder="Enter Your Subject:"
                         type="text"
                     />
                     
                     <textarea
-                        className="z-10 w-full md:w-[830px] h-[165px] rounded-lg ps-4 border-[2px] text-[22px] border-[#AAAAAA] text-[#AAAAAA]"
+                        className="z-10 w-full md:w-[830px] h-[165px] rounded-lg ps-4 border-[2px] text-[16px] border-[#AAAAAA] text-[#AAAAAA]"
                         placeholder="Enter Your Subject:"
                     ></textarea>
                     
                     <div className="z-10 w-full md:w-[830px] flex items-start">
-                        <button className="w-full md:w-[180px] h-[50px] text-[22px] bg-[#4C4886] mb-[30px] text-white rounded-lg font-semibold border-2 border-[#ACACAD]">
+                        <button className="w-full md:w-[180px] h-[50px] text-[16px] bg-[#4C4886] mb-[30px] text-white rounded-lg font-semibold border-2 border-[#ACACAD]">
                             Send Message
                         </button>
                     </div>
