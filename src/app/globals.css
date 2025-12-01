@@ -13,6 +13,7 @@ body {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -23,7 +24,8 @@ body {
 }
 
 /* SECTION ONE IMAGES ANIMATION */
-.first-column, .third-column {
+.first-column,
+.third-column {
   animation: downStepsColumns 5s linear infinite;
 }
 
@@ -32,59 +34,118 @@ body {
 }
 
 @keyframes downStepsColumns {
+
   /* Start at 0 */
-  0%   { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
 
   /* First down */
-  10%  { transform: translateY(30px); }
-  20%  { transform: translateY(30px); } /* pause 1s */
+  10% {
+    transform: translateY(30px);
+  }
+
+  20% {
+    transform: translateY(30px);
+  }
+
+  /* pause 1s */
 
   /* Second down */
-  30%  { transform: translateY(60px); }
-  40%  { transform: translateY(60px); } /* pause 1s */
+  30% {
+    transform: translateY(60px);
+  }
+
+  40% {
+    transform: translateY(60px);
+  }
+
+  /* pause 1s */
 
   /* Third down */
-  50%  { transform: translateY(90px); }
-  60%  { transform: translateY(90px); } /* pause 1s */
+  50% {
+    transform: translateY(90px);
+  }
+
+  60% {
+    transform: translateY(90px);
+  }
+
+  /* pause 1s */
 
   /* Back to top */
-  80%  { transform: translateY(0); }
+  80% {
+    transform: translateY(0);
+  }
 
   /* Ensure smooth reset */
-  100% { transform: translateY(0); }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes upStepsColumns {
+
   /* Start at 0 */
-  0%   { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
 
   /* First up */
-  10%  { transform: translateY(-30px); }
-  20%  { transform: translateY(-30px); } /* pause 1s */
+  10% {
+    transform: translateY(-30px);
+  }
+
+  20% {
+    transform: translateY(-30px);
+  }
+
+  /* pause 1s */
 
   /* Second up */
-  30%  { transform: translateY(-60px); }
-  40%  { transform: translateY(-60px); } /* pause 1s */
+  30% {
+    transform: translateY(-60px);
+  }
+
+  40% {
+    transform: translateY(-60px);
+  }
+
+  /* pause 1s */
 
   /* Third up */
-  50%  { transform: translateY(-90px); }
-  60%  { transform: translateY(-90px); } /* pause 1s */
+  50% {
+    transform: translateY(-90px);
+  }
+
+  60% {
+    transform: translateY(-90px);
+  }
+
+  /* pause 1s */
 
   /* Back to center */
-  80%  { transform: translateY(0); }
+  80% {
+    transform: translateY(0);
+  }
 
   /* Ensure smooth reset */
-  100% { transform: translateY(0); }
+  100% {
+    transform: translateY(0);
+  }
 }
 
-.images:hover .first-column, .images:hover .second-column, .images:hover .third-column{
-    animation-play-state: paused !important;
+.images:hover .first-column,
+.images:hover .second-column,
+.images:hover .third-column {
+  animation-play-state: paused !important;
 }
 
 @media (min-width: 1440px) {
   .header {
     width: 1280px;
   }
+
   .homepage-section-one {
     width: 1400px;
   }
@@ -95,20 +156,30 @@ body {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
 }
 
-.gradient-border {
+@media (min-width: 640px) {
+  .gradient-border-active {
     background: linear-gradient(90deg, #1AE4FA, #1CDE63, #FA1AC2);
-    background-size: 400% 400%; 
+    background-size: 400% 400%;
     animation: gradientMove 4s linear infinite;
+  }
 }
 
+
+.gradient-border {
+  background: linear-gradient(90deg, #1AE4FA, #1CDE63, #FA1AC2);
+  background-size: 400% 400%;
+  animation: gradientMove 4s linear infinite;
+}
 
 /* SECTION FOUR STYLING */
 .animate-slide {
@@ -116,15 +187,38 @@ body {
 }
 
 @keyframes slide {
-  0%   { transform: translateX(0); }        /* initial */
-  20%  { transform: translateX(-8%); }     /* step 1 */
-  40%  { transform: translateX(-16%); }     /* step 2 */
-  60%  { transform: translateX(-26%); }     /* step 3 */     /* go back halfway */
-  100% { transform: translateX(0); }        /* return to start */
+  0% {
+    transform: translateX(0);
+  }
+
+  /* initial */
+  20% {
+    transform: translateX(-8%);
+  }
+
+  /* step 1 */
+  40% {
+    transform: translateX(-16%);
+  }
+
+  /* step 2 */
+  60% {
+    transform: translateX(-26%);
+  }
+
+  /* step 3 */
+  /* go back halfway */
+  100% {
+    transform: translateX(0);
+  }
+
+  /* return to start */
 }
 
 /* SECTION FIVE STYLING */
-.blur-circle, .blur-circle1, .blur-circle1 {
+.blur-circle,
+.blur-circle1,
+.blur-circle1 {
   box-shadow: 90px 100px 100px 80px #ad1b88;
   transition: .4s ease;
 }
@@ -153,6 +247,7 @@ body {
   from {
     transform: scale(1);
   }
+
   to {
     transform: scale(1.2);
   }
@@ -172,60 +267,75 @@ body {
   .projects {
     height: 1031px;
   }
+
   .projects .right-image {
     top: 26px;
     right: 5%;
   }
+
   .projects .left-image {
     bottom: 66px;
     left: 4%;
   }
+
   .main-glass {
     width: 1320px;
     height: 873px;
   }
+
   .main-content {
     width: 1320px;
   }
+
   .desktop-projects {
     width: 1280px;
-    gap:16px
+    gap: 16px
   }
+
   .project-one {
     width: 264.08px;
     height: 427.61px;
   }
+
   .project-two {
     width: 451.1px;
     height: 209.57px;
   }
+
   .project-three {
     width: 526.28px;
     height: 362.76px;
   }
+
   .project-four {
     width: 264.08px;
     height: 142.85px;
   }
+
   .project-four .overlay {
     padding-top: 30px;
   }
+
   .project-four:hover .overlay {
     height: 100%;
   }
+
   .project-five {
     width: 451.1px;
     height: 362.67px;
     margin-top: -220px;
   }
+
   .project-six {
     width: 526.28px;
     height: 209.57px;
     margin-top: -68px;
   }
+
   .homepage-section-six-faq {
     width: 1200px;
   }
+
   .updatedsectionthree {
     height: 760px;
   }
@@ -234,6 +344,7 @@ body {
     width: 1360px;
     height: 640px;
   }
+
   .leftimagelogo {
     bottom: 40px
   }
@@ -241,7 +352,7 @@ body {
 
 
 .frequently-asked-question-border {
-  border: 3px solid transparent; 
+  border: 3px solid transparent;
   border-image: linear-gradient(to right, #FA1AC2, #1AE4FA, #1CDE63D9) 1;
 }
 
@@ -267,8 +378,9 @@ body {
 
 @media (min-width: 1600px) {
   .right-image-logo {
-    left: 80% ;
+    left: 80%;
   }
+
   .left-image-logo {
     left: 6%;
   }
@@ -288,8 +400,9 @@ body {
 
 @media (min-width: 2000px) {
   .right-image-logo {
-    left: 72% ;
+    left: 72%;
   }
+
   .left-image-logo {
     left: 20%;
   }
@@ -297,41 +410,62 @@ body {
 
 @media (min-width: 2400px) {
   .right-image-logo {
-    left: 70% ;
+    left: 70%;
   }
+
   .left-image-logo {
     left: 24%;
   }
 }
 
 @media (min-width: 1440px) {
-  .aboutpage-section-one, .servicepage-section-one, .servicepage-sectionthree, .servicepage-section-four,
-  .casestudiespage-sectionone, .careerspage-sectionone, .careerspage-section-four, .servicedetailspage-sectionone , 
-  .servicedetailspage-sectiontwo, .fagpage-sectionone, .faqpage-sectionthree, .packagespage-sectionone,
-  .packagespage-sectiontwo, .homepage-sectionfour{
+
+  .aboutpage-section-one,
+  .servicepage-section-one,
+  .servicepage-sectionthree,
+  .servicepage-section-four,
+  .casestudiespage-sectionone,
+  .careerspage-sectionone,
+  .careerspage-section-four,
+  .servicedetailspage-sectionone,
+  .servicedetailspage-sectiontwo,
+  .fagpage-sectionone,
+  .faqpage-sectionthree,
+  .packagespage-sectionone,
+  .packagespage-sectiontwo,
+  .homepage-sectionfour {
     width: 1400px;
   }
+
   .homepage-sectionsix {
     width: 1230px;
   }
+
   .servicedetailspage-sectionthree {
     width: 1340px;
   }
-  .aboutpage-section-three, .careerspage-sectionsix{
+
+  .aboutpage-section-three,
+  .careerspage-sectionsix {
     width: 1280px;
   }
+
   .casestudypage-sectionthree {
     width: 1300px;
   }
+
   .careerspage-sectionfive {
     width: 1305px;
   }
+
   .careerspage-sectionfive-newsblog {
     margin-left: 10px;
   }
+
   .project-card {
     width: 305px;
   }
+
   .homepage-sectionone-rightcircle {
     left: 90%;
   }
@@ -344,12 +478,10 @@ body {
 /* Gradient border with clip-path */
 .border-layer {
   background: linear-gradient(90deg, #FA1AC2, #1AE4FA, #1CDE63D9);
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 100%,
-    0 100%
-  );
+  clip-path: polygon(0 0,
+      100% 0,
+      100% 100%,
+      0 100%);
   border-radius: 10px;
   padding: 2px;
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -367,6 +499,7 @@ body {
   .firstpage-mainheading {
     font-size: 36px;
   }
+
   .firstpage-button {
     margin-top: 20px;
   }

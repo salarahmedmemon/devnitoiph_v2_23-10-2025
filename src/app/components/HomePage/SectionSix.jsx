@@ -144,10 +144,10 @@ function FAQItem({ q, a1, a2, id, onOpen }) {
   }, []);
 
   return (
-    <div ref={wrapperRef} className="relative w-full sm:w-[90%] sm:mx-auto mt-[2vw] mb-[20px] sm:mb-0 sm:mt-[2vw] p-[2px]">
+    <div ref={wrapperRef} className="relative w-full sm:w-[90%] sm:mx-auto mt-[20px] sm:mt-[2vw] p-[2px]">
       <div className="absolute inset-0 z-0 rounded-[10px] border-layer"></div>
 
-      <div className="relative z-10 w-full px-[20px] py-[14px] md:py-[20px] flex flex-col justify-center transition-all duration-300 backdrop-blur-[2px] rounded-[10px] bg-[#ffffff17] clip-rounded">
+      <div className="relative z-10 w-full px-[20px] py-[26px] sm:py-[14px] md:py-[20px] flex flex-col justify-center transition-all duration-300 backdrop-blur-[2px] rounded-[10px] bg-[#ffffff17] clip-rounded">
         <div className="flex items-center justify-between gap-4">
           <p className={`text-[12px] md:text-[16px] lg:text-[18px] transition-colors duration-300 ${open ? "text-green-500" : "text-white"}`}>
             {q}
@@ -159,7 +159,7 @@ function FAQItem({ q, a1, a2, id, onOpen }) {
             aria-controls={`faq-content-${id}`}
             className={`w-7 h-7 md:w-8 md:h-8 flex items-center justify-center rounded cursor-pointer transition-colors duration-300 ${open ? "bg-green-500 text-white" : "bg-white text-[#767C9E]"}`}
           >
-            <span className="text-[24px] pb-[5px]" ref={iconRef}>+</span>
+            <span className="text-[24px] pb-[0px]" ref={iconRef}>+</span>
           </button>
         </div>
 
@@ -278,7 +278,7 @@ const SectionSix = () => {
 
   return (
     <section ref={sectionRef} className="homepage-section-six w-full lg:min-h-[780px] bg-[#000C1B] section-six relative overflow-hidden">
-      <div className='w-full h-[86%] sm:h-[82%] bg-[#000c1bf2] absolute bottom-0'></div>
+      <div className='w-full h-[87%] sm:h-[82%] bg-[#000c1bf2] absolute bottom-0'></div>
       <div className='w-[0vw] h-[0vw] rounded-full absolute top-[100px] left-[-60px] opacity-[50%] blur-circle2'></div>
 
       <div className="w-full h-[100px] sm:h-[150px] bg-white pt-[26px] ps-[40px] sm:pt-[39px] md:ps-[50px] xl:ps-[86px]">

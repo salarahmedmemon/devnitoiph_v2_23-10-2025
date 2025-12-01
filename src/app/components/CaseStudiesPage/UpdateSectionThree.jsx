@@ -82,7 +82,7 @@ const UpdatedSectionThree = () => {
 
   return (
     <div className="w-full bg-[#0A131C] p-5 sm:p-20 transition-all duration-700 ease-in-out">
-      <div className="w-[99%] casestudypage-sectionthree gradient-border rounded-[1vw] p-1 mx-auto">
+      <div className="w-[99%] casestudypage-sectionthree gradient-border-active rounded-[1vw] p-1 mx-auto">
         <div className="w-full bg-[#0A131C] rounded-[1vw] text-white">
           {/* Top Section */}
           <div
@@ -122,7 +122,7 @@ const UpdatedSectionThree = () => {
             <div
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
-              className={`w-[220px] md:w-[600px] lg:w-[94%] xl:w-[98%] gradient-border mx-auto rounded-lg p-[3px] mt-[0px] sm:mt-[40px] mb-[70px] transition-all duration-700 ease-in-out cursor-pointer ${
+              className={`w-[220px] md:w-[600px] lg:w-[94%] xl:w-[98%] gradient-border-active mx-auto rounded-lg p-[3px] mt-[0px] sm:mt-[40px] mb-[70px] transition-all duration-700 ease-in-out cursor-pointer ${
                 isExpanded ? "scale-y-[1]" : "scale-y-[1]"
               }`}
               style={{ transformOrigin: "center center" }}
