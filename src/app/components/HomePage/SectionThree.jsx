@@ -109,7 +109,7 @@ const SectionThree = () => {
 
     return (
         // min-h-[856px]
-        <div ref={containerRef} className="projects w-full h-[1020px]  sm:h-[790px] lg:h-[980px] relative bg-[#0A131C] pt-[15px] sm:pt-[20px] lg:pt-[58px] overflow-hidden">
+        <div ref={containerRef} className="projects w-full h-[1080px]  sm:h-[790px] lg:h-[980px] relative bg-[#0A131C] pt-[15px] sm:pt-[20px] lg:pt-[58px] overflow-hidden">
             {/* Background image (sharp outside, blurred inside glass) */}
             {/* RIGHT LOGO */}
             <img src="/img/aboutpage/sectionthree/rightlogo.png" className='right-image-logo block w-[60px] sm:w-[80px] md:w-[100px] lg:w-[144px] absolute top-[14px] lg:top-[40px] left-[85%] rotate-50' />
@@ -118,7 +118,7 @@ const SectionThree = () => {
 
 
             {/* Main glass box */}
-            <div className="main-glass w-[96%] md:w-[88%] mx-auto h-[984px] sm:h-[740px] lg:h-[800px] xl:h-[800px] rounded-[5px] xl:rounded-[26px] border-2 xl:border border-[#4279E8]/40
+            <div className="main-glass w-[96%] md:w-[88%] mx-auto h-[1040px] sm:h-[740px] lg:h-[800px] xl:h-[800px] rounded-[5px] xl:rounded-[26px] border-2 xl:border border-[#4279E8]/40
                             backdrop-blur-xl opacity-96
                             shadow-[0_8px_26px_rgba(0,0,0,0.6)]
                             relative overflow-hidden">
@@ -264,9 +264,9 @@ const SectionThree = () => {
                 </div>
 
                 {/* PROJECTS SHOWCASE FOR MOBILE */}
-                <div className="flex justify-center lg:hidden w-[84.5%] mx-auto mt-[16px] sm:mt-0 gap-[6px] sm:gap-[10px] flex-wrap">
+                <div className="flex justify-center lg:hidden w-[84.5%] mx-auto mt-[16px] sm:mt-0 gap-[10px] flex-wrap">
                     {/* PROJECT ONE */}
-                    <div className="project-one w-[80%] h-[144px] sm:w-[33%] sm:h-[280px] p-[2px] gradient-border group cursor-pointer">
+                    <div className="project-one w-[80%] h-[150px] sm:w-[33%] sm:h-[280px] p-[2px] gradient-border group cursor-pointer">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projectone.png')] bg-cover bg-center relative">
                             <div
                                 ref={(el) => (circleRefsMobile.current[0] = el)}
@@ -275,7 +275,7 @@ const SectionThree = () => {
                                 <div className="w-full h-full rounded-full bg-white"></div>
                             </div>
 
-                            {/* OVERLAY */}
+                            
                             <div className="group-hover:w-[66%] sm:group-hover:w-full group-hover:h-full sm:group-hover:h-[80%] md:group-hover:h-[200px] bg-[#000] absolute bottom-0 right-0 pt-[50px] group-hover:opacity-80 rounded-tl-full w-0 h-0 opacity-0 transition-all duration-500 ease-in-out z-10 overflow-hidden">
                                 <h3 className="font-[500] text-[12px] text-[#FFFFFF] absolute top-[18px] sm:top-[40px] right-[20px]">Printing Media</h3>
                                 <h4 className="text-[#1AE4FA] text-[10px] absolute top-[32px] sm:top-[56px] right-[10px]">Short Detail Here</h4>
@@ -287,7 +287,7 @@ const SectionThree = () => {
                     </div>
 
                     {/* PROJECT TWO */}
-                    <div className="project-two w-[80%] h-[144px] sm:w-[64%] sm:h-[160px] p-[2px] gradient-border group overflow-hidden cursor-pointer">
+                    <div className="project-two w-[80%] h-[150px] sm:w-[64%] sm:h-[160px] p-[2px] gradient-border group overflow-hidden cursor-pointer">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projecttwo.jpg')] bg-cover bg-center relative">
                             <div
                                 ref={(el) => (circleRefsMobile.current[1] = el)}
@@ -296,7 +296,7 @@ const SectionThree = () => {
                                 <div className="w-full h-full rounded-full bg-white"></div>
                             </div>
 
-                            {/* OVERLAY */}
+                            
                             <div className="group-hover:w-[66%] sm:group-hover:w-[60%] group-hover:h-full sm:group-hover:h-full bg-[#000] absolute bottom-0 right-0 pt-[50px] group-hover:opacity-80 rounded-tl-full w-0 h-0 opacity-0 transition-all duration-500 ease-in-out z-10 overflow-hidden">
                                 <h3 className="font-[500] text-[12px] text-[#FFFFFF] absolute top-[18px] sm:top-[40px] right-[20px]">Printing Media</h3>
                                 <h4 className="text-[#1AE4FA] text-[10px] absolute top-[32px] sm:top-[56px] right-[10px]">Short Detail Here</h4>
@@ -308,7 +308,7 @@ const SectionThree = () => {
                     </div>
 
                     {/* PROJECT THREE */}
-                    <div className="project-three w-[80%] h-[144px] sm:w-[33%] sm:h-[120px] p-[2px] gradient-border group overflow-hidden relative cursor-pointer">
+                    <div className="project-three w-[80%] h-[150px] sm:w-[33%] sm:h-[120px] p-[2px] gradient-border group overflow-hidden relative cursor-pointer">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projectfour.png')] bg-cover bg-center relative">
                             <div
                                 ref={(el) => (circleRefsMobile.current[2] = el)}
@@ -317,7 +317,7 @@ const SectionThree = () => {
                                 <div className="w-full h-full rounded-full bg-white"></div>
                             </div>
 
-                            {/* OVERLAY */}
+                            
                             <div className="group-hover:w-[66%] sm:group-hover:w-full group-hover:h-full sm:group-hover:h-full bg-[#000] absolute bottom-0 right-0 pt-[50px] group-hover:opacity-80 rounded-tl-full w-0 h-0 opacity-0 transition-all duration-500 ease-in-out z-10 overflow-hidden">
                                 <h3 className="font-[500] text-[12px] text-[#FFFFFF] absolute top-[18px] sm:top-[16px] right-[20px]">Printing Media</h3>
                                 <h4 className="text-[#1AE4FA] text-[10px] absolute top-[32px] sm:top-[30px] right-[10px]">Short Detail Here</h4>
@@ -329,7 +329,7 @@ const SectionThree = () => {
                     </div>
 
                     {/* PROJECT FOUR */}
-                    <div className="project-four w-[80%] h-[144px] sm:w-[64%] sm:h-[240px] sm:mt-[-120px] p-[2px] gradient-border group overflow-hidden  cursor-pointer">
+                    <div className="project-four w-[80%] h-[150px] sm:w-[64%] sm:h-[240px] sm:mt-[-120px] p-[2px] gradient-border group overflow-hidden  cursor-pointer">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projectthree.jpg')] bg-cover bg-center relative">
                             <div
                                 ref={(el) => (circleRefsMobile.current[3] = el)}
@@ -338,7 +338,7 @@ const SectionThree = () => {
                                 <div className="w-full h-full rounded-full bg-white"></div>
                             </div>
 
-                            {/* OVERLAY */}
+                            
                             <div className="group-hover:w-[66%] group-hover:h-full sm:group-hover:h-[80%] md:group-hover:h-[200px] bg-[#000] absolute bottom-0 right-0 pt-[50px] group-hover:opacity-80 rounded-tl-full w-0 h-0 opacity-0 transition-all duration-500 ease-in-out z-10 overflow-hidden">
                                 <h3 className="font-[500] text-[12px] text-[#FFFFFF] absolute top-[18px] sm:top-[40px] right-[20px]">Printing Media</h3>
                                 <h4 className="text-[#1AE4FA] text-[10px] absolute top-[32px] sm:top-[56px] right-[10px]">Short Detail Here</h4>
@@ -350,7 +350,7 @@ const SectionThree = () => {
                     </div>
 
                     {/* PROJECT FIVE */}
-                    <div className="project-five w-[80%] h-[144px] sm:w-[49%] sm:h-[185px] sm:mt-0 p-[2px] gradient-border group overflow-hidden relative cursor-pointer">
+                    <div className="project-five w-[80%] h-[150px] sm:w-[49%] sm:h-[185px] sm:mt-0 p-[2px] gradient-border group overflow-hidden relative cursor-pointer">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projectsix.png')] bg-cover bg-center relative">
                             <div
                                 ref={(el) => (circleRefsMobile.current[4] = el)}
@@ -359,7 +359,7 @@ const SectionThree = () => {
                                 <div className="w-full h-full rounded-full bg-white"></div>
                             </div>
 
-                            {/* OVERLAY */}
+                            
                             <div className="group-hover:w-[66%] group-hover:h-full sm:group-hover:h-[80%] md:group-hover:h-full bg-[#000] absolute bottom-0 right-0 pt-[50px] group-hover:opacity-80 rounded-tl-full w-0 h-0 opacity-0 transition-all duration-500 ease-in-out z-10 overflow-hidden">
                                 <h3 className="font-[500] text-[12px] text-[#FFFFFF] absolute top-[18px] sm:top-[40px] right-[20px]">Printing Media</h3>
                                 <h4 className="text-[#1AE4FA] text-[10px] absolute top-[32px] sm:top-[56px] right-[10px]">Short Detail Here</h4>
@@ -371,7 +371,7 @@ const SectionThree = () => {
                     </div>
 
                     {/* PROJECT SIX */}
-                    <div className="project-six w-[80%] h-[144px] sm:w-[48%] sm:h-[185px] sm:mt-0 p-[2px] gradient-border group overflow-hidden relative cursor-pointer">
+                    <div className="project-six w-[80%] h-[150px] sm:w-[48%] sm:h-[185px] sm:mt-0 p-[2px] gradient-border group overflow-hidden relative cursor-pointer">
                         <div className="w-full h-full bg-[url('/img/homepage/sectionthree/projectfive.jpg')] bg-cover bg-center relative">
                             <div
                                 ref={(el) => (circleRefsMobile.current[5] = el)}
@@ -380,7 +380,7 @@ const SectionThree = () => {
                                 <div className="w-full h-full rounded-full bg-white"></div>
                             </div>
 
-                            {/* OVERLAY */}
+                            
                             <div className="group-hover:w-[66%] sm:group-hover:w-full md:group-hover:w-[66%] group-hover:h-full bg-[#000] absolute bottom-0 right-0 pt-[50px] group-hover:opacity-80 rounded-tl-full w-0 h-0 opacity-0 transition-all duration-500 ease-in-out z-10 overflow-hidden">
                                 <h3 className="font-[500] text-[12px] text-[#FFFFFF] absolute top-[18px] sm:top-[40px] right-[20px]">Printing Media</h3>
                                 <h4 className="text-[#1AE4FA] text-[10px] absolute top-[32px] sm:top-[56px] right-[10px]">Short Detail Here</h4>

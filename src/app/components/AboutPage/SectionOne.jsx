@@ -73,7 +73,7 @@ const SectionOne = () => {
             <div className="xl:hidden w-full h-full relative z-10">
                 <div className="w-[85%] h-[120px] sm:h-[149px] md:w-[58%] lg:w-[60%] md:h-[30%] lg:h-[34%] flex gap-[20px] mt-[38px] mx-auto">
                     {/* IMAGE ONE */}
-                    <div className="w-[100%] h-full rounded-[10px] z-10 border border-[#4AFFF0] shadow-[0_2px_7px_0_#5FFFE4] relative group overflow-hidden cursor-pointer">
+                    <div className="w-[80%] mx-auto sm:mx-0 sm:w-[100%] h-full rounded-[10px] z-10 border border-[#4AFFF0] shadow-[0_2px_7px_0_#5FFFE4] relative group overflow-hidden cursor-pointer">
                         <img src="/img/aboutpage/image01.png" alt="image one" className="w-full h-full object-cover" loading="lazy" />
 
                         {/* Overlay */}
@@ -83,7 +83,7 @@ const SectionOne = () => {
                     </div>
 
                     {/* IMAGE TWO */}
-                    <div className="w-[100%] h-full rounded-[10px] z-10 border border-[#4AFFF0] shadow-[0_2px_7px_0_#5FFFE4] relative group overflow-hidden cursor-pointer">
+                    <div className="hidden sm:block w-[100%] h-full rounded-[10px] z-10 border border-[#4AFFF0] shadow-[0_2px_7px_0_#5FFFE4] relative group overflow-hidden cursor-pointer">
                         <img src="/img/aboutpage/image02.png" alt="image two" className="w-full h-full object-cover" loading="lazy"/>
                         {/* Overlay */}
                         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">

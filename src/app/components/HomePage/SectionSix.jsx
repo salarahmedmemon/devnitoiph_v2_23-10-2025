@@ -149,7 +149,7 @@ function FAQItem({ q, a1, a2, id, onOpen }) {
 
       <div className="relative z-10 w-full px-[20px] py-[26px] sm:py-[14px] md:py-[20px] flex flex-col justify-center transition-all duration-300 backdrop-blur-[2px] rounded-[10px] bg-[#ffffff17] clip-rounded">
         <div className="flex items-center justify-between gap-4">
-          <p className={`text-[12px] md:text-[16px] lg:text-[18px] transition-colors duration-300 ${open ? "text-green-500" : "text-white"}`}>
+          <p className={`text-[14px] md:text-[16px] lg:text-[18px] transition-colors duration-300 ${open ? "text-green-500" : "text-white"}`}>
             {q}
           </p>
 
@@ -157,9 +157,9 @@ function FAQItem({ q, a1, a2, id, onOpen }) {
             onClick={handleIconClick}
             aria-expanded={open}
             aria-controls={`faq-content-${id}`}
-            className={`w-7 h-7 md:w-8 md:h-8 flex items-center justify-center rounded cursor-pointer transition-colors duration-300 ${open ? "bg-green-500 text-white" : "bg-white text-[#767C9E]"}`}
+            className={`w-[30px] h-[30px] md:w-8 md:h-8 flex items-center justify-center rounded cursor-pointer transition-colors duration-300 ${open ? "bg-green-500 text-white" : "bg-white text-[#767C9E]"}`}
           >
-            <span className="text-[24px] pb-[0px]" ref={iconRef}>+</span>
+            <span className="text-[24px] pb-[6px] sm:pb-[0px]" ref={iconRef}>+</span>
           </button>
         </div>
 
@@ -169,8 +169,8 @@ function FAQItem({ q, a1, a2, id, onOpen }) {
           className="overflow-hidden text-white"
           style={{ height: 0, opacity: 0, visibility: "hidden" }}
         >
-          <p className="mt-3 text-sm">{a1}</p>
-          <p className="mt-2 text-sm">{a2}</p>
+          <p className="mt-3 text-[12px]">{a1}</p>
+          <p className="mt-2 text-[12px]">{a2}</p>
         </div>
       </div>
     </div>
@@ -281,7 +281,7 @@ const SectionSix = () => {
       <div className='w-full h-[87%] sm:h-[82%] bg-[#000c1bf2] absolute bottom-0'></div>
       <div className='w-[0vw] h-[0vw] rounded-full absolute top-[100px] left-[-60px] opacity-[50%] blur-circle2'></div>
 
-      <div className="w-full h-[100px] sm:h-[150px] bg-white pt-[26px] ps-[40px] sm:pt-[39px] md:ps-[50px] xl:ps-[86px]">
+      <div className="w-full h-[100px] sm:h-[150px] bg-white pt-[26px] ps-[24px] sm:ps-[40px] sm:pt-[39px] md:ps-[50px] xl:ps-[86px]">
         <div className="w-full homepage-sectionsix mx-auto">
           <div className="w-[454px] h-[74px] homepage-section-six-heading">
             <h1 ref={h1Ref} className="border-t-[3px] border-[#4C4886] w-[50px] h-[24px] sm:w-[87px] sm:h-[42px] text-[20px] sm:text-[32px] font-[500]">FAQ's</h1>
